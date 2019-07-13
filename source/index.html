@@ -11,82 +11,234 @@
     <a class="page-header__logo">
       <picture>
 
-        <svg class="page-header__logo-svg" width="100" height="19"></svg>
+        <svg class="page-header__logo-svg page-header__logo-svg--scroll" width="100" height="19"></svg>
       </picture>
     </a>
     <nav class="main-nav">
-      <button class="main-nav__toggle-open" type="button">Открыть меню</button>
-      <button class="main-nav__toggle-close" type="button">Закрыть</button>
-      <ul class="main-nav__list site-list">
-        <li class="site-list__item">
-          <a>О сервисе</a>
-        </li>
-        <li class="site-list__item">
-          <a href="form.html">Направления</a>
-        </li>
-        <li class="site-list__item">
-          <a href="catalog.html">Попутчики</a>
-        </li>
-      </ul>
-      <ul class="main-nav__list user-list">
-        <li class="user-list__item">
-          <a class="user-list__login" href="login.html">Авторизация</a>
-        </li>
-      </ul>
-      <ul main-nav__connection contacts>
-        <li>
-          <a class="contacts__phone-number" href="tel:+78005558628">8 800 555-86-28</a>
-        </li>
-        <li>
-          <a class="contacts__email" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
-        </li>
-      </ul>
-      <ul class="main-nav__links-header social">
-        <li class="social__button">
-          <a class="social__link social__link--facebook" href="https://www.facebook.com/">
-            <span class="visually-hidden">
-              Фейсбук
-            </span>
-          </a>
-        </li>
-        <li class="social__button">
-          <a class="social__link social__link--instagram" href="https://www.instagram.com/?hl=ru">
-            <span class="visually-hidden">
-              Инстаграм
-            </span>
-          </a>
-        </li>
-        <li class="social__button">
-          <a class="social__link social__link--twitter" href="https://twitter.com/?lang=ru">
-            <span class="visually-hidden">
-              Твитер
-            </span>
-          </a>
-        </li>
-      </ul>
+      <button class="main-nav__toggle-open main-nav__toggle-open--scroll" type="button">Открыть меню</button>
+      <div class="main-nav__wrapper">
+        <button class="main-nav__toggle-close" type="button">Закрыть</button>
+        <ul class="main-nav__list site-list">
+          <li class="site-list__item">
+            <a>О сервисе</a>
+          </li>
+          <li class="site-list__item">
+            <a href="form.html">Направления</a>
+          </li>
+          <li class="site-list__item">
+            <a href="catalog.html">Попутчики</a>
+          </li>
+        </ul>
+        <ul class="main-nav__list user-list">
+          <li class="user-list__item">
+            <a class="user-list__login button-authorization" href="login.html">Авторизация</a>
+          </li>
+        </ul>
+        <ul main-nav__connection contacts>
+          <li>
+            <a class="contacts__phone-number" href="tel:+78005558628">8 800 555-86-28</a>
+          </li>
+          <li>
+            <a class="contacts__email" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+          </li>
+        </ul>
+        <ul class="main-nav__links-header social">
+          <li class="social__button">
+            <a class="social__link social__link--facebook" href="https://www.facebook.com/">
+              <span class="visually-hidden">
+                Фейсбук
+              </span>
+            </a>
+          </li>
+          <li class="social__button">
+            <a class="social__link social__link--instagram" href="https://www.instagram.com/?hl=ru">
+              <span class="visually-hidden">
+                Инстаграм
+              </span>
+            </a>
+          </li>
+          <li class="social__button">
+            <a class="social__link social__link--twitter" href="https://twitter.com/?lang=ru">
+              <span class="visually-hidden">
+                Твитер
+              </span>
+            </a>
+          </li>
+        </ul>
+      </div>
     </nav>
   </header>
   <main class="page-main">
     <h1 class="visually-hidden">Погнали - найди себе попутчика в путешествии</h1>
     <section class="about-us">
       <h2 class="about-us__tittle">В путешествие с крутыми попутчиками!</h2>
-      <img class="about-us__" src="img/" width="192" height="255" alt="путешественник">
+      <img class="about-us__traveler-image" src="img/" width="192" height="255" alt="путешественник">
 
-      <ul>
-        <li>Позвонить</li>
-        <li>Написать</li>
-        <li>Авторизация</li>
+      <ul class="about-us__manage">
+        <li class="about-us__contact">
+          <a href="tel:+78005558628">Позвонить</a>
+        </li>
+        <li class="about-us__contact">
+          <a href="mailto:mail@htmlacademy.ru">Написать</a>
+        </li>
+        <li class="about-us__contact">
+          <a class="button-authorization" href="login.html">Авторизация</a>
+        </li>
       </ul>
-      <div>
-        <p><q>Лучшее приложение, что я видел в жизни!</q></p>
-        <p>Мурат Эльтазин главный редактор газеты &laquo;гаджетлайф&raquo;</p>
+      <div class="about-us__information information-wrapper">
+        <p class="information-wrapper__praise"><q>Лучшее приложение, что я видел в жизни!</q></p>
+        <!--или такой класс?about-us__praise-->
+        <p class="information-wrapper__news">Мурат Эльтазин главный редактор газеты &laquo;гаджетлайф&raquo;</p>
       </div>
-      <ul>
-        <li>Выберите направление</li>
-        <li>Изучите идеи путешественников</li>
-        <li>Находите тех, кто похож на вас</li>
-        <li>Путешествуйте вместе!</li>
+      <ul class="about-us__explanations">
+        <li class="about-us__item about-us__item--first">Выберите направление</li>
+        <li class="about-us__item">Изучите идеи путешественников</li>
+        <li class="about-us__item">Находите тех, кто похож на вас</li>
+        <li class="about-us__item about-us__item--last">Путешествуйте вместе!</li>
       </ul>
+    </section>
+    <section class="about-service">
+      <h2 class="about-service__tittle headline">О сервисе</h2>
+      <p class="about-service__start">Любое путешествие веселее с попутчиками, которые на одной волне с тобой! Делитесь
+        своими идеями путешествий и черпайте вдохновение в чужих. </p>
+      <p class="about-service__end">А если найдете кого-то близкого по духу — скорее зовите в совместный трип!</p>
+    </section>
+    <section class="directions">
+      <div class="directions__wrapper">
+        <h2 class="directions__tittle headline">Направления</h2>
+        <p class="directions__paragraph">Мы не продаем туры и ничего не рекламируем. Люди сами пишут о странах, куда
+          хотели бы отправиться и чем можно там заняться.</p>
+      </div>
+      <ul class="directions__countries">
+        <li class="directions__country country">
+          <picture>
+
+          </picture>
+          <div class="country__wrapper">
+            <div class="country__wrapper-population">
+              <h3 class="country__tittle">Тайланд</h3>
+              <span class="country__count-people">18321</span>
+            </div>
+            <p class="country__paragraf">Джугли зовут!</p>
+          </div>
+        </li>
+        <li class="directions__country country">
+          <picture>
+
+          </picture>
+          <div class="country__wrapper">
+            <div class="country__wrapper-population">
+              <h3 class="country__tittle">Франция</h3>
+              <span class="country__count-people">12518</span>
+            </div>
+            <p class="country__paragraf">Трэ бьен, манифик!</p>
+          </div>
+        </li>
+        <li class="directions__country country">
+          <picture>
+
+          </picture>
+          <div class="country__wrapper">
+            <div class="country__wrapper-population">
+              <h3 class="country__tittle">Чехия</h3>
+              <span class="country__count-people">5326</span>
+            </div>
+            <p class="country__paragraf">Закоулки старой Европы</p>
+          </div>
+        </li>
+      </ul>
+      <a href="form.html" class="directions__button button">Показать все</a>
+    </section>
+    <section class="fellow-travelers">
+      <div class="fellow-travelers__wrapper">
+        <h2 class="fellow-travelers__tittle headline">Попутчики</h2>
+        <p class="fellow-travelers__paragraph">Все мы индивидуальны и у каждого свой взгляд на идеальный отдых. Одному
+          нужен пляж и коктейль, а другому маршрут для хайкинга.</p>
+        <p class="fellow-travelers__paragraph-exclamation">Теперь можно легко найти единомышленников!</p>
+      </div>
+      <ul class="fellow-travelers__list">
+        <li class="fellow-travelers__item companion">
+          <div class="companion__content">
+            <span class="companion__interest">99</span>
+            <span class="companion__level">level</span>
+          </div>
+          <picture>
+
+          </picture>
+          <ul class="companion__desires">
+            <li class="companion__first-country">Шри ланка
+              <span сlass="companion__tooltip companion__tooltip--first">Шри ланка</span>
+            </li>
+            <li class="companion__second-country">Тайланд
+              <span сlass="companion__tooltip companion__tooltip--second">Шри ланка</span>
+            </li>
+            <li class="companion__third-country">Сейшелы
+              <span сlass="companion__tooltip companion__tooltip--third">Шри ланка</span>
+            </li>
+          </ul>
+          <div class="companion__wrapper">
+            <h3 class="companion__tittle">Таня Фирсова</h3>
+            <p class="companion__paragraf">#ЗОЖ #ПП #Фитнес #пляж #авокадо #смузи</p>
+            <ul class="companion__transport">
+              <li class="companion__aircraft companion__aircraft--active">Авиаперелет
+                <span сlass="companion__tooltip-transport">Авиаперелет</span>
+              </li>
+              <li class="companion__сar">Автотранспорт
+                <span сlass="companion__tooltip-transport">Автотранспорт</span>
+              </li>
+              <li class="companion__bicycle">Велосипед
+                <span сlass="companion__tooltip-transport">Велосипед</span>
+              </li>
+              <li class="companion__pedestrian">Пешком
+                <span сlass="companion__tooltip-transport">Пешком</span>
+              </li>
+            </ul>
+          </div>
+        </li>
+        <li class="fellow-travelers__item companion">
+          <div class="companion__content">
+            <span class="companion__interest">80</span>
+            <span class="companion__level">level</span>
+          </div>
+          <picture>
+
+          </picture>
+          <ul class="companion__desires">
+            <li class="companion__first-country">Бельгия
+              <span сlass="companion__tooltip companion__tooltip--first">Бельгия</span>
+            </li>
+            <li class="companion__second-country">Чехия
+              <span сlass="companion__tooltip companion__tooltip--second">Чехия</span>
+            </li>
+          </ul>
+          <div class="companion__wrapper">
+            <h3 class="companion__tittle">Петя Демин</h3>
+            <p class="companion__paragraf">#бургер #бар #футбол #концерт #крафт</p>
+            <ul class="companion__transport">
+              <li class="companion__aircraft companion__aircraft--active">Авиаперелет
+                <span сlass="companion__tooltip-transport">Авиаперелет</span>
+              </li>
+              <li class="companion__сar companion__сar--active">Автотранспорт
+                <span сlass="companion__tooltip-transport">Автотранспорт</span>
+              </li>
+              <li class="companion__bicycle">Велосипед
+                <span сlass="companion__tooltip-transport">Велосипед</span>
+              </li>
+              <li class="companion__pedestrian companion__pedestrian--active">Пешком
+                <span сlass="companion__tooltip-transport">Пешком</span>
+              </li>
+            </ul>
+          </div>
+        </li>
+      </ul>
+      <a href="catalog.html" class="directions__button button">Показать всеx</a>
+    </section>
+    <section class="profile">
+      <h2 class="profile__tittle headline">Добавтьте свой профиль</h2>
+      <table class="profile__tariffs">
+
+
+      </table>
 
     </section>
 
