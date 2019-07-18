@@ -8,7 +8,7 @@
 </head>
 
 <body>
-  <header class="page-header">
+  <header class="page-header page-header--scroll">
     <a class="page-header__logo logo">
       <picture>
 
@@ -16,7 +16,9 @@
       </picture>
     </a>
     <nav class="main-nav">
-      <button class="main-nav__toggle-open main-nav__toggle-open--scroll" type="button">Открыть меню</button>
+      <button class="main-nav__toggle-open main-nav__toggle-open--scroll" type="button">Открыть меню
+
+      </button>
       <div class="main-nav__wrapper">
         <button class="main-nav__toggle-close" type="button">Закрыть</button>
         <ul class="main-nav__list site-list">
@@ -24,23 +26,23 @@
             <a>О сервисе</a>
           </li>
           <li class="site-list__item">
-            <a href="form.html">Направления</a>
+            <a class="site-list__link" href="form.html">Направления</a>
           </li>
           <li class="site-list__item">
-            <a href="catalog.html">Попутчики</a>
+            <a class="site-list__link" href="catalog.html">Попутчики</a>
           </li>
         </ul>
-        <ul class="main-nav__list user-list">
-          <li class="user-list__item">
-            <a class="user-list__login button-authorization" href="login.html">Авторизация</a>
+        <ul class="main-nav__authorization">
+          <li class="main-nav__item">
+            <a class="main-nav__login button-authorization" href="login.html">Авторизация</a>
           </li>
         </ul>
         <ul class="main-nav__connection contacts">
           <li>
-            <a class="contacts__phone-number phone-number" href="tel:+78005558628">8 800 555-86-28</a>
+            <a class="contacts__phone-number" href="tel:+78005558628">8 800 555-86-28</a>
           </li>
           <li>
-            <a class="contacts__email email" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+            <a class="contacts__email" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
           </li>
         </ul>
         <ul class="main-nav__links-header social">
@@ -86,7 +88,7 @@
           <a href="mailto:mail@htmlacademy.ru">Написать</a>
         </li>
         <li class="about-us__contact">
-          <a class="about-us__button button-authorization" href="login.html">Авторизация</a>
+          <a class="about-us__button button-authorization--size" href="login.html">Авторизация</a>
         </li>
       </ul>
       <div class="about-us__information information-wrapper">
@@ -266,12 +268,12 @@
         <a href="registration.html" class="interest__button" type="submit">Регистрация</a>
       </form>
       <p class="interest__paragraf">Остались вопросы? Мы с радостью на них ответим!</p>
-      <ul class="interest__contacts">
-        <li class="interest__contact">
-          <a class="interest__phone-number phone-number" href="tel:+78005558628">8 800 555-86-28</a>
+      <ul class="interest__contacts contacts">
+        <li>
+          <a class="contacts__phone-number  contacts__phone-number--color" href="tel:+78005558628">8 800 555-86-28</a>
         </li>
-        <li class="interest__contact">
-          <a class="interest__email email" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+        <li>
+          <a class="contacts__email contacts__email--color" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
         </li>
       </ul>
     </section>
