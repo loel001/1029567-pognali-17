@@ -82,13 +82,13 @@
 
       <ul class="about-us__manage">
         <li class="about-us__contact">
-          <a href="tel:+78005558628">Позвонить</a>
+          <a class="about-us__phone" href="tel:+78005558628">Позвонить</a>
         </li>
         <li class="about-us__contact">
-          <a href="mailto:mail@htmlacademy.ru">Написать</a>
+          <a class="about-us__email" href="mailto:mail@htmlacademy.ru">Написать</a>
         </li>
         <li class="about-us__contact">
-          <a class="about-us__button button-authorization--size" href="login.html">Авторизация</a>
+          <a class="about-us__button button-authorization button-authorization--size" href="login.html">Авторизация</a>
         </li>
       </ul>
       <div class="about-us__information information-wrapper">
@@ -97,8 +97,8 @@
       </div>
       <ul class="about-us__explanations">
         <li class="about-us__item about-us__item--first">Выберите направление</li>
-        <li class="about-us__item">Изучите идеи путешественников</li>
-        <li class="about-us__item">Находите тех, кто похож на вас</li>
+        <li class="about-us__item about-us__item--second">Изучите идеи путешественников</li>
+        <li class="about-us__item about-us__item--third">Находите тех, кто похож на вас</li>
         <li class="about-us__item about-us__item--last">Путешествуйте вместе!</li>
       </ul>
     </section>
@@ -175,10 +175,10 @@
               <span сlass="companion__tooltip companion__tooltip--first">Шри ланка</span>
             </li>
             <li class="companion__second-country">Тайланд
-              <span сlass="companion__tooltip companion__tooltip--second">Шри ланка</span>
+              <span сlass="companion__tooltip companion__tooltip--second">Тайланд</span>
             </li>
             <li class="companion__third-country">Сейшелы
-              <span сlass="companion__tooltip companion__tooltip--third">Шри ланка</span>
+              <span сlass="companion__tooltip companion__tooltip--third">Сейшелы</span>
             </li>
           </ul>
           <div class="companion__wrapper">
@@ -188,7 +188,7 @@
               <li class="transport__aircraft transport__aircraft--active">Авиаперелет
                 <span сlass="transport__tooltip">Авиаперелет</span>
               </li>
-              <li class="transport__сar">Автотранспорт
+              <li class="transport__car">Автотранспорт
                 <span сlass="transport__tooltip">Автотранспорт</span>
               </li>
               <li class="transport__bicycle">Велосипед
@@ -223,7 +223,7 @@
               <li class="transport__aircraft transport__aircraft--active">Авиаперелет
                 <span сlass="transport__tooltip">Авиаперелет</span>
               </li>
-              <li class="transport__сar transport__сar--active">Автотранспорт
+              <li class="transport__car transport__сar--active">Автотранспорт
                 <span сlass="transport__tooltip">Автотранспорт</span>
               </li>
               <li class="transport__bicycle">Велосипед
@@ -258,30 +258,34 @@
       <button class="modal__close" type="button">Закрыть окно</button>
     </section>
     <section class="interest">
-      <h2 class="interest__title headline">Бизнес-тарифы</h2>
-      <p class="interest__content">Зарегистрируйтесь, это быстро и бесплатно!Уже зарегистрированы? Тогда скорее
-        <a class="interest__login" href="login.html">авторизуйтесь</a>.
-      </p>
-      <form class="interest__registration" method="post" action="https://echo.htmlacademy.ru">
-        <label for="appointment-email">Ваш e-mail</label>
-        <input class="interest__email" id="appointment-email" type="email" name="email" placeholder="E-mail">
-        <a href="registration.html" class="interest__button" type="submit">Регистрация</a>
-      </form>
-      <p class="interest__paragraf">Остались вопросы? Мы с радостью на них ответим!</p>
-      <ul class="interest__contacts contacts">
-        <li>
-          <a class="contacts__phone-number  contacts__phone-number--color" href="tel:+78005558628">8 800 555-86-28</a>
-        </li>
-        <li>
-          <a class="contacts__email contacts__email--color" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
-        </li>
-      </ul>
+      <div class="interest__wrapper-color">
+        <h2 class="interest__title headline">Бизнес-тарифы</h2>
+        <p class="interest__content">Зарегистрируйтесь, это быстро и бесплатно!Уже зарегистрированы? Тогда скорее
+          <a class="interest__login" href="login.html">авторизуйтесь</a>.
+        </p>
+        <form class="interest__registration" method="post" action="https://echo.htmlacademy.ru">
+          <label class="interest__label" for="appointment-email">Ваш e-mail</label>
+          <input class="interest__email" id="appointment-email" type="email" name="email" placeholder="E-mail">
+          <div class="interest__wrapper">
+            <a href="registration.html" class="interest__button" type="submit">Регистрация</a>
+          </div>
+        </form>
+        <p class="interest__paragraf">Остались вопросы? Мы с радостью на них ответим!</p>
+        <ul class="interest__contacts contacts">
+          <li>
+            <a class="contacts__phone-number  contacts__phone-number--color" href="tel:+78005558628">8 800 555-86-28</a>
+          </li>
+          <li>
+            <a class="contacts__email contacts__email--color" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+          </li>
+        </ul>
+      </div>
     </section>
     <section class="map">
       <h2 class="visually-hidden">Как до нас добраться</h2>
       <address class="map__address">ул. Большая Конюшенная, 19/8</address>
       <a href="https://www.google.com/maps/place/%D0%91%D0%BE%D0%BB%D1%8C%D1%88%D0%B0%D1%8F+%D0%9A%D0%BE%D0%BD%D1%8E%D1%88%D0%B5%D0%BD%D0%BD%D0%B0%D1%8F+%D1%83%D0%BB.,+19%2F8,+%D0%A1%D0%B0%D0%BD%D0%BA%D1%82-%D0%9F%D0%B5%D1%82%D0%B5%D1%80%D0%B1%D1%83%D1%80%D0%B3,+191186/@59.9387165,30.3208587,17z/data=!3m1!4b1!4m5!3m4!1s0x4696310fca145cc1:0x42b32648d8238007!8m2!3d59.9387165!4d30.3230474"
-        class="map__button button">Проложить маршрут</a>
+        class="map__button button button--color">Проложить маршрут</a>
     </section>
     <section class="modal-map">
       <h2 class="visually-hidden">Как до нас добраться</h2>

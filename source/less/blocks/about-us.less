@@ -1,0 +1,72 @@
+.about-us {
+  background-image: linear-gradient(@main-color-tenth 200px, @main-color-first 200px, @main-color-first 200px);
+
+  &__title {
+    text-align: center;
+    line-height: 1.11;
+    color: @color-first;
+    font-size: 36px;
+    .bloggersans(800);
+    .text();
+    .list();
+  }
+
+  &__manage {
+    .list();
+    .style();
+  }
+
+  &__phone {
+    font-size: 0;
+  }
+
+  &__email {
+    font-size: 0;
+  }
+
+  &__praise {
+    line-height: 1.38;
+    color: @color-first;
+    font-size: 16px;
+    .bloggersans(300);
+    .list();
+  }
+
+  &__news {
+    line-height: 1.38;
+    color: @color-first;
+    font-size: 16px;
+    .bloggersans(800);
+    .list();
+  }
+
+  &__explanations {
+    width: 270px;
+    line-height: 1;
+    color: @color-fifth;
+    font-size: 18px;
+    .bloggersans(800);
+    .list();
+    .style();
+  }
+
+  &__item {
+    &--first {
+      background-color: @main-color-second;
+      .radius(5px, 5px, 0, 0);
+    }
+
+    &--second {
+      background-color: @main-color-third;
+    }
+
+    &--third {
+      background-color: @main-color-fourth;
+    }
+
+    &--last {
+      background-color: @main-color-fifth;
+      .radius(0, 0, 5px, 5px);
+    }
+  }
+}
