@@ -4,6 +4,7 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Погнали</title>
+  <link href="css/style.css" rel="stylesheet">
 </head>
 
 <body>
@@ -20,21 +21,21 @@
         <button class="main-nav__toggle-close" type="button">Закрыть</button>
         <ul class="main-nav__list site-list">
           <li class="site-list__item">
-            <a href="index.html">О сервисе</a>
+            <a class="site-list__link" href="index.html">О сервисе</a>
           </li>
           <li class="site-list__item">
-            <a href="form.html">Направления</a>
+            <a class="site-list__link" href="form.html">Направления</a>
           </li>
           <li class="site-list__item">
             <a>Попутчики</a>
           </li>
         </ul>
-        <ul class="main-nav__list user-list">
-          <li class="user-list__item">
-            <a class="user-list__login button-authorization" href="login.html">Авторизация</a>
+        <ul class="main-nav__authorization">
+          <li class="main-nav__list">
+            <a class="main-nav__login button-authorization" href="login.html">Авторизация</a>
           </li>
         </ul>
-        <ul main-nav__connection contacts>
+        <ul class="main-nav__connection contacts">
           <li>
             <a class="contacts__phone-number phone-number" href="tel:+78005558628">8 800 555-86-28</a>
           </li>
@@ -264,78 +265,114 @@
           <li class="country-alphabetically__item">Австрия</li>
           <li class="country-alphabetically__item">Азербайджанм</li>
         </ul>
-        <button сlass="modal-open__button button-container" type="button">Cвернуть</button>
+        <button сlass="modal-open__close" type="button">Cвернуть</button>
       </div>
     </section>
     <section class="choice">
-      <h2 class="choice__title">Подберите идеального попутчика</h2>
-      <form class="choice__form" method="get" action="https://echo.htmlacademy.ru">
-        <ul class="choice_list preferences">
-          <li class="preferences__item">
-            Хобби
-          </li>
-          <li class="preferences__item">
-            Музыка
-            <ul class="preferences__music music">
-              <li class="music__item">
-                <input class="music__input music__input--checkbox" type="checkbox" name="genre" value="hard-rock"
-                  id="hard-rock" checked>
-                <label class="music__label" for="hard-rock">Тяжелый рок</label>
-              </li>
-              <li class="music__item">
-                <input class="music__input music__input--checkbox" type="checkbox" name="genre" value="russian-rock"
-                  id="russian-rock">
-                <label class="music__label" for="russian-rock">Русский рок</label>
-              </li>
-              <li class="music__item">
-                <input class="music__input music__input--checkbox" type="checkbox" name="genre" value="eurodance"
-                  id="eurodance">
-                <label class="music__label" for="eurodance">Евроденс</label>
-              </li>
-            </ul>
-          </li>
-          <li class="preferences__item">
-            Еда
-          </li>
-          <li class="preferences__item">
-            Транспорт
-            <ul class="preferences__transport transport">
-              <li class="transport__aircraft">
-                <input class="transport__input transport__input--checkbox" type="checkbox" name="aircraft"
-                  value="aircraft" id="transport-aircraft" checked>
-                <label class="transport__label" for="transport-aircraft">Авиаперелет</label>
-                <span сlass="transport__tooltip">Авиаперелет</span>
-              </li>
-              <li class=class="transport__сar">
-                <input class="transport__input transport__input--checkbox" type="checkbox" name="car" value="car"
-                  id="transport-car" checked>
-                <label class="transport__label" for="transport-car">Автотранспорт</label>
-                <span сlass="transport__tooltip">Автотранспорт</span>
-              </li>
-              <li class=class="transport__bicycle">
-                <input class="transport__input transport__input--checkbox" type="checkbox" name="bicycle"
-                  value="bicycle" id="transport-bicycle">
-                <label class="transport__label" for="transport-bicycle">Велосипед</label>
-                <span сlass="transport__tooltip">Велосипед</span>
-              </li>
-              <li class=class="transport__pedestrian">
-                <input class="transport__input transport__input--checkbox" type="checkbox" name="pedestrian"
-                  value="pedestrian" id="transport-pedestrian" checked>
-                <label class="transport__label" for="transport-pedestrian">Пешком</label>
-                <span сlass=" transport__tooltip">Пешком</span>
-              </li>
-            </ul>
-          </li>
-          <li class="preferences__item">
-            Левел
-            <ul class="preferences-level level">
-              <li class="level__minimum">30</li>
-              <li class="level__maximum">100</li>
-            </ul>
-          </li>
-        </ul>
-        <button class="choice__button" type="submit">Показать</button>
-      </form>
+      <div class="choice__wrapper">
+        <h2 class="choice__title">Подберите идеального попутчика</h2>
+        <form class="choice__form" method="get" action="https://echo.htmlacademy.ru">
+          <ul class="choice_list preferences">
+            <li class="preferences__item">
+              Хобби
+              <ul class="preferences__list">
+                <li class="preferences__enthusiasm">
+                  <input class="preferences__input preferences__input--checkbox" type="checkbox" name="genre"
+                    value="hard-rock" id="hard-rock" checked>
+                  <label class="preferences__label" for="hard-rock">Cпортзал</label>
+                </li>
+                <li class="preferences__enthusiasm">
+                  <input class="music__input music__input--checkbox" type="checkbox" name="genre" value="russian-rock"
+                    id="russian-rock">
+                  <label class="music__label" for="russian-rock">Кальян</label>
+                </li>
+                <li class="preferences__enthusiasm">
+                  <input class="preferences__input music__input--checkbox" type="checkbox" name="genre"
+                    value="eurodance" id="eurodance">
+                  <label class="preferences__label" for="eurodance">Диван</label>
+                </li>
+              </ul>
+            </li>
+            <li class="preferences__item">
+              Музыка
+              <ul class="preferences__list">
+                <li class="preferences__enthusiasm">
+                  <input class="preferences__input preferences__input--checkbox" type="checkbox" name="genre"
+                    value="hard-rock" id="hard-rock" checked>
+                  <label class="preferences__label" for="hard-rock">Тяжелый рок</label>
+                </li>
+                <li class="preferences__enthusiasm">
+                  <input class="music__input music__input--checkbox" type="checkbox" name="genre" value="russian-rock"
+                    id="russian-rock">
+                  <label class="music__label" for="russian-rock">Русский рок</label>
+                </li>
+                <li class="preferences__enthusiasm">
+                  <input class="preferences__input music__input--checkbox" type="checkbox" name="genre"
+                    value="eurodance" id="eurodance">
+                  <label class="preferences__label" for="eurodance">Евроденс</label>
+                </li>
+              </ul>
+            </li>
+            <li class="preferences__item">
+              Еда
+              <ul class="preferences__list">
+                <li class="preferences__enthusiasm">
+                  <input class="preferences__input preferences__input--checkbox" type="checkbox" name="genre"
+                    value="hard-rock" id="hard-rock" checked>
+                  <label class="preferences__label" for="hard-rock">Мясоед</label>
+                </li>
+                <li class="preferences__enthusiasm">
+                  <input class="music__input music__input--checkbox" type="checkbox" name="genre" value="russian-rock"
+                    id="russian-rock">
+                  <label class="music__label" for="russian-rock">Сидит на ПП</label>
+                </li>
+                <li class="preferences__enthusiasm">
+                  <input class="preferences__input music__input--checkbox" type="checkbox" name="genre"
+                    value="eurodance" id="eurodance">
+                  <label class="preferences__label" for="eurodance">Веган-сыроед</label>
+                </li>
+              </ul>
+            </li>
+            <li class="preferences__item">
+              Транспорт
+              <ul class="preferences__transport transport">
+                <li class="transport__aircraft">
+                  <input class="transport__input transport__input--checkbox" type="checkbox" name="aircraft"
+                    value="aircraft" id="transport-aircraft" checked>
+                  <label class="transport__label" for="transport-aircraft">Авиаперелет</label>
+                  <span сlass="transport__tooltip">Авиаперелет</span>
+                </li>
+                <li class="transport__сar">
+                  <input class="transport__input transport__input--checkbox" type="checkbox" name="car" value="car"
+                    id="transport-car" checked>
+                  <label class="transport__label" for="transport-car">Автотранспорт</label>
+                  <span сlass="transport__tooltip">Автотранспорт</span>
+                </li>
+                <li class="transport__bicycle">
+                  <input class="transport__input transport__input--checkbox" type="checkbox" name="bicycle"
+                    value="bicycle" id="transport-bicycle">
+                  <label class="transport__label" for="transport-bicycle">Велосипед</label>
+                  <span сlass="transport__tooltip">Велосипед</span>
+                </li>
+                <li class="transport__pedestrian">
+                  <input class="transport__input transport__input--checkbox" type="checkbox" name="pedestrian"
+                    value="pedestrian" id="transport-pedestrian" checked>
+                  <label class="transport__label" for="transport-pedestrian">Пешком</label>
+                  <span сlass=" transport__tooltip">Пешком</span>
+                </li>
+              </ul>
+            </li>
+            <li class="preferences__item">
+              Левел
+              <ul class="preferences__level">
+                <li class="preferences__level-minimum">30</li>
+                <li class="preferences__level-maximum">100</li>
+              </ul>
+            </li>
+          </ul>
+          <button class="choice__button button-container button-container--color" type="submit">Показать</button>
+        </form>
+      </div>
     </section>
     <section class="travelers">
       <h2 class="visually-hidden">Список опутчиков</h2>
@@ -352,7 +389,10 @@
             <li class="dreams__item">Тайланд</li>
             <li class="dreams__item">Сейшелы</li>
           </ul>
-          <h4 class="ideal-traveler__title">Транспорт:</h4>
+          <div class="ideal-traveler__content">
+            <h4 class="ideal-traveler__title">Транспорт:</h4>
+            <span class="ideal-traveler__level">level</span>
+          </div>
           <div class="ideal-traveler__wrapper">
             <ul class="ideal-traveler__transport transport">
               <li class="transport__aircraft transport__aircraft--active">Авиаперелет
@@ -368,12 +408,9 @@
                 <span сlass="transport__tooltip">Пешком</span>
               </li>
             </ul>
-            <div class="ideal-traveler__content content">
-              <span class="content__interest">99</span>
-              <span class="content__level">level</span>
-            </div>
+            <span class="ideal-traveler__interest">99</span>
           </div>
-          <a class="ideal-traveler__button call" href="response.html">Позвать</a>
+          <a class="ideal-traveler__button button-container" href="response.html">Позвать</a>
         </li>
         <li class="travelers__item ideal-traveler">
           <a class="ideal-traveler__profile">
@@ -386,7 +423,10 @@
             <li class="dreams__item">Бельгия</li>
             <li class="dreams__item">Чехия</li>
           </ul>
-          <h4 class="ideal-traveler__title">Транспорт:</h4>
+          <div class="ideal-traveler__content">
+            <h4 class="ideal-traveler__title">Транспорт:</h4>
+            <span class="ideal-traveler__level">level</span>
+          </div>
           <div class="ideal-traveler__wrapper">
             <ul class="ideal-traveler__transport transport">
               <li class="transport__aircraft transport__aircraft--active">Авиаперелет
@@ -402,12 +442,9 @@
                 <span сlass="transport__tooltip">Пешком</span>
               </li>
             </ul>
-            <div class="ideal-traveler__content content">
-              <span class="content__interest">80</span>
-              <span class="content__level">level</span>
-            </div>
+            <span class="ideal-traveler__interest">80</span>
           </div>
-          <a class="ideal-traveler__button call" href="response.html">Позвать</a>
+          <a class="ideal-traveler__button button-container" href="response.html">Позвать</a>
         </li>
         <li class="travelers__item ideal-traveler">
           <a class="ideal-traveler__profile">
@@ -421,7 +458,10 @@
             <li class="dreams__item">Австралия</li>
             <li class="dreams__item">Доминикана</li>
           </ul>
-          <h4 class="ideal-traveler__title">Транспорт:</h4>
+          <div class="ideal-traveler__content">
+            <h4 class="ideal-traveler__title">Транспорт:</h4>
+            <span class="ideal-traveler__level">level</span>
+          </div>
           <div class="ideal-traveler__wrapper">
             <ul class="ideal-traveler__transport transport">
               <li class="transport__aircraft transport__aircraft--active">Авиаперелет
@@ -437,12 +477,9 @@
                 <span сlass="transport__tooltip">Пешком</span>
               </li>
             </ul>
-            <div class="ideal-traveler__content content">
-              <span class="content__interest">25</span>
-              <span class="content__level">level</span>
-            </div>
+            <span class="ideal-traveler__interest">25</span>
           </div>
-          <a class="ideal-traveler__button call" href="response.html">Позвать</a>
+          <a class="ideal-traveler__button button-container" href="response.html">Позвать</a>
         </li>
         <li class="travelers__item ideal-traveler">
           <a class="ideal-traveler__profile">
@@ -455,7 +492,10 @@
             <li class="dreams__item">Великобритания</li>
             <li class="dreams__item">Германия</li>
           </ul>
-          <h4 class="ideal-traveler__title">Транспорт:</h4>
+          <div class="ideal-traveler__content content">
+            <h4 class="ideal-traveler__title">Транспорт:</h4>
+            <span class="ideal-traveler__level">level</span>
+          </div>
           <div class="ideal-traveler__wrapper">
             <ul class="ideal-traveler__transport transport">
               <li class="transport__aircraft transport__aircraft--active">Авиаперелет
@@ -471,12 +511,9 @@
                 <span сlass="transport__tooltip">Пешком</span>
               </li>
             </ul>
-            <div class="ideal-traveler__content content">
-              <span class="content__interest">50</span>
-              <span class="content__level">level</span>
-            </div>
+            <span class="ideal-traveler__interest">50</span>
           </div>
-          <a class="ideal-traveler__button call" href="response.html">Позвать</a>
+          <a class="ideal-traveler__button button-container" href="response.html">Позвать</a>
         </li>
       </ul>
       <a class="travelers__button" href="all-fellow-travelers.html">Показать ещё</a>

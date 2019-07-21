@@ -1,0 +1,44 @@
+.bloggersans(@value) {
+  font-family: "BloggerSans", "Arial", sans-serif;
+  font-weight: @value;
+  font-style: normal;
+}
+
+.bloggersans-italic(@value-weight) {
+  font-family: "BloggerSans", "Arial", sans-serif;
+  font-weight: @value-weight;
+  font-style: italic;
+}
+
+.icon {
+  background-position: 0 0;
+  background-repeat: no-repeat;
+  content: "";
+}
+
+.border {
+  border: none;
+}
+
+.list {
+  margin: 0;
+  padding: 0;
+}
+
+.style {
+  list-style: none;
+}
+
+.text {
+  text-transform: uppercase;
+}
+
+.size-radius(@width, @height, @radius) {
+  width: @width;
+  height: @height;
+  border-radius: @radius;
+}
+
+.radius(@upper-left, @upper-right, @lower-right, @bottom-left) {
+  border-radius: @upper-left @upper-right @lower-right @bottom-left;
+}

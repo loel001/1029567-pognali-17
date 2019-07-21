@@ -4,6 +4,7 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Погнали</title>
+  <link href="css/style.css" rel="stylesheet">
 </head>
 
 <body>
@@ -20,21 +21,21 @@
         <button class="main-nav__toggle-close" type="button">Закрыть</button>
         <ul class="main-nav__list site-list">
           <li class="site-list__item">
-            <a href="index.html">О сервисе</a>
+            <a class="site-list__link" href="index.html">О сервисе</a>
           </li>
           <li class="site-list__item">
             <a>Направления</a>
           </li>
           <li class="site-list__item">
-            <a href="catalog.html">Попутчики</a>
+            <a class="site-list__link" href="catalog.html">Попутчики</a>
           </li>
         </ul>
-        <ul class="main-nav__list user-list">
-          <li class="user-list__item">
-            <a class="user-list__login button-authorization" href="login.html">Авторизация</a>
+        <ul class="main-nav__authorization">
+          <li class="main-nav__item">
+            <a class="main-nav__login button-authorization" href="login.html">Авторизация</a>
           </li>
         </ul>
-        <ul main-nav__connection contacts>
+        <ul class="main-nav__connection contacts">
           <li>
             <a class="contacts__phone-number phone-number" href="tel:+78005558628">8 800 555-86-28</a>
           </li>
@@ -85,13 +86,13 @@
         </div>
         <img>
       </div>
-      <button class="personal-profile__button button-container" type="button">Сменить фото</button>
+      <button class="personal-profile__button" type="button">Сменить фото</button>
       <fieldset class="personal-profile__hashtags">
         <legend class="personal-profile__title">Тэги</legend>
         <textarea class="personal-profile__text" name="hashtags" rows="2"
           placeholder="Коротко о себе в виде 5-8 хештэгов">#бургер #бар #футбол #концерт #крафт</textarea>
       </fieldset>
-      <fieldset class="personal-profile__transport">
+      <fieldset class="personal-profile__transports">
         <legend class="personal-profile__title">Транспорт</legend>
         <ul class="personal-profile__transport transport">
           <li class="transport__aircraft">
@@ -100,19 +101,19 @@
             <label class="transport__label" for="transport-aircraft">Авиаперелет</label>
             <span сlass="transport__tooltip">Авиаперелет</span>
           </li>
-          <li class=class="transport__сar">
+          <li class="transport__сar">
             <input class="transport__input transport__input--checkbox" type="checkbox" name="car" value="car"
               id="transport-car" checked>
             <label class="transport__label" for="transport-car">Автотранспорт</label>
             <span сlass="transport__tooltip">Автотранспорт</span>
           </li>
-          <li class=class="transport__bicycle">
+          <li class="transport__bicycle">
             <input class="transport__input transport__input--checkbox" type="checkbox" name="bicycle" value="bicycle"
               id="transport-bicycle">
             <label class="transport__label" for="transport-bicycle">Велосипед</label>
             <span сlass="transport__tooltip">Велосипед</span>
           </li>
-          <li class=class="transport__pedestrian">
+          <li class="transport__pedestrian">
             <input class="transport__input transport__input--checkbox" type="checkbox" name="pedestrian"
               value="pedestrian" id="transport-pedestrian" checked>
             <label class="transport__label" for="transport-pedestrian">Пешком</label>
@@ -122,25 +123,27 @@
       </fieldset>
     </section>
     <section class="plans">
-      <h2 class="plans__title">Мои планы:</h2>
-      <ul class="plans__list">
-        <li class="plans__item">
-          <h3 class="plans__country">1. Франция, Италия</h3>
-          <p class="plans__content">3 попутчика</p>
-          <p class="plans__content">26 мар — 29 мар</p>
-          <a class="plans__change" href="change-plans.html">Изменить</a>
-        </li>
-        <li class="plans__item">
-          <h3 class="plans__country">2. Тайланд, Индонезия</h3>
-          <p class="plans__content">1 попутчик</p>
-          <p class="plans__content">1 июл — 15 июл</p>
-          <a class="plans__change" href="change-plans.html">Изменить</a>
-        </li>
-      </ul>
+      <div class="plans__wrapper">
+        <h2 class="plans__title">Мои планы:</h2>
+        <ul class="plans__list">
+          <li class="plans__item">
+            <h3 class="plans__country">1. Франция, Италия</h3>
+            <p class="plans__content">3 попутчика</p>
+            <p class="plans__content">26 мар — 29 мар</p>
+            <a class="plans__change" href="change-plans.html">Изменить</a>
+          </li>
+          <li class="plans__item">
+            <h3 class="plans__country">2. Тайланд, Индонезия</h3>
+            <p class="plans__content">1 попутчик</p>
+            <p class="plans__content">1 июл — 15 июл</p>
+            <a class="plans__change" href="change-plans.html">Изменить</a>
+          </li>
+        </ul>
+      </div>
     </section>
     <section class="add-plan">
-      <h2 class="add-plan__title">Добавить план:</h2>
       <form class="add-plan__filter" method="get" action="https://echo.htmlacademy.ru">
+        <h2 class="add-plan__title">Добавить план:</h2>
         <ul class="add-plan__list">
           <li class="add-plan__item step-first" id="yakor-back-first">
             <h3 class="step-first__title step-tittle">Шаг 1. Даты пребывания</h3>
@@ -150,7 +153,7 @@
               <li class="step-first__search search">
                 <div class="search__content">
                   <label class="search__label" for="search-companion">Ищу попутчиков:</label>
-                  <span>Чел.</span>
+                  <span class="search__span">Чел.</span>
                 </div>
                 <div class="search__wrapper">
                   <button class="search__backwards" type="button">Меньше</button>
@@ -162,7 +165,7 @@
               <li class="step-first__search search">
                 <div class="search__content">
                   <label class="search__label" for="how-much">Длительность:</label>
-                  <span>Дн.</span>
+                  <span class="search__span">Дн.</span>
                 </div>
                 <div class="search__wrapper">
                   <button class="search__backwards" type="button">Меньше</button>
@@ -176,12 +179,12 @@
               checked>
             <label class="step-first__label" for="resolution">Можно с детьми</label>
             <div>
-              <button class="step-first__backwards" type="button">Назад</button>
+              <button class="step-first__back" type="button">Назад</button>
               <h4 class="step-first__month">Март 2019</h4>
-              <button class="step-first__forward" type="button">Вперед</button>
+              <button class="step-first__ahead" type="button">Вперед</button>
             </div>
             <div class="step-first__calendar calendar">
-              <div class="calendar__day">
+              <div class="calendar__wrapper">
                 <span class="calendar__day">П</span>
                 <span class="calendar__day">В</span>
                 <span class="calendar__day">С</span>
@@ -433,7 +436,7 @@
                 </li>
               </ul>
             </div>
-            <a class="step-first__ahead transition" href="#yakor-first">Следующий шаг</a>
+            <a class="step-first__ahead button-container" href="#yakor-first">Следующий шаг</a>
           </li>
           <li class="add-plan__item step-second" id="yakor-first yakor-back-second">
             <h3 class="step-second__title step-tittle">Шаг 2. Маршрут</h3>
@@ -441,28 +444,28 @@
               одна или сразу несколько.</p>
             <ul class="step-second__route">
               <li class="step-second__choice route">
-                <div class="route__wrapper route-selection">
-                  <div class="route-selection__wrapper">
-                    <select name="route-selection" class="route-selection__write">
+                <div class="route__wrapper">
+                  <div class="route__selection-wrapper">
+                    <select name="route-selection" class="route__write">
                       <option class="route__option" value="bosnia-and-herzegov">Босния и Герцегов</option>
                     </select>
                   </div>
-                  <div class="route-selection__flag bosnia-and-herzegov">Флаг страны</div>
+                  <div class="route__flag bosnia-and-herzegov">Флаг страны</div>
                 </div>
               </li>
               <li class="step-second__choice route">
-                <div class="route__wrapper route-selection">
-                  <div class="route-selection__wrapper">
-                    <select name="route-selection" class="route-selection__write">
+                <div class="route__wrapper">
+                  <div class="route__wrapper">
+                    <select name="route-selection" class="route__write">
                       <option class="route__option" value="сzechoslovakia">Чехословакия</option>
                     </select>
                   </div>
-                  <div class="route-selection__flag сzechoslovakia">Флаг страны</div>
+                  <div class="route__flag сzechoslovakia">Флаг страны</div>
                 </div>
               </li>
               <li class="step-second__choice route">
-                <div class="route-selection__wrapper">
-                  <select name="route-selection route-selection--active " class="route-selection__write">
+                <div class="route__wrapper">
+                  <select name="route-selection" class="route__write route__selection--active">
                     <option class="route__option route__option--not-chosen " value="choose-country">Выберите страну
                     </option>
                   </select>
@@ -470,8 +473,8 @@
               </li>
             </ul>
             <button class="step-second__button" type="button">Добавить страну</button>
-            <a class="step-second__ahead transition" href="#yakor-second">Следующий шаг</a>
-            <a class="step-second__backwards transition transition--back" href="#yakor-back-first">На шаг назад</a>
+            <a class="step-second__ahead button-container" href="#yakor-second">Следующий шаг</a>
+            <a class="step-second__backwards transition-back" href="#yakor-back-first">На шаг назад</a>
           </li>
           <li class="add-plan__item step-third" id="yakor-second">
             <h3 class="step-third__title step-tittle">Шаг 3. Развлечения</h3>
@@ -488,8 +491,8 @@
                   placeholder="План действий">Пить пиво и лазить по старым замкам, наслаждаться аритектурой и вот это все.</textarea>
               </li>
             </ul>
-            <button type="submit" class="tep-third__button transition">Отправить</button>
-            <a class="step-third__backwards transition transition--back" href="#yakor-back-second">На шаг назад</a>
+            <button type="submit" class="tep-third__button button-container">Отправить</button>
+            <a class="step-third__backwards transition-back" href="#yakor-back-second">На шаг назад</a>
           </li>
         </ul>
       </form>
