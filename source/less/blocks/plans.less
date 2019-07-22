@@ -1,49 +1,49 @@
 .plans {
   background-color: @main-color-seventh;
-
-  &__wrapper {
-    background-color: @main-color-fourteenth;
-    .radius(30px, 30px, 0, 0);
-  }
-
-  &__title {
-    .bloggersans(800);
-    font-size: 24px;
-    color: @color-seventh;
-    .list();
-  }
-
-  &__list {
-    .list();
-    .style();
-  }
-
-  &__item {
-    background-color: @main-color-eleventh;
-    border-radius: 5px;
-  }
-
-  &__country {
-    .bloggersans(800);
-    font-size: 16px;
-    color: @color-seventh;
-    .list();
-  }
-
-  &__content {
-    .bloggersans(500);
-    font-size: 14px;
-    letter-spacing: 1.4px;
-    color: @color-seventh;
-    .list();
-    .text();
-  }
-
-  &__change {
-    .bloggersans(500);
-    font-size: 14px;
-    letter-spacing: 1.4px;
-    color: rgba(0, 0, 0, 0.3);
-    .text();
-  }
 }
+
+.plans__wrapper {
+  background-color: @main-color-fourteenth;
+  .radius(30px, 30px, 0, 0);
+}
+
+.plans__title {
+  .bloggersans(800);
+  font-size: 24px;
+  color: @color-seventh;
+  .content();
+}
+
+.plans__list {
+  .list();
+}
+
+.plans__item {
+  background-color: @main-color-eleventh;
+  border-radius: 5px;
+}
+
+.plans__country {
+  .bloggersans(800);
+  font-size: 16px;
+  color: @color-seventh;
+  .content();
+}
+
+.plans__content {
+  .bloggersans(500);
+  font-size: 14px;
+  letter-spacing: 1.4px;
+  color: @color-seventh;
+  .content();
+  text-transform: uppercase;
+}
+
+.plans__change {
+  .bloggersans(500);
+  font-size: 14px;
+  letter-spacing: 1.4px;
+  color: rgba(0, 0, 0, 0.3);
+  text-transform: uppercase;
+}
+
