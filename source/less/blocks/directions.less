@@ -1,5 +1,24 @@
 .directions {
+  background-color: @main-color-first;
+  width: 100%;
+}
+
+.directions__color {
   background-color: @main-color-seventh;
+  width: 100%;
+  .radius(0, 0, 30px, 30px);
+}
+
+.directions__wrapper {
+  width: 320px;
+  .wrapper();
+  padding-top: 70px;
+}
+
+.directions__content {
+  padding-left: 25px;
+  padding-right: 46px;
+  margin-bottom: 59px;
 }
 
 .directions__paragraph {
@@ -8,6 +27,7 @@
   line-height: 1.38;
   .content();
   color: @color-second;
+  margin-top: 18px;
 }
 
 .directions__countries {

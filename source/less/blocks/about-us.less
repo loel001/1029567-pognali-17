@@ -1,5 +1,13 @@
 .about-us {
-  background-image: linear-gradient(@main-color-tenth 200px, @main-color-first 200px, @main-color-first 200px);
+  background-image: linear-gradient(@main-color-tenth 680px, @main-color-first 680px, @main-color-first 680px);
+  width: 100%;
+}
+
+.about-us__wrapper {
+  .wrapper();
+  padding-top: 12px;
+  padding-bottom: 39px;
+  width: 320px;
 }
 
 .about-us__title {
@@ -8,12 +16,22 @@
   color: @color-first;
   font-size: 36px;
   .bloggersans(800);
-  text-transform: uppercase;
   .content();
+  width: 240px;
+  margin: 0 auto;
+  margin-bottom: 10px;
+}
+
+.about-us__traveler-image {
+  width: 192px;
+  height: 255px;
 }
 
 .about-us__manage {
   .list();
+  display: flex;
+  margin-top: -19px;
+  margin-bottom: 27px;
 }
 
 .about-us__phone {
@@ -24,12 +42,20 @@
   font-size: 0;
 }
 
+.about-us__information {
+  padding-left: 25px;
+  padding-right: 25px;
+  width: 210px;
+  margin-bottom: 30px;
+}
+
 .about-us__praise {
   line-height: 1.38;
   color: @color-first;
   font-size: 16px;
   .bloggersans(300);
   .content();
+  margin-bottom: 18px;
 }
 
 .about-us__news {
@@ -50,9 +76,15 @@
 }
 
 .about-us__item {
+  padding-top: 21px;
+  padding-left: 24px;
+  padding-right: 75px;
+  padding-bottom: 23px;
+  position: relative;
+
   &--first {
     background-color: @main-color-second;
-    .radius(5px, 5px, 0, 0);
+    .radius(10px, 10px, 0, 0);
   }
 
   &--second {
@@ -61,11 +93,21 @@
 
   &--third {
     background-color: @main-color-fourth;
+    padding-right: 107px;
   }
 
   &--last {
     background-color: @main-color-fifth;
-    .radius(0, 0, 5px, 5px);
+    .radius(0, 0, 10px, 10px);
   }
+}
+
+.about-us__number {
+  position: absolute;
+  .bloggersans(800);
+  font-size: 18px;
+  color: @color-first;
+  top: 21px;
+  right: 21px;
 }
 
