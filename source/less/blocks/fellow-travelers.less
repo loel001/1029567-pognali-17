@@ -1,6 +1,28 @@
 .fellow-travelers {
+  background-color: @main-color-seventh;
+  width: 100%;
+}
+
+.fellow-travelers__color {
   background-color: @main-color-first;
   .radius(0, 0, 30px, 30px);
+  width: 100%;
+}
+
+.fellow-travelers__wrapper {
+  width: 320px;
+  .wrapper();
+  padding-top: 70px;
+}
+
+.fellow-travelers__item {
+  position: relative;
+}
+
+.fellow-travelers__content {
+  padding-left: 24px;
+  padding-right: 29px;
+  margin-bottom: 56px;
 }
 
 .fellow-travelers__paragraph {
@@ -9,6 +31,8 @@
   line-height: 1.38;
   color: @color-first;
   .content();
+  margin-top: 18px;
+  margin-bottom: 21px;
 }
 
 .fellow-travelers__paragraph-exclamation {
@@ -20,6 +44,6 @@
 }
 
 .fellow-travelers__list {
-  .content();
+  .list();
 }
 

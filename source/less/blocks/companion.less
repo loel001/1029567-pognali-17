@@ -2,6 +2,37 @@
   width: 60px;
   height: 60px;
   border-radius: 50%;
+  background-color: rgba(0, 0, 0, 0.2);
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  top: 17px;
+  left: 17px;
+  padding-top: 12px;
+
+  &::after {
+    display: block;
+    position: absolute;
+    width: 31px;
+    height: 1px;
+    opacity: 0.3;
+    background-color: @main-color-eleventh;
+    .icon();
+    top: 35px;
+    left: 15px;
+  }
+}
+
+.companion__circle {
+  position: absolute;
+  top: 16px;
+  left: 17px;
+}
+
+.companion__picture {
+  width: 270px;
+  height: 270px;
+  display: block;
 }
 
 .companion__interest {
@@ -12,7 +43,7 @@
 }
 
 .companion__level {
-  .bloggersans(800);
+  .bloggersans(400);
   font-size: 14px;
   text-align: center;
   color: @color-first;
