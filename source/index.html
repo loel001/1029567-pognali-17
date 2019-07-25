@@ -197,7 +197,8 @@
           <ul class="fellow-travelers__list">
             <li class="fellow-travelers__item companion">
               <svg class="companion__circle" width="60" height="60">
-                <circle r="28" cx="30" cy="30" fill="none" stroke="#ff8d30" stroke-width="3" stroke-dasharray="180 5" stroke-dashoffset="52">
+                <circle r="28" cx="30" cy="30" fill="none" stroke="#ff8d30" stroke-width="3" stroke-dasharray="180 5"
+                  stroke-dashoffset="52">
                 </circle>
               </svg>
               <div class="companion__content">
@@ -238,6 +239,11 @@
               </div>
             </li>
             <li class="fellow-travelers__item companion">
+              <svg class="companion__circle" width="60" height="60">
+                <circle r="28" cx="30" cy="30" fill="none" stroke="#ff8d30" stroke-width="3" stroke-dasharray="180 33"
+                  stroke-dashoffset="82">
+                </circle>
+              </svg>
               <div class="companion__content">
                 <span class="companion__interest">80</span>
                 <span class="companion__level">level</span>
@@ -273,18 +279,31 @@
               </div>
             </li>
           </ul>
-          <a href="catalog.html" class="directions__button button">Показать всеx</a>
+          <a href="catalog.html" class="directions__button-second button">Показать всеx</a>
         </div>
       </div>
     </section>
     <section class="profile">
-      <h2 class="profile__title headline">Добавтьте свой профиль</h2>
-      <ul class="profile__tariffs">
-        <li class="profile__cost">Базовое размещение Бесплатно</li>
-        <li class="profile__cost">Вывод на первых позициях 99 руб./мес</li>
-        <li class="profile__cost">Кастомный цвет карточки 59 руб./мес</li>
-      </ul>
-      <a href="business-tariffs.html" class="profile__button">Показать тарифы для бизнеса</a>
+      <div class="profile__color">
+        <div class="profile__wrapper">
+          <h2 class="profile__title headline">Добавтьте свой профиль</h2>
+          <ul class="profile__tariffs">
+            <li class="profile__cost">
+              <div class="profile__content">Базовое размещение Бесплатно</div>
+              <span class="profile__number profile__number--first">1</span>
+            </li>
+            <li class="profile__cost">
+              <div class="profile__content">Вывод на первых позициях 99 руб./мес</div>
+              <span class="profile__number profile__number--second">2</span>
+            </li>
+            <li class="profile__cost">
+              <div class="profile__content">Кастомный цвет карточки 59 руб./мес</div>
+              <span class="profile__number profile__number--third">3</span>
+            </li>
+          </ul>
+          <a href="business-tariffs.html" class="profile__button">Показать тарифы для бизнеса</a>
+        </div>
+      </div>
     </section>
     <section class="modal modal--open">
       <h2 class="modal__title headline">Бизнес-тарифы</h2>

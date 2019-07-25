@@ -1,14 +1,68 @@
 .profile {
+  background-color: @main-color-first;
+  width: 100%;
+}
+
+.profile__color {
   background-color: @main-color-seventh;
   .radius(0, 0, 30px, 30px);
+  width: 100%;
+}
+
+.profile__wrapper {
+  margin: 0 auto;
+  padding-left: 50px;
+  padding-right: 26px;
+  padding-top: 49px;
+  padding-bottom: 36px;
+}
+
+.profile__title {
+  width: 131px;
 }
 
 .profile__tariffs {
-  .content();
+  .list();
   .bloggersans(300);
   font-size: 16px;
   line-height: 1.38;
   color: @color-second;
+  margin-top: 41px;
+  margin-bottom: 43px;
+}
+
+.profile__cost {
+  margin-bottom: 15px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.profile__content {
+  width: 183px;
+  padding-top: 7px;
+}
+
+.profile__number {
+  .bloggersans(400);
+  font-size: 16px;
+  color: @color-first;
+  line-height: 34px;
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  text-align: center;
+
+  &--first {
+    background-color: @main-color-third;
+  }
+
+  &--second {
+    background-color: @main-color-second;
+  }
+
+  &--third {
+    background-color: @main-color-fifth;
+  }
 }
 
 .profile__button {
