@@ -1,11 +1,26 @@
 .interest {
   background-color: @main-color-fifth;
+  width: 100%;
 }
 
-.interest__wrapper-color {
-  background-color: @color-third;
+.interest__color {
+  background-color: @main-color-first;
   .radius( 0, 0, 30px, 30px);
-  z-index: 1;
+  width: 100%;
+}
+
+.interest__wrapper {
+  width: 320px;
+  .wrapper();
+  padding-top: 70px;
+  padding-left: 17px;
+  padding-bottom: 26px;
+}
+
+.interest__headline {
+  padding-left: 39px;
+  padding-right: 30px;
+  margin-bottom: 24px;
 }
 
 .interest__content {
@@ -15,10 +30,16 @@
   text-align: center;
   color: @color-first;
   .content();
+  margin-top: 18px;
+  width: 200px;
 }
 
 .interest__login {
   color: @color-sixth;
+}
+
+.interest__registration {
+  position: relative;
 }
 
 .interest__label {
@@ -31,6 +52,11 @@
   border: solid 4px @color-third;
   font-size: 18px;
   color: @color-first;
+  width: 240px;
+  padding-left: 24px;
+  padding-right: 30px;
+  padding-top: 21px;
+  padding-bottom: 20px;
 }
 
 .interest__email::placeholder {
@@ -42,11 +68,14 @@
   font-size: 0;
 }
 
-.interest__wrapper {
+.interest__link {
   width: 60px;
   height: 62px;
   .radius(10px, 10px, 10px, 10px);
   background-color: @main-color-fifth;
+  position: absolute;
+  top: 4px;
+  right: 0;
 }
 
 .interest__paragraf {
@@ -55,4 +84,11 @@
   line-height: 1.38;
   color: @color-first;
   text-align: center;
+  .content();
+  margin-top: 26px;
+  margin-bottom: 19px;
+}
+
+.interest__contacts {
+  padding-left: 9px;
 }

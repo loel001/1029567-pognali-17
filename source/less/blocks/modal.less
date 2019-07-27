@@ -1,6 +1,17 @@
 .modal {
-  background-image: linear-gradient(@color-first 115px, @main-color-ninth 115px, @main-color-ninth 115px);
-  .radius(30px, 30px, 30px, 30px);
+  width: 270px;
+  margin: 0 auto;
+  background-image: linear-gradient(@color-first 384px, @main-color-ninth 384px, @main-color-ninth 384px);
+  .radius(20px, 20px, 20px, 20px);
+  padding-left: 25px;
+  padding-right: 25px;
+  padding-top: 30px;
+  padding-bottom: 20px;
+  display: none;
+}
+
+.modal__title {
+  text-align: center;
 }
 
 .modal__business-tariffs {
@@ -9,6 +20,27 @@
   font-size: 16px;
   line-height: 1.38;
   color: @color-second;
+  margin-top: 41px;
+}
+
+.modal__tarif {
+  margin-bottom: 20px;
+
+  &--first {
+    width: 142px;
+  }
+
+  &--second {
+    width: 160px;
+  }
+
+  &--third {
+    width: 118px;
+  }
+
+  &--fourth {
+    width: 161px;
+  }
 }
 
 .modal__close {
@@ -16,10 +48,11 @@
   background-color: @main-color-ninth;
   .bloggersans(800);
   font-size: 16px;
-  font-weight: bold;
   line-height: 1.5;
-  text-align: center;
   color: @color-seventh;
   text-transform: uppercase;
+  margin: 0 auto;
+  margin-top: 63px;
+  display: block;
 }
 

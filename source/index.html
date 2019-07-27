@@ -308,35 +308,45 @@
     <section class="modal modal--open">
       <h2 class="modal__title headline">Бизнес-тарифы</h2>
       <ul class="modal__business-tariffs">
-        <li>Реклама у блоггера 300 000 руб./пост</li>
-        <li>Накрутка подписчиков от 1 руб./шт.</li>
-        <li>Лайки от ботов от 20 коп./лайк</li>
-        <li>Ваш продакт-плейсмент Индивидуально</li>
+        <li class="modal__tarif modal__tarif--first">
+          Реклама у блоггера 300 000 руб./пост</li>
+        <li class="modal__tarif modal__tarif--second">
+          Накрутка подписчиков от 1 руб./шт.</li>
+        <li class="modal__tarif modal__tarif--third">
+          Лайки от ботов от 20 коп./лайк</li>
+        <li class="modal__tarif modal__tarif--fourth">
+          Ваш продакт-плейсмент Индивидуально</li>
       </ul>
       <button class="modal__close" type="button">Закрыть окно</button>
     </section>
     <section class="interest">
-      <div class="interest__wrapper-color">
-        <h2 class="interest__title headline">Бизнес-тарифы</h2>
-        <p class="interest__content">Зарегистрируйтесь, это быстро и бесплатно!Уже зарегистрированы? Тогда скорее
-          <a class="interest__login" href="login.html">авторизуйтесь</a>.
-        </p>
-        <form class="interest__registration" method="post" action="https://echo.htmlacademy.ru">
-          <label class="interest__label" for="appointment-email">Ваш e-mail</label>
-          <input class="interest__email" id="appointment-email" type="email" name="email" placeholder="E-mail">
-          <div class="interest__wrapper">
-            <a href="registration.html" class="interest__button" type="submit">Регистрация</a>
+      <div class="interest__color">
+        <div class="interest__wrapper">
+          <div class="interest__headline">
+            <h2 class="interest__title headline">Заинтересовались?</h2>
+            <p class="interest__content">Зарегистрируйтесь, это&nbsp;быстро и бесплатно!Уже&nbsp;зарегистрированы? Тогда скорее
+              <a class="interest__login" href="login.html">авторизуйтесь.</a>
+            </p>
           </div>
-        </form>
-        <p class="interest__paragraf">Остались вопросы? Мы с радостью на них ответим!</p>
-        <ul class="interest__contacts contacts">
-          <li>
-            <a class="contacts__phone-number  contacts__phone-number--color" href="tel:+78005558628">8 800 555-86-28</a>
-          </li>
-          <li>
-            <a class="contacts__email contacts__email--color" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
-          </li>
-        </ul>
+          <form class="interest__registration" method="post" action="https://echo.htmlacademy.ru">
+            <label class="interest__label" for="appointment-email">Ваш e-mail</label>
+            <input class="interest__email" id="appointment-email" type="email" name="email" placeholder="E-mail">
+            <div class="interest__link">
+              <a href="registration.html" class="interest__button" type="submit">Регистрация</a>
+            </div>
+          </form>
+          <p class="interest__paragraf">Остались вопросы?<br>Мы с радостью на них ответим!</p>
+          <ul class="interest__contacts contacts">
+            <li>
+              <a class="contacts__phone-number  contacts__phone-number--color" href="tel:+78005558628">8 800
+                555-86-28</a>
+            </li>
+            <li>
+              <a class="contacts__email contacts__email--color"
+                href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+            </li>
+          </ul>
+        </div>
       </div>
     </section>
     <section class="map">
