@@ -11,6 +11,7 @@
 
   @media @tablet-width {
     width: 768px;
+    padding-top: 68px;
   }
 }
 
@@ -24,11 +25,22 @@
   width: 240px;
   margin: 0 auto;
   margin-bottom: 10px;
+
+  @media @tablet-width {
+    font-size: 60px;
+    width: 395px;
+    line-height: 1.17;
+    margin-bottom: 28px;
+  }
 }
 
 .about-us__traveler-image {
   width: 192px;
   height: 255px;
+
+  @media @tablet-width {
+    order: 2;
+  }
 }
 
 .about-us__manage {
@@ -40,10 +52,18 @@
 
 .about-us__phone {
   font-size: 0;
+
+  @media @tablet-width {
+    display: none;
+  }
 }
 
 .about-us__email {
   font-size: 0;
+
+  @media @tablet-width {
+    display: none;
+  }
 }
 
 .about-us__information {
@@ -51,6 +71,13 @@
   padding-right: 25px;
   width: 210px;
   margin-bottom: 30px;
+
+  @media @tablet-width {
+    padding-top: 58px;
+    padding-left: 36px;
+    width: 304px;
+    padding-right: 0;
+  }
 }
 
 .about-us__praise {
@@ -60,6 +87,12 @@
   .bloggersans(300);
   .content();
   margin-bottom: 18px;
+
+  @media @tablet-width {
+    font-size: 28px;
+    line-height: 1.18;
+    margin-bottom: 44px;
+  }
 }
 
 .about-us__news {
@@ -68,6 +101,11 @@
   font-size: 16px;
   .bloggersans(800);
   .content();
+
+  @media @tablet-width {
+    font-size: 21px;
+    line-height: 1.19;
+  }
 }
 
 .about-us__explanations {
@@ -77,6 +115,14 @@
   font-size: 18px;
   .bloggersans(800);
   .list();
+
+  @media @tablet-width {
+    width: 688px;
+    display: flex;
+    flex-wrap: wrap;
+    background-image: linear-gradient(#ff8d30 140px, #ffbd30 140px, #ffbd30 140px);
+    border-radius: 15px;
+  }
 }
 
 .about-us__item {
@@ -89,20 +135,40 @@
   &--first {
     background-color: @main-color-second;
     .radius(10px, 10px, 0, 0);
+
+    @media @tablet-width {
+      .radius(15px, 0, 0, 0);
+    }
   }
 
   &--second {
     background-color: @main-color-third;
+
+    @media @tablet-width {
+      .radius(15px, 15px, 0, 0);
+    }
   }
 
   &--third {
     background-color: @main-color-fourth;
     padding-right: 107px;
+
+    @media @tablet-width {
+      .radius(0, 0, 0, 15px);
+    }
   }
 
   &--last {
     background-color: @main-color-fifth;
     .radius(0, 0, 10px, 10px);
+
+    @media @tablet-width {
+      .radius(0, 0, 15px, 15px);
+    }
+  }
+
+  @media @tablet-width {
+    width: 344px;
   }
 }
 
@@ -113,5 +179,12 @@
   color: @color-first;
   top: 21px;
   right: 21px;
+}
+
+@media @tablet-width {
+  .about-us__content {
+    display: flex;
+    min-height: 453px;
+  }
 }
 
