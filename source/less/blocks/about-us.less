@@ -1,6 +1,10 @@
 .about-us {
   background-image: linear-gradient(@main-color-tenth 680px, @main-color-first 680px, @main-color-first 680px);
   width: 100%;
+
+  @media @tablet-width {
+    background-image: linear-gradient(@main-color-tenth 901px, @main-color-first 901px, @main-color-first 901px);
+  }
 }
 
 .about-us__wrapper {
@@ -12,6 +16,7 @@
   @media @tablet-width {
     width: 768px;
     padding-top: 68px;
+    padding-bottom: 96px;
   }
 }
 
@@ -122,6 +127,7 @@
     flex-wrap: wrap;
     background-image: linear-gradient(#ff8d30 140px, #ffbd30 140px, #ffbd30 140px);
     border-radius: 15px;
+    font-size: 24px;
   }
 }
 
@@ -131,6 +137,14 @@
   padding-right: 75px;
   padding-bottom: 23px;
   position: relative;
+
+  @media @tablet-width {
+    display: flex;
+    flex-direction: column;
+    padding-top: 30px;
+    padding-left: 32px;
+    width: 344px;
+  }
 
   &--first {
     background-color: @main-color-second;
@@ -155,6 +169,7 @@
 
     @media @tablet-width {
       .radius(0, 0, 0, 15px);
+      padding-right: 121px;
     }
   }
 
@@ -166,10 +181,6 @@
       .radius(0, 0, 15px, 15px);
     }
   }
-
-  @media @tablet-width {
-    width: 344px;
-  }
 }
 
 .about-us__number {
@@ -179,12 +190,21 @@
   color: @color-first;
   top: 21px;
   right: 21px;
+
+  @media @tablet-width {
+    font-size: 30px;
+    position: relative;
+    top: 0;
+    right: 0;
+    margin-top: 10px;
+  }
 }
 
 @media @tablet-width {
   .about-us__content {
     display: flex;
     min-height: 453px;
+    position: relative;
   }
 }
 

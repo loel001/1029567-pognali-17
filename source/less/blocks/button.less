@@ -12,7 +12,30 @@
   padding-left: 20px;
   padding-top: 18px;
 
+  @media @tablet-width {
+    width: 618px;
+    height: 81px;
+    font-size: 24px;
+    padding-left: 31px;
+    padding-top: 27px;
+    border-radius: 20px;
+  }
+
   &--color {
     border: solid 3px @main-color-first;
+  }
+
+  &--size {
+    display: none;
+
+    @media @tablet-width {
+      display: block;
+      width: 274px;
+      height: 81px;
+      font-size: 24px;
+      padding-left: 31px;
+      padding-top: 27px;
+      border-radius: 20px;
+    }
   }
 }

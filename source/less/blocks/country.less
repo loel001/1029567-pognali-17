@@ -1,7 +1,19 @@
+.country {
+  @media @tablet-width {
+    display: flex;
+  }
+}
+
 .country__picture {
   width: 270px;
   height: 110px;
   display: block;
+
+  @media @tablet-width {
+    order: 2;
+    width: 186px;
+    height: 140px;
+  }
 }
 
 .country__wrapper {
@@ -10,14 +22,17 @@
   padding-left: 25px;
   padding-right: 25px;
   padding-top: 26px;
-  padding-bottom: 23px;
-  margin-top: -11px;
-}
-
-.country__wrapper-population {
-  display: flex;
+  margin-top: -12px;
   margin-bottom: -6px;
-  justify-content: space-between;
+
+  @media @tablet-width {
+    width: 432px;
+    padding-top: 31px;
+    padding-left: 29px;
+    padding-bottom: 10px;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
 }
 
 .country__title {
@@ -25,6 +40,10 @@
   font-size: 21px;
   color: @color-fifth;
   .content();
+
+  @media @tablet-width {
+    font-size: 24px;
+  }
 }
 
 .country__count-people {
@@ -33,6 +52,16 @@
   line-height: 1.88;
   color: @color-second;
   opacity: 0.3;
+  position: relative;
+  top: -45px;
+  right: -179px;
+
+  @media @tablet-width {
+    font-size: 20px;
+    top: 0;
+    right: 0;
+    padding-left: 29px;
+  }
 }
 
 .country__paragraf {
@@ -42,5 +71,10 @@
   color: @color-second;
   opacity: 0.3;
   .content();
+
+  @media @tablet-width {
+    font-size: 20px;
+    margin-bottom: 12px;
+  }
 }
 

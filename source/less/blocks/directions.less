@@ -7,6 +7,10 @@
   background-color: @main-color-seventh;
   width: 100%;
   .radius(0, 0, 30px, 30px);
+
+  @media @tablet-width {
+    border-radius: 0 0 60px 60px;
+  }
 }
 
 .directions__wrapper {
@@ -14,12 +18,25 @@
   .wrapper();
   padding-top: 70px;
   padding-bottom: 31px;
+
+  @media @tablet-width {
+    width: 768px;
+    padding-left: 75px;
+    padding-right: 75px;
+    padding-bottom: 80px;
+  }
 }
 
 .directions__content {
   padding-left: 25px;
   padding-right: 46px;
   margin-bottom: 59px;
+
+  @media @tablet-width {
+    padding-left: 0;
+    padding-right: 0;
+    margin-bottom: 104px;
+  }
 }
 
 .directions__paragraph {
@@ -29,11 +46,22 @@
   .content();
   color: @color-second;
   margin-top: 18px;
+
+  @media @tablet-width {
+    font-size: 28px;
+    line-height: 1.18;
+    width: 340px;
+    margin-top: 54px;
+  }
 }
 
 .directions__countries {
   .list();
   margin-bottom: 23px;
+
+  @media @tablet-width {
+    margin-bottom: 49px;
+  }
 }
 
 .directions__country {
