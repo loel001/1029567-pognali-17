@@ -33,6 +33,11 @@
   width: 270px;
   height: 270px;
   display: block;
+
+  @media @tablet-width {
+    width: 285px;
+    height: 285px;
+  }
 }
 
 .companion__interest {
@@ -73,6 +78,15 @@
   padding-left: 41px;
   padding-right: 36px;
   padding-bottom: 56px;
+
+  @media @tablet-width {
+    width: 285px;
+    padding-top: 31px;
+    padding-left: 26px;
+    padding-right: 29px;
+    padding-bottom: 75px;
+    .radius(0, 0, 20px, 20px);
+  }
 }
 
 .companion__title {
@@ -81,6 +95,10 @@
   text-align: center;
   color: @color-seventh;
   .content();
+
+  @media @tablet-width {
+    font-size: 24px;
+  }
 }
 
 .companion__paragraf {
@@ -91,6 +109,11 @@
   color: @color-second;
   .content();
   margin-top: 17px;
+
+  @media @tablet-width {
+    font-size: 20px;
+    line-height: 1.2;
+  }
 }
 
 .companion__transport {

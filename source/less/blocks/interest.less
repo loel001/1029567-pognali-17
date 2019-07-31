@@ -7,6 +7,10 @@
   background-color: @main-color-first;
   .radius( 0, 0, 30px, 30px);
   width: 100%;
+
+  @media @tablet-width {
+    border-radius: 0 0 60px 60px;
+  }
 }
 
 .interest__wrapper {
@@ -15,12 +19,28 @@
   padding-top: 70px;
   padding-left: 17px;
   padding-bottom: 26px;
+
+  @media @tablet-width {
+    width: 768px;
+    padding-left: 75px;
+    padding-right: 75px;
+    padding-bottom: 44px;
+  }
 }
 
 .interest__headline {
   padding-left: 39px;
   padding-right: 30px;
   margin-bottom: 24px;
+
+  @media @tablet-width {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+.interest__title {
+  text-align: center;
 }
 
 .interest__content {
@@ -32,10 +52,20 @@
   .content();
   margin-top: 18px;
   width: 200px;
+
+  @media @tablet-width {
+    font-size: 28px;
+    text-align: center;
+    line-height: 1.18;
+    width: 610px;
+    margin-top: 57px;
+    margin-bottom: 59px;
+  }
 }
 
 .interest__login {
   color: @color-sixth;
+  border-bottom: 0.5px solid #ffd74b;
 }
 
 .interest__registration {
@@ -57,6 +87,14 @@
   padding-right: 30px;
   padding-top: 21px;
   padding-bottom: 20px;
+
+  @media @tablet-width {
+    font-size: 24px;
+    width: 536px;
+    .radius(20px, 0, 0, 20px);
+    padding-top: 29px;
+    padding-bottom: 25px;
+  }
 }
 
 .interest__email::placeholder {
@@ -76,6 +114,12 @@
   position: absolute;
   top: 4px;
   right: 0;
+
+  @media @tablet-width {
+    width: 82px;
+    height: 81px;
+    .radius(0, 20px, 20px, 0);
+  }
 }
 
 .interest__paragraf {
@@ -87,8 +131,32 @@
   .content();
   margin-top: 26px;
   margin-bottom: 19px;
+
+  @media @tablet-width {
+    font-size: 28px;
+    text-align: center;
+    line-height: 1.18;
+    margin-top: 56px;
+    margin-bottom: 52px;
+  }
 }
 
 .interest__contacts {
-  padding-left: 9px;
+  padding-left: 70px;
+
+  @media @tablet-width {
+    padding-left: 90px;
+  }
+}
+
+.interest__carry {
+  @media @tablet-width {
+    display: none;
+  }
+}
+
+.contacts__item {
+  @media @tablet-width {
+    margin-bottom: 24px;
+  }
 }

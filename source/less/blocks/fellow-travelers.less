@@ -24,6 +24,7 @@
     padding-top: 137px;
     padding-left: 75px;
     padding-right: 75px;
+    padding-bottom: 88px;
   }
 }
 
@@ -40,6 +41,7 @@
   @media @tablet-width {
     padding-left: 0;
     padding-right: 0;
+    margin-bottom: 58px;
   }
 }
 
@@ -75,7 +77,28 @@
   }
 }
 
+.fellow-travelers__carry {
+  display: none;
+
+  @media @tablet-width {
+    display: block;
+  }
+}
+
 .fellow-travelers__list {
   .list();
+
+  @media @tablet-width {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.fellow-travelers__button {
+  margin-top: 20px;
+
+  @media @tablet-width {
+    margin-top: 71px;
+  }
 }
 

@@ -8,6 +8,16 @@
   padding-top: 30px;
   padding-bottom: 20px;
   display: none;
+
+  @media @tablet-width {
+    width: 688px;
+    border-radius: 30px;
+    padding-left: 91px;
+    padding-right: 91px;
+    padding-top: 50px;
+    padding-bottom: 33px;
+    background-image: linear-gradient(@color-first 418px, @main-color-ninth 418px, @main-color-ninth 418px);
+  }
 }
 
 .modal__title {
@@ -21,25 +31,54 @@
   line-height: 1.38;
   color: @color-second;
   margin-top: 41px;
+
+  @media @tablet-width {
+    font-size: 22px;
+    margin-top: 45px;
+  }
 }
 
 .modal__tarif {
   margin-bottom: 20px;
+  position: relative;
 
-  &--first {
-    width: 142px;
+  &::before {
+    display: block;
+    position: absolute;
+    width: 219px;
+    height: 1px;
+    .icon();
+    background-color: black;
+    opacity: 0.05;
+    top: -10px;
+
+    @media @tablet-width {
+      width: 506px;
+      top: 0;
+    }
   }
 
-  &--second {
-    width: 160px;
+  @media @tablet-width {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 0;
+    line-height: 55px;
   }
+}
 
-  &--third {
-    width: 118px;
-  }
+.modal__tarif--last::after {
+  display: block;
+  position: absolute;
+  width: 219px;
+  height: 1px;
+  .icon();
+  background-color: black;
+  opacity: 0.05;
+  top: 51px;
 
-  &--fourth {
-    width: 161px;
+  @media @tablet-width {
+    width: 506px;
+    top: 53px;
   }
 }
 
@@ -54,5 +93,11 @@
   margin: 0 auto;
   margin-top: 63px;
   display: block;
+
+  @media @tablet-width {
+    font-size: 24px;
+    text-transform: none;
+    margin-top: 90px;
+  }
 }
 

@@ -2,6 +2,10 @@
   background-color: @main-color-fifth;
   .radius( 0, 0, 30px, 30px);
   width: 100%;
+
+  @media @tablet-width {
+    border-radius: 0 0 60px 60px;
+  }
 }
 
 .map__wrapper {
@@ -9,6 +13,14 @@
   .wrapper();
   padding-top: 36px;
   padding-bottom: 34px;
+
+  @media @tablet-width {
+    width: 768px;
+    padding-left: 75px;
+    padding-right: 75px;
+    padding-top: 66px;
+    padding-bottom: 83px;
+  }
 }
 
 .map__address {
@@ -21,5 +33,11 @@
   margin-bottom: 31px;
   padding-left: 61px;
   padding-right: 49px;
+
+  @media @tablet-width {
+    font-size: 28px;
+    padding-left: 93px;
+    margin-bottom: 56px;
+  }
 }
 
