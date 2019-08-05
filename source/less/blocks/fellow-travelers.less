@@ -26,6 +26,17 @@
     padding-right: 75px;
     padding-bottom: 88px;
   }
+
+  @media @desktop-width {
+    width: 1440px;
+    display: flex;
+    padding-top: 131px;
+    padding-left: 129px;
+    padding-right: 60px;
+    padding-bottom: 126px;
+    position: relative;
+    justify-content: space-between;
+  }
 }
 
 .fellow-travelers__item {
@@ -42,6 +53,11 @@
     padding-left: 0;
     padding-right: 0;
     margin-bottom: 58px;
+  }
+
+  @media @desktop-width {
+    margin-bottom: 0;
+    padding-bottom: 129px;
   }
 }
 
@@ -91,6 +107,11 @@
   @media @tablet-width {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  @media @desktop-width {
+    width: 630px;
   }
 }
 
@@ -99,6 +120,18 @@
 
   @media @tablet-width {
     margin-top: 71px;
+  }
+
+  @media @desktop-width {
+    position: absolute;
+    left: 131px;
+    bottom: 134px;
+  }
+}
+
+.fellow-travelers__title {
+  @media @desktop-width {
+    line-height: 1;
   }
 }
 

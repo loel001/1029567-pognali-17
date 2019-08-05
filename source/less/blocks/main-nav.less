@@ -1,7 +1,6 @@
 .main-nav {
   background-color: @main-color-eleventh;
   width: 100%;
-  display: none;
 }
 
 .main-nav__wrapper {
@@ -9,17 +8,35 @@
   .wrapper();
   padding-top: 27px;
   padding-bottom: 40px;
+
+  @media @tablet-width {
+    width: 768px;
+    padding-top: 40px;
+  }
 }
 
 .main-nav__wrapper-logo {
   display: flex;
   justify-content: space-between;
   margin-bottom: 75px;
+
+  @media @tablet-width {
+    width: 356px;
+    min-height: 46px;
+    margin-bottom: 100px;
+  }
 }
 
 .main-nav__logo {
   width: 96px;
   height: 15px;
+}
+
+.main-nav__login {
+  @media @tablet-width {
+    top: -356px;
+    right: 0;
+  }
 }
 
 .main-nav__toggle-close {
@@ -28,17 +45,20 @@
   border: none;
 }
 
-.main-nav__authorization {
-  .list();
-  margin-top: 50px;
-  margin-bottom: 51px;
-}
-
 .main-nav__connection {
   margin-top: 51px;
+
+  @media @tablet-width {
+    margin-top: 168px;
+    padding-left: 148px;
+  }
 }
 
 .main-nav__links-header {
   justify-content: center;
+}
+
+.main-nav__list {
+  margin-bottom: 58px;
 }
 

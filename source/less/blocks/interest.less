@@ -26,6 +26,14 @@
     padding-right: 75px;
     padding-bottom: 44px;
   }
+
+  @media @desktop-width {
+    width: 1440px;
+    padding-left: 127px;
+    padding-right: 132px;
+    padding-top: 104px;
+    padding-bottom: 98px;
+  }
 }
 
 .interest__headline {
@@ -36,6 +44,10 @@
   @media @tablet-width {
     padding-left: 0;
     padding-right: 0;
+  }
+
+  @media @desktop-width {
+    margin-bottom: 53px;
   }
 }
 
@@ -60,6 +72,11 @@
     width: 610px;
     margin-top: 57px;
     margin-bottom: 59px;
+  }
+
+  @media @desktop-width {
+    margin: 0 auto;
+    margin-top: 54px;
   }
 }
 
@@ -93,7 +110,12 @@
     width: 536px;
     .radius(20px, 0, 0, 20px);
     padding-top: 29px;
-    padding-bottom: 25px;
+    padding-bottom: 24.5px;
+  }
+
+  @media @desktop-width {
+    width: 853px;
+    padding-left: 30px;
   }
 }
 
@@ -104,6 +126,15 @@
 
 .interest__button {
   font-size: 0;
+
+  @media @desktop-width {
+    .bloggersans(800);
+    font-size: 24px;
+    color: @color-seventh;
+    background-color: @main-color-fifth;
+    line-height: 81px;
+    padding-left: 38px;
+  }
 }
 
 .interest__link {
@@ -119,6 +150,10 @@
     width: 82px;
     height: 81px;
     .radius(0, 20px, 20px, 0);
+  }
+
+  @media @desktop-width {
+    width: 328px;
   }
 }
 
@@ -139,6 +174,11 @@
     margin-top: 56px;
     margin-bottom: 52px;
   }
+
+  @media @desktop-width {
+    margin-top: 65px;
+    margin-bottom: 69px;
+  }
 }
 
 .interest__contacts {
@@ -146,6 +186,13 @@
 
   @media @tablet-width {
     padding-left: 90px;
+  }
+
+  @media @desktop-width {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 278px;
+    padding-right: 156px;
   }
 }
 
@@ -158,5 +205,19 @@
 .contacts__item {
   @media @tablet-width {
     margin-bottom: 24px;
+  }
+}
+
+.interest__addition {
+  @media @desktop-width {
+    display: none;
+  }
+}
+
+.interest__additive {
+  display: none;
+
+  @media @desktop-width {
+    display: inline-block;
   }
 }

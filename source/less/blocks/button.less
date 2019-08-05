@@ -21,8 +21,16 @@
     border-radius: 20px;
   }
 
+  @media @desktop-width {
+    width: 274px;
+  }
+
   &--color {
     border: solid 3px @main-color-first;
+
+    @media @desktop-width {
+      width: 324px;
+    }
   }
 
   &--size {
@@ -36,6 +44,12 @@
       padding-left: 31px;
       padding-top: 27px;
       border-radius: 20px;
+    }
+  }
+
+  &--width {
+    @media @desktop-width {
+      width: 280px;
     }
   }
 }

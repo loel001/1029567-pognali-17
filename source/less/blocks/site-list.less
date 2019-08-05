@@ -6,6 +6,20 @@
   text-transform: uppercase;
   color: @color-third;
   text-align: center;
+
+  @media @tablet-width {
+    font-size: 60px;
+    line-height: 1.18;
+    text-align: left;
+    padding-left: 60px;
+  }
+
+  @media @desktop-width {
+    font-size: 20px;
+    display: flex;
+    width: 395px;
+    justify-content: space-between;
+  }
 }
 
 .site-list__link {

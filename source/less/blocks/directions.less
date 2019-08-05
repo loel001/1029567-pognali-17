@@ -25,6 +25,17 @@
     padding-right: 75px;
     padding-bottom: 80px;
   }
+
+  @media @desktop-width {
+    width: 1440px;
+    display: flex;
+    position: relative;
+    padding-top: 161px;
+    padding-left: 131px;
+    padding-right: 240px;
+    padding-bottom: 90px;
+    justify-content: space-between;
+  }
 }
 
 .directions__content {
@@ -36,6 +47,12 @@
     padding-left: 0;
     padding-right: 0;
     margin-bottom: 104px;
+  }
+
+  @media @desktop-width {
+    order: 2;
+    margin-bottom: 0;
+    padding-bottom: 165px;
   }
 }
 
@@ -53,6 +70,10 @@
     width: 340px;
     margin-top: 54px;
   }
+
+  @media @desktop-width {
+    margin-top: 58px;
+  }
 }
 
 .directions__countries {
@@ -66,5 +87,13 @@
 
 .directions__country {
   margin-bottom: 10px;
+}
+
+.directions__button {
+  @media @desktop-width {
+    position: absolute;
+    right: 303px;
+    bottom: 139px;
+  }
 }
 
