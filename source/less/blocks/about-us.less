@@ -3,7 +3,7 @@
   width: 100%;
 
   @media @tablet-width {
-    background-image: linear-gradient(@main-color-tenth 901px, @main-color-first 901px, @main-color-first 901px);
+    background-image: linear-gradient(@main-color-tenth 860px, @main-color-first 860px, @main-color-first 860px);
   }
 }
 
@@ -45,7 +45,6 @@
 
   @media @desktop-width {
     margin: 0;
-    padding-top: 47px;
     text-align: left;
   }
 }
@@ -70,11 +69,24 @@
   display: flex;
   margin-top: -19px;
   margin-bottom: 27px;
+
+  @media @desktop-width {
+    position: absolute;
+    top: -143px;
+    right: -25px;
+  }
 }
 
 .about-us__button {
-  top: -363px;
-  right: 0;
+  @media @tablet-width {
+    top: -363px;
+    right: 0;
+  }
+
+  @media @desktop-width {
+    top: 0;
+    right: 0;
+  }
 }
 
 .about-us__phone {
@@ -100,14 +112,12 @@
   margin-bottom: 30px;
 
   @media @tablet-width {
-    padding-top: 58px;
-    padding-left: 36px;
     width: 304px;
-    padding-right: 0;
   }
 
   @media @desktop-width {
     padding-left: 0;
+    padding-right: 0;
     width: 260px;
   }
 }
@@ -161,7 +171,7 @@
     width: 1320px;
     border-radius: 20px;
     background-image: linear-gradient(to right, #ff8d30 345px, #ffa530 345px, #ffa530 690px, #ffbd30 690px);
-    margin-top: -283px;
+    margin-top: 84px;
   }
 }
 
@@ -267,11 +277,20 @@
   }
 }
 
-@media @tablet-width {
-  .about-us__content {
-    display: flex;
-    min-height: 453px;
+.about-us__content {
+  padding-top: 255px;
+
+  @media @tablet-width {
+    padding-top: 58px;
+    padding-left: 36px;
+    padding-bottom: 100px;
     position: relative;
+  }
+
+  @media @desktop-width {
+    padding-top: 10px;
+    padding-left: 0;
+    padding-bottom: 0;
   }
 }
 
@@ -280,7 +299,9 @@
     display: flex;
     padding-left: 66px;
     padding-right: 26px;
+    padding-top: 39px;
     justify-content: space-between;
+    position: relative;
   }
 }
 

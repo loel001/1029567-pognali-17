@@ -17,11 +17,25 @@
   @media @desktop-width {
     font-size: 20px;
     display: flex;
-    width: 395px;
-    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 600px;
+    color: @color-first;
+    background-color: @main-color-tenth;
+    padding-left: 0;
+    line-height: 58px;
   }
 }
 
 .site-list__link {
   color: @color-third;
+
+  @media @desktop-width {
+    color: @color-first;
+  }
+}
+
+.site-list__item {
+  @media @desktop-width {
+    margin-right: 34px;
+  }
 }

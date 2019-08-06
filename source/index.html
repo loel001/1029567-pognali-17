@@ -10,75 +10,77 @@
 
 <body>
   <header class="page-header page-header--scroll">
-    <div class="page-header__wrapper">
-      <a class="page-header__logo logo">
-        <picture>
+    <div class="page-header__modification">
+      <div class="page-header__wrapper">
+        <a class="page-header__logo logo">
+          <picture>
 
-          <svg class="logo-svg logo__svg--scroll" width="100" height="19"></svg>
-        </picture>
-      </a>
-      <button class="page-header__toggle-open page-header__toggle-open--scroll" type="button">Открыть меню</button>
-    </div>
-    <nav class="main-nav">
-      <div class="main-nav__wrapper">
-        <div class="main-nav__wrapper-logo">
-          <a class="main-nav__logo logo">
-            <picture>
-
-              <svg class="logo-svg logo__svg--scroll" width="100" height="19"></svg>
-            </picture>
-          </a>
-          <button class="main-nav__toggle-close" type="button">Закрыть</button>
-        </div>
-        <ul class="main-nav__list site-list">
-          <li class="site-list__item">
-            <a>О сервисе</a>
-          </li>
-          <li class="site-list__item">
-            <a class="site-list__link" href="form.html">Направления</a>
-          </li>
-          <li class="site-list__item">
-            <a class="site-list__link" href="catalog.html">Попутчики</a>
-          </li>
-        </ul>
-        <a class="main-nav__login button-authorization" href="login.html">Авторизация</a>
-        </ul>
-        <ul class="main-nav__connection contacts">
-          <li>
-            <a class="contacts__phone-number" href="tel:+78005558628">8 800 555-86-28</a>
-          </li>
-          <li>
-            <a class="contacts__email" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
-          </li>
-        </ul>
-        <ul class="main-nav__links-header social">
-          <li class="social__button">
-            <a class="social__link social__link--facebook" href="https://www.facebook.com/">
-              <svg></svg>
-              <span class="visually-hidden">
-                Фейсбук
-              </span>
-            </a>
-          </li>
-          <li class="social__button">
-            <a class="social__link social__link--vkontakte" href="https://vk.com/">
-              <svg></svg>
-              <span class="visually-hidden">
-                Вконтакте
-              </span>
-            </a>
-          </li>
-          <li class="social__button">
-            <a class="social__link social__link--instagram" href="https://www.instagram.com/?hl=ru">
-              <svg></svg>
-              <span class="visually-hidden">
-                Инстаграмм
-              </span>
-            </a>
-          </li>
-        </ul>
+            <svg class="logo-svg logo__svg--scroll" width="100" height="19"></svg>
+          </picture>
+        </a>
+        <button class="page-header__toggle-open page-header__toggle-open--scroll" type="button">Открыть меню</button>
       </div>
-    </nav>
+      <nav class="main-nav">
+        <div class="main-nav__wrapper">
+          <div class="main-nav__wrapper-logo">
+            <a class="main-nav__logo logo">
+              <picture>
+
+                <svg class="logo-svg logo__svg--scroll" width="100" height="19"></svg>
+              </picture>
+            </a>
+            <button class="main-nav__toggle-close" type="button">Закрыть</button>
+          </div>
+          <ul class="main-nav__list site-list">
+            <li class="site-list__item">
+              <a>О сервисе</a>
+            </li>
+            <li class="site-list__item">
+              <a class="site-list__link" href="form.html">Направления</a>
+            </li>
+            <li class="site-list__item">
+              <a class="site-list__link" href="catalog.html">Попутчики</a>
+            </li>
+          </ul>
+          <a class="main-nav__login button-authorization button-authorization--header" href="login.html">Авторизация</a>
+          </ul>
+          <ul class="main-nav__connection contacts">
+            <li class="contacts__items">
+              <a class="contacts__phone-number" href="tel:+78005558628">8 800 555-86-28</a>
+            </li>
+            <li class="contacts__items">
+              <a class="contacts__email" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+            </li>
+          </ul>
+          <ul class="main-nav__links-header social">
+            <li class="social__button">
+              <a class="social__link social__link--facebook" href="https://www.facebook.com/">
+                <svg></svg>
+                <span class="visually-hidden">
+                  Фейсбук
+                </span>
+              </a>
+            </li>
+            <li class="social__button">
+              <a class="social__link social__link--vkontakte" href="https://vk.com/">
+                <svg></svg>
+                <span class="visually-hidden">
+                  Вконтакте
+                </span>
+              </a>
+            </li>
+            <li class="social__button">
+              <a class="social__link social__link--instagram" href="https://www.instagram.com/?hl=ru">
+                <svg></svg>
+                <span class="visually-hidden">
+                  Инстаграмм
+                </span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
   </header>
   <main class="page-main">
     <h1 class="visually-hidden">Погнали - найди себе попутчика в путешествие</h1>
@@ -87,8 +89,6 @@
         <div class="about-us__transition">
           <h2 class="about-us__title">В путешествие с крутыми попутчиками!</h2>
           <div class="about-us__content">
-            <img class="about-us__traveler-image" src="img/" width="192" height="255" alt="путешественник">
-
             <ul class="about-us__manage">
               <li class="about-us__contact">
                 <a class="about-us__phone" href="tel:+78005558628">Позвонить</a>
@@ -344,9 +344,7 @@
           <form class="interest__registration" method="post" action="https://echo.htmlacademy.ru">
             <label class="interest__label" for="appointment-email">Ваш e-mail</label>
             <input class="interest__email" id="appointment-email" type="email" name="email" placeholder="E-mail">
-            <div class="interest__link">
-              <a href="registration.html" class="interest__button" type="submit">Регистрация</a>
-            </div>
+            <a href="registration.html" class="interest__button">Регистрация</a>
           </form>
           <p class="interest__paragraf">Остались вопросы?
             <span class="interest__addition"><br class="interest__carry">Мы с радостью на них ответим!</span>

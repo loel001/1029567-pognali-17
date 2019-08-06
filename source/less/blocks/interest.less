@@ -125,22 +125,11 @@
 }
 
 .interest__button {
+  display: block;
   font-size: 0;
-
-  @media @desktop-width {
-    .bloggersans(800);
-    font-size: 24px;
-    color: @color-seventh;
-    background-color: @main-color-fifth;
-    line-height: 81px;
-    padding-left: 38px;
-  }
-}
-
-.interest__link {
   width: 60px;
   height: 62px;
-  .radius(10px, 10px, 10px, 10px);
+  border-radius: 10px;
   background-color: @main-color-fifth;
   position: absolute;
   top: 4px;
@@ -153,6 +142,11 @@
   }
 
   @media @desktop-width {
+    .bloggersans(800);
+    font-size: 24px;
+    color: @color-seventh;
+    line-height: 81px;
+    padding-left: 38px;
     width: 328px;
   }
 }
