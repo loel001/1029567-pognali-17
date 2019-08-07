@@ -1,5 +1,23 @@
 .filters {
+  background-color: @main-color-seventh;
+  width: 100%;
+}
+
+.filters__color {
   background-color: @main-color-twelfth;
+  width: 100%;
+  .radius(0, 0, 30px, 30px);
+
+  @media @tablet-width {
+    border-radius: 0 0 60px 60px;
+  }
+}
+
+.filters__wrapper {
+  .wrapper();
+  width: 320px;
+  padding-top: 20px;
+  padding-bottom: 17px;
 }
 
 .filters__title {

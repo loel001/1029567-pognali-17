@@ -8,6 +8,7 @@
   line-height: 1.13;
   color: @color-seventh;
   text-transform: uppercase;
+  margin-bottom: 22px;
 }
 
 .preferences__list {
@@ -16,6 +17,19 @@
   color: @color-second;
   .list();
   text-transform: none;
+  padding-top: 16px;
+  padding-left: 27px;
+  padding-bottom: 9px;
+
+  &--hide {
+    display: none;
+  }
+}
+
+.preferences__input {
+  position: absolute;
+  opacity: 0;
+  pointer-events: none;
 }
 
 .preferences__level {
@@ -31,5 +45,9 @@
 
 .preferences__level-maximum {
   background-color: @main-color-eleventh;
+}
+
+.preferences__enthusiasm:not(:last-child) {
+  margin-bottom: 14px;
 }
 

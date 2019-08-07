@@ -1,16 +1,19 @@
-.transport__aircraft {
+.transport {
+  .list();
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.transport__label {
   font-size: 0;
 }
 
-.transport__car {
-  font-size: 0;
+.transport__input {
+  position: absolute;
+  opacity: 0;
+  pointer-events: none;
 }
 
-.transport__bicycle {
-  font-size: 0;
+.transport__tooltip {
+  display: none;
 }
-
-.transport__pedestrian {
-  font-size: 0;
-}
-

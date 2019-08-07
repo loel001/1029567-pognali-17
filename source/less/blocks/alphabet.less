@@ -1,5 +1,11 @@
 .alphabet {
   .list();
+  display: flex;
+  flex-wrap: wrap;
+  width: 227px;
+  border-bottom: solid 1px @main-color-thirteenth;
+  border-left: solid 1px @main-color-thirteenth;
+  margin: 0 auto;
 }
 
 .alphabet__list {
@@ -9,10 +15,24 @@
   color: @color-seventh;
   font-size: 14px;
   .bloggersans(500);
+  border-top: solid 1px @main-color-thirteenth;
+  border-right: solid 1px @main-color-thirteenth;
 }
 
 .alphabet__label {
-  border: solid 1px @main-color-thirteenth;
   background-color: @main-color-eleventh;
+  display: block;
+  width: 44px;
+  line-height: 42px;
 }
 
+.alphabet__input {
+  position: absolute;
+  opacity: 0;
+  pointer-events: none;
+
+  &:checked + .alphabet__label {
+    background-color: @main-color-eighth;
+    color: @color-first;
+  }
+}
