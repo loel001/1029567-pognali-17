@@ -9,30 +9,49 @@
 </head>
 
 <body>
-  <header class="page-header">
-    <div class="page-header__wrapper">
-      <a class="page-header__logo logo" href="index.html">
-        <picture>
-
-          <svg class="logo__svg logo__svg--scroll" width="100" height="19"></svg>
-        </picture>
-      </a>
-      <button class="page-header__toggle-open page-header__toggle-open--scroll" type="button">Открыть меню</button>
-      <ul class="page-header__list">
-        <li class="page-header__item">Попутчики</li>
-      </ul>
-    </div>
-    <nav class="main-nav">
-      <div class="main-nav__wrapper">
-        <div class="main-nav__wrapper-logo">
-          <a class="main-nav__logo logo">
+  <header class="page-header page-header--color">
+    <div class="page-header__color">
+      <div class="page-header__wrapper page-header__wrapper--course">
+        <div class="page-header__content">
+          <a class="page-header__logo page-header__logo--page logo" href="index.html">
             <picture>
 
-              <svg class="logo-svg logo__svg--scroll" width="100" height="19"></svg>
+              <svg class="logo__svg logo__svg--scroll" width="100" height="19"></svg>
             </picture>
           </a>
-          <button class="main-nav__toggle-close" type="button">Закрыть</button>
+          <button class="page-header__toggle-open page-header__toggle-open--scroll" type="button">Открыть
+            меню</button>
+          <ul class="page-header__navigation site-list">
+            <li class="site-list__item">
+              <a class="site-list__link" href="index.html">О сервисе</a>
+            </li>
+            <li class="site-list__item">
+              <a class="site-list__link" href="form.html">Направления</a>
+            </li>
+            <li class="site-list__item">
+              <a>Попутчики</a>
+            </li>
+          </ul>
+          <ul class="page-header__manage">
+            <li class="page-header__contact page-header__contact--hide">
+              <a class="page-header__phone" href="tel:+78005558628">Позвонить</a>
+            </li>
+            <li class="page-header__contact page-header__contact--hide">
+              <a class="page-header__email" href="mailto:mail@htmlacademy.ru">Написать</a>
+            </li>
+            <li class="page-header__contact">
+              <a class="page-header__button button-authorization button-authorization--size"
+                href="login.html">Авторизация</a>
+            </li>
+          </ul>
         </div>
+        <ul class="page-header__list">
+          <li class="page-header__item">Попутчики</li>
+        </ul>
+      </div>
+    </div>
+    <nav class="main-nav main-nav--page">
+      <div class="main-nav__wrapper">
         <ul class="main-nav__list site-list">
           <li class="site-list__item">
             <a class="site-list__link" href="index.html">О сервисе</a>
@@ -47,10 +66,10 @@
         <a class="main-nav__login button-authorization" href="login.html">Авторизация</a>
         </ul>
         <ul class="main-nav__connection contacts">
-          <li>
+          <li class="contacts__items">
             <a class="contacts__phone-number phone-number" href="tel:+78005558628">8 800 555-86-28</a>
           </li>
-          <li>
+          <li class="contacts__items">
             <a class="contacts__email email" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
           </li>
         </ul>
@@ -88,13 +107,15 @@
     <section class="filters">
       <div class="filters__color">
         <div class="filters__wrapper">
-          <h2 class="filters__title">Фильтрация по странам</h2>
-          <button class="filters__button" type="button">Открыть фильтры по странам</button>
+          <div class="filters__content">
+            <h2 class="filters__title">Фильтрация по странам</h2>
+            <button class="filters__button" type="button">Открыть фильтры по странам</button>
+          </div>
           <div class="filters__modal modal-open">
             <ul class="modal-open__list world">
               <li class="world__item">
                 <input class="world__input world__input--checkbox" type="checkbox" name="europe" value="europe"
-                  id="world-europe">
+                  id="world-europe" checked>
                 <label class="world__label" for="world-europe">Европа</label>
               </li>
               <li class="world__item">
@@ -268,40 +289,41 @@
               </li>
             </ul>
             <ul class="modal__open__countries">
-              <li class="modal-open__character">А
-                <ul class="modal-open__country country-alphabetically country-alphabetically--open">
-                  <li class="country-alphabetically__item">
+              <li class="modal-open__character modal-open__character--fixed">
+                <span class="modal-open__content">А</span>
+                <ul class="modal-open__country country-alphabetically">
+                  <li class="country-alphabetically__item country-alphabetically__item--first">
                     <a class="country-alphabetically__link">Австралия</a>
                   </li>
-                  <li class="country-alphabetically__item">
+                  <li class="country-alphabetically__item country-alphabetically__item--second">
                     <a class="country-alphabetically__link" href="#">Австрия</a>
                   </li>
-                  <li class="country-alphabetically__item">
+                  <li class="country-alphabetically__item country-alphabetically__item--third">
                     <a class="country-alphabetically__link" href="#">Азербайджанм</a>
                   </li>
-                  <li class="country-alphabetically__item">
+                  <li class="country-alphabetically__item country-alphabetically__item--fourth">
                     <a class="country-alphabetically__link" href="#">Албания</a>
                   </li>
-                  <li class="country-alphabetically__item">
+                  <li class="country-alphabetically__item country-alphabetically__item--fifth">
                     <a class="country-alphabetically__link" href="#">Алжир</a>
                   </li>
-                  <li class="country-alphabetically__item">
+                  <li class="country-alphabetically__item country-alphabetically__item--sixth">
                     <a class="country-alphabetically__link" href="#">Ангола</a>
                   </li>
-                  <li class="country-alphabetically__item">
+                  <li class="country-alphabetically__item country-alphabetically__item--seventh">
                     <a class="country-alphabetically__link" href="#">Андорра</a>
                   </li>
-                  <li class="country-alphabetically__item">
+                  <li class="country-alphabetically__item country-alphabetically__item--eighth">
                     <a class="country-alphabetically__link" href="#">Антигуа и Барбуда
                     </a>
                   </li>
-                  <li class="country-alphabetically__item">
+                  <li class="country-alphabetically__item country-alphabetically__item--ninth">
                     <a class="country-alphabetically__link" href="#">Аргентина</a>
                   </li>
-                  <li class="country-alphabetically__item">
+                  <li class="country-alphabetically__item country-alphabetically__item--tenth">
                     <a class="country-alphabetically__link" href="#">Армения</a>
                   </li>
-                  <li class="country-alphabetically__item">
+                  <li class="country-alphabetically__item country-alphabetically__item--eleventh">
                     <a class="country-alphabetically__link" href="#">Афганистан</a>
                   </li>
                 </ul>

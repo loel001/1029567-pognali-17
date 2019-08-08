@@ -1,6 +1,20 @@
 .page-header {
   background-color: @main-color-tenth;
   width: 100%;
+
+  &--color {
+    background-color: @main-color-twelfth;
+  }
+}
+
+.page-header__color {
+  background-color: @main-color-tenth;
+  width: 100%;
+  .radius(0, 0, 20px, 20px);
+
+  @media @tablet-width {
+    .radius(0, 0, 60px, 60px);
+  }
 }
 
 .page-header__wrapper {
@@ -14,16 +28,40 @@
   @media @tablet-width {
     width: 768px;
     padding-top: 40px;
-    padding-right: 369px;
   }
 
   @media @desktop-width {
-    width: 200px;
+    width: 1440px;
     padding-right: 0;
     padding-left: 0;
     padding-top: 0;
     padding-bottom: 0;
-    margin: 0;
+    order: 2;
+  }
+
+  &--course {
+    flex-direction: column;
+    padding-top: 19px;
+    padding-bottom: 10px;
+
+    @media @desktop-width {
+      padding-left: 60px;
+      padding-right: 60px;
+    }
+  }
+}
+
+.page-header__content {
+  width: 270px;
+  display: flex;
+  justify-content: space-between;
+
+  @media @tablet-width {
+    width: 688px;
+  }
+
+  @media @desktop-width {
+    width: 1320px;
   }
 }
 
@@ -43,4 +81,68 @@
   line-height: 1.11;
   color: @color-first;
   .list();
+  margin-top: 51px;
+}
+
+.page-header__manage {
+  .list();
+  display: none;
+
+  @media @tablet-width {
+    display: flex;
+  }
+
+  @media @desktop-width {
+    margin-left: auto;
+  }
+}
+
+.page-header__phone {
+  font-size: 0;
+}
+
+.page-header__email {
+  font-size: 0;
+}
+
+.page-header__contact {
+  &--hide {
+    display: none;
+
+    @media @desktop-width {
+      display: block;
+    }
+  }
+}
+
+.page-header__logo {
+  @media @desktop-width {
+    display: block;
+    position: absolute;
+    top: 54px;
+    left: 76px;
+  }
+
+  &--page {
+    position: relative;
+  }
+}
+
+.page-header__modification {
+  @media @desktop-width {
+    display: flex;
+    margin: 0 auto;
+    width: 1440px;
+    padding-left: 60px;
+    padding-top: 47px;
+    padding-right: 60px;
+  }
+}
+
+.page-header__navigation {
+  display: none;
+
+  @media @desktop-width {
+    display: flex;
+  }
 }

@@ -4,9 +4,54 @@
   line-height: 1.38;
   color: @color-second;
   .list();
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
 }
 
 .country-alphabetically__link {
   color: @color-second;
   display: block;
+}
+
+.country-alphabetically__item {
+  &--first {
+    order: 7;
+  }
+
+  &--second {
+    order: 8;
+  }
+
+  &--third {
+    order: 9;
+  }
+
+  &--fourth {
+    order: 2;
+  }
+
+  &--fifth {
+    order: 3;
+  }
+
+  &--sixth {
+    display: none;
+  }
+
+  &--seventh {
+    order: 4;
+  }
+
+  &--eighth {
+    display: none;
+  }
+
+  &--ninth {
+    order: 5;
+  }
+
+  &--tenth {
+    order: 6;
+  }
 }

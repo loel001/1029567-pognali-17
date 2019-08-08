@@ -8,5 +8,15 @@
   line-height: 1.38;
   text-transform: uppercase;
   color: rgba(25, 33, 68, 0.3);
+  margin-bottom: 5px;
 }
 
+.world__input {
+  position: absolute;
+  opacity: 0;
+  pointer-events: none;
+
+  &:checked + .world__label {
+    color: @color-third;
+  }
+}
