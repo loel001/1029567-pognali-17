@@ -1,6 +1,11 @@
 .ideal-traveler {
   background-color: @main-color-eleventh;
   .radius(20px, 20px, 20px, 20px);
+  padding-top: 15px;
+  padding-left: 18px;
+  padding-right: 20px;
+  padding-bottom: 22px;
+  position: relative;
 }
 
 .ideal-traveler__name {
@@ -8,6 +13,9 @@
   font-size: 20px;
   color: @color-seventh;
   .content();
+  width: 80px;
+  margin-left: 16px;
+  line-height: 1;
 }
 
 .ideal-traveler__distance {
@@ -15,6 +23,9 @@
   font-size: 14px;
   color: @color-fifth;
   text-transform: uppercase;
+  position: absolute;
+  top: 63px;
+  left: 105px;
 }
 
 .ideal-traveler__paragraf {
@@ -23,6 +34,10 @@
   line-height: 1.2;
   color: @color-second;
   .content();
+  margin-top: 14px;
+  margin-bottom: 13px;
+  padding-left: 9px;
+  padding-right: 45px;
 }
 
 .ideal-traveler__title {
@@ -31,20 +46,63 @@
   line-height: 1.2;
   color: @color-second;
   .content();
-  text-transform: uppercase;
+  padding-left: 9px;
 }
 
-.ideal-traveler__level {
+.ideal-traveler__levels {
   .bloggersans(400);
   font-size: 15px;
   line-height: 1.2;
   color: @color-second;
-  text-transform: uppercase;
 }
 
 .ideal-traveler__interest {
   .bloggersans(800);
   font-size: 24px;
   color: @color-seventh;
+  line-height: 40px;
 }
 
+.ideal-traveler__photo {
+  width: 70px;
+  height: 70px;
+}
+
+.ideal-traveler__profile {
+  display: flex;
+}
+
+.ideal-traveler__content {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 12px;
+}
+
+.ideal-traveler__wrapper {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 13px;
+  margin-bottom: 13px;
+  padding-right: 10px;
+  position: relative;
+}
+
+.ideal-traveler__transport {
+  line-height: 32px;
+  width: 128px;
+}
+
+.ideal-traveler__cover {
+  display: flex;
+  flex-direction: column;
+}
+
+.ideal-traveler__level {
+  display: none;
+}
+
+.ideal-traveler__circle {
+  position: absolute;
+  top: -7px;
+  right: -2px;
+}

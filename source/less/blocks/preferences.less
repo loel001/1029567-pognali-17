@@ -1,5 +1,6 @@
 .preferences {
   .list();
+  padding-left: 5px;
 }
 
 .preferences__item {
@@ -17,9 +18,9 @@
   color: @color-second;
   .list();
   text-transform: none;
-  padding-top: 16px;
   padding-left: 27px;
-  padding-bottom: 9px;
+  margin-bottom: 30px;
+  margin-top: 16px;
 
   &--hide {
     display: none;
@@ -37,14 +38,102 @@
   font-size: 15px;
   line-height: 0.9;
   .list();
+  margin-top: 12px;
+  margin-bottom: 53px;
+  display: flex;
+  width: 221px;
+  position: relative;
+
+  &::after {
+    display: block;
+    position: absolute;
+    width: 218px;
+    height: 2px;
+    background-image: linear-gradient(to right, rgba(29, 46, 91, 0.2) 72px, @main-color-eighth 72px);
+    .icon();
+    top: 57px;
+  }
+
+  &::before {
+    display: block;
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background-color: @main-color-eighth;
+    .icon();
+    top: 53px;
+    left: 67px;
+    border-radius: 50%;
+  }
 }
 
 .preferences__level-minimum {
   background-color: @main-color-eleventh;
+  width: 110px;
+  line-height: 33px;
+  text-align: center;
+  border-left: solid 1px @main-color-thirteenth;
+  border-bottom: solid 1px @main-color-thirteenth;
+  border-top: solid 1px @main-color-thirteenth;
+  position: relative;
+  .radius(5px, 0, 0, 5px);
+
+  &::before {
+    display: block;
+    position: absolute;
+    width: 1px;
+    height: 11px;
+    background-color: @main-color-thirteenth;
+    .icon();
+    top: 0;
+    right: 0;
+  }
+
+  &::after {
+    display: block;
+    position: absolute;
+    width: 1px;
+    height: 11px;
+    background-color: @main-color-thirteenth;
+    .icon();
+    top: 21px;
+    right: 0;
+  }
 }
 
 .preferences__level-maximum {
   background-color: @main-color-eleventh;
+  width: 110px;
+  line-height: 33px;
+  text-align: center;
+  position: relative;
+  border-right: solid 1px @main-color-thirteenth;
+  border-bottom: solid 1px @main-color-thirteenth;
+  border-top: solid 1px @main-color-thirteenth;
+  .radius(0, 5px, 5px, 0);
+
+  &::before {
+    display: block;
+    position: absolute;
+    width: 16px;
+    height: 1px;
+    background-color: @main-color-thirteenth;
+    .icon();
+    top: 15px;
+    left: -9px;
+  }
+
+  &::after {
+    display: block;
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background-color: @main-color-eighth;
+    .icon();
+    top: 53px;
+    right: 0;
+    border-radius: 50%;
+  }
 }
 
 .preferences__enthusiasm:not(:last-child) {
@@ -54,5 +143,6 @@
 .preferences__transport {
   margin-top: 15px;
   min-height: 33px;
+  margin-bottom: 31px;
 }
 

@@ -47,11 +47,14 @@
         </div>
         <ul class="page-header__list">
           <li class="page-header__item">Попутчики</li>
+          <li class="page-header__main">
+            <a class="page-header__link" href="index.html">на главную</a>
+          </li>
         </ul>
       </div>
     </div>
     <nav class="main-nav main-nav--page">
-      <div class="main-nav__wrapper">
+      <div class="main-nav__wrapper main-nav__wrapper--page">
         <ul class="main-nav__list site-list">
           <li class="site-list__item">
             <a class="site-list__link" href="index.html">О сервисе</a>
@@ -1030,156 +1033,206 @@
       </div>
     </section>
     <section class="travelers">
-      <h2 class="visually-hidden">Список опутчиков</h2>
-      <ul class="travelers__list">
-        <li class="travelers__item ideal-traveler">
-          <a class="ideal-traveler__profile">
-            <h3 class="ideal-traveler__name">Таня Фирсова</h3>
-          </a>
-          <span class="ideal-traveler__distance">1.5м</span>
-          <p class="ideal-traveler__paragraf">#ЗОЖ #ПП #Фитнес #пляж #авокадо #смузи</p>
-          <h4 class="ideal-traveler__title">Хочет посетить:</h4>
-          <ul class="ideal-traveler__desires dreams">
-            <li class="dreams__item">Шри ланка</li>
-            <li class="dreams__item">Тайланд</li>
-            <li class="dreams__item">Сейшелы</li>
-          </ul>
-          <div class="ideal-traveler__content">
-            <h4 class="ideal-traveler__title">Транспорт:</h4>
-            <span class="ideal-traveler__level">level</span>
-          </div>
-          <div class="ideal-traveler__wrapper">
-            <ul class="ideal-traveler__transport transport">
-              <li class="transport__aircraft transport__aircraft--active">Авиаперелет
-                <span сlass="transport__tooltip">Авиаперелет</span>
-              </li>
-              <li class="transport__сar">Автотранспорт
-                <span сlass="transport__tooltip">Автотранспорт</span>
-              </li>
-              <li class="transport__bicycle">Велосипед
-                <span сlass="transport__tooltip">Велосипед</span>
-              </li>
-              <li class="transport__pedestrian">Пешком
-                <span сlass="transport__tooltip">Пешком</span>
-              </li>
+      <div class="travelers__wrapper">
+        <h2 class="visually-hidden">Список опутчиков</h2>
+        <ul class="travelers__list">
+          <li class="travelers__item ideal-traveler">
+            <a class="ideal-traveler__profile" href="#">
+              <img class="ideal-traveler__photo">
+              <h3 class="ideal-traveler__name">Таня Фирсова</h3>
+            </a>
+            <span class="ideal-traveler__distance">1.5м</span>
+            <p class="ideal-traveler__paragraf">#ЗОЖ #ПП #Фитнес #пляж #авокадо #смузи</p>
+            <h4 class="ideal-traveler__title">xочет посетить:</h4>
+            <ul class="ideal-traveler__desires dreams">
+              <li class="dreams__item">Шри ланка</li>
+              <li class="dreams__item">Тайланд</li>
+              <li class="dreams__item">Сейшелы</li>
             </ul>
-            <span class="ideal-traveler__interest">99</span>
-          </div>
-          <a class="ideal-traveler__button button-container" href="response.html">Позвать</a>
-        </li>
-        <li class="travelers__item ideal-traveler">
-          <a class="ideal-traveler__profile">
-            <h3 class="ideal-traveler__name">Петя Демин</h3>
-          </a>
-          <span class="ideal-traveler__distance">150</span>
-          <p class="ideal-traveler__paragraf">#бургер #бар #футбол #концерт #крафт</p>
-          <h4 class="ideal-traveler__title">Хочет посетить:</h4>
-          <ul class="ideal-traveler__desires dreams">
-            <li class="dreams__item">Бельгия</li>
-            <li class="dreams__item">Чехия</li>
-          </ul>
-          <div class="ideal-traveler__content">
-            <h4 class="ideal-traveler__title">Транспорт:</h4>
-            <span class="ideal-traveler__level">level</span>
-          </div>
-          <div class="ideal-traveler__wrapper">
-            <ul class="ideal-traveler__transport transport">
-              <li class="transport__aircraft transport__aircraft--active">Авиаперелет
-                <span сlass="transport__tooltip">Авиаперелет</span>
-              </li>
-              <li class="transport__сar transport__сar--active">Автотранспорт
-                <span сlass="transport__tooltip">Автотранспорт</span>
-              </li>
-              <li class="transport__bicycle">Велосипед
-                <span сlass="transport__tooltip">Велосипед</span>
-              </li>
-              <li class="transport__pedestrian transport__pedestrian--active">Пешком
-                <span сlass="transport__tooltip">Пешком</span>
-              </li>
+            <div class="ideal-traveler__content">
+              <h4 class="ideal-traveler__title">транспорт:</h4>
+              <span class="ideal-traveler__levels">левел:</span>
+            </div>
+            <div class="ideal-traveler__wrapper">
+              <ul class="ideal-traveler__transport transport">
+                <li class="transport__aircraft transport__aircraft--active">Авиаперелет
+                  <span сlass="transport__tooltip">Авиаперелет</span>
+                </li>
+                <li class="transport__car">Автотранспорт
+                  <span class="transport__tooltip">Автортранспорт</span>
+                </li>
+                <li class="transport__bicycle">Велосипед
+                  <span сlass="transport__tooltip">Велосипед</span>
+                </li>
+                <li class="transport__pedestrian">Пешком
+                  <span сlass="transport__tooltip">Пешком</span>
+                </li>
+              </ul>
+              <svg class="ideal-traveler__circle" width="50" height="50">
+                <circle r="22.5" cx="25" cy="25" fill="none" stroke="#ff8d30" stroke-width="3" stroke-dasharray="180 2"
+                  stroke-dashoffset="78">
+                </circle>
+              </svg>
+              <div class="ideal-traveler__cover">
+                <span class="ideal-traveler__interest">99</span>
+                <span class="ideal-traveler__level">level</span>
+              </div>
+            </div>
+            <a class="ideal-traveler__button button-container" href="response.html">Позвать!</a>
+          </li>
+          <li class="travelers__item ideal-traveler">
+            <a class="ideal-traveler__profile" href="#">
+              <img class="ideal-traveler__photo">
+              <h3 class="ideal-traveler__name">Петя Демин</h3>
+            </a>
+            <span class="ideal-traveler__distance">150</span>
+            <p class="ideal-traveler__paragraf">#бургер #бар #футбол #концерт #крафт</p>
+            <h4 class="ideal-traveler__title">хочет посетить:</h4>
+            <ul class="ideal-traveler__desires dreams dreams--distance">
+              <li class="dreams__item">Бельгия</li>
+              <li class="dreams__item">Чехия</li>
             </ul>
-            <span class="ideal-traveler__interest">80</span>
-          </div>
-          <a class="ideal-traveler__button button-container" href="response.html">Позвать</a>
-        </li>
-        <li class="travelers__item ideal-traveler">
-          <a class="ideal-traveler__profile">
-            <h3 class="ideal-traveler__name">Марк Смолов</h3>
-          </a>
-          <span class="ideal-traveler__distance">1700</span>
-          <p class="ideal-traveler__paragraf">#рэп #тату #хайпбист #кроссовки #суприм</p>
-          <h4 class="ideal-traveler__title">Хочет посетить:</h4>
-          <ul class="ideal-traveler__desires dreams">
-            <li class="dreams__item">CША</li>
-            <li class="dreams__item">Австралия</li>
-            <li class="dreams__item">Доминикана</li>
-          </ul>
-          <div class="ideal-traveler__content">
-            <h4 class="ideal-traveler__title">Транспорт:</h4>
-            <span class="ideal-traveler__level">level</span>
-          </div>
-          <div class="ideal-traveler__wrapper">
-            <ul class="ideal-traveler__transport transport">
-              <li class="transport__aircraft transport__aircraft--active">Авиаперелет
-                <span сlass="transport__tooltip">Авиаперелет</span>
-              </li>
-              <li class="transport__сar">Автотранспорт
-                <span сlass="transport__tooltip">Автотранспорт</span>
-              </li>
-              <li class="transport__bicycle transport__bicycle--active">Велосипед
-                <span сlass="transport__tooltip">Велосипед</span>
-              </li>
-              <li class="transport__pedestrian">Пешком
-                <span сlass="transport__tooltip">Пешком</span>
-              </li>
+            <div class="ideal-traveler__content">
+              <h4 class="ideal-traveler__title">транспорт:</h4>
+              <span class="ideal-traveler__levels">левел:</span>
+            </div>
+            <div class="ideal-traveler__wrapper">
+              <ul class="ideal-traveler__transport transport">
+                <li class="transport__aircraft transport__aircraft--active">Авиаперелет
+                  <span сlass="transport__tooltip">Авиаперелет</span>
+                </li>
+                <li class="transport__car transport__car--active">Автотранспорт
+                  <span class="transport__tooltip">Автортранспорт</span>
+                </li>
+                <li class="transport__bicycle">Велосипед
+                  <span сlass="transport__tooltip">Велосипед</span>
+                </li>
+                <li class="transport__pedestrian transport__pedestrian--active">Пешком
+                  <span сlass="transport__tooltip">Пешком</span>
+                </li>
+              </ul>
+              <svg class="ideal-traveler__circle" width="50" height="50">
+                <circle r="22.5" cx="25" cy="25" fill="none" stroke="#ff8d30" stroke-width="3" stroke-dasharray="190 17"
+                  stroke-dashoffset="100">
+                </circle>
+              </svg>
+              <div class="ideal-traveler__cover">
+                <span class="ideal-traveler__interest">80</span>
+                <span class="ideal-traveler__level">левел:</span>
+              </div>
+            </div>
+            <a class="ideal-traveler__button button-container" href="response.html">Позвать!</a>
+          </li>
+          <li class="travelers__item ideal-traveler">
+            <a class="ideal-traveler__profile" href="#">
+              <img class="ideal-traveler__photo">
+              <h3 class="ideal-traveler__name">Марк Смолов</h3>
+            </a>
+            <span class="ideal-traveler__distance">1700</span>
+            <p class="ideal-traveler__paragraf">#рэп #тату #хайпбист #кроссовки #суприм</p>
+            <h4 class="ideal-traveler__title">хочет посетить:</h4>
+            <ul class="ideal-traveler__desires dreams dreams--length">
+              <li class="dreams__item">CША</li>
+              <li class="dreams__item">Австралия</li>
+              <li class="dreams__item">Доминикана</li>
             </ul>
-            <span class="ideal-traveler__interest">25</span>
-          </div>
-          <a class="ideal-traveler__button button-container" href="response.html">Позвать</a>
-        </li>
-        <li class="travelers__item ideal-traveler">
-          <a class="ideal-traveler__profile">
-            <h3 class="ideal-traveler__name">Лариса Роговая</h3>
-          </a>
-          <span class="ideal-traveler__distance">23</span>
-          <p class="ideal-traveler__paragraf">#образование #карьера #учеба #линкедин</p>
-          <h4 class="ideal-traveler__title">Хочет посетить:</h4>
-          <ul class="ideal-traveler__desires dreams">
-            <li class="dreams__item">Великобритания</li>
-            <li class="dreams__item">Германия</li>
-          </ul>
-          <div class="ideal-traveler__content content">
-            <h4 class="ideal-traveler__title">Транспорт:</h4>
-            <span class="ideal-traveler__level">level</span>
-          </div>
-          <div class="ideal-traveler__wrapper">
-            <ul class="ideal-traveler__transport transport">
-              <li class="transport__aircraft transport__aircraft--active">Авиаперелет
-                <span сlass="transport__tooltip">Авиаперелет</span>
-              </li>
-              <li class="transport__сar transport__сar--active">Автотранспорт
-                <span сlass="transport__tooltip">Автотранспорт</span>
-              </li>
-              <li class="transport__bicycle">Велосипед
-                <span сlass="transport__tooltip">Велосипед</span>
-              </li>
-              <li class="transport__pedestrian">Пешком
-                <span сlass="transport__tooltip">Пешком</span>
-              </li>
+            <div class="ideal-traveler__content">
+              <h4 class="ideal-traveler__title">транспорт:</h4>
+              <span class="ideal-traveler__levels">левел:</span>
+            </div>
+            <div class="ideal-traveler__wrapper">
+              <ul class="ideal-traveler__transport transport">
+                <li class="transport__aircraft transport__aircraft--active">Авиаперелет
+                  <span сlass="transport__tooltip">Авиаперелет</span>
+                </li>
+                <li class="transport__car">Автотранспорт
+                  <span class="transport__tooltip">Автортранспорт</span>
+                </li>
+                <li class="transport__bicycle transport__bicycle--active">Велосипед
+                  <span сlass="transport__tooltip">Велосипед</span>
+                </li>
+                <li class="transport__pedestrian">Пешком
+                  <span сlass="transport__tooltip">Пешком</span>
+                </li>
+              </ul>
+              <svg class="ideal-traveler__circle" width="50" height="50">
+                <circle r="22.5" cx="25" cy="25" fill="none" stroke="#ff8d30" stroke-width="3"
+                  stroke-dasharray="100 110" stroke-dashoffset="105">
+                </circle>
+              </svg>
+              <div class="ideal-traveler__covert">
+                <span class="ideal-traveler__interest">25</span>
+                <span class="ideal-traveler__level">level</span>
+              </div>
+            </div>
+            <a class="ideal-traveler__button button-container" href="response.html">Позвать!</a>
+          </li>
+          <li class="travelers__item ideal-traveler">
+            <a class="ideal-traveler__profile" href="#">
+              <img class="ideal-traveler__photo">
+              <h3 class="ideal-traveler__name">Лариса Роговая</h3>
+            </a>
+            <span class="ideal-traveler__distance">23</span>
+            <p class="ideal-traveler__paragraf">#образование #карьера #учеба #линкедин</p>
+            <h4 class="ideal-traveler__title">хочет посетить:</h4>
+            <ul class="ideal-traveler__desires dreams dreams--distance">
+              <li class="dreams__item">Великобритания</li>
+              <li class="dreams__item">Германия</li>
             </ul>
-            <span class="ideal-traveler__interest">50</span>
-          </div>
-          <a class="ideal-traveler__button button-container" href="response.html">Позвать</a>
-        </li>
-      </ul>
-      <a class="travelers__button" href="all-fellow-travelers.html">Показать ещё</a>
-      <ul class="travelers__pagination pagination">
-        <li class="pagination-item back">
-          <a class="back__link" href="#">Назад</a>
-        </li>
-        <li class="pagination-item forrader">
-          <a class="forrader__link" href="#">Вперед</a>
-        </li>
-      </ul>
+            <div class="ideal-traveler__content content">
+              <h4 class="ideal-traveler__title">транспорт:</h4>
+              <span class="ideal-traveler__levels">левел:</span>
+            </div>
+            <div class="ideal-traveler__wrapper">
+              <ul class="ideal-traveler__transport transport">
+                <li class="transport__aircraft transport__aircraft--active">Авиаперелет
+                  <span сlass="transport__tooltip">Авиаперелет</span>
+                </li>
+                <li class="transport__car transport__car--active">Автотранспорт
+                  <span class="transport__tooltip">Автортранспорт</span>
+                </li>
+                <li class="transport__bicycle">Велосипед
+                  <span сlass="transport__tooltip">Велосипед</span>
+                </li>
+                <li class="transport__pedestrian">Пешком
+                  <span сlass="transport__tooltip">Пешком</span>
+                </li>
+              </ul>
+              <svg class="ideal-traveler__circle" width="50" height="50">
+                <circle r="22.5" cx="25" cy="25" fill="none" stroke="#ff8d30" stroke-width="3" stroke-dasharray="51 72"
+                  stroke-dashoffset="140">
+                </circle>
+              </svg>
+              <div class="ideal-traveler__cover">
+                <span class="ideal-traveler__interest">50</span>
+                <span class="ideal-traveler__level">level</span>
+              </div>
+            </div>
+            <a class="ideal-traveler__button button-container" href="response.html">Позвать!</a>
+          </li>
+        </ul>
+        <a class="travelers__button" href="all-fellow-travelers.html">Показать ещё</a>
+        <ul class="travelers__pagination pagination">
+          <li class="pagination__item pagination__item--first">
+            <a class="pagination__link">1</a>
+          </li>
+          <li class="pagination__item pagination__item--second">
+            <a class="pagination__link" href="#">2</a>
+          </li>
+          <li class="pagination__item pagination__item--third">
+            <a class="pagination__link" href="#">3</a>
+          </li>
+          <li class="pagination__item pagination__item--fourth">
+            <a class="pagination__link" href="#">4</a>
+          </li>
+          <li class="pagination-item pagination__item--back">
+            <a class="pagination__link" href="#">Назад</a>
+          </li>
+          <li class="pagination-item pagination__item--forrader">
+            <a class="pagination__link" href="#">Вперед</a>
+          </li>
+        </ul>
+      </div>
     </section>
   </main>
   <footer class="page-footer">

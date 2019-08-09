@@ -1,3 +1,43 @@
 .pagination {
   .list();
+  display: flex;
+}
+
+.pagination__item {
+  &--first {
+    display: none;
+  }
+
+  &--second {
+    display: none;
+  }
+
+  &--third {
+    display: none;
+  }
+
+  &--fourth {
+    display: none;
+  }
+
+  &--back {
+    width: 135px;
+    height: 50px;
+    background-color: @main-color-eleventh;
+    .radius(20px, 0, 0, 20px);
+    font-size: 0;
+  }
+
+  &--forrader {
+    width: 134px;
+    height: 50px;
+    background-color: @main-color-eleventh;
+    .radius(0, 20px, 20px, 0);
+    font-size: 0;
+    margin-left: 1px;
+  }
+}
+
+.pagination__link {
+  display: block;
 }
