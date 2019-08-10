@@ -24,6 +24,9 @@
     width: 768px;
     padding-left: 75px;
     padding-right: 75px;
+    padding-top: 58px;
+    //padding-bottom: 71px;
+    padding-bottom: 1px;
   }
 }
 
@@ -34,6 +37,10 @@
   color: @color-third;
   .content();
   text-transform: uppercase;
+
+  @media @tablet-width {
+    display: none;
+  }
 }
 
 .filters__button {
@@ -49,4 +56,8 @@
   justify-content: space-between;
   padding-left: 27px;
   padding-right: 8px;
+
+  @media @tablet-width {
+    display: none;
+  }
 }

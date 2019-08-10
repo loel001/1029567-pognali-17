@@ -5,24 +5,42 @@
   line-height: 40px;
   color: @color-fifth;
   text-transform: uppercase;
-  width: 270px;
-  height: 40px;
+  .size-radius(270px, 40px, 20px);
   border: none;
-  border-radius: 20px;
   background-color: @main-color-sixteenth;
   margin-top: 23px;
   padding-left: 31px;
+
+  @media @tablet-width {
+    .size-radius(618px, 100px, 20px);
+    line-height: 100px;
+    font-size: 20px;
+    margin-top: 56px;
+    //убрать
+    display: none;
+  }
 }
 
 .modal-open__list {
   margin-top: 30px;
   padding-left: 25px;
   margin-bottom: 18px;
+
+  @media @tablet-width {
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 0;
+    margin-right: 71px;
+  }
 }
 
 .modal__open__countries {
   .list();
   padding-left: 27px;
+
+  @media @tablet-width {
+    padding-left: 0;
+  }
 }
 
 .modal-open__character {
@@ -35,4 +53,45 @@
 
 .modal-open__content {
   display: none;
+}
+
+.modal-open__combine {
+  @media @tablet-width {
+    //display: flex;
+    justify-content: space-between;
+    padding-right: 19px;
+    //убрать
+    display: none;
+  }
+}
+
+.modal-open__closed {
+  .bloggersans(800);
+  font-size: 20px;
+  color: @color-third;
+  text-transform: uppercase;
+  background-color: @main-color-twelfth;
+  border: none;
+  display: none;
+}
+
+.modal-open__show {
+  .bloggersans(800);
+  font-size: 20px;
+  color: @color-third;
+  text-transform: uppercase;
+  background-color: @main-color-twelfth;
+  border: none;
+  display: none;
+
+  @media @tablet-width {
+    display: block;
+  }
+}
+
+.modal-open__wrapper {
+  @media @tablet-width {
+    display: flex;
+    margin-bottom: 55px;
+  }
 }

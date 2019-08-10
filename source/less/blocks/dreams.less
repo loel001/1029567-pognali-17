@@ -7,6 +7,13 @@
   margin-top: 16px;
   padding-left: 45px;
 
+  @media @tablet-width {
+    font-size: 20px;
+    display: flex;
+    padding-left: 0;
+    order: 5;
+  }
+
   &--distance {
     padding-bottom: 7px;
   }
@@ -19,7 +26,16 @@
 .dreams__item {
   line-height: 18px;
 
+  @media @tablet-width {
+    padding-left: 47px;
+  }
+
   &:not(:last-child) {
     margin-bottom: 10px;
+
+    @media @tablet-width {
+      margin-right: 29px;
+      margin-bottom: 0;
+    }
   }
 }

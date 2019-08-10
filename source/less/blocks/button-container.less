@@ -10,7 +10,19 @@
   background-color: @main-color-fifth;
   display: block;
 
+  @media @tablet-width {
+    font-size: 20px;
+    line-height: 50px;
+    .size-radius(148px, 50px, 25px);
+    order: 2;
+    margin-left: 219px;
+  }
+
   &--color {
     background-color: @main-color-eleventh;
+
+    @media @tablet-width {
+      width: 618px;
+    }
   }
 }

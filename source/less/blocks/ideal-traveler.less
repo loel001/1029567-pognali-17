@@ -6,6 +6,15 @@
   padding-right: 20px;
   padding-bottom: 22px;
   position: relative;
+
+  @media @tablet-width {
+    padding-top: 34px;
+    padding-left: 34px;
+    padding-right: 24px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
 }
 
 .ideal-traveler__name {
@@ -16,6 +25,11 @@
   width: 80px;
   margin-left: 16px;
   line-height: 1;
+
+  @media @tablet-width {
+    font-size: 30px;
+    width: 220px;
+  }
 }
 
 .ideal-traveler__distance {
@@ -26,6 +40,10 @@
   position: absolute;
   top: 63px;
   left: 105px;
+
+  @media @tablet-width {
+    font-size: 20px;
+  }
 }
 
 .ideal-traveler__paragraf {
@@ -38,6 +56,15 @@
   margin-bottom: 13px;
   padding-left: 9px;
   padding-right: 45px;
+
+  @media @tablet-width {
+    font-size: 20px;
+    width: 242px;
+    padding-left: 0;
+    padding-right: 0;
+    margin-left: 228px;
+    margin-top: -144px;
+  }
 }
 
 .ideal-traveler__title {
@@ -47,6 +74,11 @@
   color: @color-second;
   .content();
   padding-left: 9px;
+
+  @media @tablet-width {
+    order: 4;
+    margin-top: 58px;
+  }
 }
 
 .ideal-traveler__levels {
@@ -61,11 +93,20 @@
   font-size: 24px;
   color: @color-seventh;
   line-height: 40px;
+
+  @media @tablet-width {
+    line-height: 1;
+  }
 }
 
 .ideal-traveler__photo {
   width: 70px;
   height: 70px;
+
+  @media @tablet-width {
+    width: 190px;
+    height: 190px;
+  }
 }
 
 .ideal-traveler__profile {
@@ -76,6 +117,10 @@
   display: flex;
   justify-content: space-between;
   margin-top: 12px;
+
+  @media @tablet-width {
+    display: none;
+  }
 }
 
 .ideal-traveler__wrapper {
@@ -85,11 +130,21 @@
   margin-bottom: 13px;
   padding-right: 10px;
   position: relative;
+
+  @media @tablet-width {
+    order: 3;
+    position: absolute;
+    right: 0;
+  }
 }
 
 .ideal-traveler__transport {
   line-height: 32px;
   width: 128px;
+
+  @media @tablet-width {
+    flex-direction: column;
+  }
 }
 
 .ideal-traveler__cover {
@@ -99,6 +154,14 @@
 
 .ideal-traveler__level {
   display: none;
+  .bloggersans(400);
+  font-size: 14px;
+  opacity: 0.4;
+  color: @color-second;
+
+  @media @tablet-width {
+    display: block;
+  }
 }
 
 .ideal-traveler__circle {

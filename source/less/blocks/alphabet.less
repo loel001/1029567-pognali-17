@@ -7,6 +7,12 @@
   width: 222px;
   margin: 0 auto;
   margin-bottom: 23px;
+
+  @media @tablet-width {
+    border: none;
+    width: 390px;
+    margin: 0;
+  }
 }
 
 .alphabet__list {
@@ -20,7 +26,17 @@
   border-right: solid 1px @main-color-thirteenth;
 
   @media @tablet-width {
+    .bloggersans(800);
     font-size: 60px;
+    color: rgba(25, 33, 68, 0.2);
+    border: none;
+    text-align: left;
+  }
+
+  &--hide {
+    @media @tablet-width {
+      display: none;
+    }
   }
 }
 
@@ -29,6 +45,12 @@
   display: block;
   width: 43px;
   line-height: 40px;
+
+  @media @tablet-width {
+    background-color: @main-color-twelfth;
+    width: 76px;
+    line-height: 81px;
+  }
 }
 
 .alphabet__input {
@@ -39,5 +61,10 @@
   &:checked + .alphabet__label {
     background-color: @main-color-eighth;
     color: @color-first;
+
+    @media @tablet-width {
+      background-color: @main-color-twelfth;
+      color: @color-third;
+    }
   }
 }
