@@ -10,16 +10,26 @@
   @media @tablet-width {
     font-size: 20px;
     display: flex;
+    flex-wrap: wrap;
     padding-left: 0;
     order: 5;
+    margin-top: 25px;
   }
 
   &--distance {
     padding-bottom: 7px;
+
+    @media @tablet-width {
+     padding-bottom: 0;
+    }
   }
 
   &--length {
     padding-bottom: 4px;
+
+    @media @tablet-width {
+      padding-bottom: 0;
+    }
   }
 }
 
@@ -36,6 +46,14 @@
     @media @tablet-width {
       margin-right: 29px;
       margin-bottom: 0;
+    }
+  }
+
+  &--size {
+    &:not(:last-child) {
+      @media @tablet-width {
+        margin-right: 25px;
+      }
     }
   }
 }
