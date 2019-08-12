@@ -112,7 +112,7 @@
         <div class="filters__wrapper">
           <div class="filters__content">
             <h2 class="filters__title">
-              Фильтрация по странам <span class="filters__sign">:</span>
+              Фильтрация по странам<span class="filters__sign">:</span>
             </h2>
             <button class="filters__button" type="button">Открыть фильтры по странам</button>
           </div>
@@ -309,7 +309,7 @@
                       <a class="country-alphabetically__link" href="#">Австрия</a>
                     </li>
                     <li class="country-alphabetically__item country-alphabetically__item--third">
-                      <a class="country-alphabetically__link" href="#">Азербайджанм</a>
+                      <a class="country-alphabetically__link" href="#">Азербайджан</a>
                     </li>
                     <li class="country-alphabetically__item country-alphabetically__item--fourth">
                       <a class="country-alphabetically__link" href="#">Албания</a>
@@ -408,8 +408,8 @@
                       <a class="country-alphabetically__link" href="#">Венесуэла</a>
                     </li>
                     <li class="country-alphabetically__item">
-                      <a class="country-alphabetically__link" href="#">Восточный</a>
-                      Тимор</li>
+                      <a class="country-alphabetically__link" href="#">Восточный Тимор</a>
+                    </li>
                     <li class="country-alphabetically__item">
                       <a class="country-alphabetically__link" href="#">Вьетнам</a>
                     </li>
@@ -439,8 +439,8 @@
                       <a class="country-alphabetically__link" href="#">Гвинея</a>
                     </li>
                     <li class="country-alphabetically__item">
-                      <a class="country-alphabetically__link" href="#">Гвинея</a>
-                      -Бисау</li>
+                      <a class="country-alphabetically__link" href="#">Гвинея-Бисау</a>
+                    </li>
                     <li class="country-alphabetically__item">
                       <a class="country-alphabetically__link" href="#">Германия</a>
                     </li>
@@ -703,6 +703,16 @@
                     </li>
                   </ul>
                 </li>
+                <li class="modal-open__character">О
+                  <ul class="modal-open__country country-alphabetically">
+                    <li class="country-alphabetically__item">
+                      <a class="country-alphabetically__link" href="#">ОАЭ</a>
+                    </li>
+                    <li class="country-alphabetically__item">
+                      <a class="country-alphabetically__link" href="#">Оман</a>
+                    </li>
+                  </ul>
+                </li>
                 <li class="modal-open__character">П
                   <ul class="modal-open__country country-alphabetically">
                     <li class="country-alphabetically__item">
@@ -940,318 +950,323 @@
         </div>
       </div>
     </section>
-    <section class="choice">
-      <div class="choice__wrapper">
-        <form class="choice__form" method="get" action="https://echo.htmlacademy.ru">
-          <h2 class="choice__title">Подберите идеального попутчика</h2>
-          <ul class="choice_list preferences">
-            <li class="preferences__item">
-              Хобби<span class="preferences__appearance">:</span>
-              <ul class="preferences__list preferences__list--hide">
-                <li class="preferences__enthusiasm">
-                  <input class="preferences__input" type="checkbox" name="genre" value="hard-rock" id="hard-rock"
-                    checked>
-                  <label class="preferences__label" for="hard-rock">Cпортзал</label>
-                </li>
-                <li class="preferences__enthusiasm">
-                  <input class="preferences__input" type="checkbox" name="genre" value="russian-rock" id="russian-rock">
-                  <label class="music__label" for="russian-rock">Кальян</label>
-                </li>
-                <li class="preferences__enthusiasm">
-                  <input class="preferences__input" type="checkbox" name="genre" value="eurodance" id="eurodance">
-                  <label class="preferences__label" for="eurodance">Диван</label>
-                </li>
+    <div class="page-main__wrapper">
+      <section class="choice">
+        <div class="choice__wrapper">
+          <form class="choice__form" method="get" action="https://echo.htmlacademy.ru">
+            <h2 class="choice__title">Подберите идеального попутчика</h2>
+            <ul class="choice_list preferences">
+              <li class="preferences__item">
+                Хобби<span class="preferences__appearance">:</span>
+                <ul class="preferences__list preferences__list--hide">
+                  <li class="preferences__enthusiasm">
+                    <input class="preferences__input" type="checkbox" name="genre" value="hard-rock" id="hard-rock"
+                      checked>
+                    <label class="preferences__label" for="hard-rock">Cпортзал</label>
+                  </li>
+                  <li class="preferences__enthusiasm">
+                    <input class="preferences__input" type="checkbox" name="genre" value="russian-rock"
+                      id="russian-rock">
+                    <label class="music__label" for="russian-rock">Кальян</label>
+                  </li>
+                  <li class="preferences__enthusiasm">
+                    <input class="preferences__input" type="checkbox" name="genre" value="eurodance" id="eurodance">
+                    <label class="preferences__label" for="eurodance">Диван</label>
+                  </li>
+                </ul>
+              </li>
+              <li class="preferences__item">
+                Музыка<span class="preferences__appearance">:</span>
+                <ul class="preferences__list">
+                  <li class="preferences__enthusiasm">
+                    <input class="preferences__input preferences__input--checkbox" type="checkbox" name="genre"
+                      value="hard-rock" id="hard-rock" checked>
+                    <label class="preferences__label" for="hard-rock">Тяжелый рок</label>
+                  </li>
+                  <li class="preferences__enthusiasm">
+                    <input class="preferences__input" type="checkbox" name="genre" value="russian-rock"
+                      id="russian-rock">
+                    <label class="preferences__label" for="russian-rock">Русский рэп</label>
+                  </li>
+                  <li class="preferences__enthusiasm">
+                    <input class="preferences__input" type="checkbox" name="genre" value="eurodance" id="eurodance">
+                    <label class="preferences__label" for="eurodance">Евроденс</label>
+                  </li>
+                </ul>
+              </li>
+              <li class="preferences__item">
+                Еда<span class="preferences__appearance">:</span>
+                <ul class="preferences__list preferences__list--hide">
+                  <li class="preferences__enthusiasm">
+                    <input class="preferences__input" type="checkbox" name="genre" value="hard-rock" id="hard-rock"
+                      checked>
+                    <label class="preferences__label" for="hard-rock">Мясоед</label>
+                  </li>
+                  <li class="preferences__enthusiasm">
+                    <input class="preferences__input" type="checkbox" name="genre" value="russian-rock"
+                      id="russian-rock">
+                    <label class="preferences__label" for="russian-rock">Сидит на ПП</label>
+                  </li>
+                  <li class="preferences__enthusiasm">
+                    <input class="preferences__input" type="checkbox" name="genre" value="eurodance" id="eurodance">
+                    <label class="preferences__label" for="eurodance">Веган-сыроед</label>
+                  </li>
+                </ul>
+              </li>
+              <li class="preferences__item">
+                <span class="preferences__additive">Транспорт</span>
+                <span class="preferences__appearance preferences__appearance--change">:</span>
+                <ul class="preferences__transport transport">
+                  <li class="transport__aircraft">
+                    <input class="transport__input transport__input--checkbox" type="checkbox" name="aircraft"
+                      value="aircraft" id="transport-aircraft" checked>
+                    <label class="transport__label" for="transport-aircraft">Авиаперелет</label>
+                    <span class="transport__tooltip">Авиаперелет</span>
+                  </li>
+                  <li class="transport__сar">
+                    <input class="transport__input transport__input--checkbox" type="checkbox" name="car" value="car"
+                      id="transport-car" checked>
+                    <label class="transport__label" for="transport-car">Автотранспорт</label>
+                    <span class="transport__tooltip">Автотранспорт</span>
+                  </li>
+                  <li class="transport__bicycle">
+                    <input class="transport__input transport__input--checkbox" type="checkbox" name="bicycle"
+                      value="bicycle" id="transport-bicycle">
+                    <label class="transport__label" for="transport-bicycle">Велосипед</label>
+                    <span class="transport__tooltip">Автотранспорт</span>
+                  </li>
+                  <li class="transport__pedestrian">
+                    <input class="transport__input transport__input--checkbox" type="checkbox" name="pedestrian"
+                      value="pedestrian" id="transport-pedestrian" checked>
+                    <label class="transport__label" for="transport-pedestrian">Пешком</label>
+                    <span class="transport__tooltip">Пешком</span>
+                  </li>
+                </ul>
+              </li>
+              <li class="preferences__item">
+                <span class="preferences__additive">Левел</span>
+                <span class="preferences__appearance preferences__appearance--change">:</span>
+                <ul class="preferences__level">
+                  <li class="preferences__level-minimum">30</li>
+                  <li class="preferences__level-maximum">100</li>
+                </ul>
+              </li>
+            </ul>
+            <button class="choice__button button-container button-container--color" type="submit">Показать</button>
+          </form>
+        </div>
+      </section>
+      <section class="travelers">
+        <div class="travelers__wrapper">
+          <h2 class="visually-hidden">Список опутчиков</h2>
+          <ul class="travelers__list">
+            <li class="travelers__item ideal-traveler">
+              <a class="ideal-traveler__profile" href="#">
+                <img class="ideal-traveler__photo">
+                <h3 class="ideal-traveler__name">Таня Фирсова</h3>
+              </a>
+              <p class="ideal-traveler__paragraf">#ЗОЖ #ПП #Фитнес #пляж #авокадо #смузи</p>
+              <h4 class="ideal-traveler__title">xочет посетить:</h4>
+              <ul class="ideal-traveler__desires dreams">
+                <li class="dreams__item">Шри ланка</li>
+                <li class="dreams__item">Тайланд</li>
+                <li class="dreams__item">Сейшелы</li>
               </ul>
+              <div class="ideal-traveler__content">
+                <h4 class="ideal-traveler__title">транспорт:</h4>
+                <span class="ideal-traveler__levels">левел:</span>
+              </div>
+              <div class="ideal-traveler__wrapper">
+                <ul class="ideal-traveler__transport transport">
+                  <li class="transport__aircraft transport__aircraft--active">Авиаперелет
+                    <span сlass="transport__tooltip">Авиаперелет</span>
+                  </li>
+                  <li class="transport__car">Автотранспорт
+                    <span class="transport__tooltip">Автортранспорт</span>
+                  </li>
+                  <li class="transport__bicycle">Велосипед
+                    <span сlass="transport__tooltip">Велосипед</span>
+                  </li>
+                  <li class="transport__pedestrian">Пешком
+                    <span сlass="transport__tooltip">Пешком</span>
+                  </li>
+                </ul>
+                <svg class="ideal-traveler__circle" width="50" height="50">
+                  <circle class="ideal-traveler__round ideal-traveler__round--first" r="22.5" cx="25" cy="25"
+                    fill="none" stroke="#ff8d30" stroke-width="3" stroke-dasharray="180 2" stroke-dashoffset="78">
+                  </circle>
+                </svg>
+                <div class="ideal-traveler__cover">
+                  <span class="ideal-traveler__interest">99</span>
+                  <span class="ideal-traveler__level">level</span>
+                </div>
+              </div>
+              <div class="ideal-traveler__choose">
+                <a class="ideal-traveler__button button-container" href="response.html">Позвать!</a>
+                <span class="ideal-traveler__distance">1,5 м</span>
+              </div>
             </li>
-            <li class="preferences__item">
-              Музыка<span class="preferences__appearance">:</span>
-              <ul class="preferences__list">
-                <li class="preferences__enthusiasm">
-                  <input class="preferences__input preferences__input--checkbox" type="checkbox" name="genre"
-                    value="hard-rock" id="hard-rock" checked>
-                  <label class="preferences__label" for="hard-rock">Тяжелый рок</label>
-                </li>
-                <li class="preferences__enthusiasm">
-                  <input class="preferences__input" type="checkbox" name="genre" value="russian-rock" id="russian-rock">
-                  <label class="preferences__label" for="russian-rock">Русский рэп</label>
-                </li>
-                <li class="preferences__enthusiasm">
-                  <input class="preferences__input" type="checkbox" name="genre" value="eurodance" id="eurodance">
-                  <label class="preferences__label" for="eurodance">Евроденс</label>
-                </li>
+            <li class="travelers__item ideal-traveler">
+              <a class="ideal-traveler__profile" href="#">
+                <img class="ideal-traveler__photo">
+                <h3 class="ideal-traveler__name">Петя Демин</h3>
+              </a>
+              <p class="ideal-traveler__paragraf">#бургер #бар #футбол #концерт #крафт</p>
+              <h4 class="ideal-traveler__title">хочет посетить:</h4>
+              <ul class="ideal-traveler__desires dreams dreams--distance">
+                <li class="dreams__item">Бельгия</li>
+                <li class="dreams__item">Чехия</li>
               </ul>
+              <div class="ideal-traveler__content">
+                <h4 class="ideal-traveler__title">транспорт:</h4>
+                <span class="ideal-traveler__levels">левел:</span>
+              </div>
+              <div class="ideal-traveler__wrapper">
+                <ul class="ideal-traveler__transport transport">
+                  <li class="transport__aircraft transport__aircraft--active">Авиаперелет
+                    <span сlass="transport__tooltip">Авиаперелет</span>
+                  </li>
+                  <li class="transport__car transport__car--active">Автотранспорт
+                    <span class="transport__tooltip">Автортранспорт</span>
+                  </li>
+                  <li class="transport__bicycle">Велосипед
+                    <span сlass="transport__tooltip">Велосипед</span>
+                  </li>
+                  <li class="transport__pedestrian transport__pedestrian--active">Пешком
+                    <span сlass="transport__tooltip">Пешком</span>
+                  </li>
+                </ul>
+                <svg class="ideal-traveler__circle" width="50" height="50">
+                  <circle class="ideal-traveler__round ideal-traveler__round--second" r="22.5" cx="25" cy="25"
+                    fill="none" stroke="#ff8d30" stroke-width="3" stroke-dasharray="190 17" stroke-dashoffset="100">
+                  </circle>
+                </svg>
+                <div class="ideal-traveler__cover">
+                  <span class="ideal-traveler__interest">80</span>
+                  <span class="ideal-traveler__level">level</span>
+                </div>
+              </div>
+              <div class="ideal-traveler__choose ideal-traveler__choose--size">
+                <a class="ideal-traveler__button button-container" href="response.html">Позвать!</a>
+                <span class="ideal-traveler__distance">150</span>
+              </div>
             </li>
-            <li class="preferences__item">
-              Еда<span class="preferences__appearance">:</span>
-              <ul class="preferences__list preferences__list--hide">
-                <li class="preferences__enthusiasm">
-                  <input class="preferences__input" type="checkbox" name="genre" value="hard-rock" id="hard-rock"
-                    checked>
-                  <label class="preferences__label" for="hard-rock">Мясоед</label>
-                </li>
-                <li class="preferences__enthusiasm">
-                  <input class="preferences__input" type="checkbox" name="genre" value="russian-rock" id="russian-rock">
-                  <label class="preferences__label" for="russian-rock">Сидит на ПП</label>
-                </li>
-                <li class="preferences__enthusiasm">
-                  <input class="preferences__input" type="checkbox" name="genre" value="eurodance" id="eurodance">
-                  <label class="preferences__label" for="eurodance">Веган-сыроед</label>
-                </li>
+            <li class="travelers__item ideal-traveler">
+              <a class="ideal-traveler__profile" href="#">
+                <img class="ideal-traveler__photo">
+                <h3 class="ideal-traveler__name">Марк Смолов</h3>
+              </a>
+              <p class="ideal-traveler__paragraf">#рэп #тату #хайпбист #кроссовки #суприм</p>
+              <h4 class="ideal-traveler__title">хочет посетить:</h4>
+              <ul class="ideal-traveler__desires dreams dreams--length">
+                <li class="dreams__item dreams__item--size">CША</li>
+                <li class="dreams__item dreams__item--size">Австралия</li>
+                <li class="dreams__item dreams__item--size">Доминикана</li>
               </ul>
+              <div class="ideal-traveler__content">
+                <h4 class="ideal-traveler__title">транспорт:</h4>
+                <span class="ideal-traveler__levels">левел:</span>
+              </div>
+              <div class="ideal-traveler__wrapper">
+                <ul class="ideal-traveler__transport transport">
+                  <li class="transport__aircraft transport__aircraft--active">Авиаперелет
+                    <span сlass="transport__tooltip">Авиаперелет</span>
+                  </li>
+                  <li class="transport__car">Автотранспорт
+                    <span class="transport__tooltip">Автортранспорт</span>
+                  </li>
+                  <li class="transport__bicycle transport__bicycle--active">Велосипед
+                    <span сlass="transport__tooltip">Велосипед</span>
+                  </li>
+                  <li class="transport__pedestrian">Пешком
+                    <span сlass="transport__tooltip">Пешком</span>
+                  </li>
+                </ul>
+                <svg class="ideal-traveler__circle" width="50" height="50">
+                  <circle class="ideal-traveler__round ideal-traveler__round--third" r="22.5" cx="25" cy="25"
+                    fill="none" stroke="#ff8d30" stroke-width="3" stroke-dasharray="100 110" stroke-dashoffset="105">
+                  </circle>
+                </svg>
+                <div class="ideal-traveler__cover">
+                  <span class="ideal-traveler__interest">25</span>
+                  <span class="ideal-traveler__level">level</span>
+                </div>
+              </div>
+              <div class="ideal-traveler__choose">
+                <a class="ideal-traveler__button button-container" href="response.html">Позвать!</a>
+                <span class="ideal-traveler__distance">1700</span>
+              </div>
             </li>
-            <li class="preferences__item">
-              <span class="preferences__additive">Транспорт</span>
-              <span class="preferences__appearance preferences__appearance--change">:</span>
-              <ul class="preferences__transport transport">
-                <li class="transport__aircraft">
-                  <input class="transport__input transport__input--checkbox" type="checkbox" name="aircraft"
-                    value="aircraft" id="transport-aircraft" checked>
-                  <label class="transport__label" for="transport-aircraft">Авиаперелет</label>
-                  <span class="transport__tooltip">Авиаперелет</span>
-                </li>
-                <li class="transport__сar">
-                  <input class="transport__input transport__input--checkbox" type="checkbox" name="car" value="car"
-                    id="transport-car" checked>
-                  <label class="transport__label" for="transport-car">Автотранспорт</label>
-                  <span class="transport__tooltip">Автотранспорт</span>
-                </li>
-                <li class="transport__bicycle">
-                  <input class="transport__input transport__input--checkbox" type="checkbox" name="bicycle"
-                    value="bicycle" id="transport-bicycle">
-                  <label class="transport__label" for="transport-bicycle">Велосипед</label>
-                  <span class="transport__tooltip">Автотранспорт</span>
-                </li>
-                <li class="transport__pedestrian">
-                  <input class="transport__input transport__input--checkbox" type="checkbox" name="pedestrian"
-                    value="pedestrian" id="transport-pedestrian" checked>
-                  <label class="transport__label" for="transport-pedestrian">Пешком</label>
-                  <span class="transport__tooltip">Пешком</span>
-                </li>
+            <li class="travelers__item ideal-traveler">
+              <a class="ideal-traveler__profile" href="#">
+                <img class="ideal-traveler__photo">
+                <h3 class="ideal-traveler__name">Лариса Роговая</h3>
+              </a>
+              <p class="ideal-traveler__paragraf">#образование #карьера #учеба #линкедин</p>
+              <h4 class="ideal-traveler__title">хочет посетить:</h4>
+              <ul class="ideal-traveler__desires dreams dreams--distance">
+                <li class="dreams__item">Великобритания</li>
+                <li class="dreams__item">Германия</li>
               </ul>
-            </li>
-            <li class="preferences__item">
-              <span class="preferences__additive">Левел</span>
-              <span class="preferences__appearance preferences__appearance--change">:</span>
-              <ul class="preferences__level">
-                <li class="preferences__level-minimum">30</li>
-                <li class="preferences__level-maximum">100</li>
-              </ul>
+              <div class="ideal-traveler__content content">
+                <h4 class="ideal-traveler__title">транспорт:</h4>
+                <span class="ideal-traveler__levels">левел:</span>
+              </div>
+              <div class="ideal-traveler__wrapper">
+                <ul class="ideal-traveler__transport transport">
+                  <li class="transport__aircraft transport__aircraft--active">Авиаперелет
+                    <span сlass="transport__tooltip">Авиаперелет</span>
+                  </li>
+                  <li class="transport__car transport__car--active">Автотранспорт
+                    <span class="transport__tooltip">Автортранспорт</span>
+                  </li>
+                  <li class="transport__bicycle">Велосипед
+                    <span сlass="transport__tooltip">Велосипед</span>
+                  </li>
+                  <li class="transport__pedestrian">Пешком
+                    <span сlass="transport__tooltip">Пешком</span>
+                  </li>
+                </ul>
+                <svg class="ideal-traveler__circle" width="50" height="50">
+                  <circle class="ideal-traveler__round ideal-traveler__round--fourth" r="22.5" cx="25" cy="25"
+                    fill="none" stroke="#ff8d30" stroke-width="3" stroke-dasharray="51 72" stroke-dashoffset="140">
+                  </circle>
+                </svg>
+                <div class="ideal-traveler__cover">
+                  <span class="ideal-traveler__interest">50</span>
+                  <span class="ideal-traveler__level">level</span>
+                </div>
+              </div>
+              <div class="ideal-traveler__choose ideal-traveler__choose--rate">
+                <a class="ideal-traveler__button button-container" href="response.html">Позвать!</a>
+                <span class="ideal-traveler__distance">23</span>
+              </div>
             </li>
           </ul>
-          <button class="choice__button button-container button-container--color" type="submit">Показать</button>
-        </form>
-      </div>
-    </section>
-    <section class="travelers">
-      <div class="travelers__wrapper">
-        <h2 class="visually-hidden">Список опутчиков</h2>
-        <ul class="travelers__list">
-          <li class="travelers__item ideal-traveler">
-            <a class="ideal-traveler__profile" href="#">
-              <img class="ideal-traveler__photo">
-              <h3 class="ideal-traveler__name">Таня Фирсова</h3>
-            </a>
-            <p class="ideal-traveler__paragraf">#ЗОЖ #ПП #Фитнес #пляж #авокадо #смузи</p>
-            <h4 class="ideal-traveler__title">xочет посетить:</h4>
-            <ul class="ideal-traveler__desires dreams">
-              <li class="dreams__item">Шри ланка</li>
-              <li class="dreams__item">Тайланд</li>
-              <li class="dreams__item">Сейшелы</li>
-            </ul>
-            <div class="ideal-traveler__content">
-              <h4 class="ideal-traveler__title">транспорт:</h4>
-              <span class="ideal-traveler__levels">левел:</span>
-            </div>
-            <div class="ideal-traveler__wrapper">
-              <ul class="ideal-traveler__transport transport">
-                <li class="transport__aircraft transport__aircraft--active">Авиаперелет
-                  <span сlass="transport__tooltip">Авиаперелет</span>
-                </li>
-                <li class="transport__car">Автотранспорт
-                  <span class="transport__tooltip">Автортранспорт</span>
-                </li>
-                <li class="transport__bicycle">Велосипед
-                  <span сlass="transport__tooltip">Велосипед</span>
-                </li>
-                <li class="transport__pedestrian">Пешком
-                  <span сlass="transport__tooltip">Пешком</span>
-                </li>
-              </ul>
-              <svg class="ideal-traveler__circle" width="50" height="50">
-                <circle class="ideal-traveler__round ideal-traveler__round--first" r="22.5" cx="25" cy="25" fill="none" stroke="#ff8d30" stroke-width="3" stroke-dasharray="180 2"
-                  stroke-dashoffset="78">
-                </circle>
-              </svg>
-              <div class="ideal-traveler__cover">
-                <span class="ideal-traveler__interest">99</span>
-                <span class="ideal-traveler__level">level</span>
-              </div>
-            </div>
-            <div class="ideal-traveler__choose">
-              <a class="ideal-traveler__button button-container" href="response.html">Позвать!</a>
-              <span class="ideal-traveler__distance">1,5 м</span>
-            </div>
-          </li>
-          <li class="travelers__item ideal-traveler">
-            <a class="ideal-traveler__profile" href="#">
-              <img class="ideal-traveler__photo">
-              <h3 class="ideal-traveler__name">Петя Демин</h3>
-            </a>
-            <p class="ideal-traveler__paragraf">#бургер #бар #футбол #концерт #крафт</p>
-            <h4 class="ideal-traveler__title">хочет посетить:</h4>
-            <ul class="ideal-traveler__desires dreams dreams--distance">
-              <li class="dreams__item">Бельгия</li>
-              <li class="dreams__item">Чехия</li>
-            </ul>
-            <div class="ideal-traveler__content">
-              <h4 class="ideal-traveler__title">транспорт:</h4>
-              <span class="ideal-traveler__levels">левел:</span>
-            </div>
-            <div class="ideal-traveler__wrapper">
-              <ul class="ideal-traveler__transport transport">
-                <li class="transport__aircraft transport__aircraft--active">Авиаперелет
-                  <span сlass="transport__tooltip">Авиаперелет</span>
-                </li>
-                <li class="transport__car transport__car--active">Автотранспорт
-                  <span class="transport__tooltip">Автортранспорт</span>
-                </li>
-                <li class="transport__bicycle">Велосипед
-                  <span сlass="transport__tooltip">Велосипед</span>
-                </li>
-                <li class="transport__pedestrian transport__pedestrian--active">Пешком
-                  <span сlass="transport__tooltip">Пешком</span>
-                </li>
-              </ul>
-              <svg class="ideal-traveler__circle" width="50" height="50">
-                <circle class="ideal-traveler__round ideal-traveler__round--second" r="22.5" cx="25" cy="25" fill="none" stroke="#ff8d30" stroke-width="3" stroke-dasharray="190 17"
-                  stroke-dashoffset="100">
-                </circle>
-              </svg>
-              <div class="ideal-traveler__cover">
-                <span class="ideal-traveler__interest">80</span>
-                <span class="ideal-traveler__level">level</span>
-              </div>
-            </div>
-            <div class="ideal-traveler__choose ideal-traveler__choose--size">
-              <a class="ideal-traveler__button button-container" href="response.html">Позвать!</a>
-              <span class="ideal-traveler__distance">150</span>
-            </div>
-          </li>
-          <li class="travelers__item ideal-traveler">
-            <a class="ideal-traveler__profile" href="#">
-              <img class="ideal-traveler__photo">
-              <h3 class="ideal-traveler__name">Марк Смолов</h3>
-            </a>
-            <p class="ideal-traveler__paragraf">#рэп #тату #хайпбист #кроссовки #суприм</p>
-            <h4 class="ideal-traveler__title">хочет посетить:</h4>
-            <ul class="ideal-traveler__desires dreams dreams--length">
-              <li class="dreams__item dreams__item--size">CША</li>
-              <li class="dreams__item dreams__item--size">Австралия</li>
-              <li class="dreams__item dreams__item--size">Доминикана</li>
-            </ul>
-            <div class="ideal-traveler__content">
-              <h4 class="ideal-traveler__title">транспорт:</h4>
-              <span class="ideal-traveler__levels">левел:</span>
-            </div>
-            <div class="ideal-traveler__wrapper">
-              <ul class="ideal-traveler__transport transport">
-                <li class="transport__aircraft transport__aircraft--active">Авиаперелет
-                  <span сlass="transport__tooltip">Авиаперелет</span>
-                </li>
-                <li class="transport__car">Автотранспорт
-                  <span class="transport__tooltip">Автортранспорт</span>
-                </li>
-                <li class="transport__bicycle transport__bicycle--active">Велосипед
-                  <span сlass="transport__tooltip">Велосипед</span>
-                </li>
-                <li class="transport__pedestrian">Пешком
-                  <span сlass="transport__tooltip">Пешком</span>
-                </li>
-              </ul>
-              <svg class="ideal-traveler__circle" width="50" height="50">
-                <circle class="ideal-traveler__round ideal-traveler__round--third" r="22.5" cx="25" cy="25" fill="none" stroke="#ff8d30" stroke-width="3"
-                  stroke-dasharray="100 110" stroke-dashoffset="105">
-                </circle>
-              </svg>
-              <div class="ideal-traveler__cover">
-                <span class="ideal-traveler__interest">25</span>
-                <span class="ideal-traveler__level">level</span>
-              </div>
-            </div>
-            <div class="ideal-traveler__choose">
-              <a class="ideal-traveler__button button-container" href="response.html">Позвать!</a>
-              <span class="ideal-traveler__distance">1700</span>
-            </div>
-          </li>
-          <li class="travelers__item ideal-traveler">
-            <a class="ideal-traveler__profile" href="#">
-              <img class="ideal-traveler__photo">
-              <h3 class="ideal-traveler__name">Лариса Роговая</h3>
-            </a>
-            <p class="ideal-traveler__paragraf">#образование #карьера #учеба #линкедин</p>
-            <h4 class="ideal-traveler__title">хочет посетить:</h4>
-            <ul class="ideal-traveler__desires dreams dreams--distance">
-              <li class="dreams__item">Великобритания</li>
-              <li class="dreams__item">Германия</li>
-            </ul>
-            <div class="ideal-traveler__content content">
-              <h4 class="ideal-traveler__title">транспорт:</h4>
-              <span class="ideal-traveler__levels">левел:</span>
-            </div>
-            <div class="ideal-traveler__wrapper">
-              <ul class="ideal-traveler__transport transport">
-                <li class="transport__aircraft transport__aircraft--active">Авиаперелет
-                  <span сlass="transport__tooltip">Авиаперелет</span>
-                </li>
-                <li class="transport__car transport__car--active">Автотранспорт
-                  <span class="transport__tooltip">Автортранспорт</span>
-                </li>
-                <li class="transport__bicycle">Велосипед
-                  <span сlass="transport__tooltip">Велосипед</span>
-                </li>
-                <li class="transport__pedestrian">Пешком
-                  <span сlass="transport__tooltip">Пешком</span>
-                </li>
-              </ul>
-              <svg class="ideal-traveler__circle" width="50" height="50">
-                <circle class="ideal-traveler__round ideal-traveler__round--fourth" r="22.5" cx="25" cy="25" fill="none" stroke="#ff8d30" stroke-width="3" stroke-dasharray="51 72"
-                  stroke-dashoffset="140">
-                </circle>
-              </svg>
-              <div class="ideal-traveler__cover">
-                <span class="ideal-traveler__interest">50</span>
-                <span class="ideal-traveler__level">level</span>
-              </div>
-            </div>
-            <div class="ideal-traveler__choose ideal-traveler__choose--rate">
-              <a class="ideal-traveler__button button-container" href="response.html">Позвать!</a>
-              <span class="ideal-traveler__distance">23</span>
-            </div>
-          </li>
-        </ul>
-        <a class="travelers__button" href="all-fellow-travelers.html">Показать еще</a>
-        <ul class="travelers__pagination pagination">
-          <li class="pagination__item pagination__item--first">
-            <a class="pagination__link pagination__link--active">1</a>
-          </li>
-          <li class="pagination__item pagination__item--second">
-            <a class="pagination__link" href="#">2</a>
-          </li>
-          <li class="pagination__item pagination__item--third">
-            <a class="pagination__link" href="#">3</a>
-          </li>
-          <li class="pagination__item pagination__item--fourth">
-            <a class="pagination__link" href="#">4</a>
-          </li>
-          <li class="pagination-item pagination__item--back">
-            <a class="pagination__link" href="#">Назад</a>
-          </li>
-          <li class="pagination-item pagination__item--forrader">
-            <a class="pagination__link" href="#">Вперед</a>
-          </li>
-        </ul>
-      </div>
-    </section>
+          <a class="travelers__button" href="all-fellow-travelers.html">Показать еще</a>
+          <ul class="travelers__pagination pagination">
+            <li class="pagination__item pagination__item--first">
+              <a class="pagination__link pagination__link--active">1</a>
+            </li>
+            <li class="pagination__item pagination__item--second">
+              <a class="pagination__link" href="#">2</a>
+            </li>
+            <li class="pagination__item pagination__item--third">
+              <a class="pagination__link" href="#">3</a>
+            </li>
+            <li class="pagination__item pagination__item--fourth">
+              <a class="pagination__link" href="#">4</a>
+            </li>
+            <li class="pagination-item pagination__item--back">
+              <a class="pagination__link" href="#">Назад</a>
+            </li>
+            <li class="pagination-item pagination__item--forrader">
+              <a class="pagination__link" href="#">Вперед</a>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </div>
   </main>
   <footer class="page-footer">
     <picture>
