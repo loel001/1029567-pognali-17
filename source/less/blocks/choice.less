@@ -1,6 +1,11 @@
 .choice {
   background-color: @main-color-seventh;
   width: 100%;
+
+  @media @desktop-width {
+    order: 2;
+    width: 285px;
+  }
 }
 
 .choice__wrapper {
@@ -12,6 +17,12 @@
   @media @tablet-width {
     width: 768px;
     padding-top: 40px;
+  }
+
+  @media @desktop-width {
+    padding: 0;
+    margin: 0;
+    width: 285px;
   }
 }
 
@@ -26,6 +37,11 @@
 
   @media @tablet-width {
     font-size: 30px;
+  }
+
+  @media @desktop-width {
+    margin-bottom: 32px;
+    padding-left: 0;
   }
 }
 
@@ -43,11 +59,22 @@
     padding-right: 34px;
     padding-bottom: 38px;
   }
+
+  @media @desktop-width {
+    padding-top: 47px;
+    padding-left: 47px;
+    padding-right: 42px;
+    padding-bottom: 47px;
+  }
 }
 
 .choice__button {
   @media @tablet-width {
     margin: 0 auto;
     margin-top: 73px;
+  }
+
+  @media @desktop-width {
+    margin-top: 81px;
   }
 }

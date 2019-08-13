@@ -1,6 +1,10 @@
 .travelers {
   background-color: @main-color-seventh;
   width: 100%;
+
+  @media @desktop-width {
+    width: 950px;
+  }
 }
 
 .travelers__wrapper {
@@ -13,6 +17,12 @@
     width: 768px;
     padding-top: 26px;
     padding-bottom: 62px;
+  }
+
+  @media @desktop-width {
+    padding: 0;
+    margin: 0;
+    width: 950px;
   }
 }
 
@@ -33,10 +43,15 @@
 
   @media @tablet-width {
     font-size: 20px;
-    font-size: 20px;
     padding-left: 298px;
     margin-top: 44px;
     margin-bottom: 44px;
+  }
+
+  @media @desktop-width {
+    padding-left: 396px;
+    margin-top: 64px;
+    margin-bottom: 63px;
   }
 }
 
@@ -46,6 +61,10 @@
 
     @media @tablet-width {
       margin-bottom: 40px;
+    }
+
+    @media @desktop-width {
+      margin-bottom: 30px;
     }
   }
 }

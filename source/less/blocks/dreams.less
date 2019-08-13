@@ -16,11 +16,22 @@
     margin-top: 25px;
   }
 
+  @media @desktop-width {
+    flex-direction: column;
+    margin-left: auto;
+    margin-top: -185px;
+    width: 249px;
+  }
+
   &--distance {
     padding-bottom: 7px;
 
     @media @tablet-width {
-     padding-bottom: 0;
+      padding-bottom: 0;
+    }
+
+    @media @desktop-width {
+      padding-bottom: 39px;
     }
   }
 
@@ -40,6 +51,10 @@
     padding-left: 47px;
   }
 
+  @media @desktop-width {
+    padding-left: 57px;
+  }
+
   &:not(:last-child) {
     margin-bottom: 10px;
 
@@ -47,12 +62,21 @@
       margin-right: 29px;
       margin-bottom: 0;
     }
+
+    @media @desktop-width {
+      margin-right: 0;
+      margin-bottom: 21px;
+    }
   }
 
   &--size {
     &:not(:last-child) {
       @media @tablet-width {
         margin-right: 25px;
+      }
+
+      @media @desktop-width {
+        margin-right: 0;
       }
     }
   }
