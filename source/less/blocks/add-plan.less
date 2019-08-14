@@ -1,10 +1,38 @@
 .add-plan {
   background-color: @main-color-fourteenth;
+  width: 100%;
+}
+
+.add-plan__color {
+  background-color: @main-color-fifteenth;
+  .radius(30px, 30px, 0, 0);
+  width: 100%;
+
+  @media @tablet-width {
+    .radius(60px, 60px, 0, 0);
+  }
 }
 
 .add-plan__filter {
-  background-color: @main-color-fifteenth;
-  .radius(30px, 30px, 0, 0);
+  width: 320px;
+  .wrapper();
+  padding-top: 28px;
+  padding-bottom: 44px;
+
+  @media @tablet-width {
+    width: 768px;
+    padding-left: 75px;
+    padding-right: 75px;
+    padding-top: 54px;
+    padding-bottom: 63px;
+  }
+
+  @media @desktop-width {
+    width: 1440px;
+    padding-left: 60px;
+    padding-right: 60px;
+    padding-bottom: 72px;
+  }
 }
 
 .add-plan__title {
