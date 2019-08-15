@@ -4,6 +4,11 @@
   letter-spacing: 1.6px;
   color: @color-seventh;
   text-transform: uppercase;
+
+  @media @tablet-width {
+    font-size: 20px;
+    letter-spacing: 2px;
+  }
 }
 
 .search__span {
@@ -12,10 +17,93 @@
   letter-spacing: 1.6px;
   color: rgba(29, 46, 91, 0.3);
   text-transform: uppercase;
+
+  @media @tablet-width {
+    font-size: 20px;
+    letter-spacing: 2px;
+  }
 }
 
 .search__input {
+  .bloggersans(500);
+  font-size: 15px;
   border-radius: 4px;
   border: solid 1px @main-color-thirteenth;
   text-align: center;
+  width: 220px;
+  line-height: 40px;
+  color: @color-third;
+
+  @media @tablet-width {
+    font-size: 20px;
+    width: 531px;
+    line-height: 67px;
+  }
+}
+
+.search__content {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 7px;
+
+  @media @tablet-width {
+    margin-bottom: 23px;
+  }
+}
+
+.search__wrapper {
+  display: flex;
+  position: relative;
+}
+
+.search__backwards {
+  border: none;
+  display: block;
+  font-size: 0;
+  width: 14px;
+  position: absolute;
+  height: 2px;
+  top: 21px;
+  left: 14px;
+  background-color: rgba(29, 46, 91, 0.3);
+
+  @media @tablet-width {
+    width: 20px;
+    left: 23px;
+    top: 33px;
+  }
+}
+
+.search__forward {
+  border: none;
+  display: block;
+  font-size: 0;
+  width: 14px;
+  position: absolute;
+  height: 2px;
+  top: 21px;
+  right: 14px;
+  background-color: rgba(29, 46, 91, 0.3);
+
+  @media @tablet-width {
+    width: 20px;
+    right: 19px;
+    top: 33px;
+  }
+
+  &::before {
+    display: block;
+    .icon();
+    width: 2px;
+    height: 14px;
+    position: relative;
+    background-color: rgba(29, 46, 91, 0.3);
+    top: -7px;
+
+    @media @tablet-width {
+      height: 20px;
+      top: -10px;
+      right: -3px;
+    }
+  }
 }

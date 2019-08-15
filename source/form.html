@@ -196,7 +196,8 @@
             <li class="add-plan__item step-first" id="yakor-back-first">
               <div class="step-first__union">
                 <div class="step-first__wrapper">
-                  <h3 class="step-first__title step-tittle">Шаг 1. Даты пребывания</h3>
+                  <h3 class="step-first__title step-tittle">Шаг 1.<br class="step-tittle__carryover"> Даты пребывания
+                  </h3>
                   <p class="step-first__content step-content">Укажите предпочтительное количество попутчиков, которых
                     вы хотели бы позвать в поездку и ее предполагаемую длительность.</p>
                 </div>
@@ -206,168 +207,206 @@
                   <li class="step-first__item">Развлечения</li>
                 </ul>
               </div>
-              <div class="step-first__customization">
-                <ul class="step-first__information">
-                  <li class="step-first__search search">
-                    <div class="search__content">
-                      <label class="search__label" for="search-companion">Ищу попутчиков:</label>
-                      <span class="search__span">Чел.</span>
-                    </div>
-                    <div class="search__wrapper">
-                      <button class="search__backwards" type="button">Меньше</button>
-                      <input class="search__input people-number" type="number" step="1" min="1" name="сompanions-number"
-                        value="2" id="search-companion">
-                      <button class="search__forward" type="button">Больше</button>
-                    </div>
-                  </li>
-                  <li class="step-first__search search">
-                    <div class="search__content">
-                      <label class="search__label" for="how-much">Длительность:</label>
-                      <span class="search__span">Дн.</span>
-                    </div>
-                    <div class="search__wrapper">
-                      <button class="search__backwards" type="button">Меньше</button>
-                      <input class="search__input day-number" type="number" step="1" min="1" name="days-number"
-                        value="2" id="how-much">
-                      <button class="search__forward" type="button">Больше</button>
-                    </div>
-                  </li>
-                </ul>
-                <div class="step-first__children">
+              <ul class="step-first__information">
+                <li class="step-first__search step-first__search--order search">
+                  <div class="search__content">
+                    <label class="search__label" for="search-companion">Ищу попутчиков:</label>
+                    <span class="search__span">Чел.</span>
+                  </div>
+                  <div class="search__wrapper">
+                    <button class="search__backwards" type="button">Меньше</button>
+                    <input class="search__input" type="number" step="1" min="1" name="сompanions-number" value="2"
+                      id="search-companion">
+                    <button class="search__forward" type="button">Больше</button>
+                  </div>
+                </li>
+                <li class="step-first__search step-first__search--number search">
+                  <div class="search__content">
+                    <label class="search__label" for="how-much">Длительность:</label>
+                    <span class="search__span">Дн.</span>
+                  </div>
+                  <div class="search__wrapper">
+                    <button class="search__backwards" type="button">Меньше</button>
+                    <input class="search__input" type="number" step="1" min="1" name="days-number" value="2"
+                      id="how-much">
+                    <button class="search__forward" type="button">Больше</button>
+                  </div>
+                </li>
+                <li class="step-first__children">
                   <input class="step-first__input" type="checkbox" name="children" value="permission-children"
                     id="resolution" checked>
                   <label class="step-first__label" for="resolution">Можно с детьми</label>
-                </div>
-              </div>
+                </li>
+              </ul>
               <div class="step-first__time">
                 <button class="step-first__back" type="button">Назад</button>
                 <h4 class="step-first__month">Март 2019</h4>
                 <button class="step-first__ahead" type="button">Вперед</button>
               </div>
               <div class="step-first__calendar calendar">
-                <div class="calendar__wrapper">
-                  <span class="calendar__day">П</span>
-                  <span class="calendar__day">В</span>
-                  <span class="calendar__day">С</span>
-                  <span class="calendar__day">Ч</span>
-                  <span class="calendar__day">П</span>
-                  <span class="calendar__day calendar__day--output">С</span>
-                  <span class="calendar__day calendar__day--output">В</span>
-                </div>
+                <ul class="calendar__wrapper">
+                  <li class="calendar__day">П
+                    <span class="calendar__hide">н</span>
+                  </li>
+                  <li class="calendar__day">В
+                    <span class="calendar__hide">т</span>
+                  </li>
+                  <li class="calendar__day">С
+                    <span class="calendar__hide">р</span>
+                  </li>
+                  <li class="calendar__day">Ч
+                    <span class="calendar__hide">т</span>
+                  </li>
+                  <li class="calendar__day">П
+                    <span class="calendar__hide">т</span>
+                  </li>
+                  <li class="calendar__day calendar__day--output">С
+                    <span class="calendar__hide">б</span>
+                  </li>
+                  <li class="calendar__day calendar__day--output">В
+                    <span class="calendar__hide">с</span>
+                  </li>
+                </ul>
                 <ul class="calendar__list">
                   <li class="calendar__item">
                     <input class="calendar__input calendar__input--checkbox" type="checkbox" name="days" value="arrival"
                       id="twenty-four" disabled>
-                    <label class="calendar__label" for="twenty-four">24</label>
-                    <div class="calendar__arrival">Заезд</div>
+                    <label class="calendar__label" for="twenty-four">23
+                      <div class="calendar__arrival">Заезд</div>
+                    </label>
+                  </li>
+                  <li class="calendar__item">
+                    <input class="calendar__input calendar__input--checkbox" type="checkbox" name="days" value="arrival"
+                      id="twenty-four" disabled>
+                    <label class="calendar__label" for="twenty-four">24
+                      <div class="calendar__arrival">Заезд</div>
+                    </label>
                   </li>
                   <li class="calendar__item">
                     <input class="calendar__input calendar__input--checkbox" type="checkbox" name="days" value="arrival"
                       id="twenty-five" disabled>
-                    <label class="calendar__label" for="twenty-five">25</label>
-                    <div class="calendar__arrival">Заезд</div>
+                    <label class="calendar__label" for="twenty-five">25
+                      <div class="calendar__arrival">Заезд</div>
+                    </label>
                   </li>
                   <li class="calendar__item">
                     <input class="calendar__input calendar__input--checkbox" type="checkbox" name="days" value="arrival"
                       id="twenty-six" disabled>
-                    <label class="calendar__label" for="twenty-six">26</label>
-                    <div class="calendar__arrival">Заезд</div>
+                    <label class="calendar__label" for="twenty-six">26
+                      <div class="calendar__arrival">Заезд</div>
+                    </label>
                   </li>
                   <li class="calendar__item">
                     <input class="calendar__input calendar__input--checkbox" type="checkbox" name="days" value="arrival"
                       id="twenty-seven" disabled>
-                    <label class="calendar__label" for="twenty-seven">27</label>
-                    <div class="calendar__arrival">Заезд</div>
+                    <label class="calendar__label" for="twenty-seven">27
+                      <div class="calendar__arrival">Заезд</div>
+                    </label>
                   </li>
                   <li class="calendar__item">
                     <input class="calendar__input calendar__input--checkbox" type="checkbox" name="days" value="arrival"
                       id="twenty-eight" disabled>
-                    <label class="calendar__label" for="twenty-eight">28</label>
-                    <div class="calendar__arrival">Заезд</div>
+                    <label class="calendar__label" for="twenty-eight">28
+                      <div class="calendar__arrival">Заезд</div>
+                    </label>
                   </li>
                   <li class="calendar__item">
                     <input class="calendar__input calendar__input--checkbox" type="checkbox" name="days" value="arrival"
                       id="one" disabled>
-                    <label class="calendar__label" for="one">1</label>
-                    <div class="calendar__arrival">Заезд</div>
+                    <label class="calendar__label" for="one">1
+                      <div class="calendar__arrival">Заезд</div>
+                    </label>
                   </li>
                   <li class="calendar__item">
                     <input class="calendar__input calendar__input--checkbox" type="checkbox" name="days" value="arrival"
                       id="two" disabled>
-                    <label class="calendar__label" for="two">2</label>
-                    <div class="calendar__arrival">Заезд</div>
+                    <label class="calendar__label" for="two">2
+                      <div class="calendar__arrival">Заезд</div>
+                    </label>
                   </li>
                   <li class="calendar__item">
                     <input class="calendar__input calendar__input--checkbox" type="checkbox" name="days" value="arrival"
                       id="three" disabled>
-                    <label class="calendar__label" for="three">3</label>
-                    <div class="calendar__arrival">Заезд</div>
+                    <label class="calendar__label" for="three">3
+                      <div class="calendar__arrival">Заезд</div>
+                    </label>
                   </li>
                   <li class="calendar__item">
                     <input class="calendar__input calendar__input--checkbox" type="checkbox" name="days" value="arrival"
                       id="four" disabled>
-                    <label class="calendar__label" for="four">4</label>
-                    <div class="calendar__arrival">Заезд</div>
+                    <label class="calendar__label" for="four">4
+                      <div class="calendar__arrival">Заезд</div>
+                    </label>
                   </li>
                   <li class="calendar__item">
                     <input class="calendar__input calendar__input--checkbox" type="checkbox" name="days" value="arrival"
                       id="five" disabled>
-                    <label class="calendar__label" for="five">5</label>
-                    <div class="calendar__arrival">Заезд</div>
+                    <label class="calendar__label" for="five">5
+                      <div class="calendar__arrival">Заезд</div>
+                    </label>
                   </li>
                   <li class="calendar__item">
                     <input class="calendar__input calendar__input--checkbox" type="checkbox" name="days" value="arrival"
                       id="six" disabled>
-                    <label class="calendar__label" for="six">6</label>
-                    <div class="calendar__arrival">Заезд</div>
+                    <label class="calendar__label" for="six">6
+                      <div class="calendar__arrival">Заезд</div>
+                    </label>
                   </li>
                   <li class="calendar__item">
                     <input class="calendar__input calendar__input--checkbox" type="checkbox" name="days" value="arrival"
                       id="seven" disabled>
-                    <label class="calendar__label" for="seven">7</label>
-                    <div class="calendar__arrival">Заезд</div>
+                    <label class="calendar__label" for="seven">7
+                      <div class="calendar__arrival">Заезд</div>
+                    </label>
                   </li>
                   <li class="calendar__item">
                     <input class="calendar__input calendar__input--checkbox" type="checkbox" name="days" value="arrival"
                       id="eight" disabled>
-                    <label class="calendar__label" for="eight">8</label>
-                    <div class="calendar__arrival">Заезд</div>
+                    <label class="calendar__label" for="eight">8
+                      <div class="calendar__arrival">Заезд</div>
+                    </label>
                   </li>
                   <li class="calendar__item">
                     <input class="calendar__input calendar__input--checkbox" type="checkbox" name="days" value="arrival"
                       id="nine" disabled>
-                    <label class="calendar__label" for="nine">9</label>
-                    <div class="calendar__arrival">Заезд</div>
+                    <label class="calendar__label" for="nine">9
+                      <div class="calendar__arrival">Заезд</div>
+                    </label>
                   </li>
                   <li class="calendar__item">
                     <input class="calendar__input calendar__input--checkbox" type="checkbox" name="days" value="arrival"
                       id="ten" disabled>
-                    <label class="calendar__label" for="ten">10</label>
-                    <div class="calendar__arrival">Заезд</div>
+                    <label class="calendar__label" for="ten">10
+                      <div class="calendar__arrival">Заезд</div>
+                    </label>
                   </li>
                   <li class="calendar__item">
                     <input class="calendar__input calendar__input--checkbox" type="checkbox" name="days" value="arrival"
                       id="eleven" disabled>
-                    <label class="calendar__label" for="eleven">11</label>
-                    <div class="calendar__arrival">Заезд</div>
+                    <label class="calendar__label" for="eleven">11
+                      <div class="calendar__arrival">Заезд</div>
+                    </label>
                   </li>
                   <li class="calendar__item">
                     <input class="calendar__input calendar__input--checkbox" type="checkbox" name="days" value="arrival"
                       id="twelve" disabled>
-                    <label class="calendar__label" for="twelve">12</label>
-                    <div class="calendar__arrival">Заезд</div>
+                    <label class="calendar__label" for="twelve">12
+                      <div class="calendar__arrival">Заезд</div>
+                    </label>
                   </li>
                   <li class="calendar__item">
                     <input class="calendar__input calendar__input--checkbox" type="checkbox" name="days" value="arrival"
                       id="thirteen" disabled>
-                    <label class="calendar__label" for="thirteen">13</label>
-                    <div class="calendar__arrival">Заезд</div>
+                    <label class="calendar__label" for="thirteen">13
+                      <div class="calendar__arrival">Заезд</div>
+                    </label>
                   </li>
                   <li class="calendar__item">
                     <input class="calendar__input calendar__input--checkbox" type="checkbox" name="days" value="arrival"
                       id="fourteen" disabled>
-                    <label class="calendar__label" for="fourteen">14</label>
-                    <div class="calendar__arrival">Заезд</div>
+                    <label class="calendar__label" for="fourteen">14
+                      <div class="calendar__arrival">Заезд</div>
+                    </label>
                   </li>
                   <li class="calendar__item">
                     <input class="calendar__input calendar__input--checkbox" type="checkbox" name="days" value="arrival"
@@ -378,26 +417,30 @@
                   <li class="calendar__item">
                     <input class="calendar__input calendar__input--checkbox" type="checkbox" name="days" value="arrival"
                       id="sixteen" disabled>
-                    <label class="calendar__label" for="sixteen">16</label>
-                    <div class="calendar__arrival">Заезд</div>
+                    <label class="calendar__label" for="sixteen">16
+                      <div class="calendar__arrival">Заезд</div>
+                    </label>
                   </li>
                   <li class="calendar__item">
                     <input class="calendar__input calendar__input--checkbox" type="checkbox" name="days" value="arrival"
                       id="seventeen" disabled>
-                    <label class="calendar__label" for="seventeen">17</label>
-                    <div class="calendar__arrival">Заезд</div>
+                    <label class="calendar__label" for="seventeen">17
+                      <div class="calendar__arrival">Заезд</div>
+                    </label>
                   </li>
                   <li class="calendar__item">
                     <input class="calendar__input calendar__input--checkbox" type="checkbox" name="days" value="arrival"
                       id="eighteen" disabled>
-                    <label class="calendar__label" for="eighteen">18</label>
-                    <div class="calendar__arrival">Заезд</div>
+                    <label class="calendar__label" for="eighteen">18
+                      <div class="calendar__arrival">Заезд</div>
+                    </label>
                   </li>
                   <li class="calendar__item">
                     <input class="calendar__input calendar__input--checkbox" type="checkbox" name="days" value="arrival"
                       id="nineteen" disabled>
-                    <label class="calendar__label" for="nineteen">19</label>
-                    <div class="calendar__arrival">Заезд</div>
+                    <label class="calendar__label" for="nineteen">19
+                      <div class="calendar__arrival">Заезд</div>
+                    </label>
                   </li>
                   <li class="calendar__item">
                     <input class="calendar__input calendar__input--checkbox" type="checkbox" name="days" value="arrival"
@@ -414,90 +457,111 @@
                   <li class="calendar__item">
                     <input class="calendar__input calendar__input--checkbox" type="checkbox" name="days" value="arrival"
                       id="twenty-two" disabled>
-                    <label class="calendar__label" for="twenty-two">22</label>
-                    <div class="calendar__arrival">Заезд</div>
+                    <label class="calendar__label" for="twenty-two">22
+                      <div class="calendar__arrival">Заезд</div>
+                    </label>
                   </li>
                   <li class="calendar__item">
                     <input class="calendar__input calendar__input--checkbox" type="checkbox" name="days" value="arrival"
                       id="twenty-three" disabled>
-                    <label class="calendar__label" for="twenty-three">23</label>
-                    <div class="calendar__arrival">Заезд</div>
+                    <label class="calendar__label" for="twenty-three">23
+                      <div class="calendar__arrival">Заезд</div>
+                    </label>
                   </li>
                   <li class="calendar__item">
                     <input class="calendar__input calendar__input--checkbox" type="checkbox" name="days" value="arrival"
                       id="twenty-fourth" disabled>
-                    <label class="calendar__label" for="twenty-fourth">24</label>
-                    <div class="calendar__arrival">Заезд</div>
+                    <label class="calendar__label" for="twenty-fourth">24
+                      <div class="calendar__arrival">Заезд</div>
+                    </label>
                   </li>
                   <li class="calendar__item">
                     <input class="calendar__input calendar__input--checkbox" type="checkbox" name="days" value="arrival"
                       id="twenty-fifth" disabled>
-                    <label class="calendar__label" for="twenty-fifth">25</label>
-                    <div class="calendar__arrival">Заезд</div>
+                    <label class="calendar__label" for="twenty-fifth">25
+                      <div class="calendar__arrival">Заезд</div>
+                    </label>
                   </li>
-                  <li class="calendar__item">
-                    <input class="calendar__input calendar__input--hover calendar__input--checkbox" type="checkbox"
-                      name="days" value="arrival" id="twenty-sixth">
-                    <label class="calendar__label" for="twenty-sixth">26</label>
-                    <div class="calendar__arrival">Заезд</div>
+                  <li class="calendar__item calendar__item--choose">
+                    <input class="calendar__input calendar__input--checkbox" type="checkbox" name="days" value="arrival"
+                      id="twenty-sixth">
+                    <label class="calendar__label calendar__label--choose" for="twenty-sixth">26
+                      <div class="calendar__arrival">Заезд</div>
+                    </label>
                   </li>
                   <li class="calendar__item">
                     <input class="calendar__input calendar__input--checkbox" type="checkbox" name="days" value="arrival"
-                      id="twenty-seventh" checked>
-                    <label class="calendar__label" for="twenty-seventh">27</label>
-                    <div class="calendar__arrival">Заезд</div>
+                      id="twenty-seventh">
+                    <label class="calendar__label calendar__label--active" for="twenty-seventh">27
+                      <div class="calendar__arrival">Заезд</div>
+                    </label>
                   </li>
                   <li class="calendar__item">
                     <input class="calendar__input calendar__input--checkbox" type="checkbox" name="days" value="arrival"
-                      id="twenty-eighth-day" checked>
-                    <label class="calendar__label" for="twenty-eighth-day">28</label>
-                    <div class="calendar__arrival">Заезд</div>
+                      id="twenty-eighth-day">
+                    <label class="calendar__label calendar__label--active" for="twenty-eighth-day">28
+                      <div class="calendar__arrival">Заезд</div>
+                    </label>
                   </li>
                   <li class="calendar__item">
                     <input class="calendar__input calendar__input--checkbox" type="checkbox" name="days" value="arrival"
                       id="twenty-nine">
-                    <label class="calendar__label" for="twenty-nine">29</label>
-                    <div class="calendar__arrival">Заезд</div>
+                    <label class="calendar__label" for="twenty-nine">29
+                      <div class="calendar__arrival">Заезд</div>
+                    </label>
                   </li>
                   <li class="calendar__item">
                     <input class="calendar__input calendar__input--checkbox" type="checkbox" name="days" value="arrival"
                       id="thirty">
-                    <label class="calendar__label" for="thirty">30</label>
-                    <div class="calendar__arrival">Заезд</div>
+                    <label class="calendar__label" for="thirty">30
+                      <div class="calendar__arrival">Заезд</div>
+                    </label>
                   </li>
                   <li class="calendar__item">
                     <input class="calendar__input calendar__input--checkbox" type="checkbox" name="days" value="arrival"
                       id="thirty-one">
-                    <label class="calendar__label" for="thirty-one">31</label>
-                    <div class="calendar__arrival">Заезд</div>
+                    <label class="calendar__label" for="thirty-one">31
+                      <div class="calendar__arrival">Заезд</div>
+                    </label>
                   </li>
                   <li class="calendar__item">
                     <input class="calendar__input calendar__input--checkbox" type="checkbox" name="days" value="arrival"
                       id="the-first">
-                    <label class="calendar__label" for="the-first">1</label>
-                    <div class="calendar__arrival">Заезд</div>
+                    <label class="calendar__label" for="the-first">1
+                      <div class="calendar__arrival">Заезд</div>
+                    </label>
                   </li>
                   <li class="calendar__item">
                     <input class="calendar__input calendar__input--checkbox" type="checkbox" name="days" value="arrival"
                       id="second">
-                    <label class="calendar__label" for="second">2</label>
-                    <div class="calendar__arrival">Заезд</div>
+                    <label class="calendar__label" for="second">2
+                      <div class="calendar__arrival">Заезд</div>
+                    </label>
                   </li>
                   <li class="calendar__item">
                     <input class="calendar__input calendar__input--checkbox" type="checkbox" name="days" value="arrival"
                       id="third">
-                    <label class="calendar__label" for="third">3</label>
-                    <div class="calendar__arrival">Заезд</div>
+                    <label class="calendar__label" for="third">3
+                      <div class="calendar__arrival">Заезд</div>
+                    </label>
                   </li>
                   <li class="calendar__item">
                     <input class="calendar__input calendar__input--checkbox" type="checkbox" name="days" value="arrival"
                       id="fourth">
-                    <label class="calendar__label" for="fourth">4</label>
-                    <div class="calendar__arrival">Заезд</div>
+                    <label class="calendar__label" for="fourth">4
+                      <div class="calendar__arrival">Заезд</div>
+                    </label>
+                  </li>
+                  <li class="calendar__item">
+                    <input class="calendar__input calendar__input--checkbox" type="checkbox" name="days" value="arrival"
+                      id="fourth">
+                    <label class="calendar__label" for="fourth">5
+                      <div class="calendar__arrival">Заезд</div>
+                    </label>
                   </li>
                 </ul>
               </div>
-              <a class="step-first__ahead button-container" href="#yakor-first">Следующий шаг</a>
+              <a class="step-first__button step-button" href="#yakor-first">Следующий шаг</a>
             </li>
             <li class="add-plan__item step-second" id="yakor-first yakor-back-second">
               <div class="step-first__union">
@@ -584,7 +648,7 @@
       </div>
     </section>
   </main>
-  <footer class="page-footer">
+  <!--<footer class="page-footer">
     <picture>
 
       <svg></svg>
@@ -621,7 +685,7 @@
         <img class=" logo-html__image" src="" alt="Логотип html-aкадемии">
       </a>
     </div>
-  </footer>
+  </footer>-->
   <div class="modal-country">
     <h3 class="modal-country__title">Выберите страну</h3>
     <ul class="modal-country__alphabet dictionary">

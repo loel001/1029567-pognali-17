@@ -1,0 +1,22 @@
+.step-button {
+  display: block;
+  border: none;
+  .size-radius(230px, 40px, 20px);
+  .bloggersans(800);
+  font-size: 17px;
+  color: @color-fifth;
+  background-color: @main-color-fifth;
+  line-height: 40px;
+  text-align: center;
+  text-transform: uppercase;
+
+  @media @tablet-width {
+    font-size: 24px;
+    .size-radius(285px, 81px, 20px);
+    line-height: 81px;
+    text-transform: none;
+    color: @color-seventh;
+    text-align: left;
+    padding-left: 34px;
+  }
+}
