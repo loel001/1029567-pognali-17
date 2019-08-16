@@ -199,11 +199,11 @@
                   <h3 class="step-first__title step-tittle">Шаг 1.<br class="step-tittle__carryover"> Даты пребывания
                   </h3>
                   <p class="step-first__content step-content">Укажите предпочтительное количество попутчиков, которых
-                    вы хотели бы позвать в поездку и ее предполагаемую длительность.</p>
+                    <br class="step-content__carryover"> вы хотели бы позвать в поездку и ее предполагаемую длительность.</p>
                 </div>
                 <ul class="step-first__list">
-                  <li class="step-first__item">Даты</li>
-                  <li class="step-first__item">Маршруты</li>
+                  <li class="step-first__item step-first__item--active">Даты</li>
+                  <li class="step-first__item">Маршрут</li>
                   <li class="step-first__item">Развлечения</li>
                 </ul>
               </div>
@@ -221,7 +221,7 @@
                   </div>
                 </li>
                 <li class="step-first__search step-first__search--number search">
-                  <div class="search__content">
+                  <div class="search__content search__content--size">
                     <label class="search__label" for="how-much">Длительность:</label>
                     <span class="search__span">Дн.</span>
                   </div>
@@ -486,7 +486,7 @@
                     <input class="calendar__input calendar__input--checkbox" type="checkbox" name="days" value="arrival"
                       id="twenty-sixth">
                     <label class="calendar__label calendar__label--choose" for="twenty-sixth">26
-                      <div class="calendar__arrival">Заезд</div>
+                      <div class="calendar__arrival calendar__arrival--static">Заезд</div>
                     </label>
                   </li>
                   <li class="calendar__item">
@@ -499,8 +499,9 @@
                   <li class="calendar__item">
                     <input class="calendar__input calendar__input--checkbox" type="checkbox" name="days" value="arrival"
                       id="twenty-eighth-day">
-                    <label class="calendar__label calendar__label--active" for="twenty-eighth-day">28
+                    <label class="calendar__label calendar__label--active calendar__label--departure" for="twenty-eighth-day">28
                       <div class="calendar__arrival">Заезд</div>
+                      <div class="calendar__departure">Выезд</div>
                     </label>
                   </li>
                   <li class="calendar__item">
@@ -566,24 +567,22 @@
             <li class="add-plan__item step-second" id="yakor-first yakor-back-second">
               <div class="step-first__union">
                 <div class="step-second__wrapper">
-                  <h3 class="step-second__title step-tittle">Шаг 2. Маршрут</h3>
+                  <h3 class="step-second__title step-tittle">Шаг 2.<br class="step-tittle__carryover"> Маршрут</h3>
                   <p class="step-second__content step-content">Укажите страны, которые вы хотели по посетить. Это может
                     быть
                     одна или сразу несколько.</p>
                 </div>
-                <ul class="step-first__list">
-                  <li class="step-first__item">Даты</li>
-                  <li class="step-first__item">Маршруты</li>
-                  <li class="step-first__item">Развлечения</li>
+                <ul class="step-second__list">
+                  <li class="step-second__item">Даты</li>
+                  <li class="step-second__item step-second__item--active">Маршрут</li>
+                  <li class="step-second__item">Развлечения</li>
                 </ul>
               </div>
               <ul class="step-second__route">
                 <li class="step-second__choice route">
                   <div class="route__wrapper">
                     <div class="route__selection-wrapper">
-                      <select name="route-selection" class="route__write">
-                        <option class="route__option" value="bosnia-and-herzegov">Босния и Герцегов</option>
-                      </select>
+                      <input class="route__input" type="text" name="bosnia-and-herzegov" placeholder="Босния и Герцегов" required>
                     </div>
                     <div class="route__flag bosnia-and-herzegov">Флаг страны</div>
                   </div>
@@ -607,6 +606,172 @@
                   </div>
                 </li>
               </ul>
+              <div class="step-second__modal step-second__modal--open modal-country">
+                <h3 class="modal-country__title">Выберите страну</h3>
+                <ul class="modal-country__alphabet dictionary">
+                  <li class="dictionary__list">
+                    <input class="dictionary__input dictionary__input--radio" type="radio" name="countries-alphabetically"
+                      value="letter-first" id="letter-first" checked>
+                    <label class="dictionary__label" for="letter-first">А</label>
+                  </li>
+                  <li class="dictionary__list">
+                    <input class="dictionary__input dictionary__input--radio" type="radio" name="countries-alphabetically"
+                      value="letter-second" id="letter-second">
+                    <label class="dictionary__label" for="letter-second">Б</label>
+                  </li>
+                  <li class="dictionary__list">
+                    <input class="dictionary__input dictionary__input--radio" type="radio" name="countries-alphabetically"
+                      value="letter-third" id="letter-third">
+                    <label class="dictionary__label" for="letter-third">В</label>
+                  </li>
+                  <li class="dictionary__list">
+                    <input class="dictionary__input dictionary__input--radio" type="radio" name="countries-alphabetically"
+                      value="letter-fourth" id="letter-fourth">
+                    <label class="dictionary__label" for="letter-fourth">Г</label>
+                  </li>
+                  <li class="dictionary__list">
+                    <input class="dictionary__input dictionary__input--radio" type="radio" name="countries-alphabetically"
+                      value="letter-fifth" id="letter-fifth">
+                    <label class="dictionary__label" for="letter-fifth">Д</label>
+                  </li>
+                  <li class="dictionary__list">
+                    <input class="dictionary__input dictionary__input--radio" type="radio" name="countries-alphabetically"
+                      value="letter-sixth" id="letter-sixth">
+                    <label class="dictionary__label" for="letter-sixth">Е</label>
+                  </li>
+                  <li class="dictionary__list">
+                    <input class="dictionary__input dictionary__input--radio" type="radio" name="countries-alphabetically"
+                      value="letter-seventh" id="letter-seventh">
+                    <label class="dictionary__label" for="letter-seventh">Ё</label>
+                  </li>
+                  <li class="dictionary__list">
+                    <input class="dictionary__input dictionary__input--radio" type="radio" name="countries-alphabetically"
+                      value="letter-eighth" id="letter-eighth">
+                    <label class="dictionary__label" for="letter-eighth">Ж</label>
+                  </li>
+                  <li class="dictionary__list">
+                    <input class="dictionary__input dictionary__input--radio" type="radio" name="countries-alphabetically"
+                      value="letter-ninth" id="letter-ninth">
+                    <label class="dictionary__label" for="letter-ninth">З</label>
+                  </li>
+                  <li class="dictionary__list">
+                    <input class="dictionary__input dictionary__input--radio" type="radio" name="countries-alphabetically"
+                      value="letter-tenth" id="letter-tenth">
+                    <label class="dictionary__label" for="letter-tenth">И</label>
+                  </li>
+                  <li class="dictionary__list">
+                    <input class="dictionary__input dictionary__input--radio" type="radio" name="countries-alphabetically"
+                      value="letter-eleventh" id="letter-eleventh">
+                    <label class="dictionary__label" for="letter-eleventh">Й</label>
+                  </li>
+                  <li class="dictionary__list">
+                    <input class="dictionary__input dictionary__input--radio" type="radio" name="countries-alphabetically"
+                      value="letter-twelfth" id="letter-twelfth">
+                    <label class="dictionary__label" for="letter-twelfth">К</label>
+                  </li>
+                  <li class="dictionary__list">
+                    <input class="dictionary__input dictionary__input--radio" type="radio" name="countries-alphabetically"
+                      value="letter-thirteenth" id="letter-thirteenth">
+                    <label class="dictionary__label" for="letter-thirteenth">Л</label>
+                  </li>
+                  <li class="dictionary__list">
+                    <input class="dictionary__input dictionary__input--radio" type="radio" name="countries-alphabetically"
+                      value="letter-fourteenth" id="letter-fourteenth">
+                    <label class="dictionary__label" for="letter-fourteenth">М</label>
+                  </li>
+                  <li class="dictionary__list">
+                    <input class="dictionary__input dictionary__input--radio" type="radio" name="countries-alphabetically"
+                      value="letter-fifteenth" id="letter-fifteenth">
+                    <label class="dictionary__label" for="letter-fifteenth">Н</label>
+                  </li>
+                  <li class="dictionary__list">
+                    <input class="dictionary__input dictionary__input--radio" type="radio" name="countries-alphabetically"
+                      value="letter-sixteenth" id="letter-sixteenth">
+                    <label class="dictionary__label" for="letter-sixteenth">О</label>
+                  </li>
+                  <li class="dictionary__list">
+                    <input class="dictionary__input dictionary__input--radio" type="radio" name="countries-alphabetically"
+                      value="letter-seventeenth" id="letter-seventeenth">
+                    <label class="dictionary__label" for="letter-seventeenth">П</label>
+                  </li>
+                  <li class="dictionary__list">
+                    <input class="dictionary__input dictionary__input--radio" type="radio" name="countries-alphabetically"
+                      value="letter-eighteenth" id="letter-eighteenth">
+                    <label class="dictionary__label" for="letter-eighteenth">Р</label>
+                  </li>
+                  <li class="dictionary__list">
+                    <input class="dictionary__input dictionary__input--radio" type="radio" name="countries-alphabetically"
+                      value="letter-nineteenth" id="letter-nineteenth">
+                    <label class="dictionary__label" for="letter-nineteenth">С</label>
+                  </li>
+                  <li class="dictionary__list">
+                    <input class="dictionary__input dictionary__input--radio" type="radio" name="countries-alphabetically"
+                      value="letter-twentieth" id="letter-twentieth">
+                    <label class="dictionary__label" for="letter-twentieth">Т</label>
+                  </li>
+                  <li class="dictionary__list">
+                    <input class="dictionary__input dictionary__input--radio" type="radio" name="countries-alphabetically"
+                      value="letter-twenty-first" id="letter-twenty-first">
+                    <label class="dictionary__label" for="letter-twenty-first">У</label>
+                  </li>
+                  <li class="dictionary__list">
+                    <input class="dictionary__input dictionary__input--radio" type="radio" name="countries-alphabetically"
+                      value="letter-twenty-second" id="letter-twenty-second">
+                    <label class="dictionary__label" for="letter-twenty-second">Ф</label>
+                  </li>
+                  <li class="dictionary__list">
+                    <input class="dictionary__input dictionary__input--radio" type="radio" name="countries-alphabetically"
+                      value="letter-twenty-third" id="letter-twenty-third">
+                    <label class="dictionary__label" for="letter-twenty-third">Х</label>
+                  </li>
+                  <li class="dictionary__list">
+                    <input class="dictionary__input dictionary__input--radio" type="radio" name="countries-alphabetically"
+                      value="letter-twenty-fourth" id="letter-twenty-fourth">
+                    <label class="dictionary__label" for="letter-twenty-fourth">Ц</label>
+                  </li>
+                  <li class="dictionary__list">
+                    <input class="dictionary__input dictionary__input--radio" type="radio" name="countries-alphabetically"
+                      value="letter-twenty-fifth" id="letter-twenty-fifth">
+                    <label class="dictionary__label" for="letter-twenty-fifth">Ч</label>
+                  </li>
+                  <li class="dictionary__list">
+                    <input class="dictionary__input dictionary__input--radio" type="radio" name="countries-alphabetically"
+                      value="letter-twenty-sixth" id="letter-twenty-sixth">
+                    <label class="dictionary__label" for="letter-twenty-sixth">Ш</label>
+                  </li>
+                  <li class="dictionary__list">
+                    <input class="dictionary__input dictionary__input--radio" type="radio" name="countries-alphabetically"
+                      value="letter-twenty-seventh" id="letter-twenty-seventh">
+                    <label class="dictionary__label" for="letter-twenty-seventh">Щ</label>
+                  </li>
+                  <li class="dictionary__list">
+                    <input class="dictionary__input dictionary__input--radio" type="radio" name="countries-alphabetically"
+                      value="letter-twenty-eighth" id="letter-twenty-eighth">
+                    <label class="dictionary__label" for="letter-twenty-eighth">Э</label>
+                  </li>
+                  <li class="dictionary__list">
+                    <input class="dictionary__input dictionary__input--radio" type="radio" name="countries-alphabetically"
+                      value="letter-twenty-ninth" id="letter-twenty-ninth">
+                    <label class="dictionary__label" for="letter-twenty-ninth">Ю</label>
+                  </li>
+                  <li class="dictionary__list">
+                    <input class="dictionary__input dictionary__input--radio" type="radio" name="countries-alphabetically"
+                      value="letter-thirtieth" id="letter-thirtieth">
+                    <label class="dictionary__label" for="letter-thirtieth">Я</label>
+                  </li>
+                </ul>
+                <ul class="modal-country__list">
+                  <li class="modal-country__item">Афганистан</li>
+                  <li class="modal-country__item">Албания</li>
+                  <li class="modal-country__item">Алгерия</li>
+                  <li class="modal-country__item">Андорра</li>
+                  <li class="modal-country__item">Аргентина</li>
+                  <li class="modal-country__item">Армения</li>
+                  <li class="modal-country__item">Австралия</li>
+                  <li class="modal-country__item">Австрия</li>
+                  <li class="modal-country__item">Азербайджанм</li>
+                </ul>
+              </div>
               <button class="step-second__button" type="button">Добавить страну</button>
               <div class="step-second__switches">
                 <a class="step-second__ahead button-container" href="#yakor-second">Следующий шаг</a>
@@ -614,32 +779,31 @@
               </div>
             </li>
             <li class="add-plan__item step-third" id="yakor-second">
-              <div class="step-first__union">
-                <div class="step-second__wrapper">
-                  <h3 class="step-third__title step-tittle">Шаг 3. Развлечения</h3>
-                  <p class="step-third__content step-content">Наконец, расскажите о своих планах времяпровождения.Можно
-                    писать
-                    в свободной форме и ставить тэги.</p>
+              <div class="step-third__union">
+                <div class="step-third__wrapper">
+                  <h3 class="step-third__title step-tittle">Шаг 3.<br class="step-tittle__carryover"> Развлечения</h3>
+                  <p class="step-third__content step-content">Наконец, расскажите о своих планах времяпровождения. Можно
+                    писать в свободной форме и ставить тэги.</p>
                 </div>
-                <ul class="step-first__list">
-                  <li class="step-first__item">Даты</li>
-                  <li class="step-first__item">Маршруты</li>
-                  <li class="step-first__item">Развлечения</li>
+                <ul class="step-third__list">
+                  <li class="step-third__item">Даты</li>
+                  <li class="step-third__item">Маршрут</li>
+                  <li class="step-third__item step-third__item--active">Развлечения</li>
                 </ul>
               </div>
               <ul class="step-third__entertainment">
                 <li class="step-third__country plan">
-                  <h4 class="plan__title">Босния и герцегови</h4>
-                  <textarea class="plan__text" name="action-plan" rows="10" placeholder="План действий"></textarea>
+                  <h4 class="plan__title">Босния и герцеговина</h4>
+                  <textarea class="plan__text" name="action-plan" rows="9" placeholder="План действий"></textarea>
                 </li>
                 <li class="step-third__country plan">
                   <h4 class="plan__title">Чехословакия</h4>
-                  <textarea class="plan__text" name="action-plan" rows="10"
-                    placeholder="План действий">Пить пиво и лазить по старым замкам, наслаждаться аритектурой и вот это все.</textarea>
+                  <textarea class="plan__text plan__text--size" name="action-plan" rows="9"
+                    placeholder="План действий">Пить пиво и лазить по&nbsp;старым замкам, наслаждаться аритектурой и вот это все.</textarea>
                 </li>
               </ul>
               <div class="step-third__switches">
-                <button type="submit" class="step-third__button button-container">Отправить</button>
+                <button type="submit" class="step-third__button step-button">Отправить</button>
                 <a class="step-third__backwards transition-back" href="#yakor-back-second">На шаг назад</a>
               </div>
             </li>
@@ -686,172 +850,6 @@
       </a>
     </div>
   </footer>-->
-  <div class="modal-country">
-    <h3 class="modal-country__title">Выберите страну</h3>
-    <ul class="modal-country__alphabet dictionary">
-      <li class="dictionary__list">
-        <input class="dictionary__input dictionary__input--radio" type="radio" name="countries-alphabetically"
-          value="letter-first" id="letter-first" checked>
-        <label class="dictionary__label" for="letter-first">А</label>
-      </li>
-      <li class="dictionary__list">
-        <input class="dictionary__input dictionary__input--radio" type="radio" name="countries-alphabetically"
-          value="letter-second" id="letter-second">
-        <label class="dictionary__label" for="letter-second">Б</label>
-      </li>
-      <li class="dictionary__list">
-        <input class="dictionary__input dictionary__input--radio" type="radio" name="countries-alphabetically"
-          value="letter-third" id="letter-third">
-        <label class="dictionary__label" for="letter-third">В</label>
-      </li>
-      <li class="dictionary__list">
-        <input class="dictionary__input dictionary__input--radio" type="radio" name="countries-alphabetically"
-          value="letter-fourth" id="letter-fourth">
-        <label class="dictionary__label" for="letter-fourth">Г</label>
-      </li>
-      <li class="dictionary__list">
-        <input class="dictionary__input dictionary__input--radio" type="radio" name="countries-alphabetically"
-          value="letter-fifth" id="letter-fifth">
-        <label class="dictionary__label" for="letter-fifth">Д</label>
-      </li>
-      <li class="dictionary__list">
-        <input class="dictionary__input dictionary__input--radio" type="radio" name="countries-alphabetically"
-          value="letter-sixth" id="letter-sixth">
-        <label class="dictionary__label" for="letter-sixth">Е</label>
-      </li>
-      <li class="dictionary__list">
-        <input class="dictionary__input dictionary__input--radio" type="radio" name="countries-alphabetically"
-          value="letter-seventh" id="letter-seventh">
-        <label class="dictionary__label" for="letter-seventh">Ё</label>
-      </li>
-      <li class="dictionary__list">
-        <input class="dictionary__input dictionary__input--radio" type="radio" name="countries-alphabetically"
-          value="letter-eighth" id="letter-eighth">
-        <label class="dictionary__label" for="letter-eighth">Ж</label>
-      </li>
-      <li class="dictionary__list">
-        <input class="dictionary__input dictionary__input--radio" type="radio" name="countries-alphabetically"
-          value="letter-ninth" id="letter-ninth">
-        <label class="dictionary__label" for="letter-ninth">З</label>
-      </li>
-      <li class="dictionary__list">
-        <input class="dictionary__input dictionary__input--radio" type="radio" name="countries-alphabetically"
-          value="letter-tenth" id="letter-tenth">
-        <label class="dictionary__label" for="letter-tenth">И</label>
-      </li>
-      <li class="dictionary__list">
-        <input class="dictionary__input dictionary__input--radio" type="radio" name="countries-alphabetically"
-          value="letter-eleventh" id="letter-eleventh">
-        <label class="dictionary__label" for="letter-eleventh">Й</label>
-      </li>
-      <li class="dictionary__list">
-        <input class="dictionary__input dictionary__input--radio" type="radio" name="countries-alphabetically"
-          value="letter-twelfth" id="letter-twelfth">
-        <label class="dictionary__label" for="letter-twelfth">К</label>
-      </li>
-      <li class="dictionary__list">
-        <input class="dictionary__input dictionary__input--radio" type="radio" name="countries-alphabetically"
-          value="letter-thirteenth" id="letter-thirteenth">
-        <label class="dictionary__label" for="letter-thirteenth">Л</label>
-      </li>
-      <li class="dictionary__list">
-        <input class="dictionary__input dictionary__input--radio" type="radio" name="countries-alphabetically"
-          value="letter-fourteenth" id="letter-fourteenth">
-        <label class="dictionary__label" for="letter-fourteenth">М</label>
-      </li>
-      <li class="dictionary__list">
-        <input class="dictionary__input dictionary__input--radio" type="radio" name="countries-alphabetically"
-          value="letter-fifteenth" id="letter-fifteenth">
-        <label class="dictionary__label" for="letter-fifteenth">Н</label>
-      </li>
-      <li class="dictionary__list">
-        <input class="dictionary__input dictionary__input--radio" type="radio" name="countries-alphabetically"
-          value="letter-sixteenth" id="letter-sixteenth">
-        <label class="dictionary__label" for="letter-sixteenth">О</label>
-      </li>
-      <li class="dictionary__list">
-        <input class="dictionary__input dictionary__input--radio" type="radio" name="countries-alphabetically"
-          value="letter-seventeenth" id="letter-seventeenth">
-        <label class="dictionary__label" for="letter-seventeenth">П</label>
-      </li>
-      <li class="dictionary__list">
-        <input class="dictionary__input dictionary__input--radio" type="radio" name="countries-alphabetically"
-          value="letter-eighteenth" id="letter-eighteenth">
-        <label class="dictionary__label" for="letter-eighteenth">Р</label>
-      </li>
-      <li class="dictionary__list">
-        <input class="dictionary__input dictionary__input--radio" type="radio" name="countries-alphabetically"
-          value="letter-nineteenth" id="letter-nineteenth">
-        <label class="dictionary__label" for="letter-nineteenth">С</label>
-      </li>
-      <li class="dictionary__list">
-        <input class="dictionary__input dictionary__input--radio" type="radio" name="countries-alphabetically"
-          value="letter-twentieth" id="letter-twentieth">
-        <label class="dictionary__label" for="letter-twentieth">Т</label>
-      </li>
-      <li class="dictionary__list">
-        <input class="dictionary__input dictionary__input--radio" type="radio" name="countries-alphabetically"
-          value="letter-twenty-first" id="letter-twenty-first">
-        <label class="dictionary__label" for="letter-twenty-first">У</label>
-      </li>
-      <li class="dictionary__list">
-        <input class="dictionary__input dictionary__input--radio" type="radio" name="countries-alphabetically"
-          value="letter-twenty-second" id="letter-twenty-second">
-        <label class="dictionary__label" for="letter-twenty-second">Ф</label>
-      </li>
-      <li class="dictionary__list">
-        <input class="dictionary__input dictionary__input--radio" type="radio" name="countries-alphabetically"
-          value="letter-twenty-third" id="letter-twenty-third">
-        <label class="dictionary__label" for="letter-twenty-third">Х</label>
-      </li>
-      <li class="dictionary__list">
-        <input class="dictionary__input dictionary__input--radio" type="radio" name="countries-alphabetically"
-          value="letter-twenty-fourth" id="letter-twenty-fourth">
-        <label class="dictionary__label" for="letter-twenty-fourth">Ц</label>
-      </li>
-      <li class="dictionary__list">
-        <input class="dictionary__input dictionary__input--radio" type="radio" name="countries-alphabetically"
-          value="letter-twenty-fifth" id="letter-twenty-fifth">
-        <label class="dictionary__label" for="letter-twenty-fifth">Ч</label>
-      </li>
-      <li class="dictionary__list">
-        <input class="dictionary__input dictionary__input--radio" type="radio" name="countries-alphabetically"
-          value="letter-twenty-sixth" id="letter-twenty-sixth">
-        <label class="dictionary__label" for="letter-twenty-sixth">Ш</label>
-      </li>
-      <li class="dictionary__list">
-        <input class="dictionary__input dictionary__input--radio" type="radio" name="countries-alphabetically"
-          value="letter-twenty-seventh" id="letter-twenty-seventh">
-        <label class="dictionary__label" for="letter-twenty-seventh">Щ</label>
-      </li>
-      <li class="dictionary__list">
-        <input class="dictionary__input dictionary__input--radio" type="radio" name="countries-alphabetically"
-          value="letter-twenty-eighth" id="letter-twenty-eighth">
-        <label class="dictionary__label" for="letter-twenty-eighth">Э</label>
-      </li>
-      <li class="dictionary__list">
-        <input class="dictionary__input dictionary__input--radio" type="radio" name="countries-alphabetically"
-          value="letter-twenty-ninth" id="letter-twenty-ninth">
-        <label class="dictionary__label" for="letter-twenty-ninth">Ю</label>
-      </li>
-      <li class="dictionary__list">
-        <input class="dictionary__input dictionary__input--radio" type="radio" name="countries-alphabetically"
-          value="letter-thirtieth" id="letter-thirtieth">
-        <label class="dictionary__label" for="letter-thirtieth">Я</label>
-      </li>
-    </ul>
-    <ul class="modal-country__list">
-      <li class="modal-country__item">Афганистан</li>
-      <li class="modal-country__item">Албания</li>
-      <li class="modal-country__item">Алгерия</li>
-      <li class="modal-country__item">Андорра</li>
-      <li class="modal-country__item">Аргентина</li>
-      <li class="modal-country__item">Армения</li>
-      <li class="modal-country__item">Австралия</li>
-      <li class="modal-country__item">Австрия</li>
-      <li class="modal-country__item">Азербайджанм</li>
-    </ul>
-  </div>
 </body>
 
 </html>

@@ -39,6 +39,10 @@
     width: 531px;
     line-height: 67px;
   }
+
+  @media @desktop-width {
+    width: 181px;
+  }
 }
 
 .search__content {
@@ -49,11 +53,28 @@
   @media @tablet-width {
     margin-bottom: 23px;
   }
+
+  @media @desktop-width {
+    margin-bottom: 0;
+    width: 484px;
+  }
+
+  &--size {
+    @media @desktop-width {
+      width: 475px;
+    }
+  }
 }
 
 .search__wrapper {
   display: flex;
   position: relative;
+
+  @media @desktop-width {
+    margin-top: -48px;
+    margin-left: 220px;
+    width: 181px;
+  }
 }
 
 .search__backwards {

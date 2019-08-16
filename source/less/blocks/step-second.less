@@ -1,6 +1,27 @@
 .step-second {
   background-color: @main-color-eleventh;
-  border-radius: 5px;
+  border-radius: 10px;
+  padding-top: 22px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 22px;
+  margin-bottom: 10px;
+
+  @media @tablet-width {
+    border-radius: 30px;
+    padding-top: 47px;
+    padding-left: 43px;
+    padding-right: 44px;
+    padding-bottom: 55px;
+  }
+
+  @media @desktop-width {
+    border-radius: 60px;
+    padding-top: 100px;
+    padding-left: 160px;
+    padding-right: 160px;
+    padding-bottom: 105px;
+  }
 }
 
 .step-second__route {
@@ -15,4 +36,34 @@
   border-radius: 4px;
   border: none;
   background-color: @main-color-fifteenth;
+}
+
+.step-second__list {
+  .bloggersans(400);
+  font-size: 20px;
+  letter-spacing: 2px;
+  color: rgba(0, 0, 0, 0.6);
+  .list();
+  text-transform: uppercase;
+  display: none;
+
+  @media @desktop-width {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 186px;
+    padding-top: 7px;
+  }
+}
+
+.step-second__item {
+  &--active {
+    @media @desktop-width {
+      color: #000000;
+    }
+  }
+
+  &:not(:last-child) {
+    margin-bottom: 21px;
+  }
 }

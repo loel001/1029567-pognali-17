@@ -35,6 +35,33 @@
   @media @tablet-width {
     width: 533px;
   }
+
+  @media @desktop-width {
+    width: 1000px;
+  }
+}
+
+.calendar__arrival {
+  .bloggersans(400);
+  font-size: 18px;
+  color: @color-first;
+  padding-top: 6px;
+  display: none;
+
+  &--static {
+    @media @desktop-width {
+      display: block;
+    }
+  }
+}
+
+.calendar__departure {
+  padding-top: 6px;
+  display: none;
+
+  @media @desktop-width {
+    display: block;
+  }
 }
 
 .calendar__label {
@@ -51,12 +78,16 @@
     font-size: 20px;
     .bloggersans(500);
     padding-top: 23px;
-    padding-bottom: 20px;
+    padding-bottom: 22px;
   }
 
   @media @desktop-width {
     font-size: 18px;
     .bloggersans(400);
+    text-align: left;
+    padding-top: 11px;
+    padding-left: 15px;
+    padding-bottom: 37px;
   }
 
   &:hover {
@@ -70,6 +101,23 @@
       padding-top: 21px;
       padding-bottom: 18px;
       border: solid 4px #ff5c23;
+    }
+
+    @media @desktop-width {
+      padding-top: 6px;
+      padding-bottom: 9px;
+    }
+
+    &:hover .calendar__arrival {
+      @media @desktop-width {
+        display: block;
+      }
+    }
+
+    &:hover .calendar__departure {
+      @media @desktop-width {
+        display: none;
+      }
     }
   }
 
@@ -88,8 +136,20 @@
       padding-bottom: 18px;
     }
 
+    @media @desktop-width {
+      padding-top: 6px;
+      padding-left: 12px;
+      padding-bottom: 9px;
+    }
+
     &:hover {
       border: none;
+    }
+  }
+
+  &--departure {
+    @media @desktop-width {
+      padding-bottom: 10px;
     }
   }
 }
@@ -107,6 +167,12 @@
     padding-right: 29px;
     margin-bottom: 6px;
   }
+
+  @media @desktop-width {
+    padding-left: 15px;
+    padding-right: 109px;
+    margin-bottom: 17px;
+  }
 }
 
 .calendar__input {
@@ -122,6 +188,22 @@
   &:checked + .calendar__label {
     background-color: #101d41;
     color: @color-first;
+
+    @media @desktop-width {
+      padding-bottom: 10px;
+    }
+  }
+
+  &:checked + .calendar__label .calendar__arrival {
+    @media @desktop-width {
+      display: block;
+    }
+  }
+
+  &:checked + .calendar__label .calendar__departure {
+    @media @desktop-width {
+      display: none;
+    }
   }
 
   &:disabled + .calendar__label:hover {
@@ -133,15 +215,16 @@
       padding-top: 23px;
       padding-bottom: 20px;
     }
+
+    @media @desktop-width {
+      padding-top: 11px;
+      padding-bottom: 10px;
+    }
   }
 
   &:focus + .calendar__label {
     outline: 2px solid #abcdef;
   }
-}
-
-.calendar__arrival {
-  display: none;
 }
 
 .calendar__item {
@@ -153,6 +236,11 @@
   @media @tablet-width {
     width: 76px;
     height: 69px;
+  }
+
+  @media @desktop-width {
+    width: 142.7px;
+    height: 71px;
   }
 
   &--choose {

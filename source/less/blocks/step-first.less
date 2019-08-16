@@ -1,7 +1,7 @@
 .step-first {
   background-color: @main-color-eleventh;
   border-radius: 10px;
-  padding-top: 22px;
+  padding-top: 25px;
   padding-left: 20px;
   padding-right: 20px;
   padding-bottom: 22px;
@@ -15,7 +15,7 @@
     padding-bottom: 55px;
   }
 
-  @media @tablet-width {
+  @media @desktop-width {
     border-radius: 60px;
     padding-top: 100px;
     padding-left: 160px;
@@ -37,6 +37,11 @@
     flex-direction: column;
     flex-wrap: wrap;
     margin-bottom: 54px;
+  }
+
+  @media @desktop-width {
+    position: relative;
+    margin-bottom: 58px;
   }
 }
 
@@ -87,7 +92,7 @@
 }
 
 .step-first__title {
-  margin-bottom: 13px;
+  margin-bottom: 16px;
 
   @media @tablet-width {
     margin-bottom: 34px;
@@ -95,14 +100,47 @@
 }
 
 .step-first__list {
+  .bloggersans(400);
+  font-size: 20px;
+  letter-spacing: 2px;
+  color: rgba(0, 0, 0, 0.6);
+  .list();
+  text-transform: uppercase;
   display: none;
+
+  @media @desktop-width {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 186px;
+    padding-top: 7px;
+  }
+}
+
+.step-first__item {
+  &--active {
+    @media @desktop-width {
+      color: #000000;
+    }
+  }
+
+  &:not(:last-child) {
+    margin-bottom: 21px;
+  }
 }
 
 .step-first__wrapper {
   margin-bottom: 19px;
 
   @media @tablet-width {
-    margin-bottom: 61px;
+    @media @desktop-width {
+      margin-bottom: 61px;
+    }
+  }
+
+  @media @desktop-width {
+    margin-bottom: 0;
+    width: 583px;
   }
 }
 
@@ -124,6 +162,10 @@
     padding-right: 0;
     margin-bottom: 57px;
   }
+
+  @media @desktop-width {
+    margin-bottom: 36px;
+  }
 }
 
 .step-first__calendar {
@@ -136,6 +178,10 @@
     padding-right: 0;
     margin-bottom: 45px;
   }
+
+  @media @desktop-width {
+    margin-bottom: 56px;
+  }
 }
 
 .step-first__union {
@@ -145,6 +191,12 @@
   @media @tablet-width {
     padding-left: 0;
     padding-right: 0;
+  }
+
+  @media @desktop-width {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 109px;
   }
 }
 
@@ -159,11 +211,21 @@
     @media @tablet-width {
       order: 1;
     }
+
+    @media @desktop-width {
+      order: 0;
+      margin-bottom: 38px;
+    }
   }
 
   &--number {
     @media @tablet-width {
       order: 3;
+    }
+
+    @media @desktop-width {
+      order: 0;
+      margin-bottom: 0;
     }
   }
 }
@@ -172,5 +234,13 @@
   @media @tablet-width {
     order: 2;
     margin-bottom: 52px;
+  }
+
+  @media @desktop-width {
+    order: 0;
+    margin-bottom: 0;
+    width: 247px;
+    position: absolute;
+    right: -2px;
   }
 }
