@@ -6,7 +6,16 @@
   border-left: solid 1px @main-color-thirteenth;
   width: 222px;
   margin: 0 auto;
-  margin-bottom: 23px;
+
+  @media @tablet-width {
+    margin: 0;
+    width: 319px;
+  }
+
+  @media @desktop-width {
+    border: none;
+    width: 438px;
+  }
 }
 
 .dictionary__list {
@@ -18,6 +27,21 @@
   .bloggersans(500);
   border-top: solid 1px @main-color-thirteenth;
   border-right: solid 1px @main-color-thirteenth;
+
+  @media @tablet-width {
+    font-size: 20px;
+  }
+
+  @media @desktop-width {
+    border: none;
+    margin-bottom: 15px;
+  }
+
+  &:not(:nth-child(6n)) {
+    @media @desktop-width {
+      margin-right: 15px;
+    }
+  }
 }
 
 .dictionary__label {
@@ -25,6 +49,18 @@
   display: block;
   width: 43px;
   line-height: 40px;
+
+  @media @tablet-width {
+    width: 52px;
+    line-height: 68px;
+  }
+
+  @media @desktop-width {
+    width: 60px;
+    line-height: 67.6px;
+    border: solid 1px @main-color-thirteenth;
+    border-radius: 4px;
+  }
 }
 
 .dictionary__input {

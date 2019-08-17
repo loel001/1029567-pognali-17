@@ -20,11 +20,20 @@
     padding-left: 25px;
   }
 
+  @media @desktop-width {
+    width: 730px;
+    letter-spacing: 2px;
+  }
+
   &--size {
     width: 220px;
 
     @media @tablet-width {
       width: 369px;
+    }
+
+    @media @desktop-width {
+      width: 730px;
     }
   }
 
@@ -36,6 +45,10 @@
 
     @media @tablet-width {
       font-size: 20px;
+    }
+
+    @media @desktop-width {
+      letter-spacing: 2px;
     }
   }
 }
@@ -57,11 +70,19 @@
     top: 30px;
   }
 
+  @media @desktop-width {
+    right: 297px;
+  }
+
   &--location {
     right: 13px;
 
     @media @tablet-width {
       right: 189px;
+    }
+
+    @media @desktop-width {
+      right: 297px;
     }
   }
 }
@@ -88,4 +109,15 @@
   @media @tablet-width {
     margin-bottom: 15px;
   }
+}
+
+
+//.route__modal {
+//  display: none;
+//}
+.route__modal {
+  display: block;
+  position: absolute;
+  z-index: 1;
+  top: 0;
 }
