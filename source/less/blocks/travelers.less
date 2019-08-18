@@ -1,16 +1,70 @@
 .travelers {
   background-color: @main-color-seventh;
+  width: 100%;
 
-  &__list {
-    .list();
-    .style();
+  @media @desktop-width {
+    width: 950px;
+  }
+}
+
+.travelers__wrapper {
+  width: 320px;
+  .wrapper();
+  padding-top: 13px;
+  padding-bottom: 46px;
+
+  @media @tablet-width {
+    width: 768px;
+    padding-top: 26px;
+    padding-bottom: 62px;
   }
 
-  &__button {
-    .bloggersans(800);
-    font-size: 17px;
-    line-height: 1.76;
-    color: @color-seventh;
-    .text();
+  @media @desktop-width {
+    padding: 0;
+    margin: 0;
+    width: 950px;
+  }
+}
+
+.travelers__list {
+  .list();
+}
+
+.travelers__button {
+  display: block;
+  .bloggersans(800);
+  font-size: 17px;
+  line-height: 1.76;
+  color: @color-seventh;
+  text-transform: uppercase;
+  margin-top: 21px;
+  margin-bottom: 20px;
+  padding-left: 93px;
+
+  @media @tablet-width {
+    font-size: 20px;
+    padding-left: 298px;
+    margin-top: 44px;
+    margin-bottom: 44px;
+  }
+
+  @media @desktop-width {
+    padding-left: 396px;
+    margin-top: 64px;
+    margin-bottom: 63px;
+  }
+}
+
+.travelers__item {
+  &:not(:last-child) {
+    margin-bottom: 10px;
+
+    @media @tablet-width {
+      margin-bottom: 40px;
+    }
+
+    @media @desktop-width {
+      margin-bottom: 30px;
+    }
   }
 }

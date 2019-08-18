@@ -16,21 +16,15 @@
   content: "";
 }
 
-.border {
-  border: none;
-}
-
 .list {
   margin: 0;
   padding: 0;
-}
-
-.style {
   list-style: none;
 }
 
-.text {
-  text-transform: uppercase;
+.content {
+  margin: 0;
+  padding: 0;
 }
 
 .size-radius(@width, @height, @radius) {
@@ -41,4 +35,21 @@
 
 .radius(@upper-left, @upper-right, @lower-right, @bottom-left) {
   border-radius: @upper-left @upper-right @lower-right @bottom-left;
+}
+
+.wrapper {
+  padding-left: 25px;
+  padding-right: 25px;
+  margin: 0 auto;
+
+  @media @tablet-width {
+    padding-right: 40px;
+    padding-left: 40px;
+  }
+
+  @media @desktop-width {
+    padding-right: 60px;
+    padding-left: 60px;
+    max-width: 1440px;
+  }
 }

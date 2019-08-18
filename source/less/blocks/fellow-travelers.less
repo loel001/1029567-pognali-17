@@ -1,24 +1,136 @@
 .fellow-travelers {
+  background-color: @main-color-seventh;
+  width: 100%;
+}
+
+.fellow-travelers__color {
   background-color: @main-color-first;
   .radius(0, 0, 30px, 30px);
+  width: 100%;
 
-  &__paragraph {
-    .bloggersans(300);
-    font-size: 16px;
-    line-height: 1.38;
-    color: @color-first;
-    .list();
+  @media @tablet-width {
+    border-radius: 0 0 60px 60px;
+  }
+}
+
+.fellow-travelers__wrapper {
+  width: 320px;
+  .wrapper();
+  padding-top: 70px;
+  padding-bottom: 29px;
+
+  @media @tablet-width {
+    width: 768px;
+    padding-top: 137px;
+    padding-left: 75px;
+    padding-right: 75px;
+    padding-bottom: 88px;
   }
 
-  &__paragraph-exclamation {
-    .bloggersans(800);
-    font-size: 16px;
-    line-height: 1.38;
-    color: @color-first;
-    .list();
+  @media @desktop-width {
+    width: 1440px;
+    display: flex;
+    padding-top: 131px;
+    padding-left: 129px;
+    padding-right: 60px;
+    padding-bottom: 126px;
+    position: relative;
+    justify-content: space-between;
+  }
+}
+
+.fellow-travelers__item {
+  position: relative;
+  margin-bottom: 9px;
+}
+
+.fellow-travelers__content {
+  padding-left: 24px;
+  padding-right: 29px;
+  margin-bottom: 56px;
+
+  @media @tablet-width {
+    padding-left: 0;
+    padding-right: 0;
+    margin-bottom: 58px;
   }
 
-  &__list {
-    .list();
+  @media @desktop-width {
+    margin-bottom: 0;
+    padding-bottom: 129px;
+  }
+}
+
+.fellow-travelers__paragraph {
+  .bloggersans(300);
+  font-size: 16px;
+  line-height: 1.38;
+  color: @color-first;
+  .content();
+  margin-top: 18px;
+  margin-bottom: 21px;
+
+  @media @tablet-width {
+    font-size: 28px;
+    line-height: 1.18;
+    width: 425px;
+    margin-top: 56px;
+    margin-bottom: 39px;
+  }
+}
+
+.fellow-travelers__paragraph-exclamation {
+  .bloggersans(800);
+  font-size: 16px;
+  line-height: 1.38;
+  color: @color-first;
+  .content();
+
+  @media @tablet-width {
+    font-size: 21px;
+    line-height: 1.19;
+    width: 260px;
+  }
+}
+
+.fellow-travelers__carry {
+  display: none;
+
+  @media @tablet-width {
+    display: block;
+  }
+}
+
+.fellow-travelers__list {
+  .list();
+
+  @media @tablet-width {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  @media @desktop-width {
+    width: 630px;
+  }
+}
+
+.fellow-travelers__button {
+  margin-top: 20px;
+
+  @media @tablet-width {
+    margin-top: 71px;
+  }
+
+  @media @desktop-width {
+    position: absolute;
+    left: 131px;
+    bottom: 134px;
+  }
+}
+
+.fellow-travelers__title {
+  @media @desktop-width {
+    line-height: 1;
   }
 }

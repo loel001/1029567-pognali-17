@@ -1,21 +1,110 @@
 .about-service {
+  background-color: @main-color-seventh;
+  width: 100%;
+}
+
+.about-service__color {
+  background-color: @main-color-first;
+  width: 100%;
+  .radius(0, 0, 30px, 30px);
   background-image: url("../img/about-mobile@1x.png");
   background-repeat: no-repeat;
-  background-color: @main-color-first;
 
-  &__start {
-    .bloggersans(300);
-    font-size: 16px;
-    line-height: 1.38;
-    color: @color-first;
-    .list();
+  @media @tablet-width {
+    .radius(0, 0, 60px, 60px);
+  }
+}
+
+.about-service__wrapper {
+  padding-left: 49px;
+  padding-right: 62px;
+  padding-top: 31px;
+  padding-bottom: 81px;
+  margin: 0 auto;
+  width: 320px;
+
+  @media @tablet-width {
+    width: 768px;
+    padding-left: 75px;
+    padding-top: 36px;
+    padding-right: 393px;
+    padding-bottom: 88px;
   }
 
-  &__end {
-    .bloggersans(800);
-    font-size: 16px;
-    line-height: 1.38;
-    color: @color-first;
-    .list();
+  @media @desktop-width {
+    width: 1440px;
+    padding-top: 128px;
+    padding-left: 130px;
+    padding-right: 692px;
+    padding-bottom: 163px;
+  }
+}
+
+.about-service__title {
+  margin-bottom: 10px;
+}
+
+.about-service__start {
+  .bloggersans(300);
+  font-size: 16px;
+  line-height: 1.38;
+  color: @color-first;
+  .content();
+  margin-top: 18px;
+
+  @media @tablet-width {
+    font-size: 28px;
+    line-height: 1.18;
+    margin-top: 40px;
+    margin-bottom: 32px;
+  }
+
+  @media @desktop-width {
+    margin-top: 55px;
+    margin-bottom: 40px;
+  }
+}
+
+.about-service__carry {
+  display: none;
+
+  @media @tablet-width {
+    display: block;
+  }
+
+  @media @desktop-width {
+    display: none;
+  }
+}
+
+.about-service__end {
+  .bloggersans(800);
+  font-size: 16px;
+  line-height: 1.38;
+  color: @color-first;
+  .content();
+  margin-top: 19px;
+
+  @media @tablet-width {
+    font-size: 21px;
+    line-height: 1.19;
+    margin-bottom: 51px;
+  }
+
+  @media @desktop-width {
+    width: 410px;
+    margin-bottom: 84px;
+  }
+}
+
+.about-service__additive {
+  display: none;
+
+  @media @tablet-width {
+    display: inline-block;
+  }
+
+  @media @desktop-width {
+    display: inline-block;
   }
 }

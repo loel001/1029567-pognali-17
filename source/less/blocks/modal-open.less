@@ -1,10 +1,142 @@
-.modal-open {
-  &__close {
-    .bloggersans(800);
-    font-size: 16.5px;
-    line-height: 1.79;
-    text-align: center;
-    color: @color-fifth;
-    .text();
+.modal-open__button {
+  display: block;
+  .bloggersans(800);
+  font-size: 16.5px;
+  line-height: 40px;
+  color: @color-fifth;
+  text-transform: uppercase;
+  .size-radius(270px, 40px, 20px);
+  border: none;
+  background-color: @main-color-sixteenth;
+  margin-top: 23px;
+  padding-left: 31px;
+
+  @media @tablet-width {
+    .size-radius(618px, 100px, 20px);
+    line-height: 100px;
+    font-size: 20px;
+    margin-top: 56px;
+    //убрать
+    //display: none;
+  }
+
+  @media @desktop-width {
+    margin-top: 22px;
+    width: 1320px;
+    padding-right: 0;
+  }
+}
+
+.modal-open__list {
+  margin-top: 30px;
+  padding-left: 25px;
+  margin-bottom: 18px;
+
+  @media @tablet-width {
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 0;
+    margin-right: 71px;
+  }
+}
+
+.modal__open__countries {
+  .list();
+  padding-left: 27px;
+
+  @media @tablet-width {
+    padding-left: 0;
+  }
+
+  @media @desktop-width {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+.modal-open__character {
+  .bloggersans(800);
+  font-size: 60px;
+  color: @color-third;
+  display: none;
+
+  @media @desktop-width {
+    display: block;
+    width: 212px;
+    margin-bottom: 64px;
+  }
+
+  &--fixed {
+    display: block;
+  }
+
+  &:nth-child(3n) {
+    @media @desktop-width {
+      width: 201px;
+    }
+  }
+
+  &:nth-child(6n) {
+    @media @desktop-width {
+      width: 150px;
+    }
+  }
+}
+
+.modal-open__content {
+  display: none;
+
+  @media @desktop-width {
+    display: block;
+  }
+}
+
+.modal-open__combine {
+  @media @tablet-width {
+    display: flex;
+    justify-content: space-between;
+    padding-right: 19px;
+    //убрать
+    //display: none;
+  }
+
+  @media @desktop-width {
+    padding-left: 65px;
+    padding-right: 0;
+    margin-top: 53px;
+  }
+}
+
+.modal-open__closed {
+  .bloggersans(800);
+  font-size: 20px;
+  color: @color-third;
+  text-transform: uppercase;
+  background-color: @main-color-twelfth;
+  border: none;
+  display: none;
+}
+
+.modal-open__show {
+  .bloggersans(800);
+  font-size: 20px;
+  color: @color-third;
+  text-transform: uppercase;
+  background-color: @main-color-twelfth;
+  border: none;
+  display: none;
+}
+
+.modal-open__wrapper {
+  @media @tablet-width {
+    display: flex;
+    margin-bottom: 55px;
+  }
+
+  @media @desktop-width {
+    width: 993px;
+    margin-bottom: 0;
+    margin-top: -46px;
+    padding-left: 344px;
   }
 }

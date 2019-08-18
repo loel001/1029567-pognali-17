@@ -1,4 +1,4 @@
-.alphabet {
+.dictionary {
   .list();
   display: flex;
   flex-wrap: wrap;
@@ -6,20 +6,19 @@
   border-left: solid 1px @main-color-thirteenth;
   width: 222px;
   margin: 0 auto;
-  margin-bottom: 23px;
 
   @media @tablet-width {
-    border: none;
-    width: 390px;
     margin: 0;
+    width: 319px;
   }
 
   @media @desktop-width {
-    display: none;
+    border: none;
+    width: 438px;
   }
 }
 
-.alphabet__list {
+.dictionary__list {
   text-align: center;
   line-height: 1.29;
   letter-spacing: 1.4px;
@@ -30,45 +29,47 @@
   border-right: solid 1px @main-color-thirteenth;
 
   @media @tablet-width {
-    .bloggersans(800);
-    font-size: 60px;
-    color: rgba(25, 33, 68, 0.2);
-    border: none;
-    text-align: left;
+    font-size: 20px;
   }
 
-  &--hide {
-    @media @tablet-width {
-      display: none;
+  @media @desktop-width {
+    border: none;
+    margin-bottom: 15px;
+  }
+
+  &:not(:nth-child(6n)) {
+    @media @desktop-width {
+      margin-right: 15px;
     }
   }
 }
 
-.alphabet__label {
+.dictionary__label {
   background-color: @main-color-eleventh;
   display: block;
   width: 43px;
   line-height: 40px;
 
   @media @tablet-width {
-    background-color: @main-color-twelfth;
-    width: 76px;
-    line-height: 81px;
+    width: 52px;
+    line-height: 68px;
+  }
+
+  @media @desktop-width {
+    width: 60px;
+    line-height: 67.6px;
+    border: solid 1px @main-color-thirteenth;
+    border-radius: 4px;
   }
 }
 
-.alphabet__input {
+.dictionary__input {
   position: absolute;
   opacity: 0;
   pointer-events: none;
 
-  &:checked + .alphabet__label {
+  &:checked + .dictionary__label {
     background-color: @main-color-eighth;
     color: @color-first;
-
-    @media @tablet-width {
-      background-color: @main-color-twelfth;
-      color: @color-third;
-    }
   }
 }

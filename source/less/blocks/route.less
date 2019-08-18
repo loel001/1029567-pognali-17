@@ -1,8 +1,123 @@
 .route {
-  &__write {
+  position: relative;
+}
+
+.route__input {
+  .bloggersans(500);
+  font-size: 14px;
+  color: @color-seventh;
+  text-transform: uppercase;
+  width: 168px;
+  height: 42px;
+  border-radius: 4px;
+  border: solid 1px @main-color-thirteenth;
+  padding-left: 10px;
+
+  @media @tablet-width {
+    font-size: 20px;
+    width: 369px;
+    height: 70px;
+    padding-left: 25px;
+  }
+
+  @media @desktop-width {
+    width: 730px;
+    letter-spacing: 2px;
+  }
+
+  &--size {
+    width: 220px;
+
+    @media @tablet-width {
+      width: 369px;
+    }
+
+    @media @desktop-width {
+      width: 730px;
+    }
+  }
+
+  &::placeholder {
     .bloggersans(500);
     font-size: 14px;
     color: @color-seventh;
-    .text();
+    text-transform: uppercase;
+
+    @media @tablet-width {
+      font-size: 20px;
+    }
+
+    @media @desktop-width {
+      letter-spacing: 2px;
+    }
   }
+}
+
+.route__button {
+  display: block;
+  position: absolute;
+  font-size: 0;
+  background-color: @main-color-eleventh;
+  width: 12px;
+  height: 7px;
+  top: 17px;
+  right: 64px;
+
+  @media @tablet-width {
+    width: 17px;
+    height: 9px;
+    right: 189px;
+    top: 30px;
+  }
+
+  @media @desktop-width {
+    right: 297px;
+  }
+
+  &--location {
+    right: 13px;
+
+    @media @tablet-width {
+      right: 189px;
+    }
+
+    @media @desktop-width {
+      right: 297px;
+    }
+  }
+}
+
+.route__flag {
+  display: block;
+  font-size: 0;
+  width: 53px;
+  height: 42px;
+  border-radius: 4px;
+  border: solid 1px @main-color-thirteenth;
+  border-left: none;
+
+  @media @tablet-width {
+    display: none;
+  }
+}
+
+.route__wrapper {
+  display: flex;
+  position: relative;
+  margin-bottom: 22px;
+
+  @media @tablet-width {
+    margin-bottom: 15px;
+  }
+}
+
+
+//.route__modal {
+//  display: none;
+//}
+.route__modal {
+  display: block;
+  position: absolute;
+  z-index: 1;
+  top: 0;
 }

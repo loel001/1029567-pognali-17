@@ -4,5 +4,103 @@
   line-height: 1.38;
   color: @color-second;
   .list();
-  .style();
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+
+  @media @tablet-width {
+    font-size: 20px;
+    line-height: 1.5;
+  }
+
+  @media @desktop-width {
+    margin-top: 9px;
+  }
+}
+
+.country-alphabetically__link {
+  color: @color-second;
+  display: block;
+}
+
+.country-alphabetically__item {
+  &--first {
+    order: 7;
+
+    @media @tablet-width {
+      order: 0;
+    }
+  }
+
+  &--second {
+    order: 8;
+
+    @media @tablet-width {
+      order: 0;
+    }
+  }
+
+  &--third {
+    order: 9;
+
+    @media @tablet-width {
+      order: 0;
+    }
+  }
+
+  &--fourth {
+    order: 2;
+
+    @media @tablet-width {
+      order: 0;
+    }
+  }
+
+  &--fifth {
+    order: 3;
+
+    @media @tablet-width {
+      order: 0;
+    }
+  }
+
+  &--sixth {
+    display: none;
+
+    @media @tablet-width {
+      display: block;
+    }
+  }
+
+  &--seventh {
+    order: 4;
+
+    @media @tablet-width {
+      order: 0;
+    }
+  }
+
+  &--eighth {
+    display: none;
+
+    @media @tablet-width {
+      display: block;
+    }
+  }
+
+  &--ninth {
+    order: 5;
+
+    @media @tablet-width {
+      order: 0;
+    }
+  }
+
+  &--tenth {
+    order: 6;
+
+    @media @tablet-width {
+      order: 0;
+    }
+  }
 }

@@ -1,67 +1,132 @@
-.companion {
-  &__content {
-    width: 60px;
-    height: 60px;
-    border-radius: 50%;
-  }
+.companion__content {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background-color: rgba(0, 0, 0, 0.2);
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  top: 17px;
+  left: 17px;
+  padding-top: 12px;
 
-  &__interest {
-    .bloggersans(800);
-    font-size: 24px;
-    line-height: 1;
-    text-align: center;
-    color: @color-first;
-  }
-
-  &__level {
-    .bloggersans(800);
-    font-size: 14px;
-    line-height: 1;
-    text-align: center;
-    color: @color-first;
-  }
-
-  &__desires {
-    .list();
-    .style();
-  }
-
-  &__first-country {
-    font-size: 0;
-  }
-
-  &__second-country {
-    font-size: 0;
-  }
-
-  &__third-country {
-    font-size: 0;
-  }
-
-  &__wrapper {
+  &::after {
+    display: block;
+    position: absolute;
+    width: 31px;
+    height: 1px;
+    opacity: 0.3;
     background-color: @main-color-eleventh;
-    width: 270px;
-    .radius(0, 0, 10px, 10px);
+    .icon();
+    top: 35px;
+    left: 15px;
   }
 
-  &__title {
-    .bloggersans(800);
-    font-size: 21px;
-    line-height: 1;
-    text-align: center;
-    color: @color-seventh;
+  @media @desktop-width {
+    top: 24px;
+    left: 23px;
   }
+}
 
-  &__paragraf {
-    .bloggersans(800);
-    font-size: 16px;
-    line-height: 1.13;
-    text-align: center;
-    color: @color-second;
-  }
+.companion__circle {
+  position: absolute;
+  top: 16px;
+  left: 17px;
 
-  &__transport {
-    .list();
-    .style();
+  @media @desktop-width {
+    top: 24px;
+    left: 23px;
   }
+}
+
+.companion__picture {
+  width: 270px;
+  height: 270px;
+  display: block;
+
+  @media @tablet-width {
+    width: 285px;
+    height: 285px;
+  }
+}
+
+.companion__interest {
+  .bloggersans(800);
+  font-size: 24px;
+  text-align: center;
+  color: @color-first;
+}
+
+.companion__level {
+  .bloggersans(400);
+  font-size: 14px;
+  text-align: center;
+  color: @color-first;
+}
+
+.companion__desires {
+  .list();
+}
+
+.companion__first-country {
+  font-size: 0;
+}
+
+.companion__second-country {
+  font-size: 0;
+}
+
+.companion__third-country {
+  font-size: 0;
+}
+
+.companion__wrapper {
+  background-color: @main-color-eleventh;
+  width: 270px;
+  .radius(0, 0, 10px, 10px);
+  padding-top: 24px;
+  padding-left: 41px;
+  padding-right: 36px;
+  padding-bottom: 56px;
+
+  @media @tablet-width {
+    width: 285px;
+    padding-top: 31px;
+    padding-left: 26px;
+    padding-right: 29px;
+    padding-bottom: 75px;
+    .radius(0, 0, 20px, 20px);
+  }
+}
+
+.companion__title {
+  .bloggersans(800);
+  font-size: 21px;
+  text-align: center;
+  color: @color-seventh;
+  .content();
+
+  @media @tablet-width {
+    font-size: 24px;
+  }
+}
+
+.companion__paragraf {
+  .bloggersans(400);
+  font-size: 16px;
+  line-height: 1.13;
+  text-align: center;
+  color: @color-second;
+  .content();
+  margin-top: 17px;
+
+  @media @tablet-width {
+    font-size: 20px;
+    line-height: 1.2;
+  }
+}
+
+.companion__transport {
+  .list();
+  display: flex;
 }

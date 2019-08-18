@@ -4,10 +4,52 @@
   line-height: 1;
   color: @color-seventh;
   background-color: @main-color-fifth;
-  .radius(5px, 5px, 5px, 5px);
+  border-radius: 10px;
   border: solid 3px transparent;
+  width: 270px;
+  height: 62px;
+  display: block;
+  padding-left: 20px;
+  padding-top: 18px;
+
+  @media @tablet-width {
+    width: 618px;
+    height: 81px;
+    font-size: 24px;
+    padding-left: 31px;
+    padding-top: 27px;
+    border-radius: 20px;
+  }
+
+  @media @desktop-width {
+    width: 274px;
+  }
 
   &--color {
     border: solid 3px @main-color-first;
+
+    @media @desktop-width {
+      width: 324px;
+    }
+  }
+
+  &--size {
+    display: none;
+
+    @media @tablet-width {
+      display: block;
+      width: 274px;
+      height: 81px;
+      font-size: 24px;
+      padding-left: 31px;
+      padding-top: 27px;
+      border-radius: 20px;
+    }
+  }
+
+  &--width {
+    @media @desktop-width {
+      width: 280px;
+    }
   }
 }

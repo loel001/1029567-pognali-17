@@ -1,25 +1,116 @@
 .modal {
-  background-image: linear-gradient(@color-first 115px, @main-color-ninth 115px, @main-color-ninth 115px);
-  .radius(30px, 30px, 30px, 30px);
+  width: 270px;
+  margin: 0 auto;
+  background-image: linear-gradient(@color-first 384px, @main-color-ninth 384px, @main-color-ninth 384px);
+  .radius(20px, 20px, 20px, 20px);
+  padding-left: 25px;
+  padding-right: 25px;
+  padding-top: 30px;
+  padding-bottom: 20px;
+  display: none;
 
-  &__business-tariffs {
-    .list();
-    .style();
-    .bloggersans(300);
-    font-size: 16px;
-    line-height: 1.38;
-    color: @color-second;
+  @media @tablet-width {
+    width: 688px;
+    border-radius: 30px;
+    padding-left: 91px;
+    padding-right: 91px;
+    padding-top: 50px;
+    padding-bottom: 33px;
+    background-image: linear-gradient(@color-first 418px, @main-color-ninth 418px, @main-color-ninth 418px);
   }
 
-  &__close {
-    border: none;
-    background-color: @main-color-ninth;
-    .bloggersans(800);
-    font-size: 16px;
-    font-weight: bold;
-    line-height: 1.5;
-    text-align: center;
-    color: @color-seventh;
-    .text();
+  @media @desktop-width {
+    width: 750px;
+    padding-left: 60px;
+    padding-right: 60px;
+  }
+}
+
+.modal__title {
+  text-align: center;
+}
+
+.modal__business-tariffs {
+  .list();
+  .bloggersans(300);
+  font-size: 16px;
+  line-height: 1.38;
+  color: @color-second;
+  margin-top: 41px;
+
+  @media @tablet-width {
+    font-size: 22px;
+    margin-top: 45px;
+  }
+}
+
+.modal__tarif {
+  margin-bottom: 20px;
+  position: relative;
+
+  &::before {
+    display: block;
+    position: absolute;
+    width: 219px;
+    height: 1px;
+    .icon();
+    background-color: black;
+    opacity: 0.05;
+    top: -10px;
+
+    @media @tablet-width {
+      width: 506px;
+      top: 0;
+    }
+
+    @media @desktop-width {
+      width: 630px;
+    }
+  }
+
+  @media @tablet-width {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 0;
+    line-height: 55px;
+  }
+}
+
+.modal__tarif--last::after {
+  display: block;
+  position: absolute;
+  width: 219px;
+  height: 1px;
+  .icon();
+  background-color: black;
+  opacity: 0.05;
+  top: 51px;
+
+  @media @tablet-width {
+    width: 506px;
+    top: 53px;
+  }
+
+  @media @desktop-width {
+    width: 630px;
+  }
+}
+
+.modal__close {
+  border: none;
+  background-color: @main-color-ninth;
+  .bloggersans(800);
+  font-size: 16px;
+  line-height: 1.5;
+  color: @color-seventh;
+  text-transform: uppercase;
+  margin: 0 auto;
+  margin-top: 63px;
+  display: block;
+
+  @media @tablet-width {
+    font-size: 24px;
+    text-transform: none;
+    margin-top: 90px;
   }
 }

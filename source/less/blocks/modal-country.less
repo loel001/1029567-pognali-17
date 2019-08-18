@@ -1,12 +1,114 @@
 .modal-country {
-  &__title {
-    .bloggersans(500);
-    font-size: 14px;
-    line-height: 1.29;
-    letter-spacing: 1.4px;
-    color: @color-first;
-    background-color: @main-color-eighth;
-    .list();
-    .text();
+  box-shadow: 0 20px 50px 0 rgba(29, 46, 91, 0.1);
+  background-color: @main-color-eleventh;
+}
+
+.modal-country__wrapper {
+  background-color: @main-color-eighth;
+  display: flex;
+  justify-content: space-between;
+  .radius(5px, 5px, 0, 0);
+
+  @media @tablet-width {
+    width: 369px;
+  }
+
+  @media @desktop-width {
+    width: 730px;
+  }
+}
+
+.modal-country__title {
+  .bloggersans(500);
+  font-size: 14px;
+  line-height: 1.29;
+  letter-spacing: 1.4px;
+  color: @color-first;
+  .content();
+  text-transform: uppercase;
+  padding-left: 12px;
+  padding-top: 13px;
+  padding-bottom: 10px;
+
+  @media @tablet-width {
+    font-size: 20px;
+    line-height: 0.9;
+    letter-spacing: 2px;
+    width: 369px;
+    padding-left: 25px;
+    padding-top: 27px;
+    padding-bottom: 23px;
+  }
+}
+
+.modal-country__button {
+  display: block;
+  position: absolute;
+  font-size: 0;
+  background-color: @main-color-eighth;
+  width: 9px;
+  height: 9px;
+  right: 16px;
+  top: 16px;
+
+  @media @tablet-width {
+    width: 17px;
+    height: 17px;
+    top: 26px;
+    right: 230px;
+  }
+
+  @media @desktop-width {
+    right: 26px;
+  }
+}
+
+.modal-country__list {
+  .bloggersans(400);
+  .list();
+  background-color: @main-color-eleventh;
+  font-size: 16px;
+  line-height: 1.38;
+  color: @color-second;
+  .radius(0, 0, 10px, 10px);
+  border-left: solid 1px @main-color-thirteenth;
+  border-right: solid 1px @main-color-thirteenth;
+  border-bottom: solid 1px @main-color-thirteenth;
+  width: 221px;
+  padding-left: 19px;
+  padding-top: 15px;
+
+  @media @tablet-width {
+    border: none;
+    font-size: 20px;
+    line-height: 1.5;
+    padding-left: 0;
+    padding-top: 0;
+    width: 123px;
+  }
+}
+
+.modal-country__link {
+  color: @color-second;
+}
+
+.modal-country__union {
+  @media @tablet-width {
+    display: flex;
+    justify-content: space-between;
+    width: 575px;
+    padding-top: 34px;
+    padding-bottom: 38px;
+    padding-left: 27px;
+    padding-right: 59px;
+    .radius(0, 0, 10px, 10px);
+    box-shadow: 0 20px 50px 0 rgba(29, 46, 91, 0.1);
+  }
+
+  @media @desktop-width {
+    width: 730px;
+    padding-top: 37px;
+    padding-right: 92px;
+    padding-bottom: 20px;
   }
 }

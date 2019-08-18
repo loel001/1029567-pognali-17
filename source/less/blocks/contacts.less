@@ -4,22 +4,34 @@
   line-height: 45px;
   color: @color-third;
   .list;
-  .style;
-  .text();
+  text-transform: uppercase;
 
-  &__phone-number {
-    color: @color-third;
+  @media @tablet-width {
+    font-size: 28px;
+    line-height: 67px;
   }
+}
 
-  &__email {
-    color: @color-third;
-  }
+.contacts__phone-number {
+  color: @color-third;
 
-  &__phone-number--color {
+  &--color {
     color: @color-sixth;
   }
+}
 
-  &__email--color {
+.contacts__email {
+  color: @color-third;
+
+  &--color {
     color: @color-sixth;
+  }
+}
+
+.contacts__items {
+  padding-left: 62px;
+
+  @media @tablet-width {
+    padding-left: 148px;
   }
 }

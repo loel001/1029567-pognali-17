@@ -2,7 +2,82 @@
   .bloggersans(500);
   font-size: 15px;
   color: @color-seventh;
-  .text();
+  text-transform: uppercase;
   .list();
-  .style();
+  margin-top: 16px;
+  padding-left: 45px;
+
+  @media @tablet-width {
+    font-size: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 0;
+    order: 5;
+    margin-top: 25px;
+  }
+
+  @media @desktop-width {
+    flex-direction: column;
+    margin-left: auto;
+    margin-top: -185px;
+    width: 249px;
+  }
+
+  &--distance {
+    padding-bottom: 7px;
+
+    @media @tablet-width {
+      padding-bottom: 0;
+    }
+
+    @media @desktop-width {
+      padding-bottom: 39px;
+    }
+  }
+
+  &--length {
+    padding-bottom: 4px;
+
+    @media @tablet-width {
+      padding-bottom: 0;
+    }
+  }
+}
+
+.dreams__item {
+  line-height: 18px;
+
+  @media @tablet-width {
+    padding-left: 47px;
+  }
+
+  @media @desktop-width {
+    padding-left: 57px;
+  }
+
+  &:not(:last-child) {
+    margin-bottom: 10px;
+
+    @media @tablet-width {
+      margin-right: 29px;
+      margin-bottom: 0;
+    }
+
+    @media @desktop-width {
+      margin-right: 0;
+      margin-bottom: 21px;
+    }
+  }
+
+  &--size {
+    &:not(:last-child) {
+      @media @tablet-width {
+        margin-right: 25px;
+      }
+
+      @media @desktop-width {
+        margin-right: 0;
+      }
+    }
+  }
 }

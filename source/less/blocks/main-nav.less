@@ -1,15 +1,98 @@
 .main-nav {
+  width: 100%;
   background-color: @main-color-eleventh;
+  margin-top: -82px;
+  display: none;
 
-  &__toggle-open {
-    background-color: @main-color-eleventh;
-    .icon();
-    .border();
-    font-size: 0;
+  @media @tablet-width {
+    padding-top: 7px;
+    margin-top: -132px;
   }
 
-  &__authorization {
-    .list();
-    .style();
+  @media @desktop-width {
+    width: 600px;
+    background-color: @main-color-tenth;
+    display: block;
+    margin-top: 0;
+    padding-top: 0;
+    margin-left: 344px;
+  }
+
+  &--page {
+    margin-top: -143px;
+
+    @media @tablet-width {
+      margin-top: -349px;
+    }
+
+    @media @desktop-width {
+      display: none;
+    }
+  }
+}
+
+.main-nav__wrapper {
+  width: 320px;
+  padding-top: 117px;
+  padding-bottom: 40px;
+  .wrapper();
+
+  @media @tablet-width {
+    width: 768px;
+    padding-top: 188px;
+  }
+
+  @media @desktop-width {
+    padding-top: 0;
+    padding-bottom: 0;
+    padding-left: 0;
+    padding-right: 0;
+    width: 600px;
+    margin: 0;
+  }
+
+  &--page {
+    @media @tablet-width {
+      padding-top: 179px;
+    }
+
+    @media @desktop-width {
+      padding-top: 0;
+    }
+  }
+}
+
+.main-nav__login {
+  margin-bottom: 51px;
+
+  @media @tablet-width {
+    display: none;
+  }
+}
+
+.main-nav__connection {
+  @media @tablet-width {
+    margin-top: 168px;
+    padding-left: 148px;
+  }
+
+  @media @desktop-width {
+    display: none;
+  }
+}
+
+.main-nav__links-header {
+  justify-content: center;
+}
+
+.main-nav__list {
+  margin-bottom: 50px;
+
+  @media @tablet-width {
+    margin-bottom: 129px;
+  }
+
+  @media @desktop-width {
+    margin-bottom: 0;
   }
 }

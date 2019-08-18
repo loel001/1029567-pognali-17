@@ -1,25 +1,109 @@
 .plan {
-  &__title {
-    .bloggersans(500);
-    font-size: 18px;
-    color: @color-seventh;
-    .list();
+  position: relative;
+
+  &::before {
+    display: block;
+    position: absolute;
+    .icon();
+    width: 15px;
+    height: 2px;
+    background-color: @color-seventh;
+    top: 9px;
+    left: -14px;
+
+    @media @tablet-width {
+      display: none;
+    }
+  }
+}
+
+.plan__title {
+  .bloggersans(500);
+  font-size: 18px;
+  color: @color-seventh;
+  .list();
+  padding-left: 11px;
+  margin-bottom: 15px;
+
+  @media @tablet-width {
+    .bloggersans(800);
+    font-size: 30px;
+    padding-left: 0;
+    margin-bottom: 35px;
   }
 
-  &__text {
-    .bloggersans(500);
-    font-size: 16px;
-    border-radius: 4px;
-    border: solid 1px @main-color-thirteenth;
-    resize: none;
-    line-height: 1.38;
-    color: @color-second;
+  &::before {
+    display: block;
+    position: absolute;
+    .icon();
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background-color: @color-seventh;
+    top: 7px;
+    left: -3px;
+
+    @media @tablet-width {
+      width: 15px;
+      height: 15px;
+      left: 519px;
+      top: 12px;
+    }
+
+    @media @desktop-width {
+      left: 767px;
+      top: 9px;
+    }
+  }
+}
+
+.plan__text {
+  .bloggersans(400);
+  font-size: 16px;
+  border-radius: 4px;
+  border: solid 1px @main-color-thirteenth;
+  resize: none;
+  line-height: 1.38;
+  color: @color-second;
+  padding-top: 8px;
+  padding-left: 13px;
+  width: 220px;
+  padding-bottom: 13px;
+
+  @media @tablet-width {
+    width: 501px;
+    height: 142px;
+    font-size: 20px;
+    padding-left: 17px;
+    padding-top: 16px;
   }
 
-  &__text::placeholder {
-    .bloggersans(400);
-    font-size: 16px;
-    line-height: 1.38;
-    color: rgba(68, 68, 68, 0.3);
+  @media @desktop-width {
+    width: 730px;
+    padding-top: 22px;
+    padding-left: 25px;
+  }
+
+  &--size {
+    padding-right: 10px;
+
+    @media @tablet-width {
+      padding-right: 38px;
+    }
+
+    @media @desktop-width {
+      padding-right: 19px;
+    }
+  }
+}
+
+.plan__text::placeholder {
+  .bloggersans(400);
+  font-size: 16px;
+  line-height: 1.38;
+  color: rgba(68, 68, 68, 0.3);
+
+  @media @tablet-width {
+    font-size: 20px;
   }
 }
