@@ -82,7 +82,17 @@
 
 .interest__login {
   color: @color-sixth;
-  border-bottom: 0.5px solid #ffd74b;
+  border-bottom: 0.5px solid @color-sixth;
+
+  &:hover {
+    color: @color-fourth;
+    border-bottom: 0.5px solid @color-fourth;
+  }
+
+  &:active {
+    color: rgba(255, 141, 48, 0.3);
+    border-bottom: 0.5px solid rgba(255, 141, 48, 0.3);
+  }
 }
 
 .interest__registration {
@@ -105,6 +115,24 @@
   padding-top: 21px;
   padding-bottom: 20px;
 
+  &::placeholder {
+    color: rgba(68, 68, 68, 0.3);
+  }
+
+  &:hover::placeholder {
+    color: rgba(68, 68, 68, 0.5);
+  }
+
+  &:active {
+    background-color: @main-color-first;
+    border: solid 4px @color-first;
+  }
+
+  &:focus {
+    background-color: @main-color-first;
+    border: solid 4px @color-first;
+  }
+
   @media @tablet-width {
     font-size: 24px;
     width: 536px;
@@ -117,11 +145,6 @@
     width: 853px;
     padding-left: 30px;
   }
-}
-
-.interest__email::placeholder {
-  color: @color-second;
-  opacity: 0.3;
 }
 
 .interest__button {
