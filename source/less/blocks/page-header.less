@@ -1,6 +1,14 @@
 .page-header {
-  background-color: @main-color-tenth;
+  background-color: #161c35;
   width: 100%;
+
+  @media @tablet-width {
+    background-color: #182044;
+  }
+
+  @media @desktop-width {
+    background-color: #161c34;
+  }
 
   &--color {
     background-color: @main-color-twelfth;
@@ -32,6 +40,8 @@
   @media @tablet-width {
     width: 768px;
     padding-top: 40px;
+    padding-left: 43px;
+    justify-content: flex-start;
   }
 
   @media @desktop-width {
@@ -77,17 +87,32 @@
 
 .page-header__toggle-open {
   background-color: @main-color-tenth;
-  .icon();
   border: none;
+  position: relative;
+  font-size: 0;
+  display: block;
+  padding: 0;
+
+  @media @tablet-width {
+    margin-left: 168px;
+    margin-right: 140px;
+    background-color: #182044;
+  }
 
   @media @desktop-width {
     display: none;
+  }
+
+  &--color {
+    @media @tablet-width {
+      background-color: @main-color-tenth;
+    }
   }
 }
 
 .page-header__list {
   .list();
-  margin-top: 37px;
+  margin-top: 55px;
 
   @media @tablet-width {
     display: flex;
@@ -146,11 +171,69 @@
 }
 
 .page-header__phone {
+  display: block;
   font-size: 0;
+  background-color: @main-color-second;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  position: relative;
+
+  &:hover {
+    background-color: #f26926;
+  }
+
+  &:active {
+    background-color: #f26926;
+  }
+
+  &:active::before {
+    opacity: 0.3;
+  }
+
+  &::before {
+    display: block;
+    position: absolute;
+    .icon();
+    width: 18px;
+    height: 18px;
+    background-image: url("../img/topmenu-phone.svg");
+    top: 18px;
+    left: 17px;
+  }
 }
 
 .page-header__email {
+  display: block;
   font-size: 0;
+  background-color: @main-color-fourth;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  position: relative;
+
+  &:hover {
+    background-color: #ff8d30;
+  }
+
+  &:active {
+    background-color: #ff8d30;
+  }
+
+  &:active::before {
+    opacity: 0.3;
+  }
+
+  &::before {
+    display: block;
+    position: absolute;
+    .icon();
+    width: 18px;
+    height: 18px;
+    background-image: url("../img/topmenu-mail.svg");
+    top: 19px;
+    left: 17px;
+  }
 }
 
 .page-header__contact {
@@ -167,13 +250,12 @@
   @media @desktop-width {
     display: block;
     position: absolute;
-    top: 54px;
-    left: 76px;
+    top: 48px;
+    left: 59px;
   }
 
   &--page {
     position: static;
-    width: 197px;
   }
 }
 
@@ -193,6 +275,6 @@
 
   @media @desktop-width {
     display: flex;
-    margin-left: 150px;
+    margin-left: 146px;
   }
 }
