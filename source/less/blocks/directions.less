@@ -24,6 +24,15 @@
     padding-left: 75px;
     padding-right: 75px;
     padding-bottom: 80px;
+    background-image: url("../img/flags-back@1x.png"), url("../img/background-index.svg");
+    background-repeat: no-repeat, no-repeat;
+    background-position: 439px 85px, 45px 412px;
+    background-size: 289px 575px, 141px 141px;
+
+    @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+      background-image: url("../img/flags-back@2x.png"), url("../img/background-index.svg");
+      background-size: 289px 575px, 141px 141px;
+    }
   }
 
   @media @desktop-width {
@@ -35,18 +44,19 @@
     padding-right: 240px;
     padding-bottom: 90px;
     justify-content: space-between;
+    background-position: 1091px 85px, 67px 93px;
   }
 }
 
 .directions__content {
   padding-left: 25px;
   padding-right: 46px;
-  margin-bottom: 59px;
+  margin-bottom: 62px;
 
   @media @tablet-width {
     padding-left: 0;
     padding-right: 0;
-    margin-bottom: 104px;
+    margin-bottom: 108px;
   }
 
   @media @desktop-width {

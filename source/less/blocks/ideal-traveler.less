@@ -127,17 +127,19 @@
 }
 
 .ideal-traveler__photo {
-  width: 70px;
-  height: 70px;
+  border-radius: 50%;
 
   @media @tablet-width {
     width: 190px;
     height: 190px;
+    border-radius: 7%;
   }
 
   @media @desktop-width {
     width: 285px;
     height: 285px;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
   }
 }
 

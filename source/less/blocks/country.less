@@ -5,14 +5,21 @@
 }
 
 .country__picture {
-  width: 270px;
-  height: 110px;
-  display: block;
-
   @media @tablet-width {
     order: 2;
+  }
+}
+
+.country__image {
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+
+  @media @tablet-width {
     width: 186px;
     height: 140px;
+    border-top-left-radius: 0;
+    border-bottom-right-radius: 20px;
+    border-top-right-radius: 20px;
   }
 }
 
@@ -23,7 +30,8 @@
   padding-right: 25px;
   padding-top: 26px;
   margin-top: -12px;
-  margin-bottom: -6px;
+  padding-bottom: 5px;
+  position: relative;
 
   @media @tablet-width {
     width: 432px;
@@ -38,6 +46,72 @@
   @media @desktop-width {
     width: 375px;
     padding-top: 22px;
+  }
+
+  &--first::before {
+    display: block;
+    position: absolute;
+    .icon();
+    width: 35px;
+    height: 24px;
+    background-image: url("../img/flag-thailand.svg");
+    top: -10px;
+
+    @media @tablet-width {
+      width: 70px;
+      height: 47px;
+      top: 18px;
+      right: -38px;
+    }
+
+    @media @desktop-width {
+      top: 24px;
+      right: -33px;
+    }
+  }
+
+  &--second::before {
+    display: block;
+    position: absolute;
+    .icon();
+    width: 35px;
+    height: 24px;
+    background-image: url("../img/flag-france.svg");
+    top: -10px;
+
+    @media @tablet-width {
+      width: 70px;
+      height: 47px;
+      top: 18px;
+      right: -38px;
+    }
+
+    @media @desktop-width {
+      top: 24px;
+      right: -33px;
+    }
+  }
+
+  &--third::before {
+    display: block;
+    position: absolute;
+    .icon();
+    width: 35px;
+    height: 24px;
+    background-image: url("../img/flag-czech.svg");
+    top: -10px;
+
+    @media @tablet-width {
+      width: 70px;
+      height: 47px;
+      top: 18px;
+      right: -38px;
+    }
+
+    @media @desktop-width {
+      top: 24px;
+      right: -33px;
+    }
   }
 }
 
@@ -55,22 +129,47 @@
 .country__count-people {
   .bloggersans(500);
   font-size: 16px;
-  line-height: 1.88;
   color: @color-second;
   opacity: 0.3;
   position: relative;
-  top: -45px;
-  right: -179px;
+  top: -38px;
+  right: -183px;
+  line-height: 1;
 
   @media @tablet-width {
     font-size: 20px;
-    top: 0;
+    top: 4px;
     right: 0;
     padding-left: 29px;
   }
 
   @media @desktop-width {
     padding-left: 31px;
+    top: 9px;
+  }
+
+  &::before {
+    display: block;
+    position: absolute;
+    .icon;
+    width: 11px;
+    height: 11px;
+    background-image: url("../img/user.svg");
+    top: 5px;
+    left: -17px;
+    opacity: 0.2;
+
+    @media @tablet-width {
+      width: 21px;
+      height: 20px;
+      top: 3px;
+      left: -1px;
+    }
+
+    @media @desktop-width {
+      width: 20px;
+      height: 20px;
+    }
   }
 }
 

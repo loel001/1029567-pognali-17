@@ -87,7 +87,7 @@
     text-align: left;
     padding-top: 11px;
     padding-left: 15px;
-    padding-bottom: 37px;
+    padding-bottom: 39px;
   }
 
   &:hover {
@@ -105,7 +105,7 @@
 
     @media @desktop-width {
       padding-top: 6px;
-      padding-bottom: 9px;
+      padding-bottom: 10px;
     }
 
     &:hover .calendar__arrival {
@@ -124,6 +124,14 @@
   &--active {
     background-color: @main-color-eighth;
     color: @color-first;
+
+    &:hover {
+      @media @desktop-width {
+        padding-top: 7px;
+        padding-bottom: 9px;
+        padding-left: 11px;
+      }
+    }
   }
 
   &--choose {
@@ -139,7 +147,7 @@
     @media @desktop-width {
       padding-top: 6px;
       padding-left: 12px;
-      padding-bottom: 9px;
+      padding-bottom: 10px;
     }
 
     &:hover {
@@ -149,7 +157,7 @@
 
   &--departure {
     @media @desktop-width {
-      padding-bottom: 10px;
+      padding-bottom: 13px;
     }
   }
 }
@@ -190,7 +198,7 @@
     color: @color-first;
 
     @media @desktop-width {
-      padding-bottom: 10px;
+      padding-bottom: 12px;
     }
   }
 

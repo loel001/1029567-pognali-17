@@ -16,8 +16,7 @@
           <picture>
             <!--<source type="image/webp" media="(min-width: 1440px)" srcset="img/logo-desktop-white@1x.webp, img/logo-desktop-white@2x.webp">
             <source type="image/webp" media="(min-width: 768px)" srcset="img/logo-tablet-white@1x.webp, img/logo-tablet-white@2x.webp">
-            <img type="image/webp" src="img/logo-mobile-white@1x.webp" srcset="img/logo-mobile-white@2x.webp"
-              width="100" height="19" alt="Логотип Погнали">-->
+            <source type="image/webp" srcset="img/logo-mobile-white@1x.webp, img/logo-mobile-white@2x.webp">-->
 
             <source media="(min-width: 1440px)" srcset="img/logo-desktop-white@1x.png, img/logo-desktop-white@2x.png">
             <source media="(min-width: 768px)" srcset="img/logo-tablet-white@1x.png, img/logo-tablet-white@2x.png">
@@ -29,7 +28,8 @@
           меню
           <svg class="page-header__icon" width="25" height="11" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 25 11">
             <g fill="#fff">
-              <path d="M1.5 3h22c.8 0 1.5-.7 1.5-1.5S24.3 0 23.5 0h-22C.7 0 0 .7 0 1.5S.7 3 1.5 3zM23.5 8h-22C.7 8 0 8.7 0 9.5S.7 11 1.5 11h22c.8 0 1.5-.7 1.5-1.5S24.3 8 23.5 8z"/>
+              <path
+                d="M1.5 3h22c.8 0 1.5-.7 1.5-1.5S24.3 0 23.5 0h-22C.7 0 0 .7 0 1.5S.7 3 1.5 3zM23.5 8h-22C.7 8 0 8.7 0 9.5S.7 11 1.5 11h22c.8 0 1.5-.7 1.5-1.5S24.3 8 23.5 8z" />
             </g>
           </svg>
         </button>
@@ -164,9 +164,14 @@
           <ul class="directions__countries">
             <li class="directions__country country">
               <picture class="country__picture">
-
+                <!--
+                  <source type="image/webp" media="(min-width: 768px)" srcset="img/thailand-desktop@1x.webp, img/thailand-desktop@2x.webp">
+                  <source type="image/webp" srcset="img/thailand-mobile@1x.webp, img/thailand-mobile@2x.webp">-->
+                <source media="(min-width: 768px)" srcset="img/thailand-desktop@1x.jpg, img/thailand-desktop@2x.jpg">
+                <img class="country__image" src="img/thailand-mobile@1x.jpg" srcset="img/thailand-mobile@2x.jpg"
+                  width="270" height="110" alt="Тайланд">
               </picture>
-              <div class="country__wrapper">
+              <div class="country__wrapper country__wrapper--first">
                 <h3 class="country__title">Тайланд</h3>
                 <p class="country__paragraf">Джугли зовут!</p>
                 <span class="country__count-people">18321</span>
@@ -174,9 +179,13 @@
             </li>
             <li class="directions__country country">
               <picture class="country__picture">
-
+                <!--<source type="image/webp" media="(min-width: 768px)" srcset="img/france-desktop@1x.webp, img/france-desktop@2x.webp">
+                <source type="image/webp" srcset="img/france-mobile@1x.webp, img/france-mobile@2x.webp">-->
+                <source media="(min-width: 768px)" srcset="img/france-desktop@1x.jpg, img/france-desktop@2x.jpg">
+                <img class="country__image" src="img/france-mobile@1x.jpg" srcset="img/france-mobile@2x.jpg" width="270"
+                  height="110" alt="Франция">
               </picture>
-              <div class="country__wrapper">
+              <div class="country__wrapper country__wrapper--second">
                 <h3 class="country__title">Франция</h3>
                 <p class="country__paragraf">Трэ бьен, манифик!</p>
                 <span class="country__count-people">12518</span>
@@ -184,9 +193,14 @@
             </li>
             <li class="directions__country country">
               <picture class="country__picture">
+                <!--<source type="image/webp" media="(min-width: 768px)" srcset="img/czech-desktop@1x.webp, img/czech-desktop@2x.webp">
+                <source type="image/webp" srcset="img/czech-mobile@1x.webp, img/czech-mobile@2x.webp">-->
 
+                <source media="(min-width: 768px)" srcset="img/czech-desktop@1x.jpg, img/czech-desktop@2x.jpg">
+                <img class="country__image" src="img/czech-mobile@1x.jpg" srcset="img/czech-mobile@2x.jpg" width="270"
+                  height="110" alt="Чехия">
               </picture>
-              <div class="country__wrapper">
+              <div class="country__wrapper country__wrapper--third">
                 <h3 class="country__title">Чехия</h3>
                 <p class="country__paragraf">Закоулки старой Европы</p>
                 <span class="country__count-people">5326</span>
@@ -220,7 +234,9 @@
                 <span class="companion__level">level</span>
               </div>
               <picture class="companion__picture">
-
+                <!--<source type="image/webp" srcset="img/firsova-desktop@1x.webp, img/firsova-desktop@2x.webp">-->
+                <img class="companion__image" src="img/firsova-desktop@1x.jpg" srcset="img/firsova-desktop@2x.jpg"
+                  width="270" height="270" alt="Таня Фирсова">
               </picture>
               <ul class="companion__desires">
                 <li class="companion__first-country">Шри ланка
@@ -263,7 +279,9 @@
                 <span class="companion__level">level</span>
               </div>
               <picture class="companion__picture">
-
+                <!--<source type="image/webp" srcset="img/demin-desktop@1x.webp, img/demin-desktop@2x.webp">-->
+                <img class="companion__image" src="img/demin-desktop@1x.jpg" srcset="img/demin-desktop@2x.jpg"
+                  width="270" height="270" alt="Петя Демин">
               </picture>
               <ul class="companion__desires">
                 <li class="companion__first-country">Бельгия
@@ -391,6 +409,21 @@
           class="map__button button button--color">Проложить маршрут</a>
       </div>
     </section>
+    <section class="address">
+      <div class="address__wrapper">
+        <picture>
+          <!--<source type="image/webp" media="(min-width: 1440px)"
+                      srcset="img/map-desktop@1x.webp, img/map-desktop@2x.webp">
+                      <source type="image/webp" media="(min-width: 768px)" srcset="img/map-tablet@1x.webp, img/map-tablet@2x.webp">
+                      <source type="image/webp" srcset="img/map-mobile@1x.webp, img/map-mobile@2x.webp">-->
+
+          <source media="(min-width: 1440px)" srcset="img/map-desktop@1x.jpg, img/map-desktop@2x.jpg">
+          <source media="(min-width: 768px)" srcset="img/map-tablet@1x.jpg, img/map-tablet@2x.jpg">
+          <img class="address__image" src="img/map-mobile@1x.jpg" srcset="img/map-mobile@2x.jpg" width="320" height="546"
+            alt="ул. Большая Конюшенная, 19/8">
+        </picture>
+      </div>
+    </section>
     <section class="modal-map">
       <h2 class="visually-hidden">Как до нас добраться</h2>
       <iframe
@@ -400,7 +433,6 @@
       <button class="modal-map__close" type="button">Закрыть</button>
     </section>
   </main>
-  <!--
   <footer class="page-footer">
     <div class="page-footer__wrapper">
       <picture>
@@ -440,7 +472,7 @@
         </a>
       </div>
     </div>
-  </footer>-->
+  </footer>
 </body>
 
 </html>

@@ -26,11 +26,14 @@
                 width="100" height="19" alt="Логотип Погнали">
             </picture>
           </a>
-          <button class="page-header__toggle-open page-header__toggle-open--color page-header__toggle-open--scroll" type="button">Открыть
+          <button class="page-header__toggle-open page-header__toggle-open--color page-header__toggle-open--scroll"
+            type="button">Открыть
             меню
-            <svg class="page-header__icon" width="25" height="11" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 25 11">
+            <svg class="page-header__icon" width="25" height="11" xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 25 11">
               <g fill="#fff">
-                <path d="M1.5 3h22c.8 0 1.5-.7 1.5-1.5S24.3 0 23.5 0h-22C.7 0 0 .7 0 1.5S.7 3 1.5 3zM23.5 8h-22C.7 8 0 8.7 0 9.5S.7 11 1.5 11h22c.8 0 1.5-.7 1.5-1.5S24.3 8 23.5 8z"/>
+                <path
+                  d="M1.5 3h22c.8 0 1.5-.7 1.5-1.5S24.3 0 23.5 0h-22C.7 0 0 .7 0 1.5S.7 3 1.5 3zM23.5 8h-22C.7 8 0 8.7 0 9.5S.7 11 1.5 11h22c.8 0 1.5-.7 1.5-1.5S24.3 8 23.5 8z" />
               </g>
             </svg>
           </button>
@@ -1076,7 +1079,16 @@
             <ul class="travelers__list">
               <li class="travelers__item ideal-traveler">
                 <a class="ideal-traveler__profile" href="#">
-                  <img class="ideal-traveler__photo">
+                  <picture>
+                    <!--<source type="image/webp" media="(min-width: 1440px)" srcset="img/firsova-desktop@1x.webp, img/firsova-desktop@2x.webp">
+                      <source type="image/webp" media="(min-width: 768px)" srcset="img/firsova-tablet@1x.webp, img/firsova-tablet@2x.webp">
+                      <source type="image/webp" srcset="img/firsova-mobile@1x.webp, img/firsova-mobile@2x.webp">-->
+
+                    <source media="(min-width: 1440px)" srcset="img/firsova-desktop@1x.jpg, img/firsova-desktop@1x.jpg">
+                    <source media="(min-width: 768px)" srcset="img/firsova-tablet@1x.jpg, img/firsova-tablet@2x.jpg">
+                    <img class="ideal-traveler__photo" src="img/firsova-mobile@1x.jpg"
+                      srcset="img/firsova-mobile@2x.jpg" width="70" height="70" alt="Таня Фирсова">
+                  </picture>
                   <h3 class="ideal-traveler__name">Таня Фирсова</h3>
                 </a>
                 <p class="ideal-traveler__paragraf">#ЗОЖ #ПП #Фитнес #пляж #авокадо #смузи</p>
@@ -1122,7 +1134,16 @@
               </li>
               <li class="travelers__item ideal-traveler">
                 <a class="ideal-traveler__profile" href="#">
-                  <img class="ideal-traveler__photo">
+                  <picture>
+                    <!--<source type="image/webp" media="(min-width: 1440px)" srcset="img/demin-desktop@1x.webp, img/demin-desktop@2x.webp">
+                          <source type="image/webp" media="(min-width: 768px)" srcset="img/demin-tablet@1x.webp, img/demin-tablet@2x.webp">
+                          <source type="image/webp" srcset="img/demin-mobile@1x.webp, img/demin-mobile@2x.webp">-->
+
+                    <source media="(min-width: 1440px)" srcset="img/demin-desktop@1x.jpg, img/demin-desktop@1x.jpg">
+                    <source media="(min-width: 768px)" srcset="img/demin-tablet@1x.jpg, img/demin-tablet@2x.jpg">
+                    <img class="ideal-traveler__photo" src="img/demin-mobile@1x.jpg" srcset="img/demin-mobile@2x.jpg"
+                      width="70" height="70" alt="Петя Демин">
+                  </picture>
                   <h3 class="ideal-traveler__name">Петя Демин</h3>
                 </a>
                 <p class="ideal-traveler__paragraf">#бургер #бар #футбол #концерт #крафт</p>
@@ -1167,7 +1188,16 @@
               </li>
               <li class="travelers__item ideal-traveler">
                 <a class="ideal-traveler__profile" href="#">
-                  <img class="ideal-traveler__photo">
+                  <picture>
+                    <!--<source type="image/webp" media="(min-width: 1440px)" srcset="img/smolov-desktop@1x.webp, img/smolov-desktop@2x.webp">
+                              <source type="image/webp" media="(min-width: 768px)" srcset="img/smolov-tablet@1x.webp, img/smolov-tablet@2x.webp">
+                              <source type="image/webp" srcset="img/smolov-mobile@1x.webp, img/smolov-mobile@2x.webp">-->
+
+                    <source media="(min-width: 1440px)" srcset="img/smolov-desktop@1x.jpg, img/smolov-desktop@1x.jpg">
+                    <source media="(min-width: 768px)" srcset="img/smolov-tablet@1x.jpg, img/smolov-tablet@2x.jpg">
+                    <img class="ideal-traveler__photo" src="img/smolov-mobile@1x.jpg" srcset="img/smolov-mobile@2x.jpg"
+                      width="70" height="70" alt="Марк Смолов">
+                  </picture>
                   <h3 class="ideal-traveler__name">Марк Смолов</h3>
                 </a>
                 <p class="ideal-traveler__paragraf">#рэп #тату #хайпбист #кроссовки #суприм</p>
@@ -1213,7 +1243,16 @@
               </li>
               <li class="travelers__item ideal-traveler">
                 <a class="ideal-traveler__profile" href="#">
-                  <img class="ideal-traveler__photo">
+                  <picture>
+                    <!--<source type="image/webp" media="(min-width: 1440px)" srcset="img/rogovaya-desktop@1x.webp, img/rogovaya-desktop@2x.webp">
+                                  <source type="image/webp" media="(min-width: 768px)" srcset="img/rogovaya-tablet@1x.webp, img/rogovaya-tablet@2x.webp">
+                                  <source type="image/webp" srcset="img/rogovaya-mobile@1x.webp, img/rogovaya-mobile@2x.webp">-->
+                    <source media="(min-width: 1440px)"
+                      srcset="img/rogovaya-desktop@1x.jpg, img/rogovaya-desktop@1x.jpg">
+                    <source media="(min-width: 768px)" srcset="img/rogovaya-tablet@1x.jpg, img/rogovaya-tablet@2x.jpg">
+                    <img class="ideal-traveler__photo" src="img/rogovaya-mobile@1x.jpg"
+                      srcset="img/rogovaya-mobile@2x.jpg" width="70" height="70" alt="Лариса Роговая">
+                  </picture>
                   <h3 class="ideal-traveler__name">Лариса Роговая</h3>
                 </a>
                 <p class="ideal-traveler__paragraf">#образование #карьера #учеба #линкедин</p>

@@ -1,0 +1,66 @@
+.address {
+  width: 100%;
+  background-color: @main-color-first;
+  margin-top: -35px;
+
+  @media @tablet-width {
+    margin-top: -85px;
+  }
+
+  @media @desktop-width {
+    margin-top: -200px;
+  }
+}
+
+.address__wrapper {
+  width: 320px;
+  margin: 0 auto;
+  position: relative;
+
+  @media @tablet-width {
+    width: 768px;
+  }
+
+  @media @desktop-width {
+    width: 1440px;
+  }
+
+  &::before {
+    position: absolute;
+    display: block;
+    background-image: url("../img/map-marker.svg");
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    content: "";
+    width: 41px;
+    height: 41px;
+    top: 143px;
+    left: 140px;
+
+    @media @tablet-width {
+      width: 57px;
+      height: 56px;
+      top: 272px;
+      left: 356px;
+    }
+
+    @media @desktop-width {
+      width: 54px;
+      height: 54px;
+      top: 346px;
+      left: 692px;
+    }
+  }
+}
+
+.address__image {
+  @media @tablet-width {
+    width: 768px;
+    height: 700px;
+  }
+
+  @media @desktop-width {
+    width: 1440px;
+    height: 750px;
+  }
+}
