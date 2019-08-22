@@ -20,7 +20,7 @@
     width: 768px;
     padding-left: 75px;
     padding-right: 75px;
-    padding-top: 66px;
+    padding-top: 62px;
     padding-bottom: 83px;
   }
 
@@ -45,6 +45,7 @@
   margin-bottom: 31px;
   padding-left: 61px;
   padding-right: 49px;
+  position: relative;
 
   @media @tablet-width {
     font-size: 28px;
@@ -55,5 +56,49 @@
   @media @desktop-width {
     margin-bottom: 0;
     line-height: 81px;
+  }
+
+  &::before {
+    position: absolute;
+    display: block;
+    .icon();
+    width: 14px;
+    height: 22px;
+    background-image: url("../img/contacts-location.svg");
+    top: 13px;
+    left: 16px;
+    z-index: 1;
+
+    @media @tablet-width {
+      width: 21px;
+      height: 31px;
+    }
+
+    @media @desktop-width {
+      width: 28px;
+      height: 43px;
+    }
+  }
+
+  &::after {
+    position: absolute;
+    display: block;
+    .icon();
+    width: 45px;
+    height: 45px;
+    background-color: @main-color-sixth;
+    border-radius: 50%;
+    top: 0;
+    left: 0;
+
+    @media @tablet-width {
+      width: 67px;
+      height: 67px;
+    }
+
+    @media @desktop-width {
+      width: 90px;
+      height: 90px;
+    }
   }
 }

@@ -2,6 +2,7 @@
   .list();
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
 
   @media @desktop-width {
     flex-direction: row;
@@ -16,4 +17,100 @@
   position: absolute;
   opacity: 0;
   pointer-events: none;
+}
+
+.transport__item {
+  position: relative;
+
+  &:hover::after {
+    display: block;
+    content: attr(tooltip);
+    position: absolute;
+    color: @color-first;
+    background-color: #101d41;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    top: 35px;
+    right: -23px;
+    white-space: nowrap;
+    border-radius: 4px;
+    font-size: 20px;
+    opacity: initial;
+    z-index: 100;
+  }
+
+  &:hover::before {
+    display: block;
+    .icon();
+    position: absolute;
+    width: 0;
+    height: 0;
+    border: 10px solid transparent;
+    border-bottom: 10px solid #101d41;
+    top: 15px;
+    left: 8px;
+    opacity: initial;
+    z-index: 100;
+  }
+}
+
+.transport__aircraft {
+  display: block;
+  .icon();
+  background-image: url("../img/plane.svg");
+  width: 19px;
+  height: 21px;
+  opacity: 0.15;
+  font-size: 0;
+  margin-right: 17px;
+
+  &--active {
+    opacity: 1;
+  }
+}
+
+.transport__car {
+  display: block;
+  .icon();
+  background-image: url("../img/bus.svg");
+  width: 19px;
+  height: 21px;
+  opacity: 0.15;
+  margin-right: 13px;
+  font-size: 0;
+
+  &--active {
+    opacity: 1;
+  }
+}
+
+.transport__bicycle {
+  display: block;
+  .icon();
+  background-image: url("../img/bike.svg");
+  width: 24px;
+  height: 21px;
+  opacity: 0.15;
+  margin-right: 10px;
+  font-size: 0;
+
+  &--active {
+    opacity: 1;
+  }
+}
+
+.transport__pedestrian {
+  display: block;
+  .icon();
+  background-image: url("../img/run.svg");
+  width: 19px;
+  height: 21px;
+  opacity: 0.15;
+  font-size: 0;
+
+  &--active {
+    opacity: 1;
+  }
 }
