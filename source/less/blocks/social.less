@@ -1,10 +1,6 @@
 .social {
   display: flex;
   .list();
-
-  @media @desktop-width {
-    display: none;
-  }
 }
 
 .social__link {
@@ -14,6 +10,11 @@
   background-color: #ffd74b;
   border-radius: 50%;
   position: relative;
+
+  @media @tablet-width {
+    width: 60px;
+    height: 60px;
+  }
 
   &:hover .social__facebook {
     fill: @main-color-eleventh;
@@ -55,16 +56,37 @@
   position: absolute;
   top: 11px;
   right: 16px;
+
+  @media @tablet-width {
+    width: 14px;
+    height: 28px;
+    top: 15px;
+    right: 23px;
+  }
 }
 
 .social__vkontakte {
   position: absolute;
   top: 16px;
   left: 11px;
+
+  @media @tablet-width {
+    width: 31px;
+    height: 16px;
+    top: 22px;
+    left: 13px;
+  }
 }
 
 .social__instagram {
   position: absolute;
   top: 13px;
   left: 14px;
+
+  @media @tablet-width {
+    width: 24px;
+    height: 24px;
+    top: 16px;
+    left: 17px;
+  }
 }
