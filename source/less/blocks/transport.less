@@ -9,18 +9,9 @@
   }
 }
 
-.transport__label {
-  font-size: 0;
-}
-
-.transport__input {
-  position: absolute;
-  opacity: 0;
-  pointer-events: none;
-}
-
 .transport__item {
   position: relative;
+  cursor: pointer;
 
   &:hover::after {
     display: block;
@@ -33,7 +24,7 @@
     padding-top: 10px;
     padding-bottom: 10px;
     top: 35px;
-    right: -23px;
+    right: -33px;
     white-space: nowrap;
     border-radius: 4px;
     font-size: 20px;
@@ -50,7 +41,7 @@
     border: 10px solid transparent;
     border-bottom: 10px solid #101d41;
     top: 15px;
-    left: 8px;
+    left: -3px;
     opacity: initial;
     z-index: 100;
   }

@@ -136,9 +136,30 @@
   font-size: 36px;
   line-height: 1.11;
   color: @color-first;
+  position: relative;
 
   @media @tablet-width {
     font-size: 60px;
+  }
+
+  &--catalog {
+    &::after {
+      display: block;
+      position: absolute;
+      .icon();
+      width: 173px;
+      height: 5px;
+      border-radius: 2.4px;
+      background-color: @main-color-second;
+      top: 46px;
+
+      @media @tablet-width {
+        width: 287px;
+        height: 8px;
+        border-radius: 4px;
+        top: 128px;
+      }
+    }
   }
 }
 
@@ -157,6 +178,20 @@
 
 .page-header__link {
   color: @color-first;
+  position: relative;
+
+  &::before {
+    @media @tablet-width {
+      display: block;
+      position: absolute;
+      .icon();
+      width: 32px;
+      height: 16px;
+      background-image: url("../img/return.svg");
+      top: 3px;
+      left: 144px;
+    }
+  }
 }
 
 .page-header__manage {

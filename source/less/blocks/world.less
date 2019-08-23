@@ -14,6 +14,7 @@
   text-transform: uppercase;
   color: rgba(25, 33, 68, 0.3);
   margin-bottom: 5px;
+  cursor: pointer;
 
   @media @tablet-width {
     font-size: 20px;
@@ -27,6 +28,10 @@
       margin-right: 30px;
     }
   }
+
+  &:active {
+    color: #192144;
+  }
 }
 
 .world__input {
@@ -36,5 +41,15 @@
 
   &:checked + .world__label {
     color: @color-third;
+  }
+
+  &:focus + .world__label {
+    outline: 2px solid #abcdef;
+  }
+}
+
+.world__label {
+  &:hover {
+    color: rgba(25, 33, 68, 0.6);
   }
 }
