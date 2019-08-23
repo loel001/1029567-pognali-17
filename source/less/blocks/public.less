@@ -1,0 +1,38 @@
+.public {
+  .list();
+  display: flex;
+  justify-content: space-between;
+  width: 100px;
+  margin: 0 auto;
+
+  @media @tablet-width {
+    margin: 0;
+    padding-left: 83px;
+    width: 223px;
+  }
+
+  @media @desktop-width {
+    display: none;
+  }
+}
+
+.public__facebook {
+  @media @tablet-width {
+    width: 14px;
+    height: 28px;
+  }
+}
+
+.public__vkontakte {
+  @media @tablet-width {
+    width: 31px;
+    height: 16px;
+  }
+}
+
+.public__instagram {
+  @media @tablet-width {
+    width: 24px;
+    height: 24px;
+  }
+}
