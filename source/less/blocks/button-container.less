@@ -1,20 +1,26 @@
 .button-container {
   .bloggersans(800);
   font-size: 17px;
-  line-height: 40px;
   text-align: center;
   color: @color-fifth;
   text-transform: uppercase;
-  .size-radius(230px, 40px, 20px);
+  width: 230px;
+  border-radius: 20px;
   border: none;
   background-color: @main-color-fifth;
   display: block;
   cursor: pointer;
+  padding-top: 10px;
+  padding-bottom: 11px;
+  padding-left: 10px;
+  padding-right: 10px;
 
   @media @tablet-width {
     font-size: 20px;
-    line-height: 50px;
-    .size-radius(148px, 50px, 25px);
+    width: 148px;
+    border-radius: 25px;
+    padding-top: 13px;
+    padding-bottom: 14px;
   }
 
   &--color {
@@ -35,6 +41,17 @@
     &:active {
       color: rgba(22, 28, 53, 0.3);
       background-color: #f3c72b;
+    }
+  }
+
+  &--catalog {
+    &:hover {
+      background-color: @main-color-third;
+    }
+
+    &:active {
+      background-color: @main-color-third;
+      color: rgba(22, 28, 53, 0.3);
     }
   }
 }
