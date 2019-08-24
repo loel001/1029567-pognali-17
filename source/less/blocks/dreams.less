@@ -46,6 +46,7 @@
 
 .dreams__item {
   line-height: 18px;
+  position: relative;
 
   @media @tablet-width {
     padding-left: 47px;
@@ -79,5 +80,95 @@
         margin-right: 0;
       }
     }
+  }
+
+  &--first::before {
+    display: block;
+    position: absolute;
+    .icon();
+    width: 26px;
+    height: 18px;
+    background-image: url("../img/flag-sri-lanka.svg");
+  }
+
+  &--second::before {
+    display: block;
+    position: absolute;
+    .icon();
+    width: 26px;
+    height: 18px;
+    background-image: url("../img/flag-thailand.svg");
+  }
+
+  &--third::before {
+    display: block;
+    position: absolute;
+    .icon();
+    width: 26px;
+    height: 18px;
+    background-image: url("../img/flag-seychelles.svg");
+  }
+
+  &--fourth::before {
+    display: block;
+    position: absolute;
+    .icon();
+    width: 26px;
+    height: 18px;
+    background-image: url("../img/flag-belgium.svg");
+  }
+
+  &--fifth::before {
+    display: block;
+    position: absolute;
+    .icon();
+    width: 26px;
+    height: 18px;
+    background-image: url("../img/flag-czech.svg");
+  }
+
+  &--sixth::before {
+    display: block;
+    position: absolute;
+    .icon();
+    width: 26px;
+    height: 18px;
+    background-image: url("../img/flag-usa.svg");
+  }
+
+  &--seventh::before {
+    display: block;
+    position: absolute;
+    .icon();
+    width: 26px;
+    height: 18px;
+    background-image: url("../img/flag-australia.svg");
+  }
+
+  &--eighth::before {
+    display: block;
+    position: absolute;
+    .icon();
+    width: 26px;
+    height: 18px;
+    background-image: url("../img/flag-dominica.svg");
+  }
+
+  &--ninth::before {
+    display: block;
+    position: absolute;
+    .icon();
+    width: 26px;
+    height: 18px;
+    background-image: url("../img/flag-united-kingdom.svg");
+  }
+
+  &--tenth::before {
+    display: block;
+    position: absolute;
+    .icon();
+    width: 18px;
+    height: 26px;
+    background-image: url("../img/flag-belgium.svg");
   }
 }

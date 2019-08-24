@@ -20,13 +20,31 @@
   padding-top: 49px;
   padding-bottom: 36px;
   width: 320px;
+  background-image: url("../img/rates@1x.png");
+  background-repeat: no-repeat, no-repeat;
+  background-position: 195px 39px;
+  background-size: 99px 99px;
+
+  @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+    background-image: url("../img/rates@2x.png");
+    background-size: 99px 99px;
+  }
 
   @media @tablet-width {
     width: 768px;
-    padding-top: 70px;
+    padding-top: 64px;
     padding-left: 40px;
     padding-right: 40px;
     padding-bottom: 85px;
+    background-image: url("../img/rates@1x.png"), url("../img/background-index-tablet.svg");
+    background-repeat: no-repeat, no-repeat;
+    background-position: 583px 412px, 527px 153px;
+    background-size: 99px 99px, 198px 285px;
+
+    @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+      background-image: url("../img/rates@2x.png"), url("../img/background-index-tablet.svg");
+      background-size: 99px 99px, 198px 285px;
+    }
   }
 
   @media @desktop-width {
@@ -35,6 +53,15 @@
     padding-top: 102px;
     padding-right: 372px;
     padding-bottom: 187px;
+    background-image: url("../img/rates@1x.png"), url("../img/background-index-desktop.svg");
+    background-repeat: no-repeat, no-repeat;
+    background-position: 1108px 287px, 747px 236px;
+    background-size: 198px 198px, 444px 300px;
+
+    @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+      background-image: url("../img/rates@2x.png"), url("../img/background-index-desktop.svg");
+      background-size: 198px 198px, 444px 300px;
+    }
   }
 }
 
@@ -95,6 +122,22 @@
 .profile__content {
   padding-top: 7px;
   position: relative;
+  display: flex;
+  flex-direction: column;
+
+  @media @tablet-width {
+    order: 2;
+    width: 565px;
+    flex-direction: row;
+    justify-content: space-between;
+    font-size: 28px;
+    line-height: 64px;
+    padding-top: 0;
+  }
+
+  @media @desktop-width {
+    width: 813px;
+  }
 
   &--last::after {
     display: block;
@@ -105,6 +148,7 @@
     background-color: black;
     opacity: 0.05;
     top: 60px;
+    left: 0;
 
     @media @tablet-width {
       width: 562px;
@@ -132,20 +176,6 @@
     @media @desktop-width {
       width: 813px;
     }
-  }
-
-  @media @tablet-width {
-    order: 2;
-    width: 565px;
-    display: flex;
-    justify-content: space-between;
-    font-size: 28px;
-    line-height: 64px;
-    padding-top: 0;
-  }
-
-  @media @desktop-width {
-    width: 813px;
   }
 }
 
@@ -182,10 +212,46 @@
 .profile__button {
   .bloggersans(800);
   font-size: 16px;
-  color: @color-third;
+  color: #132576;
+  position: relative;
+  cursor: pointer;
 
   @media @tablet-width {
     font-size: 20px;
     padding-left: 88px;
+  }
+
+  &::before {
+    @media @tablet-width {
+      display: block;
+      border-radius: 50%;
+      position: absolute;
+      .icon;
+      background-color: @main-color-twelfth;
+      width: 67px;
+      height: 67px;
+      top: -23px;
+    }
+  }
+
+  &::after {
+    @media @tablet-width {
+      display: block;
+      position: absolute;
+      .icon;
+      background-image: url("../img/business.svg");
+      width: 17px;
+      height: 21px;
+      top: 0;
+      left: 24px;
+    }
+  }
+
+  &:hover {
+    opacity: 0.7;
+  }
+
+  &:active {
+    opacity: 0.3;
   }
 }

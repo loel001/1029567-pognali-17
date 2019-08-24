@@ -1,6 +1,26 @@
 .logo-html {
-  .bloggersans(300);
+  .bloggersans(400);
   font-size: 16px;
   line-height: 34px;
   color: @color-second;
+
+  @media @tablet-width {
+    font-size: 20px;
+    padding-top: 12px;
+  }
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+.logo-html__icon {
+  @media @tablet-width {
+    width: 27px;
+    height: 34px;
+  }
 }

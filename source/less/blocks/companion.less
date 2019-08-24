@@ -1,6 +1,6 @@
 .companion__content {
-  width: 60px;
-  height: 60px;
+  width: 59px;
+  height: 59px;
   border-radius: 50%;
   background-color: rgba(0, 0, 0, 0.2);
   position: absolute;
@@ -22,6 +22,11 @@
     left: 15px;
   }
 
+  @media @tablet-width {
+    left: 20px;
+    top: 19px;
+  }
+
   @media @desktop-width {
     top: 24px;
     left: 23px;
@@ -33,18 +38,24 @@
   top: 16px;
   left: 17px;
 
+  @media @tablet-width {
+    top: 18px;
+    left: 19px;
+  }
+
   @media @desktop-width {
     top: 24px;
     left: 23px;
   }
 }
 
-.companion__picture {
-  width: 270px;
-  height: 270px;
-  display: block;
+.companion__image {
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
 
   @media @tablet-width {
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
     width: 285px;
     height: 285px;
   }
@@ -66,18 +77,10 @@
 
 .companion__desires {
   .list();
-}
-
-.companion__first-country {
-  font-size: 0;
-}
-
-.companion__second-country {
-  font-size: 0;
-}
-
-.companion__third-country {
-  font-size: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: -24px;
 }
 
 .companion__wrapper {
@@ -87,19 +90,24 @@
   padding-top: 24px;
   padding-left: 41px;
   padding-right: 36px;
-  padding-bottom: 56px;
+  padding-bottom: 23px;
 
   @media @tablet-width {
     width: 285px;
-    padding-top: 31px;
     padding-left: 26px;
     padding-right: 29px;
-    padding-bottom: 75px;
+    padding-top: 27px;
+    padding-bottom: 29px;
     .radius(0, 0, 20px, 20px);
+  }
+
+  @media @desktop-width {
+    padding-top: 31px;
   }
 }
 
 .companion__title {
+  position: relative;
   .bloggersans(800);
   font-size: 21px;
   text-align: center;
@@ -108,6 +116,54 @@
 
   @media @tablet-width {
     font-size: 24px;
+  }
+
+  &--first {
+    &::before {
+      display: block;
+      position: absolute;
+      width: 5px;
+      height: 5px;
+      border-radius: 50%;
+      background-color: #f97676;
+      left: 12px;
+      top: 11px;
+      .icon();
+
+      @media @tablet-width {
+        width: 7px;
+        height: 7px;
+        left: 20px;
+      }
+    }
+  }
+
+  &--second {
+    &::before {
+      display: block;
+      position: absolute;
+      width: 5px;
+      height: 5px;
+      border-radius: 2.5px;
+      background-color: #81e31e;
+      left: 22px;
+      top: 11px;
+      .icon();
+
+      @media @tablet-width {
+        width: 7px;
+        height: 7px;
+        left: 30px;
+      }
+    }
+  }
+
+  &:hover {
+    opacity: 0.7;
+  }
+
+  &:active {
+    opacity: 0.3;
   }
 }
 
@@ -118,15 +174,144 @@
   text-align: center;
   color: @color-second;
   .content();
-  margin-top: 17px;
+  margin-top: 13px;
+  margin-bottom: 18px;
 
   @media @tablet-width {
     font-size: 20px;
     line-height: 1.2;
+    margin-top: 20px;
+    margin-bottom: 25px;
   }
 }
 
 .companion__transport {
   .list();
   display: flex;
+}
+
+.companion__country {
+  position: relative;
+  cursor: pointer;
+
+  &--first {
+    display: block;
+    .icon();
+    background-image: url("../img/flag-sri-lanka.svg");
+    width: 35px;
+    height: 24px;
+    top: 15px;
+    fill: rgba(16, 29, 65, 0.15);
+
+    @media @tablet-width {
+      top: 11px;
+    }
+
+    @media @desktop-width {
+      top: 15px;
+    }
+  }
+
+  &--second {
+    display: block;
+    .icon();
+    background-image: url("../img/flag-thailand.svg");
+    width: 35px;
+    height: 24px;
+    top: 15px;
+
+    @media @tablet-width {
+      top: 11px;
+    }
+
+    @media @desktop-width {
+      top: 15px;
+    }
+  }
+
+  &--third {
+    display: block;
+    .icon();
+    background-image: url("../img/flag-seychelles.svg");
+    width: 35px;
+    height: 24px;
+    top: 15px;
+
+    @media @tablet-width {
+      top: 11px;
+    }
+
+    @media @desktop-width {
+      top: 15px;
+    }
+  }
+
+  &--fourth {
+    display: block;
+    .icon();
+    background-image: url("../img/flag-belgium.svg");
+    width: 35px;
+    height: 24px;
+    top: 15px;
+
+    @media @tablet-width {
+      top: 11px;
+    }
+
+    @media @desktop-width {
+      top: 15px;
+    }
+  }
+
+  &--fifth {
+    display: block;
+    .icon();
+    background-image: url("../img/flag-czech.svg");
+    width: 35px;
+    height: 24px;
+    top: 15px;
+
+    @media @tablet-width {
+      top: 11px;
+    }
+
+    @media @desktop-width {
+      top: 15px;
+    }
+  }
+
+  &:not(:last-child) {
+    margin-right: 19px;
+  }
+
+  &:hover::after {
+    display: block;
+    content: attr(tooltip);
+    position: absolute;
+    color: @color-first;
+    background-color: #101d41;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    top: 35px;
+    right: -23px;
+    white-space: nowrap;
+    border-radius: 4px;
+    font-size: 20px;
+    z-index: 100;
+  }
+
+  &:hover::before {
+    display: block;
+    .icon();
+    position: absolute;
+    width: 0;
+    height: 0;
+    border: 10px solid transparent;
+    border-bottom: 10px solid #101d41;
+    top: 15px;
+    left: 8px;
+    z-index: 100;
+  }
 }

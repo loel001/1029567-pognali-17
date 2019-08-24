@@ -20,9 +20,15 @@
     flex-wrap: wrap;
     width: 600px;
     color: @color-first;
-    background-color: @main-color-tenth;
+    background-color: #161c34;
     padding-left: 0;
     line-height: 58px;
+  }
+
+  &--color {
+    @media @desktop-width {
+      background-color: @main-color-tenth;
+    }
   }
 }
 
@@ -31,6 +37,14 @@
 
   @media @desktop-width {
     color: @color-first;
+
+    &:hover {
+      color: @color-sixth;
+    }
+
+    &:active {
+      color: rgba(255, 215, 75, 0.3);
+    }
   }
 }
 

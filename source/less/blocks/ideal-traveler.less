@@ -127,17 +127,19 @@
 }
 
 .ideal-traveler__photo {
-  width: 70px;
-  height: 70px;
+  border-radius: 50%;
 
   @media @tablet-width {
     width: 190px;
     height: 190px;
+    border-radius: 7%;
   }
 
   @media @desktop-width {
     width: 285px;
     height: 285px;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
   }
 }
 
@@ -261,39 +263,6 @@
   &--rate {
     @media @tablet-width {
       width: 230px;
-    }
-  }
-}
-
-.ideal-traveler__round {
-  @media @tablet-width {
-    r: 29px;
-    cx: 35px;
-    cy: 34px;
-  }
-
-  &--first {
-    @media @tablet-width {
-      stroke-dashoffset: 47px;
-    }
-  }
-
-  &--second {
-    @media @tablet-width {
-      stroke-dasharray: 190, 32;
-      stroke-dashoffset: 85;
-    }
-  }
-
-  &--third {
-    @media @tablet-width {
-      stroke-dasharray: 100, 140;
-    }
-  }
-
-  &--fourth {
-    @media @tablet-width {
-      stroke-dasharray: 49, 88;
     }
   }
 }

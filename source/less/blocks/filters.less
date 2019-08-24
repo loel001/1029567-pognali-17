@@ -24,7 +24,7 @@
     width: 768px;
     padding-left: 75px;
     padding-right: 75px;
-    padding-top: 58px;
+    padding-top: 54px;
     padding-bottom: 71px;
     //padding-bottom: 1px;
   }
@@ -44,6 +44,7 @@
   color: @color-third;
   .content();
   text-transform: uppercase;
+  position: relative;
 
   @media @tablet-width {
     display: none;
@@ -53,6 +54,17 @@
     display: block;
     font-size: 20px;
   }
+
+  &::before {
+    display: block;
+    position: absolute;
+    .icon();
+    background-image: url("../img/filter.svg");
+    width: 15px;
+    height: 10px;
+    top: 5px;
+    left: -27px;
+  }
 }
 
 .filters__button {
@@ -61,6 +73,7 @@
   height: 12px;
   border: none;
   background-color: @main-color-twelfth;
+  display: none;
 }
 
 .filters__content {

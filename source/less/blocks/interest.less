@@ -18,21 +18,21 @@
   .wrapper();
   padding-top: 70px;
   padding-left: 17px;
-  padding-bottom: 26px;
+  padding-bottom: 27px;
 
   @media @tablet-width {
     width: 768px;
     padding-left: 75px;
     padding-right: 75px;
-    padding-bottom: 44px;
+    padding-bottom: 61px;
   }
 
   @media @desktop-width {
     width: 1440px;
     padding-left: 127px;
     padding-right: 132px;
-    padding-top: 104px;
-    padding-bottom: 98px;
+    padding-top: 98px;
+    padding-bottom: 113px;
   }
 }
 
@@ -47,7 +47,7 @@
   }
 
   @media @desktop-width {
-    margin-bottom: 53px;
+    margin-bottom: 58px;
   }
 }
 
@@ -82,7 +82,17 @@
 
 .interest__login {
   color: @color-sixth;
-  border-bottom: 0.5px solid #ffd74b;
+  border-bottom: 0.5px solid @color-sixth;
+
+  &:hover {
+    color: @color-fourth;
+    border-bottom: 0.5px solid @color-fourth;
+  }
+
+  &:active {
+    color: rgba(255, 141, 48, 0.3);
+    border-bottom: 0.5px solid rgba(255, 141, 48, 0.3);
+  }
 }
 
 .interest__registration {
@@ -104,6 +114,25 @@
   padding-right: 30px;
   padding-top: 21px;
   padding-bottom: 20px;
+  cursor: pointer;
+
+  &::placeholder {
+    color: rgba(68, 68, 68, 0.3);
+  }
+
+  &:hover::placeholder {
+    color: rgba(68, 68, 68, 0.5);
+  }
+
+  &:active {
+    background-color: @main-color-first;
+    border: solid 4px @color-first;
+  }
+
+  &:focus {
+    background-color: @main-color-first;
+    border: solid 4px @color-first;
+  }
 
   @media @tablet-width {
     font-size: 24px;
@@ -119,16 +148,11 @@
   }
 }
 
-.interest__email::placeholder {
-  color: @color-second;
-  opacity: 0.3;
-}
-
 .interest__button {
   display: block;
   font-size: 0;
   width: 60px;
-  height: 62px;
+  min-height: 62px;
   border-radius: 10px;
   background-color: @main-color-fifth;
   position: absolute;
@@ -137,7 +161,7 @@
 
   @media @tablet-width {
     width: 82px;
-    height: 81px;
+    min-height: 81px;
     .radius(0, 20px, 20px, 0);
   }
 
@@ -145,9 +169,41 @@
     .bloggersans(800);
     font-size: 24px;
     color: @color-seventh;
-    line-height: 81px;
     padding-left: 38px;
     width: 328px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+
+  &::before {
+    position: relative;
+    display: block;
+    .icon();
+    width: 10px;
+    height: 14px;
+    border: 7px solid transparent;
+    border-left: 10px solid #1d2e5b;
+    right: -28px;
+    top: 23px;
+
+    @media @tablet-width {
+      right: -37px;
+      top: 36px;
+    }
+
+    @media @desktop-width {
+      right: -241px;
+      top: 22px;
+    }
+  }
+
+  &:hover::before {
+    border: 7px solid transparent;
+    border-left: 7px solid @main-color-eleventh;
+  }
+
+  &:active::before {
+    opacity: 0.3;
   }
 }
 
@@ -166,12 +222,12 @@
     text-align: center;
     line-height: 1.18;
     margin-top: 56px;
-    margin-bottom: 52px;
+    margin-bottom: 42px;
   }
 
   @media @desktop-width {
-    margin-top: 65px;
-    margin-bottom: 69px;
+    margin-top: 60px;
+    margin-bottom: 56px;
   }
 }
 
@@ -193,12 +249,6 @@
 .interest__carry {
   @media @tablet-width {
     display: none;
-  }
-}
-
-.contacts__item {
-  @media @tablet-width {
-    margin-bottom: 24px;
   }
 }
 

@@ -101,15 +101,17 @@
 }
 
 .personal-profile__photo {
-  width: 99px;
-  height: 100px;
+  border-radius: 50%;
 
   @media @tablet-width {
     width: 94px;
     height: 94px;
+    border-radius: 10%;
   }
 
   @media @desktop-width {
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
     width: 190px;
     height: 190px;
   }
@@ -273,13 +275,6 @@
 
 .personal-profile__transport {
   line-height: 33px;
-}
-
-.personal-profile__round {
-  @media @tablet-width {
-    r: 45;
-    stroke-dashoffset: 28;
-  }
 }
 
 .personal-profile__hide {

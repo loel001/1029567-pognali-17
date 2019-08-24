@@ -7,22 +7,61 @@
   border-radius: 10px;
   border: solid 3px transparent;
   width: 270px;
-  height: 62px;
   display: block;
   padding-left: 20px;
   padding-top: 18px;
+  padding-bottom: 18px;
+  padding-right: 20px;
+  position: relative;
 
   @media @tablet-width {
     width: 618px;
-    height: 81px;
     font-size: 24px;
     padding-left: 31px;
+    padding-right: 31px;
     padding-top: 27px;
+    padding-bottom: 27px;
     border-radius: 20px;
   }
 
   @media @desktop-width {
     width: 274px;
+  }
+
+  &::before {
+    position: absolute;
+    display: block;
+    .icon();
+    width: 10px;
+    height: 14px;
+    border: 7px solid transparent;
+    border-left: 10px solid @main-color-eighth;
+    right: 14px;
+    top: 22px;
+
+    @media @tablet-width {
+      right: 26px;
+      top: 32px;
+    }
+  }
+
+  &:hover {
+    background-color: @main-color-first;
+    color: @color-first;
+  }
+
+  &:active {
+    background-color: @main-color-first;
+    color: rgba(255, 255, 255, 0.3);
+  }
+
+  &:hover::before {
+    border: 7px solid transparent;
+    border-left: 7px solid @main-color-eleventh;
+  }
+
+  &:active::before {
+    opacity: 0.3;
   }
 
   &--color {
@@ -39,10 +78,11 @@
     @media @tablet-width {
       display: block;
       width: 274px;
-      height: 81px;
       font-size: 24px;
       padding-left: 31px;
+      padding-right: 31px;
       padding-top: 27px;
+      padding-bottom: 27px;
       border-radius: 20px;
     }
   }
@@ -50,6 +90,12 @@
   &--width {
     @media @desktop-width {
       width: 280px;
+    }
+  }
+
+  &--desktop {
+    @media @desktop-width {
+      position: absolute;
     }
   }
 }

@@ -15,13 +15,29 @@
         <div class="page-header__content">
           <a class="page-header__logo page-header__logo--page logo" href="index.html">
             <picture>
+              <!--<source type="image/webp" media="(min-width: 1440px)" srcset="img/logo-desktop-white@1x.webp, img/logo-desktop-white@2x.webp">
+                  <source type="image/webp" media="(min-width: 768px)" srcset="img/logo-tablet-white@1x.webp, img/logo-tablet-white@2x.webp">
+                  <img type="image/webp" src="img/logo-mobile-white@1x.webp" srcset="img/logo-mobile-white@2x.webp"
+                    width="100" height="19" alt="Логотип Погнали">-->
 
-              <svg class="logo__svg logo__svg--scroll" width="100" height="19"></svg>
+              <source media="(min-width: 1440px)" srcset="img/logo-desktop-white@1x.png, img/logo-desktop-white@2x.png">
+              <source media="(min-width: 768px)" srcset="img/logo-tablet-white@1x.png, img/logo-tablet-white@2x.png">
+              <img class="logo__image" src="img/logo-mobile-white@1x.png" srcset="img/logo-mobile-white@2x.png"
+                width="100" height="19" alt="Логотип Погнали">
             </picture>
           </a>
-          <button class="page-header__toggle-open page-header__toggle-open--scroll" type="button">Открыть
-            меню</button>
-          <ul class="page-header__navigation site-list">
+          <button class="page-header__toggle-open page-header__toggle-open--color page-header__toggle-open--scroll"
+            type="button">Открыть
+            меню
+            <svg class="page-header__icon" width="25" height="11" xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 25 11">
+              <g fill="#fff">
+                <path
+                  d="M1.5 3h22c.8 0 1.5-.7 1.5-1.5S24.3 0 23.5 0h-22C.7 0 0 .7 0 1.5S.7 3 1.5 3zM23.5 8h-22C.7 8 0 8.7 0 9.5S.7 11 1.5 11h22c.8 0 1.5-.7 1.5-1.5S24.3 8 23.5 8z" />
+              </g>
+            </svg>
+          </button>
+          <ul class="page-header__navigation site-list site-list--color">
             <li class="site-list__item">
               <a class="site-list__link" href="index.html">О сервисе</a>
             </li>
@@ -29,7 +45,7 @@
               <a class="site-list__link" href="form.html">Направления</a>
             </li>
             <li class="site-list__item">
-              <a>Попутчики</a>
+              <a class="site-list__link">Попутчики</a>
             </li>
           </ul>
           <ul class="page-header__manage">
@@ -46,7 +62,7 @@
           </ul>
         </div>
         <ul class="page-header__list">
-          <li class="page-header__item">Попутчики</li>
+          <li class="page-header__item page-header__item--catalog">Попутчики</li>
           <li class="page-header__main">
             <a class="page-header__link" href="index.html">на главную</a>
           </li>
@@ -55,6 +71,18 @@
     </div>
     <nav class="main-nav main-nav--page">
       <div class="main-nav__wrapper main-nav__wrapper--page">
+        <div class="main-nav__content">
+          <a class="main-nav__logo">
+            <picture>
+              <!--<source type="image/webp" media="(min-width: 768px)" srcset="img/logo-tablet-blue@1x.webp, img/logo-tablet-blue@2x.webp">
+                    <source type="image/webp" srcset="img/logo-mobile-blue@1x.webp, img/logo-mobile-blue@2x.webp">-->
+              <source media="(min-width: 768px)" srcset="img/logo-tablet-blue@1x.png, img/logo-tablet-blue@2x.png">
+              <img class="main-nav__image" src="img/logo-mobile-blue@1x.png" srcset="img/logo-mobile-blue@2x.png"
+                width="100" height="19" alt="Логотип Погнали">
+            </picture>
+          </a>
+          <button class="main-nav__close" type="button">Закрыть меню</button>
+        </div>
         <ul class="main-nav__list site-list">
           <li class="site-list__item">
             <a class="site-list__link" href="index.html">О сервисе</a>
@@ -68,34 +96,63 @@
         </ul>
         <a class="main-nav__login button-authorization" href="login.html">Авторизация</a>
         </ul>
-        <ul class="main-nav__connection contacts">
-          <li class="contacts__items">
-            <a class="contacts__phone-number phone-number" href="tel:+78005558628">8 800 555-86-28</a>
+        <ul class="main-nav__connection">
+          <li class="main-nav__items">
+            <a class="main-nav__phone-number" href="tel:+78005558628">
+              <span>8 800 555-86-28</span>
+              <svg class="contacts__image-phone" width="18" height="18" xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 36 36">
+                <path
+                  d="M18 0C11.6 0 5.2 1.1 2.8 3.4.9 5.3.2 8.7 0 10.8v.3c0 .8.7 1.5 1.5 1.5.1 0 3.7-.3 5.9-.5h.2c.8 0 1.5-.7 1.5-1.5v-3C9 6.7 9.7 6 10.7 6h14.7c.8 0 1.6.7 1.6 1.7v3c0 .8.7 1.5 1.5 1.5h.2c2.2.2 5.8.5 5.9.5.8 0 1.5-.7 1.5-1.5v-.3c-.2-2.1-.9-5.5-2.8-7.4C30.8 1.1 24.4 0 18 0zm0 19.5c-1.7 0-3 1.3-3 3s1.3 3 3 3 3-1.3 3-3-1.3-3-3-3zm-2.3-6.8v-1.9c0-1-.8-1.9-1.9-1.9s-1.8.9-1.8 2v1.9L1.9 23.6c-.7.7-1.1 1.6-1.1 2.7v3c0 1.7 1.3 3 3 3h.8v1.9c0 1 .8 1.9 1.9 1.9s1.9-.8 1.9-1.9v-1.9h19.5v1.9c0 1 .8 1.9 1.9 1.9 1 0 1.9-.8 1.9-1.9v-1.9h.8c1.7 0 3-1.3 3-3v-3c0-1.1-.4-2-1.1-2.7L24 12.7v-1.9c0-1-.8-1.9-1.9-1.9s-1.9.8-1.9 1.9v1.9h-4.5zm2.3 3.8c3.3 0 6 2.7 6 6s-2.7 6-6 6-6-2.7-6-6 2.7-6 6-6z" />
+              </svg>
+            </a>
           </li>
-          <li class="contacts__items">
-            <a class="contacts__email email" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+          <li class="main-nav__items">
+            <a class="main-nav__email" href="mailto:mail@htmlacademy.ru">
+              <span>mail@htmlacademy.ru</span>
+              <svg class="contacts__image-email" width="18" height="13" xxmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 36 26">
+                <path
+                  d="M0 23c0 1.6 1.3 3 3 3h30c1.7 0 3-1.3 3-3V3c0-1.6-1.3-3-3-3H3C1.3 0 0 1.3 0 3v20zm11-10L4.2 6.2c-.6-.6-.6-1.5 0-2 .6-.6 1.5-.6 2.1 0l11 10.9c.4.4 1.2.4 1.6 0l11-10.9c.6-.6 1.5-.6 2.1 0 .6.6.6 1.5 0 2L25 13l6.9 6.8c.6.6.6 1.5 0 2-.6.6-1.5.6-2.1 0L22.9 15s-2.1 2.2-2.5 2.5c-.6.6-1.4 1-2.4 1-.9 0-1.8-.4-2.4-1L13.1 15l-6.9 6.8c-.6.6-1.5.6-2.1 0-.6-.6-.6-1.5 0-2L11 13z" />
+              </svg>
+            </a>
           </li>
         </ul>
-        <ul class="main-nav__links-header social">
-          <li class="social__button">
-            <a class="social__link social__link--facebook" href="https://www.facebook.com/">
-              <svg></svg>
+        <ul class="main-nav__links-header public">
+          <li class="public__button">
+            <a class="publicl__link" href="https://www.facebook.com/">
+              <svg class="public__facebook" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 11 21" fill="#cccccc"
+                width="11" height="21">
+                <path
+                  d="M7.8 21H2.2v-9.8H0V6.4h2.1c-.1-2.2.3-3.8 1.3-4.9C4.2.6 5.5.1 7.1 0H11v4.7H7.9c-.1.2-.2.8-.2 1.7H11v4.8H7.8V21zm-4.4-1.1h3.1v-9.8h3.2V7.5H6.5v-.6c0-1.5 0-2.9.8-3.4l.2-.1h2.3V1.1H7.1c-1.2.1-2.2.5-2.8 1.2-.8.9-1.1 2.5-.9 4.6l.1.6H1.2v2.6h2.2v9.8z" />
+              </svg>
               <span class="visually-hidden">
                 Фейсбук
               </span>
             </a>
           </li>
-          <li class="social__button">
-            <a class="social__link social__link--vkontakte" href="https://vk.com/">
-              <svg></svg>
+          <li class="public__button">
+            <a class="public__link" href="https://vk.com/">
+              <svg class="public__vkontakte" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 15.8" fill="#cccccc"
+                width="23" height="12">
+                <path
+                  d="M23.9 15.8c-.4 0-1.2-.1-2.1-.6-.6-.4-1.2-1-1.8-1.5-.4-.4-1.2-1.2-1.4-1.2-.3.1-.5.9-.5 1.6 0 .1 0 .8-.5 1.2-.4.4-1.1.5-1.2.5h-1.9c-1 0-4.4-.2-7.4-3C3.4 9.4.3 3 .1 2.7 0 2.2-.1 1.5.3 1.1.7.7 1.4.6 1.7.6H5.9c.1 0 .6.1 1 .3.4.2.6.7.6.7S8.1 3 9 4.3c1.3 2 1.9 2.5 2.1 2.6.2-.4.3-1.7.2-2.9 0-.5-.1-1.1-.3-1.3-.1-.1-.4-.3-.8-.3l-.7-.6c-.1-.7.6-1.2 1.1-1.4.7-.3 1.8-.4 3.1-.4h.7c1.2 0 1.6.1 2.1.2 1.7.4 1.6 1.7 1.6 3.3v2.1c0 .4 0 1 .1 1.3.2-.1.9-.7 2.1-2.5.8-1.2 1.4-2.5 1.5-2.8.2-.4.6-.9 1.6-.9h4.7c1 0 1.6.3 1.8.9.3.6.2 1.7-2.4 4.6-.4.4-.7.8-1 1.1-.6.7-1.2 1.4-1.2 1.6.1.1.7.6 1.3 1.1 1.5 1.2 2.5 2.3 3 3.1.5.8.4 1.3.3 1.7-.4.9-1.6 1-1.9 1h-4.1zm-5.3-4.9c.9 0 1.7.8 2.5 1.6.5.5 1 1 1.5 1.3.7.4 1.3.4 1.4.4h3.9c.2 0 .4-.1.5-.1 0 0 0-.1-.1-.2-.4-.7-1.4-1.7-2.7-2.7-1.2-1-1.8-1.5-1.9-2.2-.1-.8.5-1.4 1.6-2.7.3-.3.6-.7 1-1.1 1.6-1.8 2-2.6 2.1-3H23.1c-.2.4-.8 1.8-1.6 3-1.9 2.8-2.8 3.2-3.4 3.2-.2 0-.4 0-.6-.1-1-.6-1-1.8-.9-2.8v-.4-1.7c.1-1.7 0-1.7-.4-1.8-.4-.1-.7-.1-1.9-.2h-.7c-.6 0-1.3 0-1.9.1l.3.3c.6.7.6 2 .6 2.2.1 1.6.1 3.8-1 4.3-.2.1-.4.1-.6.1-.9 0-1.9-.9-3.4-3.3-.8-1.2-1.5-2.7-1.5-2.8L6 2.2c-.1 0-.2-.1-.3-.1h-4-.1c.6 1.2 3.4 6.6 6.5 9.5 2.7 2.5 5.8 2.6 6.4 2.6h1.9s.2-.1.3-.1V14c0-.3 0-2.6 1.6-3 .1-.1.2-.1.3-.1z" />
+              </svg>
               <span class="visually-hidden">
                 Вконтакте
               </span>
             </a>
           </li>
-          <li class="social__button">
-            <a class="social__link social__link--instagram" href="https://www.instagram.com/?hl=ru">
-              <svg></svg>
+          <li class="public__button">
+            <a class="public__link" href="https://www.instagram.com/?hl=ru">
+              <svg class="public__instagram" id="Layer_1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 23 23"
+                fill="#cccccc" width="18" height="18">
+                <path class="st0"
+                  d="M17 1.5c2.5 0 4.5 2 4.5 4.5v11c0 2.5-2 4.5-4.5 4.5H6c-2.5 0-4.5-2-4.5-4.5V6c0-2.5 2-4.5 4.5-4.5h11M17 0H6C2.7 0 0 2.7 0 6v11c0 3.3 2.7 6 6 6h11c3.3 0 6-2.7 6-6V6c0-3.3-2.7-6-6-6z" />
+                <path class="st0"
+                  d="M11.5 7.1c2.4 0 4.4 2 4.4 4.4 0 2.4-2 4.4-4.4 4.4-2.4 0-4.4-2-4.4-4.4 0-2.4 2-4.4 4.4-4.4m0-1.5c-3.3 0-5.9 2.7-5.9 5.9s2.7 5.9 5.9 5.9 5.9-2.7 5.9-5.9-2.6-5.9-5.9-5.9z" />
+                <circle class="st0" cx="17.6" cy="5.4" r="1.3" />
+              </svg>
               <span class="visually-hidden">
                 Инстаграмм
               </span>
@@ -958,26 +1015,28 @@
               <h2 class="choice__title">Подберите идеального попутчика</h2>
               <ul class="choice_list preferences">
                 <li class="preferences__item">
-                  Хобби<span class="preferences__appearance">:</span>
+                  <span class="preferences__traveler">Хобби</span>
+                  <span class="preferences__appearance">:</span>
                   <ul class="preferences__list preferences__list--hide">
                     <li class="preferences__enthusiasm">
-                      <input class="preferences__input" type="checkbox" name="genre" value="hard-rock" id="hard-rock"
+                      <input class="preferences__input preferences__input--checkbox" type="checkbox" name="preferences" value="gym" id="gym"
                         checked>
-                      <label class="preferences__label" for="hard-rock">Cпортзал</label>
+                      <label class="preferences__label" for="gym">Cпортзал</label>
                     </li>
                     <li class="preferences__enthusiasm">
-                      <input class="preferences__input" type="checkbox" name="genre" value="russian-rock"
-                        id="russian-rock">
-                      <label class="music__label" for="russian-rock">Кальян</label>
+                      <input class="preferences__input preferences__input--checkbox" type="checkbox" name="preferences" value="hookah"
+                        id="hookah">
+                      <label class="preferences__label" for="hookah">Кальян</label>
                     </li>
                     <li class="preferences__enthusiasm">
-                      <input class="preferences__input" type="checkbox" name="genre" value="eurodance" id="eurodance">
-                      <label class="preferences__label" for="eurodance">Диван</label>
+                      <input class="preferences__input preferences__input--checkbox" type="checkbox" name="preferences" value="sofa" id="sofa">
+                      <label class="preferences__label" for="sofa">Диван</label>
                     </li>
                   </ul>
                 </li>
                 <li class="preferences__item">
-                  Музыка<span class="preferences__appearance">:</span>
+                  <span class="preferences__traveler">Музыка</span>
+                  <span class="preferences__appearance">:</span>
                   <ul class="preferences__list">
                     <li class="preferences__enthusiasm">
                       <input class="preferences__input preferences__input--checkbox" type="checkbox" name="genre"
@@ -985,62 +1044,59 @@
                       <label class="preferences__label" for="hard-rock">Тяжелый рок</label>
                     </li>
                     <li class="preferences__enthusiasm">
-                      <input class="preferences__input" type="checkbox" name="genre" value="russian-rock"
+                      <input class="preferences__input preferences__input--checkbox" type="checkbox" name="genre" value="russian-rock"
                         id="russian-rock">
                       <label class="preferences__label" for="russian-rock">Русский рэп</label>
                     </li>
                     <li class="preferences__enthusiasm">
-                      <input class="preferences__input" type="checkbox" name="genre" value="eurodance" id="eurodance">
+                      <input class="preferences__input preferences__input--checkbox" type="checkbox" name="genre" value="eurodance" id="eurodance">
                       <label class="preferences__label" for="eurodance">Евроденс</label>
                     </li>
                   </ul>
                 </li>
                 <li class="preferences__item">
-                  Еда<span class="preferences__appearance">:</span>
+                  <span class="preferences__traveler">Еда</span>
+                  <span class="preferences__appearance">:</span>
                   <ul class="preferences__list preferences__list--hide">
                     <li class="preferences__enthusiasm">
-                      <input class="preferences__input" type="checkbox" name="genre" value="hard-rock" id="hard-rock"
+                      <input class="preferences__input preferences__input--checkbox" type="checkbox" name="food" value="meat" id="meat"
                         checked>
-                      <label class="preferences__label" for="hard-rock">Мясоед</label>
+                      <label class="preferences__label" for="meat">Мясоед</label>
                     </li>
                     <li class="preferences__enthusiasm">
-                      <input class="preferences__input" type="checkbox" name="genre" value="russian-rock"
-                        id="russian-rock">
-                      <label class="preferences__label" for="russian-rock">Сидит на ПП</label>
+                      <input class="preferences__input preferences__input--checkbox" type="checkbox" name="food" value="proper-nutrition"
+                        id="proper-nutrition">
+                      <label class="preferences__label" for="proper-nutrition">Сидит на ПП</label>
                     </li>
                     <li class="preferences__enthusiasm">
-                      <input class="preferences__input" type="checkbox" name="genre" value="eurodance" id="eurodance">
-                      <label class="preferences__label" for="eurodance">Веган-сыроед</label>
+                      <input class="preferences__input preferences__input--checkbox" type="checkbox" name="food" value="vegan" id="vegan">
+                      <label class="preferences__label" for="vegan">Веган-сыроед</label>
                     </li>
                   </ul>
                 </li>
                 <li class="preferences__item">
                   <span class="preferences__additive">Транспорт</span>
                   <span class="preferences__appearance preferences__appearance--change">:</span>
-                  <ul class="preferences__transport transport">
-                    <li class="transport__aircraft">
-                      <input class="transport__input transport__input--checkbox" type="checkbox" name="aircraft"
+                  <ul class="preferences__transport transport-choice">
+                    <li class="transport-сhoice__type">
+                      <input class="transport-choice__input transport-choice__input--checkbox" type="checkbox" name="aircraft"
                         value="aircraft" id="transport-aircraft" checked>
-                      <label class="transport__label" for="transport-aircraft">Авиаперелет</label>
-                      <span class="transport__tooltip">Авиаперелет</span>
+                      <label class="transport-choice__label transport-choice__label--aircraft" for="transport-aircraft">Авиаперелет</label>
                     </li>
-                    <li class="transport__сar">
-                      <input class="transport__input transport__input--checkbox" type="checkbox" name="car" value="car"
+                    <li class="transport-сhoice__type">
+                      <input class="transport-choice__input transport-choice__input--checkbox" type="checkbox" name="car" value="car"
                         id="transport-car" checked>
-                      <label class="transport__label" for="transport-car">Автотранспорт</label>
-                      <span class="transport__tooltip">Автотранспорт</span>
+                      <label class="transport-choice__label transport-choice__label--car" for="transport-car">Автотранспорт</label>
                     </li>
-                    <li class="transport__bicycle">
-                      <input class="transport__input transport__input--checkbox" type="checkbox" name="bicycle"
+                    <li class="transport-сhoice__type">
+                      <input class="transport-choice__input transport-choice__input--checkbox" type="checkbox" name="bicycle"
                         value="bicycle" id="transport-bicycle">
-                      <label class="transport__label" for="transport-bicycle">Велосипед</label>
-                      <span class="transport__tooltip">Автотранспорт</span>
+                      <label class="transport-choice__label transport-choice__label--bicycle" for="transport-bicycle">Велосипед</label>
                     </li>
-                    <li class="transport__pedestrian">
-                      <input class="transport__input transport__input--checkbox" type="checkbox" name="pedestrian"
+                    <li class="transport-сhoice__type">
+                      <input class="transport-choice__input transport-choice__input--checkbox" type="checkbox" name="pedestrian"
                         value="pedestrian" id="transport-pedestrian" checked>
-                      <label class="transport__label" for="transport-pedestrian">Пешком</label>
-                      <span class="transport__tooltip">Пешком</span>
+                      <label class="transport-choice__label transport-choice__label--pedestrian" for="transport-pedestrian">Пешком</label>
                     </li>
                   </ul>
                 </li>
@@ -1063,15 +1119,24 @@
             <ul class="travelers__list">
               <li class="travelers__item ideal-traveler">
                 <a class="ideal-traveler__profile" href="#">
-                  <img class="ideal-traveler__photo">
+                  <picture>
+                    <!--<source type="image/webp" media="(min-width: 1440px)" srcset="img/firsova-desktop@1x.webp, img/firsova-desktop@2x.webp">
+                      <source type="image/webp" media="(min-width: 768px)" srcset="img/firsova-tablet@1x.webp, img/firsova-tablet@2x.webp">
+                      <source type="image/webp" srcset="img/firsova-mobile@1x.webp, img/firsova-mobile@2x.webp">-->
+
+                    <source media="(min-width: 1440px)" srcset="img/firsova-desktop@1x.jpg, img/firsova-desktop@1x.jpg">
+                    <source media="(min-width: 768px)" srcset="img/firsova-tablet@1x.jpg, img/firsova-tablet@2x.jpg">
+                    <img class="ideal-traveler__photo" src="img/firsova-mobile@1x.jpg"
+                      srcset="img/firsova-mobile@2x.jpg" width="70" height="70" alt="Таня Фирсова">
+                  </picture>
                   <h3 class="ideal-traveler__name">Таня Фирсова</h3>
                 </a>
                 <p class="ideal-traveler__paragraf">#ЗОЖ #ПП #Фитнес #пляж #авокадо #смузи</p>
                 <h4 class="ideal-traveler__title">xочет посетить:</h4>
                 <ul class="ideal-traveler__desires dreams">
-                  <li class="dreams__item">Шри ланка</li>
-                  <li class="dreams__item">Тайланд</li>
-                  <li class="dreams__item">Сейшелы</li>
+                  <li class="dreams__item dreams__item--first">Шри ланка</li>
+                  <li class="dreams__item dreams__item--second">Тайланд</li>
+                  <li class="dreams__item dreams__item--third">Сейшелы</li>
                 </ul>
                 <div class="ideal-traveler__content">
                   <h4 class="ideal-traveler__title">транспорт:</h4>
@@ -1079,22 +1144,23 @@
                 </div>
                 <div class="ideal-traveler__wrapper">
                   <ul class="ideal-traveler__transport transport">
-                    <li class="transport__aircraft transport__aircraft--active">Авиаперелет
-                      <span сlass="transport__tooltip">Авиаперелет</span>
+                    <li class="transport__item" tooltip="Авиаперелет">
+                      <span class="transport__aircraft transport__aircraft--active"
+                        aria-label="Авиаперелет">Авиаперелет</span>
                     </li>
-                    <li class="transport__car">Автотранспорт
-                      <span class="transport__tooltip">Автортранспорт</span>
+                    <li class="transport__item" tooltip="Автотранспорт">
+                      <span class="transport__car" aria-label="Автотранспорт">Автотранспорт</span>
                     </li>
-                    <li class="transport__bicycle">Велосипед
-                      <span сlass="transport__tooltip">Велосипед</span>
+                    <li class="transport__item" tooltip="Велосипед">
+                      <span class="transport__bicycle" aria-label="Велосипед">Велосипед</span>
                     </li>
-                    <li class="transport__pedestrian">Пешком
-                      <span сlass="transport__tooltip">Пешком</span>
+                    <li class="transport__item" tooltip="Пешком">
+                      <span class="transport__pedestrian" aria-label="Пешком">Пешком</span>
                     </li>
                   </ul>
-                  <svg class="ideal-traveler__circle" width="50" height="50">
-                    <circle class="ideal-traveler__round ideal-traveler__round--first" r="22.5" cx="25" cy="25"
-                      fill="none" stroke="#ff8d30" stroke-width="3" stroke-dasharray="180 2" stroke-dashoffset="78">
+                  <svg class="ideal-traveler__circle" width="50" height="50" viewBox="0 0 60 60">
+                    <circle class="ideal-traveler__round" r="28" cx="30" cy="30" fill="none" stroke="#ff8d30"
+                      stroke-width="3" stroke-dasharray="180 5" stroke-dashoffset="52">
                     </circle>
                   </svg>
                   <div class="ideal-traveler__cover">
@@ -1109,14 +1175,23 @@
               </li>
               <li class="travelers__item ideal-traveler">
                 <a class="ideal-traveler__profile" href="#">
-                  <img class="ideal-traveler__photo">
+                  <picture>
+                    <!--<source type="image/webp" media="(min-width: 1440px)" srcset="img/demin-desktop@1x.webp, img/demin-desktop@2x.webp">
+                          <source type="image/webp" media="(min-width: 768px)" srcset="img/demin-tablet@1x.webp, img/demin-tablet@2x.webp">
+                          <source type="image/webp" srcset="img/demin-mobile@1x.webp, img/demin-mobile@2x.webp">-->
+
+                    <source media="(min-width: 1440px)" srcset="img/demin-desktop@1x.jpg, img/demin-desktop@1x.jpg">
+                    <source media="(min-width: 768px)" srcset="img/demin-tablet@1x.jpg, img/demin-tablet@2x.jpg">
+                    <img class="ideal-traveler__photo" src="img/demin-mobile@1x.jpg" srcset="img/demin-mobile@2x.jpg"
+                      width="70" height="70" alt="Петя Демин">
+                  </picture>
                   <h3 class="ideal-traveler__name">Петя Демин</h3>
                 </a>
                 <p class="ideal-traveler__paragraf">#бургер #бар #футбол #концерт #крафт</p>
                 <h4 class="ideal-traveler__title">хочет посетить:</h4>
                 <ul class="ideal-traveler__desires dreams dreams--distance">
-                  <li class="dreams__item">Бельгия</li>
-                  <li class="dreams__item">Чехия</li>
+                  <li class="dreams__item dreams__item--fourth">Бельгия</li>
+                  <li class="dreams__item dreams__item--fifth">Чехия</li>
                 </ul>
                 <div class="ideal-traveler__content">
                   <h4 class="ideal-traveler__title">транспорт:</h4>
@@ -1124,22 +1199,25 @@
                 </div>
                 <div class="ideal-traveler__wrapper">
                   <ul class="ideal-traveler__transport transport">
-                    <li class="transport__aircraft transport__aircraft--active">Авиаперелет
-                      <span сlass="transport__tooltip">Авиаперелет</span>
+                    <li class="transport__item" tooltip="Авиаперелет">
+                      <span class="transport__aircraft transport__aircraft--active"
+                        aria-label="Авиаперелет">Авиаперелет</span>
                     </li>
-                    <li class="transport__car transport__car--active">Автотранспорт
-                      <span class="transport__tooltip">Автортранспорт</span>
+                    <li class="transport__item" tooltip="Автотранспорт">
+                      <span class="transport__car transport__car--active"
+                        aria-label="Автотранспорт">Автотранспорт</span>
                     </li>
-                    <li class="transport__bicycle">Велосипед
-                      <span сlass="transport__tooltip">Велосипед</span>
+                    <li class="transport__item" tooltip="Велосипед">
+                      <span class="transport__bicycle" aria-label="Велосипед">Велосипед</span>
                     </li>
-                    <li class="transport__pedestrian transport__pedestrian--active">Пешком
-                      <span сlass="transport__tooltip">Пешком</span>
+                    <li class="transport__item" tooltip="Пешком">
+                      <span class="transport__pedestrian transport__pedestrian--active"
+                        aria-label="Пешком">Пешком</span>
                     </li>
                   </ul>
-                  <svg class="ideal-traveler__circle" width="50" height="50">
-                    <circle class="ideal-traveler__round ideal-traveler__round--second" r="22.5" cx="25" cy="25"
-                      fill="none" stroke="#ff8d30" stroke-width="3" stroke-dasharray="190 17" stroke-dashoffset="100">
+                  <svg class="ideal-traveler__circle" width="50" height="50" viewBox="0 0 60 60">
+                    <circle class="ideal-traveler__round" r="28" cx="30" cy="30" fill="none" stroke="#ff8d30"
+                      stroke-width="3" stroke-dasharray="180 33" stroke-dashoffset="82">
                     </circle>
                   </svg>
                   <div class="ideal-traveler__cover">
@@ -1154,15 +1232,24 @@
               </li>
               <li class="travelers__item ideal-traveler">
                 <a class="ideal-traveler__profile" href="#">
-                  <img class="ideal-traveler__photo">
+                  <picture>
+                    <!--<source type="image/webp" media="(min-width: 1440px)" srcset="img/smolov-desktop@1x.webp, img/smolov-desktop@2x.webp">
+                              <source type="image/webp" media="(min-width: 768px)" srcset="img/smolov-tablet@1x.webp, img/smolov-tablet@2x.webp">
+                              <source type="image/webp" srcset="img/smolov-mobile@1x.webp, img/smolov-mobile@2x.webp">-->
+
+                    <source media="(min-width: 1440px)" srcset="img/smolov-desktop@1x.jpg, img/smolov-desktop@1x.jpg">
+                    <source media="(min-width: 768px)" srcset="img/smolov-tablet@1x.jpg, img/smolov-tablet@2x.jpg">
+                    <img class="ideal-traveler__photo" src="img/smolov-mobile@1x.jpg" srcset="img/smolov-mobile@2x.jpg"
+                      width="70" height="70" alt="Марк Смолов">
+                  </picture>
                   <h3 class="ideal-traveler__name">Марк Смолов</h3>
                 </a>
                 <p class="ideal-traveler__paragraf">#рэп #тату #хайпбист #кроссовки #суприм</p>
                 <h4 class="ideal-traveler__title">хочет посетить:</h4>
                 <ul class="ideal-traveler__desires dreams dreams--length">
-                  <li class="dreams__item dreams__item--size">CША</li>
-                  <li class="dreams__item dreams__item--size">Австралия</li>
-                  <li class="dreams__item dreams__item--size">Доминикана</li>
+                  <li class="dreams__item dreams__item--size dreams__item--sixth">CША</li>
+                  <li class="dreams__item dreams__item--size dreams__item--seventh">Австралия</li>
+                  <li class="dreams__item dreams__item--size dreams__item--eighth">Доминикана</li>
                 </ul>
                 <div class="ideal-traveler__content">
                   <h4 class="ideal-traveler__title">транспорт:</h4>
@@ -1170,22 +1257,24 @@
                 </div>
                 <div class="ideal-traveler__wrapper">
                   <ul class="ideal-traveler__transport transport">
-                    <li class="transport__aircraft transport__aircraft--active">Авиаперелет
-                      <span сlass="transport__tooltip">Авиаперелет</span>
+                    <li class="transport__item" tooltip="Авиаперелет">
+                      <span class="transport__aircraft transport__aircraft--active"
+                        aria-label="Авиаперелет">Авиаперелет</span>
                     </li>
-                    <li class="transport__car">Автотранспорт
-                      <span class="transport__tooltip">Автортранспорт</span>
+                    <li class="transport__item" tooltip="Автотранспорт">
+                      <span class="transport__car" aria-label="Автотранспорт">Автотранспорт</span>
                     </li>
-                    <li class="transport__bicycle transport__bicycle--active">Велосипед
-                      <span сlass="transport__tooltip">Велосипед</span>
+                    <li class="transport__item" tooltip="Велосипед">
+                      <span class="transport__bicycle transport__bicycle--active"
+                        aria-label="Велосипед">Велосипед</span>
                     </li>
-                    <li class="transport__pedestrian">Пешком
-                      <span сlass="transport__tooltip">Пешком</span>
+                    <li class="transport__item" tooltip="Пешком">
+                      <span class="transport__pedestrian" aria-label="Пешком">Пешком</span>
                     </li>
                   </ul>
-                  <svg class="ideal-traveler__circle" width="50" height="50">
-                    <circle class="ideal-traveler__round ideal-traveler__round--third" r="22.5" cx="25" cy="25"
-                      fill="none" stroke="#ff8d30" stroke-width="3" stroke-dasharray="100 110" stroke-dashoffset="105">
+                  <svg class="ideal-traveler__circle" width="50" height="50" viewBox="0 0 50 50">
+                    <circle class="ideal-traveler__round" r="22.5" cx="25" cy="25" fill="none" stroke="#ff8d30"
+                      stroke-width="3" stroke-dasharray="100 110" stroke-dashoffset="105">
                     </circle>
                   </svg>
                   <div class="ideal-traveler__cover">
@@ -1200,14 +1289,23 @@
               </li>
               <li class="travelers__item ideal-traveler">
                 <a class="ideal-traveler__profile" href="#">
-                  <img class="ideal-traveler__photo">
+                  <picture>
+                    <!--<source type="image/webp" media="(min-width: 1440px)" srcset="img/rogovaya-desktop@1x.webp, img/rogovaya-desktop@2x.webp">
+                                  <source type="image/webp" media="(min-width: 768px)" srcset="img/rogovaya-tablet@1x.webp, img/rogovaya-tablet@2x.webp">
+                                  <source type="image/webp" srcset="img/rogovaya-mobile@1x.webp, img/rogovaya-mobile@2x.webp">-->
+                    <source media="(min-width: 1440px)"
+                      srcset="img/rogovaya-desktop@1x.jpg, img/rogovaya-desktop@1x.jpg">
+                    <source media="(min-width: 768px)" srcset="img/rogovaya-tablet@1x.jpg, img/rogovaya-tablet@2x.jpg">
+                    <img class="ideal-traveler__photo" src="img/rogovaya-mobile@1x.jpg"
+                      srcset="img/rogovaya-mobile@2x.jpg" width="70" height="70" alt="Лариса Роговая">
+                  </picture>
                   <h3 class="ideal-traveler__name">Лариса Роговая</h3>
                 </a>
                 <p class="ideal-traveler__paragraf">#образование #карьера #учеба #линкедин</p>
                 <h4 class="ideal-traveler__title">хочет посетить:</h4>
                 <ul class="ideal-traveler__desires dreams dreams--distance">
-                  <li class="dreams__item">Великобритания</li>
-                  <li class="dreams__item">Германия</li>
+                  <li class="dreams__item dreams__item--ninth">Великобритания</li>
+                  <li class="dreams__item dreams__item--tenth">Германия</li>
                 </ul>
                 <div class="ideal-traveler__content content">
                   <h4 class="ideal-traveler__title">транспорт:</h4>
@@ -1215,22 +1313,24 @@
                 </div>
                 <div class="ideal-traveler__wrapper">
                   <ul class="ideal-traveler__transport transport">
-                    <li class="transport__aircraft transport__aircraft--active">Авиаперелет
-                      <span сlass="transport__tooltip">Авиаперелет</span>
+                    <li class="transport__item" tooltip="Авиаперелет">
+                      <span class="transport__aircraft transport__aircraft--active"
+                        aria-label="Авиаперелет">Авиаперелет</span>
                     </li>
-                    <li class="transport__car transport__car--active">Автотранспорт
-                      <span class="transport__tooltip">Автортранспорт</span>
+                    <li class="transport__item" tooltip="Автотранспорт">
+                      <span class="transport__car transport__car--active"
+                        aria-label="Автотранспорт">Автотранспорт</span>
                     </li>
-                    <li class="transport__bicycle">Велосипед
-                      <span сlass="transport__tooltip">Велосипед</span>
+                    <li class="transport__item" tooltip="Велосипед">
+                      <span class="transport__bicycle" aria-label="Велосипед">Велосипед</span>
                     </li>
-                    <li class="transport__pedestrian">Пешком
-                      <span сlass="transport__tooltip">Пешком</span>
+                    <li class="transport__item" tooltip="Пешком">
+                      <span class="transport__pedestrian" aria-label="Пешком">Пешком</span>
                     </li>
                   </ul>
-                  <svg class="ideal-traveler__circle" width="50" height="50">
-                    <circle class="ideal-traveler__round ideal-traveler__round--fourth" r="22.5" cx="25" cy="25"
-                      fill="none" stroke="#ff8d30" stroke-width="3" stroke-dasharray="51 72" stroke-dashoffset="140">
+                  <svg class="ideal-traveler__circle" width="50" height="50" viewBox="0 0 50 50">
+                    <circle class="ideal-traveler__round" r="22.5" cx="25" cy="25" fill="none" stroke="#ff8d30"
+                      stroke-width="3" stroke-dasharray="51 72" stroke-dashoffset="140">
                     </circle>
                   </svg>
                   <div class="ideal-traveler__cover">
@@ -1270,44 +1370,74 @@
       </div>
     </section>
   </main>
-  <!--<footer class="page-footer">
-    <picture>
-
-      <svg></svg>
-    </picture>
-    <ul class="page-footer__links social">
-      <li class="social__button">
-        <a class="social__link social__link--facebook" href="https://www.facebook.com/">
-          <svg></svg>
-          <span class="visually-hidden">
-            Фейсбук
-          </span>
-        </a>
-      </li>
-      <li class="social__button">
-        <a class="social__link social__link--vkontakte" href="https://vk.com/">
-          <svg></svg>
-          <span class="visually-hidden">
-            Вконтакте
-          </span>
-        </a>
-      </li>
-      <li class="social__button">
-        <a class="social__link social__link--instagram" href="https://www.instagram.com/?hl=ru">
-          <svg></svg>
-          <span class="visually-hidden">
-            Инстаграмм
-          </span>
-        </a>
-      </li>
-    </ul>
+  <footer class="page-footer">
     <div class="page-footer__wrapper">
-      <a class="page-footer__html logo-html" href="https://htmlacademy.ru/intensive/adaptive">
-        Разработано
-        <img class="logo-html__image" src="" alt="Логотип html-aкадемии">
+      <a class="page-footer__logo" href="index.html">
+        <picture>
+          <!--<source type="image/webp" media="(min-width: 1440px)" srcset="img/logo-desktop-blue@1x.webp, img/logo-desktop-blue@2x.webp">
+            <source type="image/webp" media="(min-width: 768px)" srcset="img/logo-tablet-blue@1x.webp, img/logo-tablet-blue@2x.webp">
+            <source type="image/webp" srcset="img/logo-mobile-blue@1x.webp, img/logo-mobile-blue@2x.webp">-->
+
+          <source media="(min-width: 1440px)" srcset="img/logo-desktop-blue@1x.png, img/logo-desktop-blue@2x.png">
+          <source media="(min-width: 768px)" srcset="img/logo-tablet-blue@1x.png, img/logo-tablet-blue@2x.png">
+          <img class="page-footer__image" src="img/logo-mobile-blue@1x.png" srcset="img/logo-mobile-blue@2x.png"
+            width="100" height="19" alt="Логотип Погнали">
+        </picture>
       </a>
+      <ul class="page-footer__links social">
+        <li class="social__button">
+          <a class="social__link" href="https://www.facebook.com/">
+            <svg class="social__facebook" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 11 21" fill="#1d2e5b"
+              width="11" height="21">
+              <path
+                d="M7.8 21H2.2v-9.8H0V6.4h2.1c-.1-2.2.3-3.8 1.3-4.9C4.2.6 5.5.1 7.1 0H11v4.7H7.9c-.1.2-.2.8-.2 1.7H11v4.8H7.8V21zm-4.4-1.1h3.1v-9.8h3.2V7.5H6.5v-.6c0-1.5 0-2.9.8-3.4l.2-.1h2.3V1.1H7.1c-1.2.1-2.2.5-2.8 1.2-.8.9-1.1 2.5-.9 4.6l.1.6H1.2v2.6h2.2v9.8z" />
+            </svg>
+            <span class="visually-hidden">
+              Фейсбук
+            </span>
+          </a>
+        </li>
+        <li class="social__button">
+          <a class="social__link" href="https://vk.com/">
+            <svg class="social__vkontakte" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 15.8" fill="#1d2e5b"
+              width="23" height="12">
+              <path
+                d="M23.9 15.8c-.4 0-1.2-.1-2.1-.6-.6-.4-1.2-1-1.8-1.5-.4-.4-1.2-1.2-1.4-1.2-.3.1-.5.9-.5 1.6 0 .1 0 .8-.5 1.2-.4.4-1.1.5-1.2.5h-1.9c-1 0-4.4-.2-7.4-3C3.4 9.4.3 3 .1 2.7 0 2.2-.1 1.5.3 1.1.7.7 1.4.6 1.7.6H5.9c.1 0 .6.1 1 .3.4.2.6.7.6.7S8.1 3 9 4.3c1.3 2 1.9 2.5 2.1 2.6.2-.4.3-1.7.2-2.9 0-.5-.1-1.1-.3-1.3-.1-.1-.4-.3-.8-.3l-.7-.6c-.1-.7.6-1.2 1.1-1.4.7-.3 1.8-.4 3.1-.4h.7c1.2 0 1.6.1 2.1.2 1.7.4 1.6 1.7 1.6 3.3v2.1c0 .4 0 1 .1 1.3.2-.1.9-.7 2.1-2.5.8-1.2 1.4-2.5 1.5-2.8.2-.4.6-.9 1.6-.9h4.7c1 0 1.6.3 1.8.9.3.6.2 1.7-2.4 4.6-.4.4-.7.8-1 1.1-.6.7-1.2 1.4-1.2 1.6.1.1.7.6 1.3 1.1 1.5 1.2 2.5 2.3 3 3.1.5.8.4 1.3.3 1.7-.4.9-1.6 1-1.9 1h-4.1zm-5.3-4.9c.9 0 1.7.8 2.5 1.6.5.5 1 1 1.5 1.3.7.4 1.3.4 1.4.4h3.9c.2 0 .4-.1.5-.1 0 0 0-.1-.1-.2-.4-.7-1.4-1.7-2.7-2.7-1.2-1-1.8-1.5-1.9-2.2-.1-.8.5-1.4 1.6-2.7.3-.3.6-.7 1-1.1 1.6-1.8 2-2.6 2.1-3H23.1c-.2.4-.8 1.8-1.6 3-1.9 2.8-2.8 3.2-3.4 3.2-.2 0-.4 0-.6-.1-1-.6-1-1.8-.9-2.8v-.4-1.7c.1-1.7 0-1.7-.4-1.8-.4-.1-.7-.1-1.9-.2h-.7c-.6 0-1.3 0-1.9.1l.3.3c.6.7.6 2 .6 2.2.1 1.6.1 3.8-1 4.3-.2.1-.4.1-.6.1-.9 0-1.9-.9-3.4-3.3-.8-1.2-1.5-2.7-1.5-2.8L6 2.2c-.1 0-.2-.1-.3-.1h-4-.1c.6 1.2 3.4 6.6 6.5 9.5 2.7 2.5 5.8 2.6 6.4 2.6h1.9s.2-.1.3-.1V14c0-.3 0-2.6 1.6-3 .1-.1.2-.1.3-.1z" />
+            </svg>
+            <span class="visually-hidden">
+              Вконтакте
+            </span>
+          </a>
+        </li>
+        <li class="social__button">
+          <a class="social__link" href="https://www.instagram.com/?hl=ru">
+            <svg class="social__instagram" id="Layer_1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 23 23"
+              fill="#1d2e5b" width="18" height="18">
+              <path class="st0"
+                d="M17 1.5c2.5 0 4.5 2 4.5 4.5v11c0 2.5-2 4.5-4.5 4.5H6c-2.5 0-4.5-2-4.5-4.5V6c0-2.5 2-4.5 4.5-4.5h11M17 0H6C2.7 0 0 2.7 0 6v11c0 3.3 2.7 6 6 6h11c3.3 0 6-2.7 6-6V6c0-3.3-2.7-6-6-6z" />
+              <path class="st0"
+                d="M11.5 7.1c2.4 0 4.4 2 4.4 4.4 0 2.4-2 4.4-4.4 4.4-2.4 0-4.4-2-4.4-4.4 0-2.4 2-4.4 4.4-4.4m0-1.5c-3.3 0-5.9 2.7-5.9 5.9s2.7 5.9 5.9 5.9 5.9-2.7 5.9-5.9-2.6-5.9-5.9-5.9z" />
+              <circle class="st0" cx="17.6" cy="5.4" r="1.3" />
+            </svg>
+            <span class="visually-hidden">
+              Инстаграмм
+            </span>
+          </a>
+        </li>
+      </ul>
+      <div class="page-footer__content">
+        <a class="page-footer__html logo-html" href="https://htmlacademy.ru/intensive/adaptive">
+          <span>Разработано</span>
+          <svg class="logo-html__icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 27 34" width="27px"
+            height="34px">
+            <path
+              d="M13.6 0h-.2L0 1.4V26l13.5 8L27 26V1.4L13.6 0zm5.7 16.8l-.9.5-5-3v1.4l3.8 2.3-.8.5-3-1.8v1.4l1.9 1.1-1.8 1.1L2 13.6l11.4-6.8L25 13.5l-4.5 2.6-7.1-4.2v1.4l5.9 3.5zM1.9 15.1l11.4 6.8v1l-8-4.7v1.4l8 4.8v1.1l-8-4.7v1.4l8 4.8 8.2-4.9V17l3.4-2v10l-11.6 6.9-11.4-7v-9.8zm0-3v-9l11.6-1.2 11.6 1.2v9L13.5 5.3v-.1h-.2v.1L1.9 12.1z"
+              fill="#192144" />
+          </svg>
+        </a>
+      </div>
     </div>
-  </footer>-->
+  </footer>
 
 </body>
 
