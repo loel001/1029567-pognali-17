@@ -69,6 +69,7 @@
 .page-footer__links {
   justify-content: center;
   margin-bottom: 49px;
+  position: relative;
 
   @media @tablet-width {
     margin-bottom: 0;
@@ -77,6 +78,22 @@
 
   @media @desktop-width {
     margin-right: 417px;
+  }
+
+  &::after {
+    display: block;
+    position: absolute;
+    .icon();
+    width: 270px;
+    height: 1px;
+    opacity: 0.05;
+    background-color: #000000;
+    top: 82px;
+    left: 0;
+
+    @media @tablet-width {
+      display: none;
+    }
   }
 }
 

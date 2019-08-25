@@ -1,6 +1,6 @@
 .modal-country {
   box-shadow: 0 20px 50px 0 rgba(29, 46, 91, 0.1);
-  background-color: @main-color-eleventh;
+  display: none;
 }
 
 .modal-country__wrapper {
@@ -50,6 +50,10 @@
   height: 9px;
   right: 16px;
   top: 16px;
+  border: none;
+  background-image: url("../img/small-cross.svg");
+  .icon();
+  cursor: pointer;
 
   @media @tablet-width {
     width: 17px;
@@ -60,6 +64,14 @@
 
   @media @desktop-width {
     right: 26px;
+  }
+
+  &:hover {
+    opacity: 0.3;
+  }
+
+  &:active {
+    opacity: 0.1;
   }
 }
 
@@ -77,6 +89,7 @@
   width: 221px;
   padding-left: 19px;
   padding-top: 15px;
+  position: relative;
 
   @media @tablet-width {
     border: none;
@@ -86,19 +99,44 @@
     padding-top: 0;
     width: 123px;
   }
+
+  &::before {
+    @media @tablet-width {
+      display: block;
+      position: absolute;
+      .icon();
+      height: 476px;
+      width: 1px;
+      background-color: #d6d9e6;
+      opacity: 0.5;
+      top: -34px;
+      left: -26px;
+    }
+  }
 }
 
 .modal-country__link {
   color: @color-second;
+  cursor: pointer;
+
+  &:hover {
+    color: @color-seventh;
+  }
+
+  &:active {
+    color: rgba(29, 46, 91, 0.3);
+  }
 }
 
 .modal-country__union {
+  background-color: @main-color-eleventh;
+
   @media @tablet-width {
     display: flex;
     justify-content: space-between;
     width: 575px;
     padding-top: 34px;
-    padding-bottom: 38px;
+    padding-bottom: 96px;
     padding-left: 27px;
     padding-right: 59px;
     .radius(0, 0, 10px, 10px);
@@ -109,6 +147,6 @@
     width: 730px;
     padding-top: 37px;
     padding-right: 92px;
-    padding-bottom: 20px;
+    padding-bottom: 34px;
   }
 }

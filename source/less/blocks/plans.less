@@ -182,9 +182,19 @@
   @media @desktop-width {
     margin-left: 88px;
   }
+
+  &:hover {
+    color: rgba(0, 0, 0, 0.6);
+  }
+
+  &:active {
+    color: rgba(0, 0, 0, 0.1);
+  }
 }
 
 .plans__union {
+  position: relative;
+
   @media @tablet-width {
     display: flex;
     flex-wrap: wrap;
@@ -192,5 +202,23 @@
 
   @media @desktop-width {
     width: 590px;
+  }
+
+  &::before {
+    @media @tablet-width {
+      display: block;
+      position: absolute;
+      .icon();
+      width: 618px;
+      height: 1px;
+      background-color: #cbced9;
+      opacity: 0.3;
+      top: -15px;
+      left: -35px;
+    }
+
+    @media @desktop-width {
+      display: none;
+    }
   }
 }

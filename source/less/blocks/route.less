@@ -1,5 +1,37 @@
 .route {
   position: relative;
+
+  &::after {
+    display: block;
+    position: absolute;
+    .icon();
+    width: 5px;
+    height: 10px;
+    background-image: url("../img/small-arrow.svg");
+    right: 51px;
+    top: 48px;
+
+    @media @tablet-width {
+      display: none;
+    }
+  }
+
+  &::before {
+    display: block;
+    position: absolute;
+    .icon();
+    width: 21px;
+    height: 21px;
+    background-color: #edeff6;
+    border-radius: 50%;
+    top: -8px;
+    right: -9px;
+    z-index: 1;
+
+    @media @tablet-width {
+      display: none;
+    }
+  }
 }
 
 .route__input {
@@ -12,6 +44,7 @@
   border-radius: 4px;
   border: solid 1px @main-color-thirteenth;
   padding-left: 10px;
+  cursor: pointer;
 
   @media @tablet-width {
     font-size: 20px;
@@ -58,10 +91,13 @@
   position: absolute;
   font-size: 0;
   background-color: @main-color-eleventh;
-  width: 12px;
-  height: 7px;
-  top: 17px;
-  right: 64px;
+  width: 49px;
+  height: 36px;
+  top: 3px;
+  right: 55px;
+  border: none;
+  cursor: pointer;
+  padding: 0;
 
   @media @tablet-width {
     width: 17px;
@@ -75,15 +111,74 @@
   }
 
   &--location {
-    right: 13px;
+    right: 4px;
+    top: 1px;
 
     @media @tablet-width {
       right: 189px;
+      top: 17px;
     }
 
     @media @desktop-width {
       right: 297px;
     }
+
+    &::before {
+      display: block;
+      position: relative;
+      .icon();
+      width: 9px;
+      height: 9px;
+      opacity: 0.3;
+      background-image: url("../img/filter-close.svg");
+      top: -13px;
+      right: -47px;
+      z-index: 2;
+      cursor: pointer;
+
+      @media @tablet-width {
+        width: 17px;
+        height: 17px;
+        top: 7px;
+        right: -191px;
+        opacity: 0.1;
+      }
+
+      @media @desktop-width {
+        width: 18px;
+        height: 18px;
+        right: -291px;
+      }
+    }
+
+    &:hover::before {
+      opacity: 0.5;
+    }
+
+    &:active::before {
+      opacity: 0.1;
+    }
+  }
+
+  &::after {
+    display: block;
+    position: relative;
+    .icon();
+    width: 12px;
+    height: 7px;
+    opacity: 0.3;
+    background-image: url("../img/dropdown-form.svg");
+    right: -26px;
+
+    @media @tablet-width {
+      width: 17px;
+      height: 9px;
+      right: 0;
+    }
+  }
+
+  &:hover::after {
+    opacity: 0.5;
   }
 }
 
@@ -91,13 +186,93 @@
   display: block;
   font-size: 0;
   width: 53px;
-  height: 42px;
+  min-height: 42px;
   border-radius: 4px;
   border: solid 1px @main-color-thirteenth;
   border-left: none;
+  position: relative;
 
   @media @tablet-width {
-    display: none;
+    border: none;
+    min-width: 70px;
+    height: 47px;
+  }
+
+  @media @desktop-width {
+    width: 156px;
+    min-height: 61px;
+  }
+
+  &--bosnia-and-herzegov {
+    &::after {
+      display: block;
+      position: absolute;
+      .icon();
+      width: 35px;
+      height: 24px;
+      background-image: url("../img/flag-bosnia.svg");
+      top: 10px;
+      left: 9px;
+
+      @media @tablet-width {
+        width: 70px;
+        height: 47px;
+        top: 13px;
+        left: 53px;
+      }
+
+      @media @desktop-width {
+        left: 85px;
+      }
+    }
+  }
+
+  &--chechoslovakia {
+    &::after {
+      display: block;
+      position: absolute;
+      .icon();
+      width: 35px;
+      height: 24px;
+      background-image: url("../img/flag-czech.svg");
+      top: 10px;
+      left: 9px;
+
+      @media @tablet-width {
+        width: 70px;
+        height: 47px;
+        top: 13px;
+        left: 53px;
+        background-image: url("../img/czech-republic.png");
+      }
+
+      @media @desktop-width {
+        left: 85px;
+      }
+    }
+  }
+
+  &::before {
+    display: block;
+    position: absolute;
+    .icon();
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: @main-color-eighth;
+    top: 17px;
+    left: -5px;
+
+    @media @tablet-width {
+      width: 15px;
+      height: 15px;
+      top: 27px;
+      left: 18px;
+    }
+
+    @media @desktop-width {
+      left: 38px;
+    }
   }
 }
 
@@ -109,12 +284,43 @@
   @media @tablet-width {
     margin-bottom: 15px;
   }
+
+  &::after {
+    display: block;
+    position: absolute;
+    .icon();
+    width: 9px;
+    height: 9px;
+    opacity: 0.3;
+    background-image: url("../img/filter-close.svg");
+    right: -3px;
+    z-index: 2;
+    top: -2px;
+    cursor: pointer;
+
+    @media @tablet-width {
+      width: 17px;
+      height: 17px;
+      top: 26px;
+      opacity: 0.1;
+    }
+
+    @media @desktop-width {
+      width: 18px;
+      height: 18px;
+      right: 6px;
+    }
+  }
+
+  &:hover::after {
+    opacity: 0.5;
+  }
+
+  &:active::after {
+    opacity: 0.1;
+  }
 }
 
-
-//.route__modal {
-//  display: none;
-//}
 .route__modal {
   display: block;
   position: absolute;

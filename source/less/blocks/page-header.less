@@ -159,6 +159,30 @@
       }
     }
   }
+
+  &--form {
+    &::after {
+      display: block;
+      position: absolute;
+      .icon();
+      width: 214px;
+      height: 5px;
+      border-radius: 2.4px;
+      background-color: @main-color-second;
+      top: 46px;
+
+      @media @tablet-width {
+        width: 355px;
+        height: 8px;
+        border-radius: 4px;
+        top: 128px;
+      }
+
+      @media @desktop-width {
+        width: 357px;
+      }
+    }
+  }
 }
 
 .page-header__main {
@@ -189,6 +213,14 @@
       top: 3px;
       left: 144px;
     }
+  }
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
   }
 }
 

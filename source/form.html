@@ -2,11 +2,6 @@
 <html lang="ru">
 
 <head>
-  <script>
-    // Picture element HTML5 shiv
-    document.createElement("picture");
-
-  </script>
   <script src="js/picturefill.min.js" async></script>
   <meta charset="utf-8">
   <title>HTML Academy: Погнали</title>
@@ -68,7 +63,7 @@
           </ul>
         </div>
         <ul class="page-header__list page-header__list--third">
-          <li class="page-header__item">Направления</li>
+          <li class="page-header__item page-header__item--form">Направления</li>
         </ul>
       </div>
     </div>
@@ -180,7 +175,7 @@
             <span class="personal-profile__interest">80</span>
             <span class="personal-profile__level">level</span>
           </div>
-          <picture>
+          <picture class="personal-profile__picture">
             <!--<source type="image/webp" media="(min-width: 768px)" srcset="img/photo-account-tablet@1x.webp, img/photo-account-tablet@2x.webp">
             <source type="image/webp" srcset="img/photo-account-mobile@1x.webp, img/photo-account-mobile@2x.webp">-->
             <source media="(min-width: 768px)"
@@ -198,30 +193,30 @@
         </div>
         <div class="personal-profile__transports">
           <h3 class="personal-profile__title personal-profile__title--size">Транспорт</h3>
-          <ul class="personal-profile__transport transport">
-            <li class="transport__aircraft">
-              <input class="transport__input transport__input--checkbox" type="checkbox" name="aircraft"
+          <ul class="personal-profile__transport transport-choice transport-choice--form">
+            <li class="transport-choice__type" tooltip="Авиаперелет">
+              <input class="transport-choice__input transport-choice__input--checkbox" type="checkbox" name="aircraft"
                 value="aircraft" id="transport-aircraft" checked>
-              <label class="transport__label" for="transport-aircraft">Авиаперелет</label>
-              <span сlass="transport__tooltip">Авиаперелет</span>
+              <label class="transport-choice__label transport-choice__label--aircraft"
+                for="transport-aircraft">Авиаперелет</label>
             </li>
-            <li class="transport__сar">
-              <input class="transport__input transport__input--checkbox" type="checkbox" name="car" value="car"
-                id="transport-car" checked>
-              <label class="transport__label" for="transport-car">Автотранспорт</label>
-              <span class="transport__tooltip">Автотранспорт</span>
+            <li class="transport-choice__type" tooltip="Автотранспорт">
+              <input class="transport-choice__input transport-choice__input--checkbox" type="checkbox" name="car"
+                value="car" id="transport-car" checked>
+              <label class="transport-choice__label transport-choice__label--car"
+                for="transport-car">Автотранспорт</label>
             </li>
-            <li class="transport__bicycle">
-              <input class="transport__input transport__input--checkbox" type="checkbox" name="bicycle" value="bicycle"
-                id="transport-bicycle">
-              <label class="transport__label" for="transport-bicycle">Велосипед</label>
-              <span сlass="transport__tooltip">Велосипед</span>
+            <li class="transport-choice__type" tooltip="Велосипед">
+              <input class="transport-choice__input transport-choice__input--checkbox" type="checkbox" name="bicycle"
+                value="bicycle" id="transport-bicycle">
+              <label class="transport-choice__label transport-choice__label--bicycle"
+                for="transport-bicycle">Велосипед</label>
             </li>
-            <li class="transport__pedestrian">
-              <input class="transport__input transport__input--checkbox" type="checkbox" name="pedestrian"
+            <li class="transport-choice__type" tooltip="Пешком">
+              <input class="transport-choice__input transport-choice__input--checkbox" type="checkbox" name="pedestrian"
                 value="pedestrian" id="transport-pedestrian" checked>
-              <label class="transport__label" for="transport-pedestrian">Пешком</label>
-              <span сlass=" transport__tooltip">Пешком</span>
+              <label class="transport-choice__label transport-choice__label--pedestrian"
+                for="transport-pedestrian">Пешком</label>
             </li>
           </ul>
         </div>
@@ -274,8 +269,8 @@
                 </div>
                 <ul class="step-first__list">
                   <li class="step-first__item step-first__item--active">Даты</li>
-                  <li class="step-first__item">Маршрут</li>
-                  <li class="step-first__item">Развлечения</li>
+                  <li class="step-first__item step-first__item--inactive">Маршрут</li>
+                  <li class="step-first__item step-first__item--inactive">Развлечения</li>
                 </ul>
               </div>
               <ul class="step-first__information">
@@ -304,7 +299,7 @@
                   </div>
                 </li>
                 <li class="step-first__children">
-                  <input class="step-first__input" type="checkbox" name="children" value="permission-children"
+                  <input class="step-first__input step-first__input--checkbox" type="checkbox" name="children" value="permission-children"
                     id="resolution" checked>
                   <label class="step-first__label" for="resolution">Можно с детьми</label>
                 </li>
@@ -645,9 +640,9 @@
                     одна или сразу несколько.</p>
                 </div>
                 <ul class="step-second__list">
-                  <li class="step-second__item">Даты</li>
+                  <li class="step-second__item step-second__item--inactive">Даты</li>
                   <li class="step-second__item step-second__item--active">Маршрут</li>
-                  <li class="step-second__item">Развлечения</li>
+                  <li class="step-second__item step-second__item--inactive">Развлечения</li>
                 </ul>
               </div>
               <ul class="step-second__route">
@@ -663,7 +658,7 @@
                   <div class="route__wrapper">
                     <input class="route__input" type="text" name="сzechoslovakia" placeholder="Чехословакия">
                     <button class="route__button" type="button">выбрать страну</button>
-                    <div class="route__flag  route__flag--сzechoslovakia">Флаг страны</div>
+                    <div class="route__flag route__flag--chechoslovakia">Флаг страны</div>
                   </div>
                 </li>
                 <li class="step-second__choice route">
@@ -875,18 +870,18 @@
                     писать в свободной форме и ставить тэги.</p>
                 </div>
                 <ul class="step-third__list">
-                  <li class="step-third__item">Даты</li>
-                  <li class="step-third__item">Маршрут</li>
+                  <li class="step-third__item step-third__item--inactive">Даты</li>
+                  <li class="step-third__item step-third__item--inactive">Маршрут</li>
                   <li class="step-third__item step-third__item--active">Развлечения</li>
                 </ul>
               </div>
               <ul class="step-third__entertainment">
                 <li class="step-third__country plan">
-                  <h4 class="plan__title">Босния и герцеговина</h4>
+                  <h4 class="plan__title plan__title--bosnia-and-herzegov">Босния и герцеговина</h4>
                   <textarea class="plan__text" name="action-plan" rows="9" placeholder="План действий"></textarea>
                 </li>
                 <li class="step-third__country plan">
-                  <h4 class="plan__title">Чехословакия</h4>
+                  <h4 class="plan__title plan__title--chechoslovakia">Чехословакия</h4>
                   <textarea class="plan__text plan__text--size" name="action-plan" rows="9"
                     placeholder="План действий">Пить пиво и лазить по&nbsp;старым замкам, наслаждаться аритектурой и вот это все.</textarea>
                 </li>

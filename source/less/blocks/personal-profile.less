@@ -30,7 +30,6 @@
 
 .personal-profile__union {
   display: flex;
-  justify-content: space-between;
   position: relative;
   margin-bottom: 22px;
   padding-right: 18px;
@@ -125,27 +124,46 @@
   background-color: @main-color-fourteenth;
   text-transform: uppercase;
   border: none;
-  .size-radius(270px, 40px, 20px);
-  margin-bottom: 30px;
+  width: 270px;
+  border-radius: 20px;
+  margin-bottom: 34px;
+  padding-top: 7px;
+  padding-bottom: 4px;
+  padding-left: 10px;
+  padding-right: 10px;
+  cursor: pointer;
 
   @media @tablet-width {
     .bloggersans(500);
     font-size: 20px;
-    .size-radius(618px, 60px, 10px);
     order: 3;
     margin-top: 52px;
     margin-bottom: 53px;
     letter-spacing: 2px;
+    width: 618px;
+    border-radius: 10px;
+    padding-top: 12px;
+    padding-bottom: 13px;
   }
 
   @media @desktop-width {
     order: 0;
     margin-top: 0;
     margin-left: 972px;
-    margin-bottom: 26px;
+    margin-bottom: 21px;
     width: 190px;
-    height: 47px;
     .radius(0, 0, 10px, 10px);
+    padding-top: 8px;
+    padding-bottom: 10px;
+  }
+
+  &:hover {
+    background-color: #d1d7e9;
+  }
+
+  &:active {
+    background-color: #d1d7e9;
+    color: rgba(29, 46, 91, 0.3);
   }
 }
 
@@ -166,7 +184,7 @@
     font-size: 20px;
     width: 83px;
     order: 2;
-    margin-top: -5px;
+    margin-top: -1px;
     margin-bottom: -18px;
     letter-spacing: 2px;
   }
@@ -198,26 +216,34 @@
   border: solid 1px @main-color-thirteenth;
   border-radius: 10px;
   margin-bottom: 24px;
-  padding-top: 3px;
-  padding-left: 22px;
-  padding-right: 22px;
-  padding-bottom: 14px;
+  padding-left: 5px;
+  padding-right: 5px;
+  padding-bottom: 5px;
 
   @media @tablet-width {
     display: flex;
     flex-direction: column;
     order: 4;
     margin-bottom: 0;
-    padding-top: 18px;
-    padding-left: 36px;
-    padding-right: 36px;
-    padding-bottom: 4px;
+    padding-top: 5px;
+    padding-bottom: 2px;
+    padding-left: 0;
+    padding-right: 0;
   }
 
   @media @desktop-width {
     order: 0;
     width: 730px;
-    padding-left: 20px;
+    padding-left: 19px;
+    padding-bottom: 4px;
+  }
+
+  &:hover {
+    border: solid 1px #aeb4cb;
+  }
+
+  &:active {
+    border: solid 1px @main-color-tenth;
   }
 }
 
@@ -225,17 +251,17 @@
   border: solid 1px @main-color-thirteenth;
   border-radius: 10px;
   padding-top: 16px;
-  padding-left: 65px;
+  padding-left: 68px;
   padding-right: 66px;
-  padding-bottom: 15px;
+  padding-bottom: 29px;
 
   @media @tablet-width {
     display: flex;
     flex-direction: column;
     width: 308px;
     padding-top: 25px;
-    padding-left: 56px;
-    padding-right: 56px;
+    padding-left: 40px;
+    padding-right: 40px;
     padding-bottom: 4px;
     order: 2;
     margin: 0 auto;
@@ -247,8 +273,14 @@
     width: 384px;
     margin: 0;
     margin-left: auto;
-    margin-top: -95px;
+    margin-top: -93px;
     padding-bottom: 4px;
+    padding-left: 109px;
+    padding-right: 109px;
+  }
+
+  &:hover {
+    border: solid 1px #aeb4cb;
   }
 }
 
@@ -261,24 +293,33 @@
   resize: none;
   border: none;
   padding-top: 13px;
-  width: 220px;
+  padding-left: 17px;
+  padding-right: 17px;
+  padding-bottom: 13px;
+  width: 258px;
+  cursor: pointer;
 
   @media @tablet-width {
     font-size: 20px;
-    width: 535px;
+    width: 616px;
+    padding-top: 25px;
+    padding-left: 38px;
+    padding-right: 38px;
+    padding-bottom: 0;
   }
 
   @media @desktop-width {
-    padding-left: 18px;
+    padding-left: 19px;
+    width: 701px;
   }
-}
-
-.personal-profile__transport {
-  line-height: 33px;
 }
 
 .personal-profile__hide {
   @media @desktop-width {
     display: none;
   }
+}
+
+.personal-profile__picture {
+  margin-left: auto;
 }

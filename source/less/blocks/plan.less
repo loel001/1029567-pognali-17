@@ -23,13 +23,14 @@
   color: @color-seventh;
   .list();
   padding-left: 11px;
-  margin-bottom: 15px;
+  margin-bottom: 18px;
+  position: relative;
 
   @media @tablet-width {
     .bloggersans(800);
     font-size: 30px;
     padding-left: 0;
-    margin-bottom: 35px;
+    margin-bottom: 36px;
   }
 
   &::before {
@@ -55,6 +56,54 @@
       top: 9px;
     }
   }
+
+  &--bosnia-and-herzegov {
+    &::after {
+      display: block;
+      position: absolute;
+      .icon();
+      width: 35px;
+      height: 24px;
+      background-image: url("../img/flag-bosnia.svg");
+      top: 1px;
+      right: 0;
+
+      @media @tablet-width {
+        width: 70px;
+        height: 47px;
+        top: -5px;
+        right: 30px;
+      }
+
+      @media @desktop-width {
+        right: 115px;
+      }
+    }
+  }
+
+  &--chechoslovakia {
+    &::after {
+      display: block;
+      position: absolute;
+      .icon();
+      width: 35px;
+      height: 24px;
+      background-image: url("../img/flag-czech.svg");
+      top: 1px;
+      right: 0;
+
+      @media @tablet-width {
+        width: 70px;
+        height: 47px;
+        top: -5px;
+        right: 30px;
+      }
+
+      @media @desktop-width {
+        right: 115px;
+      }
+    }
+  }
 }
 
 .plan__text {
@@ -69,6 +118,8 @@
   padding-left: 13px;
   width: 220px;
   padding-bottom: 13px;
+  cursor: pointer;
+  height: 221px;
 
   @media @tablet-width {
     width: 501px;
@@ -94,6 +145,14 @@
     @media @desktop-width {
       padding-right: 19px;
     }
+  }
+
+  &:hover {
+    border: solid 1px #959bb2;
+  }
+
+  &:active {
+    border: solid 1px @main-color-tenth;
   }
 }
 
