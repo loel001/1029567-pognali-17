@@ -5,6 +5,12 @@
   .radius(20px, 20px, 20px, 20px);
   padding-top: 30px;
   display: none;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  box-shadow: 0 20px 50px 0 rgba(29, 46, 91, 0.1);
+  position: fixed;
+  z-index: 200;
 
   @media @tablet-width {
     width: 688px;
@@ -14,6 +20,10 @@
 
   @media @desktop-width {
     width: 750px;
+  }
+
+  &--open {
+    display: block;
   }
 }
 

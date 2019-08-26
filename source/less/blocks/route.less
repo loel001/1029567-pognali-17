@@ -322,8 +322,12 @@
 }
 
 .route__modal {
-  display: block;
+  display: none;
   position: absolute;
   z-index: 1;
   top: 0;
+
+  &--open {
+    display: block;
+  }
 }

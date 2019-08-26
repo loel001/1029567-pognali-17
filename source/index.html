@@ -2,7 +2,6 @@
 <html lang="ru">
 
 <head>
-  <script src="js/picturefill.min.js" async></script>
   <meta charset="utf-8">
   <title>HTML Academy: Погнали</title>
   <meta name="viewport" content="width=device-width,initial-scale=1">
@@ -12,7 +11,7 @@
 <body>
   <header class="page-header page-header--scroll">
     <div class="page-header__wrapper">
-      <a class="page-header__logo logo show__logo">
+      <a class="page-header__logo logo">
         <picture>
           <!--<source type="image/webp" media="(min-width: 1440px)" srcset="img/logo-desktop-white@1x.webp, img/logo-desktop-white@2x.webp">
             <source type="image/webp" media="(min-width: 768px)" srcset="img/logo-tablet-white@1x.webp, img/logo-tablet-white@2x.webp">
@@ -24,7 +23,7 @@
             height="19" alt="Логотип Погнали">
         </picture>
       </a>
-      <button class="page-header__toggle-open page-header__toggle-open--scroll show__toogle" type="button">Открыть
+      <button class="page-header__toggle-open page-header__toggle-open--scroll" type="button">Открыть
         меню
         <svg class="page-header__icon" width="25" height="11" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 25 11">
           <g fill="#fff">
@@ -87,7 +86,7 @@
           <li class="main-nav__items">
             <a class="main-nav__phone-number" href="tel:+78005558628">
               <span>8 800 555-86-28</span>
-              <svg class="contacts__image-phone" width="18" height="18" xmlns="http://www.w3.org/2000/svg"
+              <svg class="main-nav__first" width="18" height="18" xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 36 36">
                 <path
                   d="M18 0C11.6 0 5.2 1.1 2.8 3.4.9 5.3.2 8.7 0 10.8v.3c0 .8.7 1.5 1.5 1.5.1 0 3.7-.3 5.9-.5h.2c.8 0 1.5-.7 1.5-1.5v-3C9 6.7 9.7 6 10.7 6h14.7c.8 0 1.6.7 1.6 1.7v3c0 .8.7 1.5 1.5 1.5h.2c2.2.2 5.8.5 5.9.5.8 0 1.5-.7 1.5-1.5v-.3c-.2-2.1-.9-5.5-2.8-7.4C30.8 1.1 24.4 0 18 0zm0 19.5c-1.7 0-3 1.3-3 3s1.3 3 3 3 3-1.3 3-3-1.3-3-3-3zm-2.3-6.8v-1.9c0-1-.8-1.9-1.9-1.9s-1.8.9-1.8 2v1.9L1.9 23.6c-.7.7-1.1 1.6-1.1 2.7v3c0 1.7 1.3 3 3 3h.8v1.9c0 1 .8 1.9 1.9 1.9s1.9-.8 1.9-1.9v-1.9h19.5v1.9c0 1 .8 1.9 1.9 1.9 1 0 1.9-.8 1.9-1.9v-1.9h.8c1.7 0 3-1.3 3-3v-3c0-1.1-.4-2-1.1-2.7L24 12.7v-1.9c0-1-.8-1.9-1.9-1.9s-1.9.8-1.9 1.9v1.9h-4.5zm2.3 3.8c3.3 0 6 2.7 6 6s-2.7 6-6 6-6-2.7-6-6 2.7-6 6-6z" />
@@ -97,7 +96,7 @@
           <li class="main-nav__items">
             <a class="main-nav__email" href="mailto:mail@htmlacademy.ru">
               <span>mail@htmlacademy.ru</span>
-              <svg class="contacts__image-email" width="18" height="13" xxmlns="http://www.w3.org/2000/svg"
+              <svg class="main-nav__second" width="18" height="13" xxmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 36 26">
                 <path
                   d="M0 23c0 1.6 1.3 3 3 3h30c1.7 0 3-1.3 3-3V3c0-1.6-1.3-3-3-3H3C1.3 0 0 1.3 0 3v20zm11-10L4.2 6.2c-.6-.6-.6-1.5 0-2 .6-.6 1.5-.6 2.1 0l11 10.9c.4.4 1.2.4 1.6 0l11-10.9c.6-.6 1.5-.6 2.1 0 .6.6.6 1.5 0 2L25 13l6.9 6.8c.6.6.6 1.5 0 2-.6.6-1.5.6-2.1 0L22.9 15s-2.1 2.2-2.5 2.5c-.6.6-1.4 1-2.4 1-.9 0-1.8-.4-2.4-1L13.1 15l-6.9 6.8c-.6.6-1.5.6-2.1 0-.6-.6-.6-1.5 0-2L11 13z" />
@@ -107,7 +106,7 @@
         </ul>
         <ul class="main-nav__links-header public">
           <li class="public__button">
-            <a class="publicl__link" href="https://www.facebook.com/">
+            <a class="public__link" href="https://www.facebook.com/">
               <svg class="public__facebook" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 11 21" fill="#cccccc"
                 width="11" height="21">
                 <path
@@ -404,7 +403,7 @@
         </div>
       </div>
     </section>
-    <section class="modal modal--open">
+    <section class="modal">
       <h2 class="modal__title headline">Бизнес-тарифы</h2>
       <ul class="modal__business-tariffs">
         <li class="modal__tarif">
@@ -420,8 +419,8 @@
           <span>от 20 коп./лайк</span>
         </li>
         <li class="modal__tarif modal__tarif--last">
-          Ваш продакт-плейсмент
-          <div>Индивидуально</div>
+          <span>Ваш продакт-плейсмент</span>
+          <span>Индивидуально</span>
         </li>
       </ul>
       <button class="modal__close" type="button">Закрыть окно</button>
@@ -449,7 +448,7 @@
             <li class="contacts__item">
               <a class="contacts__phone-number" href="tel:+78005558628">
                 <span>8 800 555-86-28</span>
-                <svg class="contacts__image-phone" width="18" height="18" xmlns="http://www.w3.org/2000/svg"
+                <svg class="contacts__first" width="18" height="18" xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 36 36">
                   <path
                     d="M18 0C11.6 0 5.2 1.1 2.8 3.4.9 5.3.2 8.7 0 10.8v.3c0 .8.7 1.5 1.5 1.5.1 0 3.7-.3 5.9-.5h.2c.8 0 1.5-.7 1.5-1.5v-3C9 6.7 9.7 6 10.7 6h14.7c.8 0 1.6.7 1.6 1.7v3c0 .8.7 1.5 1.5 1.5h.2c2.2.2 5.8.5 5.9.5.8 0 1.5-.7 1.5-1.5v-.3c-.2-2.1-.9-5.5-2.8-7.4C30.8 1.1 24.4 0 18 0zm0 19.5c-1.7 0-3 1.3-3 3s1.3 3 3 3 3-1.3 3-3-1.3-3-3-3zm-2.3-6.8v-1.9c0-1-.8-1.9-1.9-1.9s-1.8.9-1.8 2v1.9L1.9 23.6c-.7.7-1.1 1.6-1.1 2.7v3c0 1.7 1.3 3 3 3h.8v1.9c0 1 .8 1.9 1.9 1.9s1.9-.8 1.9-1.9v-1.9h19.5v1.9c0 1 .8 1.9 1.9 1.9 1 0 1.9-.8 1.9-1.9v-1.9h.8c1.7 0 3-1.3 3-3v-3c0-1.1-.4-2-1.1-2.7L24 12.7v-1.9c0-1-.8-1.9-1.9-1.9s-1.9.8-1.9 1.9v1.9h-4.5zm2.3 3.8c3.3 0 6 2.7 6 6s-2.7 6-6 6-6-2.7-6-6 2.7-6 6-6z" />
@@ -459,7 +458,7 @@
             <li class="contacts__item">
               <a class="contacts__email" href="mailto:mail@htmlacademy.ru">
                 <span>mail@htmlacademy.ru</span>
-                <svg class="contacts__image-email" width="18" height="13" xxmlns="http://www.w3.org/2000/svg"
+                <svg class="contacts__second" width="18" height="13" xxmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 36 26">
                   <path
                     d="M0 23c0 1.6 1.3 3 3 3h30c1.7 0 3-1.3 3-3V3c0-1.6-1.3-3-3-3H3C1.3 0 0 1.3 0 3v20zm11-10L4.2 6.2c-.6-.6-.6-1.5 0-2 .6-.6 1.5-.6 2.1 0l11 10.9c.4.4 1.2.4 1.6 0l11-10.9c.6-.6 1.5-.6 2.1 0 .6.6.6 1.5 0 2L25 13l6.9 6.8c.6.6.6 1.5 0 2-.6.6-1.5.6-2.1 0L22.9 15s-2.1 2.2-2.5 2.5c-.6.6-1.4 1-2.4 1-.9 0-1.8-.4-2.4-1L13.1 15l-6.9 6.8c-.6.6-1.5.6-2.1 0-.6-.6-.6-1.5 0-2L11 13z" />
@@ -568,7 +567,9 @@
       </div>
     </div>
   </footer>
+  <script src="js/picturefill.min.js" async></script>
   <script src="js/email.js"></script>
+  <script src="js/business-rates.js"></script>
 </body>
 
 </html>

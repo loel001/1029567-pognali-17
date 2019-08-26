@@ -70,13 +70,15 @@
 }
 
 .address__map {
-  position: absolute;
+  position: relative;
   width: 100vw;
-  transform: translateX(-50%);
+  transform: translateX(-50%) translateY(-19%);
+  left: 50%;
   height: 546px;
 
   @media @tablet-width {
     height: 700px;
+    transform: translateX(-50%);
   }
 
   @media @desktop-width {
