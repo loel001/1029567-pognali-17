@@ -1,22 +1,60 @@
 .step-button {
   display: block;
   border: none;
-  .size-radius(230px, 40px, 20px);
   .bloggersans(800);
   font-size: 17px;
   color: @color-fifth;
   background-color: @main-color-fifth;
-  line-height: 40px;
+  width: 230px;
+  border-radius: 20px;
   text-align: center;
   text-transform: uppercase;
+  padding-top: 12px;
+  padding-bottom: 9px;
+  padding-left: 10px;
+  padding-right: 10px;
+  cursor: pointer;
+  position: relative;
 
   @media @tablet-width {
     font-size: 24px;
-    .size-radius(285px, 81px, 20px);
-    line-height: 81px;
     text-transform: none;
     color: @color-seventh;
     text-align: left;
+    padding-top: 27px;
+    padding-bottom: 27px;
     padding-left: 34px;
+    padding-right: 34px;
+    width: 285px;
+    border-radius: 20px;
+  }
+
+  &::after {
+    @media @tablet-width {
+      position: absolute;
+      display: block;
+      .icon();
+      width: 10px;
+      height: 14px;
+      border: 7px solid transparent;
+      border-left: 10px solid #1d2e5b;
+      right: 27px;
+      top: 34px;
+    }
+  }
+
+  &:active::after {
+    @media @tablet-width {
+      opacity: 0.3;
+    }
+  }
+
+  &:hover {
+    background-color: @main-color-fourth;
+  }
+
+  &:active {
+    background-color: @main-color-fourth;
+    color: rgba(29, 46, 91, 0.3);
   }
 }

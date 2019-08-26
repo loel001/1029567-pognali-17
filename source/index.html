@@ -2,6 +2,7 @@
 <html lang="ru">
 
 <head>
+  <script src="js/picturefill.min.js" async></script>
   <meta charset="utf-8">
   <title>HTML Academy: Погнали</title>
   <meta name="viewport" content="width=device-width,initial-scale=1">
@@ -10,133 +11,143 @@
 
 <body>
   <header class="page-header page-header--scroll">
-    <div class="page-header__modification">
-      <div class="page-header__wrapper">
-        <a class="page-header__logo logo show__logo">
-          <picture>
-            <!--<source type="image/webp" media="(min-width: 1440px)" srcset="img/logo-desktop-white@1x.webp, img/logo-desktop-white@2x.webp">
+    <div class="page-header__wrapper">
+      <a class="page-header__logo logo show__logo">
+        <picture>
+          <!--<source type="image/webp" media="(min-width: 1440px)" srcset="img/logo-desktop-white@1x.webp, img/logo-desktop-white@2x.webp">
             <source type="image/webp" media="(min-width: 768px)" srcset="img/logo-tablet-white@1x.webp, img/logo-tablet-white@2x.webp">
             <source type="image/webp" srcset="img/logo-mobile-white@1x.webp, img/logo-mobile-white@2x.webp">-->
 
-            <source media="(min-width: 1440px)" srcset="img/logo-desktop-white@1x.png, img/logo-desktop-white@2x.png">
-            <source media="(min-width: 768px)" srcset="img/logo-tablet-white@1x.png, img/logo-tablet-white@2x.png">
-            <img class="logo__image" src="img/logo-mobile-white@1x.png" srcset="img/logo-mobile-white@2x.png"
-              width="100" height="19" alt="Логотип Погнали">
-          </picture>
-        </a>
-        <button class="page-header__toggle-open page-header__toggle-open--scroll show__toogle" type="button">Открыть
-          меню
-          <svg class="page-header__icon" width="25" height="11" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 25 11">
-            <g fill="#fff">
-              <path
-                d="M1.5 3h22c.8 0 1.5-.7 1.5-1.5S24.3 0 23.5 0h-22C.7 0 0 .7 0 1.5S.7 3 1.5 3zM23.5 8h-22C.7 8 0 8.7 0 9.5S.7 11 1.5 11h22c.8 0 1.5-.7 1.5-1.5S24.3 8 23.5 8z" />
-            </g>
-          </svg>
-        </button>
-        <ul class="page-header__manage">
-          <li class="page-header__contact page-header__contact--hide">
-            <a class="page-header__phone" href="tel:+78005558628">Позвонить</a>
+          <source media="(min-width: 1440px)" srcset="img/logo-desktop-white@1x.png, img/logo-desktop-white@2x.png">
+          <source media="(min-width: 768px)" srcset="img/logo-tablet-white@1x.png, img/logo-tablet-white@2x.png">
+          <img class="logo__image" src="img/logo-mobile-white@1x.png" srcset="img/logo-mobile-white@2x.png" width="100"
+            height="19" alt="Логотип Погнали">
+        </picture>
+      </a>
+      <button class="page-header__toggle-open page-header__toggle-open--scroll show__toogle" type="button">Открыть
+        меню
+        <svg class="page-header__icon" width="25" height="11" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 25 11">
+          <g fill="#fff">
+            <path
+              d="M1.5 3h22c.8 0 1.5-.7 1.5-1.5S24.3 0 23.5 0h-22C.7 0 0 .7 0 1.5S.7 3 1.5 3zM23.5 8h-22C.7 8 0 8.7 0 9.5S.7 11 1.5 11h22c.8 0 1.5-.7 1.5-1.5S24.3 8 23.5 8z" />
+          </g>
+        </svg>
+      </button>
+      <ul class="page-header__navigation site-list">
+        <li class="site-list__item">
+          <a class="site-list__link">О сервисе</a>
+        </li>
+        <li class="site-list__item">
+          <a class="site-list__link" href="form.html">Направления</a>
+        </li>
+        <li class="site-list__item">
+          <a class="site-list__link" href="catalog.html">Попутчики</a>
+        </li>
+      </ul>
+      <ul class="page-header__manage">
+        <li class="page-header__contact page-header__contact--hide">
+          <a class="page-header__phone" href="tel:+78005558628">Позвонить</a>
+        </li>
+        <li class="page-header__contact page-header__contact--hide">
+          <a class="page-header__email" href="mailto:mail@htmlacademy.ru">Написать</a>
+        </li>
+        <li class="page-header__contact">
+          <a class="page-header__button button-authorization button-authorization--size"
+            href="login.html">Авторизация</a>
+        </li>
+      </ul>
+    </div>
+    <nav class="main-nav show">
+      <div class="main-nav__wrapper">
+        <div class="main-nav__content">
+          <a class="main-nav__logo">
+            <picture>
+              <!--<source type="image/webp" media="(min-width: 768px)" srcset="img/logo-tablet-blue@1x.webp, img/logo-tablet-blue@2x.webp">
+                  <source type="image/webp" srcset="img/logo-mobile-blue@1x.webp, img/logo-mobile-blue@2x.webp">-->
+              <source media="(min-width: 768px)" srcset="img/logo-tablet-blue@1x.png, img/logo-tablet-blue@2x.png">
+              <img class="main-nav__image" src="img/logo-mobile-blue@1x.png" srcset="img/logo-mobile-blue@2x.png"
+                width="100" height="19" alt="Логотип Погнали">
+            </picture>
+          </a>
+          <button class="main-nav__close" type="button">Закрыть меню</button>
+        </div>
+        <ul class="main-nav__list site-list">
+          <li class="site-list__item">
+            <a class="site-list__link">О сервисе</a>
           </li>
-          <li class="page-header__contact page-header__contact--hide">
-            <a class="page-header__email" href="mailto:mail@htmlacademy.ru">Написать</a>
+          <li class="site-list__item">
+            <a class="site-list__link" href="form.html">Направления</a>
           </li>
-          <li class="page-header__contact">
-            <a class="page-header__button button-authorization button-authorization--size"
-              href="login.html">Авторизация</a>
+          <li class="site-list__item">
+            <a class="site-list__link" href="catalog.html">Попутчики</a>
+          </li>
+        </ul>
+        <a class="main-nav__login button-authorization button-authorization--header" href="login.html">Авторизация</a>
+        <ul class="main-nav__connection">
+          <li class="main-nav__items">
+            <a class="main-nav__phone-number" href="tel:+78005558628">
+              <span>8 800 555-86-28</span>
+              <svg class="contacts__image-phone" width="18" height="18" xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 36 36">
+                <path
+                  d="M18 0C11.6 0 5.2 1.1 2.8 3.4.9 5.3.2 8.7 0 10.8v.3c0 .8.7 1.5 1.5 1.5.1 0 3.7-.3 5.9-.5h.2c.8 0 1.5-.7 1.5-1.5v-3C9 6.7 9.7 6 10.7 6h14.7c.8 0 1.6.7 1.6 1.7v3c0 .8.7 1.5 1.5 1.5h.2c2.2.2 5.8.5 5.9.5.8 0 1.5-.7 1.5-1.5v-.3c-.2-2.1-.9-5.5-2.8-7.4C30.8 1.1 24.4 0 18 0zm0 19.5c-1.7 0-3 1.3-3 3s1.3 3 3 3 3-1.3 3-3-1.3-3-3-3zm-2.3-6.8v-1.9c0-1-.8-1.9-1.9-1.9s-1.8.9-1.8 2v1.9L1.9 23.6c-.7.7-1.1 1.6-1.1 2.7v3c0 1.7 1.3 3 3 3h.8v1.9c0 1 .8 1.9 1.9 1.9s1.9-.8 1.9-1.9v-1.9h19.5v1.9c0 1 .8 1.9 1.9 1.9 1 0 1.9-.8 1.9-1.9v-1.9h.8c1.7 0 3-1.3 3-3v-3c0-1.1-.4-2-1.1-2.7L24 12.7v-1.9c0-1-.8-1.9-1.9-1.9s-1.9.8-1.9 1.9v1.9h-4.5zm2.3 3.8c3.3 0 6 2.7 6 6s-2.7 6-6 6-6-2.7-6-6 2.7-6 6-6z" />
+              </svg>
+            </a>
+          </li>
+          <li class="main-nav__items">
+            <a class="main-nav__email" href="mailto:mail@htmlacademy.ru">
+              <span>mail@htmlacademy.ru</span>
+              <svg class="contacts__image-email" width="18" height="13" xxmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 36 26">
+                <path
+                  d="M0 23c0 1.6 1.3 3 3 3h30c1.7 0 3-1.3 3-3V3c0-1.6-1.3-3-3-3H3C1.3 0 0 1.3 0 3v20zm11-10L4.2 6.2c-.6-.6-.6-1.5 0-2 .6-.6 1.5-.6 2.1 0l11 10.9c.4.4 1.2.4 1.6 0l11-10.9c.6-.6 1.5-.6 2.1 0 .6.6.6 1.5 0 2L25 13l6.9 6.8c.6.6.6 1.5 0 2-.6.6-1.5.6-2.1 0L22.9 15s-2.1 2.2-2.5 2.5c-.6.6-1.4 1-2.4 1-.9 0-1.8-.4-2.4-1L13.1 15l-6.9 6.8c-.6.6-1.5.6-2.1 0-.6-.6-.6-1.5 0-2L11 13z" />
+              </svg>
+            </a>
+          </li>
+        </ul>
+        <ul class="main-nav__links-header public">
+          <li class="public__button">
+            <a class="publicl__link" href="https://www.facebook.com/">
+              <svg class="public__facebook" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 11 21" fill="#cccccc"
+                width="11" height="21">
+                <path
+                  d="M7.8 21H2.2v-9.8H0V6.4h2.1c-.1-2.2.3-3.8 1.3-4.9C4.2.6 5.5.1 7.1 0H11v4.7H7.9c-.1.2-.2.8-.2 1.7H11v4.8H7.8V21zm-4.4-1.1h3.1v-9.8h3.2V7.5H6.5v-.6c0-1.5 0-2.9.8-3.4l.2-.1h2.3V1.1H7.1c-1.2.1-2.2.5-2.8 1.2-.8.9-1.1 2.5-.9 4.6l.1.6H1.2v2.6h2.2v9.8z" />
+              </svg>
+              <span class="visually-hidden">
+                Фейсбук
+              </span>
+            </a>
+          </li>
+          <li class="public__button">
+            <a class="public__link" href="https://vk.com/">
+              <svg class="public__vkontakte" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 15.8" fill="#cccccc"
+                width="23" height="12">
+                <path
+                  d="M23.9 15.8c-.4 0-1.2-.1-2.1-.6-.6-.4-1.2-1-1.8-1.5-.4-.4-1.2-1.2-1.4-1.2-.3.1-.5.9-.5 1.6 0 .1 0 .8-.5 1.2-.4.4-1.1.5-1.2.5h-1.9c-1 0-4.4-.2-7.4-3C3.4 9.4.3 3 .1 2.7 0 2.2-.1 1.5.3 1.1.7.7 1.4.6 1.7.6H5.9c.1 0 .6.1 1 .3.4.2.6.7.6.7S8.1 3 9 4.3c1.3 2 1.9 2.5 2.1 2.6.2-.4.3-1.7.2-2.9 0-.5-.1-1.1-.3-1.3-.1-.1-.4-.3-.8-.3l-.7-.6c-.1-.7.6-1.2 1.1-1.4.7-.3 1.8-.4 3.1-.4h.7c1.2 0 1.6.1 2.1.2 1.7.4 1.6 1.7 1.6 3.3v2.1c0 .4 0 1 .1 1.3.2-.1.9-.7 2.1-2.5.8-1.2 1.4-2.5 1.5-2.8.2-.4.6-.9 1.6-.9h4.7c1 0 1.6.3 1.8.9.3.6.2 1.7-2.4 4.6-.4.4-.7.8-1 1.1-.6.7-1.2 1.4-1.2 1.6.1.1.7.6 1.3 1.1 1.5 1.2 2.5 2.3 3 3.1.5.8.4 1.3.3 1.7-.4.9-1.6 1-1.9 1h-4.1zm-5.3-4.9c.9 0 1.7.8 2.5 1.6.5.5 1 1 1.5 1.3.7.4 1.3.4 1.4.4h3.9c.2 0 .4-.1.5-.1 0 0 0-.1-.1-.2-.4-.7-1.4-1.7-2.7-2.7-1.2-1-1.8-1.5-1.9-2.2-.1-.8.5-1.4 1.6-2.7.3-.3.6-.7 1-1.1 1.6-1.8 2-2.6 2.1-3H23.1c-.2.4-.8 1.8-1.6 3-1.9 2.8-2.8 3.2-3.4 3.2-.2 0-.4 0-.6-.1-1-.6-1-1.8-.9-2.8v-.4-1.7c.1-1.7 0-1.7-.4-1.8-.4-.1-.7-.1-1.9-.2h-.7c-.6 0-1.3 0-1.9.1l.3.3c.6.7.6 2 .6 2.2.1 1.6.1 3.8-1 4.3-.2.1-.4.1-.6.1-.9 0-1.9-.9-3.4-3.3-.8-1.2-1.5-2.7-1.5-2.8L6 2.2c-.1 0-.2-.1-.3-.1h-4-.1c.6 1.2 3.4 6.6 6.5 9.5 2.7 2.5 5.8 2.6 6.4 2.6h1.9s.2-.1.3-.1V14c0-.3 0-2.6 1.6-3 .1-.1.2-.1.3-.1z" />
+              </svg>
+              <span class="visually-hidden">
+                Вконтакте
+              </span>
+            </a>
+          </li>
+          <li class="public__button">
+            <a class="public__link" href="https://www.instagram.com/?hl=ru">
+              <svg class="public__instagram" id="Layer_1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 23 23"
+                fill="#cccccc" width="18" height="18">
+                <path class="st0"
+                  d="M17 1.5c2.5 0 4.5 2 4.5 4.5v11c0 2.5-2 4.5-4.5 4.5H6c-2.5 0-4.5-2-4.5-4.5V6c0-2.5 2-4.5 4.5-4.5h11M17 0H6C2.7 0 0 2.7 0 6v11c0 3.3 2.7 6 6 6h11c3.3 0 6-2.7 6-6V6c0-3.3-2.7-6-6-6z" />
+                <path class="st0"
+                  d="M11.5 7.1c2.4 0 4.4 2 4.4 4.4 0 2.4-2 4.4-4.4 4.4-2.4 0-4.4-2-4.4-4.4 0-2.4 2-4.4 4.4-4.4m0-1.5c-3.3 0-5.9 2.7-5.9 5.9s2.7 5.9 5.9 5.9 5.9-2.7 5.9-5.9-2.6-5.9-5.9-5.9z" />
+                <circle class="st0" cx="17.6" cy="5.4" r="1.3" />
+              </svg>
+              <span class="visually-hidden">
+                Инстаграмм
+              </span>
+            </a>
           </li>
         </ul>
       </div>
-      <nav class="main-nav show">
-        <div class="main-nav__wrapper">
-          <div class="main-nav__content">
-            <a class="main-nav__logo">
-              <picture>
-                <!--<source type="image/webp" media="(min-width: 768px)" srcset="img/logo-tablet-blue@1x.webp, img/logo-tablet-blue@2x.webp">
-                  <source type="image/webp" srcset="img/logo-mobile-blue@1x.webp, img/logo-mobile-blue@2x.webp">-->
-                <source media="(min-width: 768px)" srcset="img/logo-tablet-blue@1x.png, img/logo-tablet-blue@2x.png">
-                <img class="main-nav__image" src="img/logo-mobile-blue@1x.png" srcset="img/logo-mobile-blue@2x.png"
-                  width="100" height="19" alt="Логотип Погнали">
-              </picture>
-            </a>
-            <button class="main-nav__close" type="button">Закрыть меню</button>
-          </div>
-          <ul class="main-nav__list site-list">
-            <li class="site-list__item">
-              <a class="site-list__link">О сервисе</a>
-            </li>
-            <li class="site-list__item">
-              <a class="site-list__link" href="form.html">Направления</a>
-            </li>
-            <li class="site-list__item">
-              <a class="site-list__link" href="catalog.html">Попутчики</a>
-            </li>
-          </ul>
-          <a class="main-nav__login button-authorization button-authorization--header" href="login.html">Авторизация</a>
-          <ul class="main-nav__connection">
-            <li class="main-nav__items">
-              <a class="main-nav__phone-number" href="tel:+78005558628">
-                <span>8 800 555-86-28</span>
-                <svg class="contacts__image-phone" width="18" height="18" xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 36 36">
-                  <path
-                    d="M18 0C11.6 0 5.2 1.1 2.8 3.4.9 5.3.2 8.7 0 10.8v.3c0 .8.7 1.5 1.5 1.5.1 0 3.7-.3 5.9-.5h.2c.8 0 1.5-.7 1.5-1.5v-3C9 6.7 9.7 6 10.7 6h14.7c.8 0 1.6.7 1.6 1.7v3c0 .8.7 1.5 1.5 1.5h.2c2.2.2 5.8.5 5.9.5.8 0 1.5-.7 1.5-1.5v-.3c-.2-2.1-.9-5.5-2.8-7.4C30.8 1.1 24.4 0 18 0zm0 19.5c-1.7 0-3 1.3-3 3s1.3 3 3 3 3-1.3 3-3-1.3-3-3-3zm-2.3-6.8v-1.9c0-1-.8-1.9-1.9-1.9s-1.8.9-1.8 2v1.9L1.9 23.6c-.7.7-1.1 1.6-1.1 2.7v3c0 1.7 1.3 3 3 3h.8v1.9c0 1 .8 1.9 1.9 1.9s1.9-.8 1.9-1.9v-1.9h19.5v1.9c0 1 .8 1.9 1.9 1.9 1 0 1.9-.8 1.9-1.9v-1.9h.8c1.7 0 3-1.3 3-3v-3c0-1.1-.4-2-1.1-2.7L24 12.7v-1.9c0-1-.8-1.9-1.9-1.9s-1.9.8-1.9 1.9v1.9h-4.5zm2.3 3.8c3.3 0 6 2.7 6 6s-2.7 6-6 6-6-2.7-6-6 2.7-6 6-6z" />
-                </svg>
-              </a>
-            </li>
-            <li class="main-nav__items">
-              <a class="main-nav__email" href="mailto:mail@htmlacademy.ru">
-                <span>mail@htmlacademy.ru</span>
-                <svg class="contacts__image-email" width="18" height="13" xxmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 36 26">
-                  <path
-                    d="M0 23c0 1.6 1.3 3 3 3h30c1.7 0 3-1.3 3-3V3c0-1.6-1.3-3-3-3H3C1.3 0 0 1.3 0 3v20zm11-10L4.2 6.2c-.6-.6-.6-1.5 0-2 .6-.6 1.5-.6 2.1 0l11 10.9c.4.4 1.2.4 1.6 0l11-10.9c.6-.6 1.5-.6 2.1 0 .6.6.6 1.5 0 2L25 13l6.9 6.8c.6.6.6 1.5 0 2-.6.6-1.5.6-2.1 0L22.9 15s-2.1 2.2-2.5 2.5c-.6.6-1.4 1-2.4 1-.9 0-1.8-.4-2.4-1L13.1 15l-6.9 6.8c-.6.6-1.5.6-2.1 0-.6-.6-.6-1.5 0-2L11 13z" />
-                </svg>
-              </a>
-            </li>
-          </ul>
-          <ul class="main-nav__links-header public">
-            <li class="public__button">
-              <a class="publicl__link" href="https://www.facebook.com/">
-                <svg class="public__facebook" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 11 21" fill="#cccccc"
-                  width="11" height="21">
-                  <path
-                    d="M7.8 21H2.2v-9.8H0V6.4h2.1c-.1-2.2.3-3.8 1.3-4.9C4.2.6 5.5.1 7.1 0H11v4.7H7.9c-.1.2-.2.8-.2 1.7H11v4.8H7.8V21zm-4.4-1.1h3.1v-9.8h3.2V7.5H6.5v-.6c0-1.5 0-2.9.8-3.4l.2-.1h2.3V1.1H7.1c-1.2.1-2.2.5-2.8 1.2-.8.9-1.1 2.5-.9 4.6l.1.6H1.2v2.6h2.2v9.8z" />
-                </svg>
-                <span class="visually-hidden">
-                  Фейсбук
-                </span>
-              </a>
-            </li>
-            <li class="public__button">
-              <a class="public__link" href="https://vk.com/">
-                <svg class="public__vkontakte" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 15.8" fill="#cccccc"
-                  width="23" height="12">
-                  <path
-                    d="M23.9 15.8c-.4 0-1.2-.1-2.1-.6-.6-.4-1.2-1-1.8-1.5-.4-.4-1.2-1.2-1.4-1.2-.3.1-.5.9-.5 1.6 0 .1 0 .8-.5 1.2-.4.4-1.1.5-1.2.5h-1.9c-1 0-4.4-.2-7.4-3C3.4 9.4.3 3 .1 2.7 0 2.2-.1 1.5.3 1.1.7.7 1.4.6 1.7.6H5.9c.1 0 .6.1 1 .3.4.2.6.7.6.7S8.1 3 9 4.3c1.3 2 1.9 2.5 2.1 2.6.2-.4.3-1.7.2-2.9 0-.5-.1-1.1-.3-1.3-.1-.1-.4-.3-.8-.3l-.7-.6c-.1-.7.6-1.2 1.1-1.4.7-.3 1.8-.4 3.1-.4h.7c1.2 0 1.6.1 2.1.2 1.7.4 1.6 1.7 1.6 3.3v2.1c0 .4 0 1 .1 1.3.2-.1.9-.7 2.1-2.5.8-1.2 1.4-2.5 1.5-2.8.2-.4.6-.9 1.6-.9h4.7c1 0 1.6.3 1.8.9.3.6.2 1.7-2.4 4.6-.4.4-.7.8-1 1.1-.6.7-1.2 1.4-1.2 1.6.1.1.7.6 1.3 1.1 1.5 1.2 2.5 2.3 3 3.1.5.8.4 1.3.3 1.7-.4.9-1.6 1-1.9 1h-4.1zm-5.3-4.9c.9 0 1.7.8 2.5 1.6.5.5 1 1 1.5 1.3.7.4 1.3.4 1.4.4h3.9c.2 0 .4-.1.5-.1 0 0 0-.1-.1-.2-.4-.7-1.4-1.7-2.7-2.7-1.2-1-1.8-1.5-1.9-2.2-.1-.8.5-1.4 1.6-2.7.3-.3.6-.7 1-1.1 1.6-1.8 2-2.6 2.1-3H23.1c-.2.4-.8 1.8-1.6 3-1.9 2.8-2.8 3.2-3.4 3.2-.2 0-.4 0-.6-.1-1-.6-1-1.8-.9-2.8v-.4-1.7c.1-1.7 0-1.7-.4-1.8-.4-.1-.7-.1-1.9-.2h-.7c-.6 0-1.3 0-1.9.1l.3.3c.6.7.6 2 .6 2.2.1 1.6.1 3.8-1 4.3-.2.1-.4.1-.6.1-.9 0-1.9-.9-3.4-3.3-.8-1.2-1.5-2.7-1.5-2.8L6 2.2c-.1 0-.2-.1-.3-.1h-4-.1c.6 1.2 3.4 6.6 6.5 9.5 2.7 2.5 5.8 2.6 6.4 2.6h1.9s.2-.1.3-.1V14c0-.3 0-2.6 1.6-3 .1-.1.2-.1.3-.1z" />
-                </svg>
-                <span class="visually-hidden">
-                  Вконтакте
-                </span>
-              </a>
-            </li>
-            <li class="public__button">
-              <a class="public__link" href="https://www.instagram.com/?hl=ru">
-                <svg class="public__instagram" id="Layer_1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 23 23"
-                  fill="#cccccc" width="18" height="18">
-                  <path class="st0"
-                    d="M17 1.5c2.5 0 4.5 2 4.5 4.5v11c0 2.5-2 4.5-4.5 4.5H6c-2.5 0-4.5-2-4.5-4.5V6c0-2.5 2-4.5 4.5-4.5h11M17 0H6C2.7 0 0 2.7 0 6v11c0 3.3 2.7 6 6 6h11c3.3 0 6-2.7 6-6V6c0-3.3-2.7-6-6-6z" />
-                  <path class="st0"
-                    d="M11.5 7.1c2.4 0 4.4 2 4.4 4.4 0 2.4-2 4.4-4.4 4.4-2.4 0-4.4-2-4.4-4.4 0-2.4 2-4.4 4.4-4.4m0-1.5c-3.3 0-5.9 2.7-5.9 5.9s2.7 5.9 5.9 5.9 5.9-2.7 5.9-5.9-2.6-5.9-5.9-5.9z" />
-                  <circle class="st0" cx="17.6" cy="5.4" r="1.3" />
-                </svg>
-                <span class="visually-hidden">
-                  Инстаграмм
-                </span>
-              </a>
-            </li>
-          </ul>
-        </div>
-      </nav>
+    </nav>
     </div>
   </header>
   <main class="page-main">
@@ -369,21 +380,21 @@
           <ul class="profile__tariffs">
             <li class="profile__cost">
               <div class="profile__content">
-                <span>Базовое размещение</span>
+                <span class="profile__information">Базовое размещение</span>
                 <span class="profile__money">Бесплатно</span>
               </div>
               <span class="profile__number profile__number--first">1</span>
             </li>
             <li class="profile__cost">
               <div class="profile__content">
-                <span>Вывод на первых позициях</span>
+                <span class="profile__information">Вывод на первых позициях</span>
                 <span class="profile__money">99 руб./мес</span>
               </div>
               <span class="profile__number profile__number--second">2</span>
             </li>
             <li class="profile__cost">
               <div class="profile__content profile__content--last">
-                <span>Кастомный цвет карточки</span>
+                <span class="profile__information">Кастомный цвет карточки</span>
                 <span class="profile__money">59 руб./мес</span>
               </div>
               <span class="profile__number profile__number--third">3</span>
@@ -427,9 +438,8 @@
           </div>
           <form class="interest__registration" method="post" action="https://echo.htmlacademy.ru">
             <label class="interest__label" for="appointment-email">Ваш e-mail</label>
-            <input class="interest__email" id="appointment-email" type="email" name="email" placeholder="E-mail"
-              required>
-            <a href="registration.html" class="interest__button">Регистрация</a>
+            <input class="interest__email" id="appointment-email" type="email" name="email" placeholder="E-mail">
+            <button type="submit" class="interest__button">Регистрация</button>
           </form>
           <p class="interest__paragraf">Остались вопросы?
             <span class="interest__addition"><br class="interest__carry">Мы с радостью на них ответим!</span>
@@ -481,15 +491,13 @@
           <img class="address__image" src="img/map-mobile@1x.jpg" srcset="img/map-mobile@2x.jpg" width="320"
             height="546" alt="ул. Большая Конюшенная, 19/8">
         </picture>
+        <div class="address__map">
+          <iframe class="address__iframe"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037872533277!2d30.320858716096975!3d59.93871648187614!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1563105780503!5m2!1sru!2sru"
+            frameborder="0" allowfullscreen>
+          </iframe>
+        </div>
       </div>
-    </section>
-    <section class="modal-map">
-      <h2 class="visually-hidden">Как до нас добраться</h2>
-      <iframe
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037872533277!2d30.320858716096975!3d59.93871648187614!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1563105780503!5m2!1sru!2sru"
-        width="?" height="450" frameborder="0" allowfullscreen></iframe>
-      <img class="modal-map__big" src="" alt="ул. Большая Конюшенная, 19/8">
-      <button class="modal-map__close" type="button">Закрыть</button>
     </section>
   </main>
   <footer class="page-footer">
@@ -560,6 +568,7 @@
       </div>
     </div>
   </footer>
+  <script src="js/email.js"></script>
 </body>
 
 </html>

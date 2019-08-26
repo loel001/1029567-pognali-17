@@ -4,8 +4,16 @@
   flex-wrap: wrap;
   justify-content: center;
 
-  @media @desktop-width {
-    flex-direction: row;
+  &--catalog {
+    @media @tablet-width {
+      flex-direction: row;
+    }
+
+    @media @desktop-width {
+      width: 118px;
+      justify-content: space-between;
+      padding-top: 8px;
+    }
   }
 }
 
@@ -41,9 +49,21 @@
     border: 10px solid transparent;
     border-bottom: 10px solid #101d41;
     top: 15px;
-    left: -3px;
     opacity: initial;
     z-index: 100;
+  }
+
+  &--catalog {
+    width: 33px;
+    height: 32px;
+    border-radius: 50%;
+    background-color: #edeff6;
+
+    @media @tablet-width {
+      width: 19px;
+      height: 31px;
+      background-color: @main-color-eleventh;
+    }
   }
 }
 
@@ -60,13 +80,27 @@
   &--active {
     opacity: 1;
   }
+
+  &--catalog {
+    width: 14px;
+    height: 16px;
+    margin-left: 7px;
+    margin-top: 7px;
+
+    @media @tablet-width {
+      width: 19px;
+      height: 21px;
+      margin-left: 0;
+      margin-top: 0;
+    }
+  }
 }
 
 .transport__car {
   display: block;
   .icon();
   background-image: url("../img/bus.svg");
-  width: 19px;
+  width: 17px;
   height: 21px;
   opacity: 0.15;
   margin-right: 13px;
@@ -74,6 +108,20 @@
 
   &--active {
     opacity: 1;
+  }
+
+  &--catalog {
+    width: 13px;
+    height: 16px;
+    margin-left: 10px;
+    margin-top: 7px;
+
+    @media @tablet-width {
+      width: 17px;
+      height: 21px;
+      margin-left: 0;
+      margin-top: 0;
+    }
   }
 }
 
@@ -90,18 +138,46 @@
   &--active {
     opacity: 1;
   }
+
+  &--catalog {
+    width: 19px;
+    height: 17px;
+    margin-left: 7px;
+    margin-top: 7px;
+
+    @media @tablet-width {
+      width: 24px;
+      height: 21px;
+      margin-left: 0;
+      margin-top: 0;
+    }
+  }
 }
 
 .transport__pedestrian {
   display: block;
   .icon();
   background-image: url("../img/run.svg");
-  width: 19px;
+  width: 20px;
   height: 21px;
   opacity: 0.15;
   font-size: 0;
 
   &--active {
     opacity: 1;
+  }
+
+  &--catalog {
+    width: 15px;
+    height: 17px;
+    margin-left: 7px;
+    margin-top: 7px;
+
+    @media @tablet-width {
+      width: 20px;
+      height: 21px;
+      margin-left: 0;
+      margin-top: 0;
+    }
   }
 }

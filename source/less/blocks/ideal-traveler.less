@@ -23,6 +23,11 @@
     padding-bottom: 49px;
     padding-right: 30px;
   }
+
+  &:hover {
+    transform: scale(1.04);
+    box-shadow: 0 6px 21px 0 rgba(0, 0, 0, 0.08);
+  }
 }
 
 .ideal-traveler__name {
@@ -38,11 +43,88 @@
     font-size: 30px;
     width: 220px;
     margin-left: 34px;
+    position: relative;
   }
 
   @media @desktop-width {
     margin-left: 58px;
     padding-top: 48px;
+  }
+
+  &--first {
+    @media @tablet-width {
+      width: 230px;
+    }
+  }
+
+  &--second {
+    @media @tablet-width {
+      width: 202px;
+    }
+  }
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+
+  &--active {
+    &::after {
+      display: block;
+      position: absolute;
+      .icon();
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+      background-color: #f97676;
+      right: 22px;
+      top: 21px;
+
+      @media @tablet-width {
+        width: 7px;
+        height: 7px;
+        border-radius: 50%;
+        top: 12px;
+        right: 13px;
+      }
+
+      @media @desktop-width {
+        top: 60px;
+        right: 0;
+        left: -23px;
+      }
+    }
+  }
+
+  &--other {
+    &::after {
+      display: block;
+      position: absolute;
+      .icon();
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+      background-color: #81e31e;
+      right: 22px;
+      top: 21px;
+
+      @media @tablet-width {
+        width: 7px;
+        height: 7px;
+        border-radius: 50%;
+        right: -23px;
+        top: 12px;
+      }
+
+      @media @desktop-width {
+        top: 60px;
+        right: 0;
+        left: -23px;
+      }
+    }
   }
 }
 
@@ -96,6 +178,7 @@
   color: @color-second;
   .content();
   padding-left: 9px;
+  position: relative;
 
   @media @tablet-width {
     order: 4;
@@ -106,6 +189,40 @@
   @media @desktop-width {
     display: none;
   }
+
+  &::before {
+    position: absolute;
+    display: block;
+    .icon();
+    width: 15px;
+    height: 1px;
+    background-color: #edeff6;
+    top: 9px;
+    left: -18px;
+
+    @media @tablet-width {
+      width: 72px;
+      left: -34px;
+    }
+  }
+
+  &--line {
+    &::after {
+      position: absolute;
+      display: block;
+      .icon();
+      width: 138px;
+      height: 1px;
+      background-color: #edeff6;
+      top: 9px;
+      right: -20px;
+
+      @media @tablet-width {
+        width: 500px;
+        right: -24px;
+      }
+    }
+  }
 }
 
 .ideal-traveler__levels {
@@ -113,6 +230,29 @@
   font-size: 15px;
   line-height: 1.2;
   color: @color-second;
+  position: relative;
+
+  &::before {
+    position: absolute;
+    display: block;
+    .icon();
+    width: 95px;
+    height: 1px;
+    background-color: #edeff6;
+    top: 9px;
+    left: -109px;
+  }
+
+  &::after {
+    position: absolute;
+    display: block;
+    .icon();
+    width: 12px;
+    height: 1px;
+    background-color: #edeff6;
+    top: 9px;
+    right: -20px;
+  }
 }
 
 .ideal-traveler__interest {
@@ -120,9 +260,22 @@
   font-size: 24px;
   color: @color-seventh;
   line-height: 40px;
+  position: relative;
 
   @media @tablet-width {
     line-height: 1;
+  }
+
+  &::after {
+    @media @tablet-width {
+      display: block;
+      position: absolute;
+      .icon();
+      width: 31px;
+      height: 1px;
+      background-color: #e5e5e5;
+      left: -3px;
+    }
   }
 }
 
@@ -169,28 +322,32 @@
     order: 3;
     position: absolute;
     right: 32px;
+    top: 33px;
     flex-direction: column;
     margin: 0;
+    padding-top: 5px;
   }
 
   @media @desktop-width {
     flex-direction: row;
     padding-right: 0;
     position: relative;
-    width: 250px;
-    margin-top: 27px;
+    margin-top: 31px;
     order: 6;
     margin-left: auto;
+    padding-top: 19px;
+    width: 213px;
+    top: 0;
   }
 }
 
 .ideal-traveler__transport {
   line-height: 32px;
-  width: 128px;
+  width: 150px;
 
   @media @tablet-width {
     flex-direction: column;
-    width: 25px;
+    width: 24px;
   }
 }
 
@@ -204,7 +361,6 @@
 
   @media @desktop-width {
     margin-top: 0;
-    padding-top: 19px;
   }
 }
 
@@ -222,19 +378,19 @@
 
 .ideal-traveler__circle {
   position: absolute;
-  top: -7px;
-  right: -2px;
+  top: -4px;
+  right: 0;
 
   @media @tablet-width {
-    top: 131px;
-    right: -12px;
-    height: 70px;
-    width: 70px;
+    top: 137px;
+    right: -7px;
+    height: 60px;
+    width: 60px;
   }
 
   @media @desktop-width {
-    top: 3px;
-    right: -21px;
+    top: 7px;
+    right: -18px;
   }
 }
 
@@ -263,6 +419,88 @@
   &--rate {
     @media @tablet-width {
       width: 230px;
+    }
+  }
+}
+
+.ideal-traveler__like {
+  position: absolute;
+  display: block;
+  border: none;
+  font-size: 0;
+  width: 31px;
+  height: 31px;
+  border-radius: 50%;
+  top: 52px;
+  left: 67px;
+  padding: 0;
+
+  @media @tablet-width {
+    width: 50px;
+    height: 50px;
+    position: static;
+  }
+
+  &--yes {
+    background-color: #f9eaea;
+
+    &::after {
+      display: block;
+      position: relative;
+      width: 13px;
+      height: 11px;
+      .icon();
+      background-image: url("../img/heart-active.svg");
+      left: 9px;
+      top: 1px;
+
+      @media @tablet-width {
+        width: 20px;
+        height: 17px;
+        left: 14px;
+      }
+    }
+
+    &:hover {
+      background-color: #f9d8d8;
+    }
+
+    &:active::after {
+      opacity: 0.3;
+    }
+  }
+
+  &--not {
+    background-color: #edeff6;
+
+    &::after {
+      display: block;
+      position: relative;
+      width: 13px;
+      height: 11px;
+      .icon();
+      background-image: url("../img/heart.svg");
+      opacity: 0.3;
+      left: 9px;
+      top: 1px;
+
+      @media @tablet-width {
+        width: 20px;
+        height: 17px;
+        left: 14px;
+      }
+    }
+
+    &:hover {
+      background-color: #e2e5f2;
+    }
+
+    &:hover::after {
+      opacity: 0.5;
+    }
+
+    &:active::after {
+      opacity: 0.1;
     }
   }
 }

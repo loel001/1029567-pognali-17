@@ -146,6 +146,14 @@
     width: 853px;
     padding-left: 30px;
   }
+
+  &--error {
+    background-color: #ffefef;
+
+    &::placeholder {
+      color: #ff0000;
+    }
+  }
 }
 
 .interest__button {
@@ -158,6 +166,7 @@
   position: absolute;
   top: 4px;
   right: 0;
+  padding: 0;
 
   @media @tablet-width {
     width: 82px;
@@ -172,7 +181,8 @@
     padding-left: 38px;
     width: 328px;
     padding-top: 10px;
-    padding-bottom: 10px;
+    padding-bottom: 22px;
+    text-align: left;
   }
 
   &::before {
@@ -183,12 +193,12 @@
     height: 14px;
     border: 7px solid transparent;
     border-left: 10px solid #1d2e5b;
-    right: -28px;
-    top: 23px;
+    right: -24px;
+    top: 2px;
 
     @media @tablet-width {
-      right: -37px;
-      top: 36px;
+      right: -35px;
+      top: 2px;
     }
 
     @media @desktop-width {

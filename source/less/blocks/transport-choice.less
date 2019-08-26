@@ -6,6 +6,34 @@
   width: 98px;
   margin-top: 17px;
   margin-bottom: 33px;
+
+  @media @tablet-width {
+    width: 132px;
+    margin-left: 16px;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
+  @media @desktop-width {
+    margin-left: 0;
+    width: 129px;
+    margin-top: 18px;
+  }
+
+  &--form {
+    margin-top: 5px;
+    margin-bottom: 0;
+
+    @media @tablet-width {
+      margin-top: 0;
+      width: 154px;
+      margin-bottom: 18px;
+    }
+
+    @media @desktop-width {
+      width: 130px;
+    }
+  }
 }
 
 .transport-choice__label {
@@ -28,6 +56,11 @@
     border-radius: 50%;
     background-color: @main-color-eleventh;
     cursor: pointer;
+
+    @media @tablet-width {
+      width: 43px;
+      height: 43px;
+    }
   }
 
   &--checkbox + .transport-choice__label:active::before {
@@ -49,6 +82,11 @@
     cursor: pointer;
     top: -6px;
     left: 8px;
+
+    @media @tablet-width {
+      width: 19px;
+      height: 21px;
+    }
   }
 
   &--checkbox + .transport-choice__label--aircraft:hover::after {
@@ -78,6 +116,12 @@
     cursor: pointer;
     top: -6px;
     left: 9px;
+
+    @media @tablet-width {
+      width: 17px;
+      height: 21px;
+      left: 12px;
+    }
   }
 
   &--checkbox + .transport-choice__label--car:hover::after {
@@ -107,6 +151,11 @@
     cursor: pointer;
     top: -6px;
     left: 8px;
+
+    @media @tablet-width {
+      width: 24px;
+      height: 21px;
+    }
   }
 
   &--checkbox + .transport-choice__label--bicycle:hover::after {
@@ -136,6 +185,11 @@
     cursor: pointer;
     top: -6px;
     left: 8px;
+
+    @media @tablet-width {
+      width: 20px;
+      height: 21px;
+    }
   }
 
   &--checkbox + .transport-choice__label--pedestrian:hover::after {
@@ -156,5 +210,43 @@
 
   &:focus + .transport-choice__label::before {
     outline: 2px solid #abcdef;
+  }
+}
+
+.transport-choice__type {
+  position: relative;
+  cursor: pointer;
+
+  &:hover::after {
+    display: block;
+    content: attr(tooltip);
+    position: absolute;
+    color: @color-first;
+    background-color: #101d41;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    top: 41px;
+    right: -82px;
+    white-space: nowrap;
+    border-radius: 4px;
+    font-size: 20px;
+    opacity: initial;
+    z-index: 100;
+  }
+
+  &:hover::before {
+    display: block;
+    .icon();
+    position: absolute;
+    width: 0;
+    height: 0;
+    border: 10px solid transparent;
+    border-bottom: 10px solid #101d41;
+    top: 23px;
+    left: 3px;
+    opacity: initial;
+    z-index: 100;
   }
 }

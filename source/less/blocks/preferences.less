@@ -1,6 +1,7 @@
 .preferences {
   .list();
   padding-left: 5px;
+  position: relative;
 
   @media @tablet-width {
     padding-top: 41px;
@@ -10,6 +11,38 @@
   @media @desktop-width {
     padding-top: 0;
     padding-left: 0;
+  }
+
+  &::before {
+    @media @tablet-width {
+      display: block;
+      position: absolute;
+      .icon();
+      width: 618px;
+      height: 1px;
+      background-color: #f3c72b;
+      top: 5px;
+    }
+
+    @media @desktop-width {
+      display: none;
+    }
+  }
+
+  &::after {
+    @media @tablet-width {
+      display: block;
+      position: absolute;
+      .icon();
+      width: 618px;
+      height: 1px;
+      background-color: #f3c72b;
+      bottom: -39px;
+    }
+
+    @media @desktop-width {
+      display: none;
+    }
   }
 }
 
@@ -31,7 +64,7 @@
 
   @media @desktop-width {
     flex-direction: column;
-    margin-bottom: 22px;
+    margin-bottom: 20px;
   }
 
   &:nth-child(2) {
@@ -69,6 +102,10 @@
     height: 1px;
     background-color: #f3c72b;
     top: -10px;
+
+    @media @tablet-width {
+      display: none;
+    }
   }
 }
 
@@ -116,18 +153,6 @@
     margin-top: 26px;
     padding-left: 37px;
   }
-
-  &--hide {
-    display: none;
-
-    @media @tablet-width {
-      display: flex;
-    }
-
-    @media @desktop-width {
-      display: none;
-    }
-  }
 }
 
 .preferences__input {
@@ -146,6 +171,13 @@
     top: -1px;
     left: -26px;
     cursor: pointer;
+
+    @media @tablet-width {
+      width: 24px;
+      height: 24px;
+      top: 0;
+      left: -36px;
+    }
   }
 
   &--checkbox:checked + .preferences__label::after {
@@ -158,6 +190,13 @@
     top: 4px;
     left: -22px;
     cursor: pointer;
+
+    @media @tablet-width {
+      width: 12px;
+      height: 12px;
+      top: 6px;
+      left: -29px;
+    }
   }
 
   &:focus + .preferences__label {
@@ -503,6 +542,16 @@
     border-bottom: 4px solid @main-color-eighth;
     left: 212px;
     top: 4px;
+
+    @media @tablet-width {
+      display: none;
+    }
+
+    @media @desktop-width {
+      display: block;
+      left: 183px;
+      top: 1px;
+    }
   }
 }
 
@@ -528,5 +577,15 @@
     border-bottom: 4px solid @main-color-eighth;
     left: 212px;
     top: 4px;
+
+    @media @tablet-width {
+      display: none;
+    }
+
+    @media @desktop-width {
+      display: block;
+      left: 183px;
+      top: 1px;
+    }
   }
 }
