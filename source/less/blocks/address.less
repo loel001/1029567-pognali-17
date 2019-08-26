@@ -56,6 +56,8 @@
 }
 
 .address__image {
+  display: none;
+
   @media @tablet-width {
     width: 768px;
     height: 700px;
@@ -65,4 +67,24 @@
     width: 1440px;
     height: 750px;
   }
+}
+
+.address__map {
+  position: absolute;
+  width: 100vw;
+  transform: translateX(-50%);
+  height: 546px;
+
+  @media @tablet-width {
+    height: 700px;
+  }
+
+  @media @desktop-width {
+    height: 750px;
+  }
+}
+
+.address__iframe {
+  height: 100%;
+  width: 100%;
 }
