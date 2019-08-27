@@ -9,10 +9,10 @@
 </head>
 
 <body>
-  <header class="page-header page-header--scroll">
+  <header class="page-header">
     <div class="page-header__wrapper">
       <a class="page-header__logo logo">
-        <picture>
+        <picture class="page-header__hide">
           <!--<source type="image/webp" media="(min-width: 1440px)" srcset="img/logo-desktop-white@1x.webp, img/logo-desktop-white@2x.webp">
             <source type="image/webp" media="(min-width: 768px)" srcset="img/logo-tablet-white@1x.webp, img/logo-tablet-white@2x.webp">
             <source type="image/webp" srcset="img/logo-mobile-white@1x.webp, img/logo-mobile-white@2x.webp">-->
@@ -22,25 +22,35 @@
           <img class="logo__image" src="img/logo-mobile-white@1x.png" srcset="img/logo-mobile-white@2x.png" width="100"
             height="19" alt="Логотип Погнали">
         </picture>
+        <picture class="page-header__picture">
+          <!--<source type="image/webp" media="(min-width: 1440px)" srcset="img/logo-desktop-blue@1x.webp, img/logo-desktop-blue@2x.webp">
+                  <source type="image/webp" media="(min-width: 768px)" srcset="img/logo-tablet-blue@1x.webp, img/logo-tablet-blue@2x.webp">
+                  <source type="image/webp" srcset="img/logo-mobile-blue@1x.webp, img/logo-mobile-blue@2x.webp">-->
+
+          <source media="(min-width: 1440px)" srcset="img/logo-desktop-blue@1x.png, img/logo-desktop-blue@2x.png">
+          <source media="(min-width: 768px)" srcset="img/logo-tablet-blue@1x.png, img/logo-tablet-blue@2x.png">
+          <img class="page-header__new" src="img/logo-mobile-blue@1x.png" srcset="img/logo-mobile-blue@2x.png"
+            width="100" height="19" alt="Логотип Погнали">
+        </picture>
       </a>
-      <button class="page-header__toggle-open page-header__toggle-open--scroll" type="button">Открыть
+      <button class="page-header__toggle-open" type="button">Открыть
         меню
         <svg class="page-header__icon" width="25" height="11" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 25 11">
-          <g fill="#fff">
+          <g>
             <path
               d="M1.5 3h22c.8 0 1.5-.7 1.5-1.5S24.3 0 23.5 0h-22C.7 0 0 .7 0 1.5S.7 3 1.5 3zM23.5 8h-22C.7 8 0 8.7 0 9.5S.7 11 1.5 11h22c.8 0 1.5-.7 1.5-1.5S24.3 8 23.5 8z" />
           </g>
         </svg>
       </button>
-      <ul class="page-header__navigation site-list">
-        <li class="site-list__item">
-          <a class="site-list__link">О сервисе</a>
+      <ul class="page-header__navigation navigation">
+        <li class="navigation__item">
+          <a class="navigation__link">О сервисе</a>
         </li>
-        <li class="site-list__item">
-          <a class="site-list__link" href="form.html">Направления</a>
+        <li class="navigation__item">
+          <a class="navigation__link" href="form.html">Направления</a>
         </li>
-        <li class="site-list__item">
-          <a class="site-list__link" href="catalog.html">Попутчики</a>
+        <li class="navigation__item">
+          <a class="navigation__link" href="catalog.html">Попутчики</a>
         </li>
       </ul>
       <ul class="page-header__manage">
@@ -56,7 +66,7 @@
         </li>
       </ul>
     </div>
-    <nav class="main-nav show">
+    <nav class="main-nav">
       <div class="main-nav__wrapper">
         <div class="main-nav__content">
           <a class="main-nav__logo">
@@ -407,20 +417,20 @@
       <h2 class="modal__title headline">Бизнес-тарифы</h2>
       <ul class="modal__business-tariffs">
         <li class="modal__tarif">
-          <span>Реклама у блоггера</span>
-          <span>300 000 руб./пост</span>
+          <span class="modal__name">Реклама у блоггера</span>
+          <span class="modal__cost">300 000 руб./пост</span>
         </li>
         <li class="modal__tarif">
-          <span>Накрутка подписчиков</span>
-          <span>от 1 руб./шт.</span>
+          <span class="modal__name">Накрутка подписчиков</span>
+          <span class="modal__cost">от 1 руб./шт.</span>
         </li>
         <li class="modal__tarif">
-          <span>Лайки от ботов</span>
-          <span>от 20 коп./лайк</span>
+          <span class="modal__name">Лайки от ботов</span>
+          <span class="modal__cost">от 20 коп./лайк</span>
         </li>
         <li class="modal__tarif modal__tarif--last">
-          <span>Ваш продакт-плейсмент</span>
-          <span>Индивидуально</span>
+          <span class="modal__name">Ваш продакт-плейсмент</span>
+          <span class="modal__cost">Индивидуально</span>
         </li>
       </ul>
       <button class="modal__close" type="button">Закрыть окно</button>
@@ -570,6 +580,9 @@
   <script src="js/picturefill.min.js" async></script>
   <script src="js/email.js"></script>
   <script src="js/business-rates.js"></script>
+  <script src="js/map.js"></script>
+  <script src="js/menu.js"></script>
+  <script src="js/scroll.js"></script>
 </body>
 
 </html>

@@ -15,23 +15,6 @@
       display: none;
     }
   }
-
-  &::before {
-    display: block;
-    position: absolute;
-    .icon();
-    width: 21px;
-    height: 21px;
-    background-color: #edeff6;
-    border-radius: 50%;
-    top: -8px;
-    right: -9px;
-    z-index: 1;
-
-    @media @tablet-width {
-      display: none;
-    }
-  }
 }
 
 .route__input {
@@ -100,14 +83,13 @@
   padding: 0;
 
   @media @tablet-width {
-    width: 17px;
-    height: 9px;
-    right: 189px;
-    top: 30px;
+    width: 40px;
+    right: 166px;
+    top: 18px;
   }
 
   @media @desktop-width {
-    right: 297px;
+    right: 275px;
   }
 
   &--location {
@@ -115,48 +97,12 @@
     top: 1px;
 
     @media @tablet-width {
-      right: 189px;
-      top: 17px;
+      right: 166px;
+      top: 18px;
     }
 
     @media @desktop-width {
-      right: 297px;
-    }
-
-    &::before {
-      display: block;
-      position: relative;
-      .icon();
-      width: 9px;
-      height: 9px;
-      opacity: 0.3;
-      background-image: url("../img/filter-close.svg");
-      top: -13px;
-      right: -47px;
-      z-index: 2;
-      cursor: pointer;
-
-      @media @tablet-width {
-        width: 17px;
-        height: 17px;
-        top: 7px;
-        right: -191px;
-        opacity: 0.1;
-      }
-
-      @media @desktop-width {
-        width: 18px;
-        height: 18px;
-        right: -291px;
-      }
-    }
-
-    &:hover::before {
-      opacity: 0.5;
-    }
-
-    &:active::before {
-      opacity: 0.1;
+      right: 275px;
     }
   }
 
@@ -277,32 +223,70 @@
 }
 
 .route__wrapper {
-  display: flex;
   position: relative;
-  margin-bottom: 22px;
+
+  &--size {
+    display: flex;
+    margin-bottom: 22px;
+
+    @media @tablet-width {
+      margin-bottom: 15px;
+    }
+  }
+}
+
+.route__modal {
+  display: none;
+  position: absolute;
+  z-index: 1;
+  top: 0;
+
+  &--open {
+    display: block;
+  }
+}
+
+.route__close {
+  font-size: 0;
+  border: none;
+  display: block;
+  position: absolute;
+  .icon();
+  width: 21px;
+  height: 21px;
+  background-color: @main-color-seventh;
+  border-radius: 50%;
+  top: -8px;
+  right: -9px;
+  z-index: 1;
+  padding: 0;
 
   @media @tablet-width {
-    margin-bottom: 15px;
+    background-color: @main-color-eleventh;
+    width: 19px;
+    height: 19px;
+    top: 25px;
+    right: -3px;
   }
 
   &::after {
     display: block;
-    position: absolute;
+    position: relative;
     .icon();
     width: 9px;
     height: 9px;
     opacity: 0.3;
     background-image: url("../img/filter-close.svg");
-    right: -3px;
+    right: -6px;
     z-index: 2;
-    top: -2px;
+    top: 0;
     cursor: pointer;
 
     @media @tablet-width {
       width: 17px;
       height: 17px;
-      top: 26px;
       opacity: 0.1;
+      right: -1px;
     }
 
     @media @desktop-width {
@@ -318,16 +302,5 @@
 
   &:active::after {
     opacity: 0.1;
-  }
-}
-
-.route__modal {
-  display: none;
-  position: absolute;
-  z-index: 1;
-  top: 0;
-
-  &--open {
-    display: block;
   }
 }

@@ -93,9 +93,30 @@
   font-size: 18px;
   color: @color-second;
   text-align: center;
+  position: relative;
 
   @media @desktop-width {
     color: @color-first;
+  }
+
+  &::before {
+    display: block;
+    position: absolute;
+    .icon();
+    width: 49px;
+    height: 2px;
+    background-color: #cbced9;
+    top: -3px;
+    left: -5px;
+
+    @media @tablet-width {
+      opacity: 0.3;
+      background-color: #000000;
+    }
+
+    @media @desktop-width {
+      background-color: #ffffff;
+    }
   }
 }
 

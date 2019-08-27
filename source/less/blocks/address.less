@@ -56,8 +56,6 @@
 }
 
 .address__image {
-  display: none;
-
   @media @tablet-width {
     width: 768px;
     height: 700px;
@@ -67,9 +65,14 @@
     width: 1440px;
     height: 750px;
   }
+
+  &--close {
+    display: none;
+  }
 }
 
 .address__map {
+  display: none;
   position: relative;
   width: 100vw;
   transform: translateX(-50%) translateY(-19%);
@@ -83,6 +86,10 @@
 
   @media @desktop-width {
     height: 750px;
+  }
+
+  &--open {
+    display: block;
   }
 }
 
