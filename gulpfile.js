@@ -102,6 +102,11 @@ gulp.task("clean", function () {
   return del("build/");
 });
 
+gulp.task("refresh", function (done) {
+  server.reload();
+  done();
+});
+
 gulp.task("server", function () {
   server.init({
     server: "build/",
@@ -115,11 +120,6 @@ gulp.task("server", function () {
   gulp.watch("source/img/icon-*.svg}", gulp.series("css", "html", "refresh"));
   gulp.watch("source/js/*.js", gulp.series("scripts", "refresh"));
   gulp.watch("source/*.html", gulp.series("html", "refresh"));
-});
-
-gulp.task("refresh", function (done) {
-  server.reload();
-  done();
 });
 
 gulp.task("build",
