@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <title>HTML Academy: Погнали</title>
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <link href="css/style.css" rel="stylesheet">
+  <link href="css/style.min.css" rel="stylesheet">
 </head>
 
 <body>
@@ -15,20 +15,22 @@
         <div class="page-header__content">
           <a class="page-header__logo logo" href="index.html">
             <picture class="page-header__hide">
-              <!--<source type="image/webp" media="(min-width: 1440px)" srcset="img/logo-desktop-white@1x.webp, img/logo-desktop-white@2x.webp">
-                    <source type="image/webp" media="(min-width: 768px)" srcset="img/logo-tablet-white@1x.webp, img/logo-tablet-white@2x.webp">
-                    <source type="image/webp" srcset="img/logo-mobile-white@1x.webp, img/logo-mobile-white@2x.webp">-->
-
+              <source type="image/webp" media="(min-width: 1440px)"
+                srcset="img/logo-desktop-white@1x.webp, img/logo-desktop-white@2x.webp">
+              <source type="image/webp" media="(min-width: 768px)"
+                srcset="img/logo-tablet-white@1x.webp, img/logo-tablet-white@2x.webp">
+              <source type="image/webp" srcset="img/logo-mobile-white@1x.webp, img/logo-mobile-white@2x.webp">
               <source media="(min-width: 1440px)" srcset="img/logo-desktop-white@1x.png, img/logo-desktop-white@2x.png">
               <source media="(min-width: 768px)" srcset="img/logo-tablet-white@1x.png, img/logo-tablet-white@2x.png">
               <img class="logo__image" src="img/logo-mobile-white@1x.png" srcset="img/logo-mobile-white@2x.png"
                 width="100" height="19" alt="Логотип Погнали">
             </picture>
             <picture class="page-header__picture">
-              <!--<source type="image/webp" media="(min-width: 1440px)" srcset="img/logo-desktop-blue@1x.webp, img/logo-desktop-blue@2x.webp">
-                          <source type="image/webp" media="(min-width: 768px)" srcset="img/logo-tablet-blue@1x.webp, img/logo-tablet-blue@2x.webp">
-                          <source type="image/webp" srcset="img/logo-mobile-blue@1x.webp, img/logo-mobile-blue@2x.webp">-->
-
+              <source type="image/webp" media="(min-width: 1440px)"
+                srcset="img/logo-desktop-blue@1x.webp, img/logo-desktop-blue@2x.webp">
+              <source type="image/webp" media="(min-width: 768px)"
+                srcset="img/logo-tablet-blue@1x.webp, img/logo-tablet-blue@2x.webp">
+              <source type="image/webp" srcset="img/logo-mobile-blue@1x.webp, img/logo-mobile-blue@2x.webp">
               <source media="(min-width: 1440px)" srcset="img/logo-desktop-blue@1x.png, img/logo-desktop-blue@2x.png">
               <source media="(min-width: 768px)" srcset="img/logo-tablet-blue@1x.png, img/logo-tablet-blue@2x.png">
               <img class="page-header__new" src="img/logo-mobile-blue@1x.png" srcset="img/logo-mobile-blue@2x.png"
@@ -41,7 +43,8 @@
               viewBox="0 0 25 11">
               <g>
                 <path
-                  d="M1.5 3h22c.8 0 1.5-.7 1.5-1.5S24.3 0 23.5 0h-22C.7 0 0 .7 0 1.5S.7 3 1.5 3zM23.5 8h-22C.7 8 0 8.7 0 9.5S.7 11 1.5 11h22c.8 0 1.5-.7 1.5-1.5S24.3 8 23.5 8z" />
+                  d="M1.5 3h22c.8 0 1.5-.7 1.5-1.5S24.3 0 23.5 0h-22C.7 0 0 .7 0 1.5S.7 3 1.5 3zM23.5 8h-22C.7 8 0 8.7 0 9.5S.7 11 1.5 11h22c.8 0 1.5-.7 1.5-1.5S24.3 8 23.5 8z">
+                </path>
               </g>
             </svg>
           </button>
@@ -79,8 +82,9 @@
         <div class="main-nav__content">
           <a class="main-nav__logo">
             <picture>
-              <!--<source type="image/webp" media="(min-width: 768px)" srcset="img/logo-tablet-blue@1x.webp, img/logo-tablet-blue@2x.webp">
-                        <source type="image/webp" srcset="img/logo-mobile-blue@1x.webp, img/logo-mobile-blue@2x.webp">-->
+              <source type="image/webp" media="(min-width: 768px)"
+                srcset="img/logo-tablet-blue@1x.webp, img/logo-tablet-blue@2x.webp">
+              <source type="image/webp" srcset="img/logo-mobile-blue@1x.webp, img/logo-mobile-blue@2x.webp">
               <source media="(min-width: 768px)" srcset="img/logo-tablet-blue@1x.png, img/logo-tablet-blue@2x.png">
               <img class="main-nav__image" src="img/logo-mobile-blue@1x.png" srcset="img/logo-mobile-blue@2x.png"
                 width="100" height="19" alt="Логотип Погнали">
@@ -100,7 +104,7 @@
           </li>
         </ul>
         <a class="main-nav__login button-authorization" href="login.html">Авторизация</a>
-        </ul>
+
         <ul class="main-nav__connection">
           <li class="main-nav__items">
             <a class="main-nav__phone-number" href="tel:+78005558628">
@@ -108,7 +112,8 @@
               <svg class="main-nav__first" width="18" height="18" xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 36 36">
                 <path
-                  d="M18 0C11.6 0 5.2 1.1 2.8 3.4.9 5.3.2 8.7 0 10.8v.3c0 .8.7 1.5 1.5 1.5.1 0 3.7-.3 5.9-.5h.2c.8 0 1.5-.7 1.5-1.5v-3C9 6.7 9.7 6 10.7 6h14.7c.8 0 1.6.7 1.6 1.7v3c0 .8.7 1.5 1.5 1.5h.2c2.2.2 5.8.5 5.9.5.8 0 1.5-.7 1.5-1.5v-.3c-.2-2.1-.9-5.5-2.8-7.4C30.8 1.1 24.4 0 18 0zm0 19.5c-1.7 0-3 1.3-3 3s1.3 3 3 3 3-1.3 3-3-1.3-3-3-3zm-2.3-6.8v-1.9c0-1-.8-1.9-1.9-1.9s-1.8.9-1.8 2v1.9L1.9 23.6c-.7.7-1.1 1.6-1.1 2.7v3c0 1.7 1.3 3 3 3h.8v1.9c0 1 .8 1.9 1.9 1.9s1.9-.8 1.9-1.9v-1.9h19.5v1.9c0 1 .8 1.9 1.9 1.9 1 0 1.9-.8 1.9-1.9v-1.9h.8c1.7 0 3-1.3 3-3v-3c0-1.1-.4-2-1.1-2.7L24 12.7v-1.9c0-1-.8-1.9-1.9-1.9s-1.9.8-1.9 1.9v1.9h-4.5zm2.3 3.8c3.3 0 6 2.7 6 6s-2.7 6-6 6-6-2.7-6-6 2.7-6 6-6z" />
+                  d="M18 0C11.6 0 5.2 1.1 2.8 3.4.9 5.3.2 8.7 0 10.8v.3c0 .8.7 1.5 1.5 1.5.1 0 3.7-.3 5.9-.5h.2c.8 0 1.5-.7 1.5-1.5v-3C9 6.7 9.7 6 10.7 6h14.7c.8 0 1.6.7 1.6 1.7v3c0 .8.7 1.5 1.5 1.5h.2c2.2.2 5.8.5 5.9.5.8 0 1.5-.7 1.5-1.5v-.3c-.2-2.1-.9-5.5-2.8-7.4C30.8 1.1 24.4 0 18 0zm0 19.5c-1.7 0-3 1.3-3 3s1.3 3 3 3 3-1.3 3-3-1.3-3-3-3zm-2.3-6.8v-1.9c0-1-.8-1.9-1.9-1.9s-1.8.9-1.8 2v1.9L1.9 23.6c-.7.7-1.1 1.6-1.1 2.7v3c0 1.7 1.3 3 3 3h.8v1.9c0 1 .8 1.9 1.9 1.9s1.9-.8 1.9-1.9v-1.9h19.5v1.9c0 1 .8 1.9 1.9 1.9 1 0 1.9-.8 1.9-1.9v-1.9h.8c1.7 0 3-1.3 3-3v-3c0-1.1-.4-2-1.1-2.7L24 12.7v-1.9c0-1-.8-1.9-1.9-1.9s-1.9.8-1.9 1.9v1.9h-4.5zm2.3 3.8c3.3 0 6 2.7 6 6s-2.7 6-6 6-6-2.7-6-6 2.7-6 6-6z">
+                </path>
               </svg>
             </a>
           </li>
@@ -118,7 +123,8 @@
               <svg class="main-nav__second" width="18" height="13" xxmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 36 26">
                 <path
-                  d="M0 23c0 1.6 1.3 3 3 3h30c1.7 0 3-1.3 3-3V3c0-1.6-1.3-3-3-3H3C1.3 0 0 1.3 0 3v20zm11-10L4.2 6.2c-.6-.6-.6-1.5 0-2 .6-.6 1.5-.6 2.1 0l11 10.9c.4.4 1.2.4 1.6 0l11-10.9c.6-.6 1.5-.6 2.1 0 .6.6.6 1.5 0 2L25 13l6.9 6.8c.6.6.6 1.5 0 2-.6.6-1.5.6-2.1 0L22.9 15s-2.1 2.2-2.5 2.5c-.6.6-1.4 1-2.4 1-.9 0-1.8-.4-2.4-1L13.1 15l-6.9 6.8c-.6.6-1.5.6-2.1 0-.6-.6-.6-1.5 0-2L11 13z" />
+                  d="M0 23c0 1.6 1.3 3 3 3h30c1.7 0 3-1.3 3-3V3c0-1.6-1.3-3-3-3H3C1.3 0 0 1.3 0 3v20zm11-10L4.2 6.2c-.6-.6-.6-1.5 0-2 .6-.6 1.5-.6 2.1 0l11 10.9c.4.4 1.2.4 1.6 0l11-10.9c.6-.6 1.5-.6 2.1 0 .6.6.6 1.5 0 2L25 13l6.9 6.8c.6.6.6 1.5 0 2-.6.6-1.5.6-2.1 0L22.9 15s-2.1 2.2-2.5 2.5c-.6.6-1.4 1-2.4 1-.9 0-1.8-.4-2.4-1L13.1 15l-6.9 6.8c-.6.6-1.5.6-2.1 0-.6-.6-.6-1.5 0-2L11 13z">
+                </path>
               </svg>
             </a>
           </li>
@@ -129,7 +135,8 @@
               <svg class="public__facebook" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 11 21" fill="#cccccc"
                 width="11" height="21">
                 <path
-                  d="M7.8 21H2.2v-9.8H0V6.4h2.1c-.1-2.2.3-3.8 1.3-4.9C4.2.6 5.5.1 7.1 0H11v4.7H7.9c-.1.2-.2.8-.2 1.7H11v4.8H7.8V21zm-4.4-1.1h3.1v-9.8h3.2V7.5H6.5v-.6c0-1.5 0-2.9.8-3.4l.2-.1h2.3V1.1H7.1c-1.2.1-2.2.5-2.8 1.2-.8.9-1.1 2.5-.9 4.6l.1.6H1.2v2.6h2.2v9.8z" />
+                  d="M7.8 21H2.2v-9.8H0V6.4h2.1c-.1-2.2.3-3.8 1.3-4.9C4.2.6 5.5.1 7.1 0H11v4.7H7.9c-.1.2-.2.8-.2 1.7H11v4.8H7.8V21zm-4.4-1.1h3.1v-9.8h3.2V7.5H6.5v-.6c0-1.5 0-2.9.8-3.4l.2-.1h2.3V1.1H7.1c-1.2.1-2.2.5-2.8 1.2-.8.9-1.1 2.5-.9 4.6l.1.6H1.2v2.6h2.2v9.8z">
+                </path>
               </svg>
               <span class="visually-hidden">
                 Фейсбук
@@ -141,7 +148,8 @@
               <svg class="public__vkontakte" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 15.8" fill="#cccccc"
                 width="23" height="12">
                 <path
-                  d="M23.9 15.8c-.4 0-1.2-.1-2.1-.6-.6-.4-1.2-1-1.8-1.5-.4-.4-1.2-1.2-1.4-1.2-.3.1-.5.9-.5 1.6 0 .1 0 .8-.5 1.2-.4.4-1.1.5-1.2.5h-1.9c-1 0-4.4-.2-7.4-3C3.4 9.4.3 3 .1 2.7 0 2.2-.1 1.5.3 1.1.7.7 1.4.6 1.7.6H5.9c.1 0 .6.1 1 .3.4.2.6.7.6.7S8.1 3 9 4.3c1.3 2 1.9 2.5 2.1 2.6.2-.4.3-1.7.2-2.9 0-.5-.1-1.1-.3-1.3-.1-.1-.4-.3-.8-.3l-.7-.6c-.1-.7.6-1.2 1.1-1.4.7-.3 1.8-.4 3.1-.4h.7c1.2 0 1.6.1 2.1.2 1.7.4 1.6 1.7 1.6 3.3v2.1c0 .4 0 1 .1 1.3.2-.1.9-.7 2.1-2.5.8-1.2 1.4-2.5 1.5-2.8.2-.4.6-.9 1.6-.9h4.7c1 0 1.6.3 1.8.9.3.6.2 1.7-2.4 4.6-.4.4-.7.8-1 1.1-.6.7-1.2 1.4-1.2 1.6.1.1.7.6 1.3 1.1 1.5 1.2 2.5 2.3 3 3.1.5.8.4 1.3.3 1.7-.4.9-1.6 1-1.9 1h-4.1zm-5.3-4.9c.9 0 1.7.8 2.5 1.6.5.5 1 1 1.5 1.3.7.4 1.3.4 1.4.4h3.9c.2 0 .4-.1.5-.1 0 0 0-.1-.1-.2-.4-.7-1.4-1.7-2.7-2.7-1.2-1-1.8-1.5-1.9-2.2-.1-.8.5-1.4 1.6-2.7.3-.3.6-.7 1-1.1 1.6-1.8 2-2.6 2.1-3H23.1c-.2.4-.8 1.8-1.6 3-1.9 2.8-2.8 3.2-3.4 3.2-.2 0-.4 0-.6-.1-1-.6-1-1.8-.9-2.8v-.4-1.7c.1-1.7 0-1.7-.4-1.8-.4-.1-.7-.1-1.9-.2h-.7c-.6 0-1.3 0-1.9.1l.3.3c.6.7.6 2 .6 2.2.1 1.6.1 3.8-1 4.3-.2.1-.4.1-.6.1-.9 0-1.9-.9-3.4-3.3-.8-1.2-1.5-2.7-1.5-2.8L6 2.2c-.1 0-.2-.1-.3-.1h-4-.1c.6 1.2 3.4 6.6 6.5 9.5 2.7 2.5 5.8 2.6 6.4 2.6h1.9s.2-.1.3-.1V14c0-.3 0-2.6 1.6-3 .1-.1.2-.1.3-.1z" />
+                  d="M23.9 15.8c-.4 0-1.2-.1-2.1-.6-.6-.4-1.2-1-1.8-1.5-.4-.4-1.2-1.2-1.4-1.2-.3.1-.5.9-.5 1.6 0 .1 0 .8-.5 1.2-.4.4-1.1.5-1.2.5h-1.9c-1 0-4.4-.2-7.4-3C3.4 9.4.3 3 .1 2.7 0 2.2-.1 1.5.3 1.1.7.7 1.4.6 1.7.6H5.9c.1 0 .6.1 1 .3.4.2.6.7.6.7S8.1 3 9 4.3c1.3 2 1.9 2.5 2.1 2.6.2-.4.3-1.7.2-2.9 0-.5-.1-1.1-.3-1.3-.1-.1-.4-.3-.8-.3l-.7-.6c-.1-.7.6-1.2 1.1-1.4.7-.3 1.8-.4 3.1-.4h.7c1.2 0 1.6.1 2.1.2 1.7.4 1.6 1.7 1.6 3.3v2.1c0 .4 0 1 .1 1.3.2-.1.9-.7 2.1-2.5.8-1.2 1.4-2.5 1.5-2.8.2-.4.6-.9 1.6-.9h4.7c1 0 1.6.3 1.8.9.3.6.2 1.7-2.4 4.6-.4.4-.7.8-1 1.1-.6.7-1.2 1.4-1.2 1.6.1.1.7.6 1.3 1.1 1.5 1.2 2.5 2.3 3 3.1.5.8.4 1.3.3 1.7-.4.9-1.6 1-1.9 1h-4.1zm-5.3-4.9c.9 0 1.7.8 2.5 1.6.5.5 1 1 1.5 1.3.7.4 1.3.4 1.4.4h3.9c.2 0 .4-.1.5-.1 0 0 0-.1-.1-.2-.4-.7-1.4-1.7-2.7-2.7-1.2-1-1.8-1.5-1.9-2.2-.1-.8.5-1.4 1.6-2.7.3-.3.6-.7 1-1.1 1.6-1.8 2-2.6 2.1-3H23.1c-.2.4-.8 1.8-1.6 3-1.9 2.8-2.8 3.2-3.4 3.2-.2 0-.4 0-.6-.1-1-.6-1-1.8-.9-2.8v-.4-1.7c.1-1.7 0-1.7-.4-1.8-.4-.1-.7-.1-1.9-.2h-.7c-.6 0-1.3 0-1.9.1l.3.3c.6.7.6 2 .6 2.2.1 1.6.1 3.8-1 4.3-.2.1-.4.1-.6.1-.9 0-1.9-.9-3.4-3.3-.8-1.2-1.5-2.7-1.5-2.8L6 2.2c-.1 0-.2-.1-.3-.1h-4-.1c.6 1.2 3.4 6.6 6.5 9.5 2.7 2.5 5.8 2.6 6.4 2.6h1.9s.2-.1.3-.1V14c0-.3 0-2.6 1.6-3 .1-.1.2-.1.3-.1z">
+                </path>
               </svg>
               <span class="visually-hidden">
                 Вконтакте
@@ -153,10 +161,12 @@
               <svg class="public__instagram" id="Layer_1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 23 23"
                 fill="#cccccc" width="18" height="18">
                 <path class="st0"
-                  d="M17 1.5c2.5 0 4.5 2 4.5 4.5v11c0 2.5-2 4.5-4.5 4.5H6c-2.5 0-4.5-2-4.5-4.5V6c0-2.5 2-4.5 4.5-4.5h11M17 0H6C2.7 0 0 2.7 0 6v11c0 3.3 2.7 6 6 6h11c3.3 0 6-2.7 6-6V6c0-3.3-2.7-6-6-6z" />
+                  d="M17 1.5c2.5 0 4.5 2 4.5 4.5v11c0 2.5-2 4.5-4.5 4.5H6c-2.5 0-4.5-2-4.5-4.5V6c0-2.5 2-4.5 4.5-4.5h11M17 0H6C2.7 0 0 2.7 0 6v11c0 3.3 2.7 6 6 6h11c3.3 0 6-2.7 6-6V6c0-3.3-2.7-6-6-6z">
+                </path>
                 <path class="st0"
-                  d="M11.5 7.1c2.4 0 4.4 2 4.4 4.4 0 2.4-2 4.4-4.4 4.4-2.4 0-4.4-2-4.4-4.4 0-2.4 2-4.4 4.4-4.4m0-1.5c-3.3 0-5.9 2.7-5.9 5.9s2.7 5.9 5.9 5.9 5.9-2.7 5.9-5.9-2.6-5.9-5.9-5.9z" />
-                <circle class="st0" cx="17.6" cy="5.4" r="1.3" />
+                  d="M11.5 7.1c2.4 0 4.4 2 4.4 4.4 0 2.4-2 4.4-4.4 4.4-2.4 0-4.4-2-4.4-4.4 0-2.4 2-4.4 4.4-4.4m0-1.5c-3.3 0-5.9 2.7-5.9 5.9s2.7 5.9 5.9 5.9 5.9-2.7 5.9-5.9-2.6-5.9-5.9-5.9z">
+                </path>
+                <circle class="st0" cx="17.6" cy="5.4" r="1.3"></circle>
               </svg>
               <span class="visually-hidden">
                 Инстаграмм
@@ -183,8 +193,9 @@
             <span class="personal-profile__level">level</span>
           </div>
           <picture class="personal-profile__picture">
-            <!--<source type="image/webp" media="(min-width: 768px)" srcset="img/photo-account-tablet@1x.webp, img/photo-account-tablet@2x.webp">
-            <source type="image/webp" srcset="img/photo-account-mobile@1x.webp, img/photo-account-mobile@2x.webp">-->
+            <source type="image/webp" media="(min-width: 768px)"
+              srcset="img/photo-account-tablet@1x.webp, img/photo-account-tablet@2x.webp">
+            <source type="image/webp" srcset="img/photo-account-mobile@1x.webp, img/photo-account-mobile@2x.webp">
             <source media="(min-width: 768px)"
               srcset="img/photo-account-tablet@1x.jpg, img/photo-account-tablet@2x.jpg">
             <img class="personal-profile__photo" src="img/photo-account-mobile@1x.jpg"
@@ -203,13 +214,13 @@
           <ul class="personal-profile__transport transport-choice transport-choice--form">
             <li class="transport-choice__type" tooltip="Авиаперелет">
               <input class="transport-choice__input transport-choice__input--checkbox" type="checkbox" name="aircraft"
-                value="aircraft" id="transport-aircraft" checked>
+                value="aircraft" id="transport-aircraft" checked="">
               <label class="transport-choice__label transport-choice__label--aircraft"
                 for="transport-aircraft">Авиаперелет</label>
             </li>
             <li class="transport-choice__type" tooltip="Автотранспорт">
               <input class="transport-choice__input transport-choice__input--checkbox" type="checkbox" name="car"
-                value="car" id="transport-car" checked>
+                value="car" id="transport-car" checked="">
               <label class="transport-choice__label transport-choice__label--car"
                 for="transport-car">Автотранспорт</label>
             </li>
@@ -221,7 +232,7 @@
             </li>
             <li class="transport-choice__type" tooltip="Пешком">
               <input class="transport-choice__input transport-choice__input--checkbox" type="checkbox" name="pedestrian"
-                value="pedestrian" id="transport-pedestrian" checked>
+                value="pedestrian" id="transport-pedestrian" checked="">
               <label class="transport-choice__label transport-choice__label--pedestrian"
                 for="transport-pedestrian">Пешком</label>
             </li>
@@ -307,7 +318,7 @@
                 </li>
                 <li class="step-first__children">
                   <input class="step-first__input step-first__input--checkbox" type="checkbox" name="children"
-                    value="permission-children" id="resolution" checked>
+                    value="permission-children" id="resolution" checked="">
                   <label class="step-first__label" for="resolution">Можно с детьми</label>
                 </li>
               </ul>
@@ -343,49 +354,49 @@
                 <ul class="calendar__list">
                   <li class="calendar__item">
                     <input class="calendar__input calendar__input--checkbox" type="checkbox" name="days" value="arrival"
-                      id="twenty-four" disabled>
+                      id="twenty-four" disabled="">
                     <label class="calendar__label" for="twenty-four">23
                       <div class="calendar__arrival">Заезд</div>
                     </label>
                   </li>
                   <li class="calendar__item">
                     <input class="calendar__input calendar__input--checkbox" type="checkbox" name="days" value="arrival"
-                      id="twenty-four" disabled>
+                      id="twenty-four" disabled="">
                     <label class="calendar__label" for="twenty-four">24
                       <div class="calendar__arrival">Заезд</div>
                     </label>
                   </li>
                   <li class="calendar__item">
                     <input class="calendar__input calendar__input--checkbox" type="checkbox" name="days" value="arrival"
-                      id="twenty-five" disabled>
+                      id="twenty-five" disabled="">
                     <label class="calendar__label" for="twenty-five">25
                       <div class="calendar__arrival">Заезд</div>
                     </label>
                   </li>
                   <li class="calendar__item">
                     <input class="calendar__input calendar__input--checkbox" type="checkbox" name="days" value="arrival"
-                      id="twenty-six" disabled>
+                      id="twenty-six" disabled="">
                     <label class="calendar__label" for="twenty-six">26
                       <div class="calendar__arrival">Заезд</div>
                     </label>
                   </li>
                   <li class="calendar__item">
                     <input class="calendar__input calendar__input--checkbox" type="checkbox" name="days" value="arrival"
-                      id="twenty-seven" disabled>
+                      id="twenty-seven" disabled="">
                     <label class="calendar__label" for="twenty-seven">27
                       <div class="calendar__arrival">Заезд</div>
                     </label>
                   </li>
                   <li class="calendar__item">
                     <input class="calendar__input calendar__input--checkbox" type="checkbox" name="days" value="arrival"
-                      id="twenty-eight" disabled>
+                      id="twenty-eight" disabled="">
                     <label class="calendar__label" for="twenty-eight">28
                       <div class="calendar__arrival">Заезд</div>
                     </label>
                   </li>
                   <li class="calendar__item">
                     <input class="calendar__input calendar__input--checkbox" type="checkbox" name="days" value="arrival"
-                      id="one" disabled>
+                      id="one" disabled="">
                     <label class="calendar__label" for="one">1
                       <span class="calendar__month">мар</span>
                       <div class="calendar__arrival">Заезд</div>
@@ -393,165 +404,165 @@
                   </li>
                   <li class="calendar__item">
                     <input class="calendar__input calendar__input--checkbox" type="checkbox" name="days" value="arrival"
-                      id="two" disabled>
+                      id="two" disabled="">
                     <label class="calendar__label" for="two">2
                       <div class="calendar__arrival">Заезд</div>
                     </label>
                   </li>
                   <li class="calendar__item">
                     <input class="calendar__input calendar__input--checkbox" type="checkbox" name="days" value="arrival"
-                      id="three" disabled>
+                      id="three" disabled="">
                     <label class="calendar__label" for="three">3
                       <div class="calendar__arrival">Заезд</div>
                     </label>
                   </li>
                   <li class="calendar__item">
                     <input class="calendar__input calendar__input--checkbox" type="checkbox" name="days" value="arrival"
-                      id="four" disabled>
+                      id="four" disabled="">
                     <label class="calendar__label" for="four">4
                       <div class="calendar__arrival">Заезд</div>
                     </label>
                   </li>
                   <li class="calendar__item">
                     <input class="calendar__input calendar__input--checkbox" type="checkbox" name="days" value="arrival"
-                      id="five" disabled>
+                      id="five" disabled="">
                     <label class="calendar__label" for="five">5
                       <div class="calendar__arrival">Заезд</div>
                     </label>
                   </li>
                   <li class="calendar__item">
                     <input class="calendar__input calendar__input--checkbox" type="checkbox" name="days" value="arrival"
-                      id="six" disabled>
+                      id="six" disabled="">
                     <label class="calendar__label" for="six">6
                       <div class="calendar__arrival">Заезд</div>
                     </label>
                   </li>
                   <li class="calendar__item">
                     <input class="calendar__input calendar__input--checkbox" type="checkbox" name="days" value="arrival"
-                      id="seven" disabled>
+                      id="seven" disabled="">
                     <label class="calendar__label" for="seven">7
                       <div class="calendar__arrival">Заезд</div>
                     </label>
                   </li>
                   <li class="calendar__item">
                     <input class="calendar__input calendar__input--checkbox" type="checkbox" name="days" value="arrival"
-                      id="eight" disabled>
+                      id="eight" disabled="">
                     <label class="calendar__label" for="eight">8
                       <div class="calendar__arrival">Заезд</div>
                     </label>
                   </li>
                   <li class="calendar__item">
                     <input class="calendar__input calendar__input--checkbox" type="checkbox" name="days" value="arrival"
-                      id="nine" disabled>
+                      id="nine" disabled="">
                     <label class="calendar__label" for="nine">9
                       <div class="calendar__arrival">Заезд</div>
                     </label>
                   </li>
                   <li class="calendar__item">
                     <input class="calendar__input calendar__input--checkbox" type="checkbox" name="days" value="arrival"
-                      id="ten" disabled>
+                      id="ten" disabled="">
                     <label class="calendar__label" for="ten">10
                       <div class="calendar__arrival">Заезд</div>
                     </label>
                   </li>
                   <li class="calendar__item">
                     <input class="calendar__input calendar__input--checkbox" type="checkbox" name="days" value="arrival"
-                      id="eleven" disabled>
+                      id="eleven" disabled="">
                     <label class="calendar__label" for="eleven">11
                       <div class="calendar__arrival">Заезд</div>
                     </label>
                   </li>
                   <li class="calendar__item">
                     <input class="calendar__input calendar__input--checkbox" type="checkbox" name="days" value="arrival"
-                      id="twelve" disabled>
+                      id="twelve" disabled="">
                     <label class="calendar__label" for="twelve">12
                       <div class="calendar__arrival">Заезд</div>
                     </label>
                   </li>
                   <li class="calendar__item">
                     <input class="calendar__input calendar__input--checkbox" type="checkbox" name="days" value="arrival"
-                      id="thirteen" disabled>
+                      id="thirteen" disabled="">
                     <label class="calendar__label" for="thirteen">13
                       <div class="calendar__arrival">Заезд</div>
                     </label>
                   </li>
                   <li class="calendar__item">
                     <input class="calendar__input calendar__input--checkbox" type="checkbox" name="days" value="arrival"
-                      id="fourteen" disabled>
+                      id="fourteen" disabled="">
                     <label class="calendar__label" for="fourteen">14
                       <div class="calendar__arrival">Заезд</div>
                     </label>
                   </li>
                   <li class="calendar__item">
                     <input class="calendar__input calendar__input--checkbox" type="checkbox" name="days" value="arrival"
-                      id="fifteen" disabled>
+                      id="fifteen" disabled="">
                     <label class="calendar__label" for="fifteen">15</label>
                     <div class="calendar__arrival">Заезд</div>
                   </li>
                   <li class="calendar__item">
                     <input class="calendar__input calendar__input--checkbox" type="checkbox" name="days" value="arrival"
-                      id="sixteen" disabled>
+                      id="sixteen" disabled="">
                     <label class="calendar__label" for="sixteen">16
                       <div class="calendar__arrival">Заезд</div>
                     </label>
                   </li>
                   <li class="calendar__item">
                     <input class="calendar__input calendar__input--checkbox" type="checkbox" name="days" value="arrival"
-                      id="seventeen" disabled>
+                      id="seventeen" disabled="">
                     <label class="calendar__label" for="seventeen">17
                       <div class="calendar__arrival">Заезд</div>
                     </label>
                   </li>
                   <li class="calendar__item">
                     <input class="calendar__input calendar__input--checkbox" type="checkbox" name="days" value="arrival"
-                      id="eighteen" disabled>
+                      id="eighteen" disabled="">
                     <label class="calendar__label" for="eighteen">18
                       <div class="calendar__arrival">Заезд</div>
                     </label>
                   </li>
                   <li class="calendar__item">
                     <input class="calendar__input calendar__input--checkbox" type="checkbox" name="days" value="arrival"
-                      id="nineteen" disabled>
+                      id="nineteen" disabled="">
                     <label class="calendar__label" for="nineteen">19
                       <div class="calendar__arrival">Заезд</div>
                     </label>
                   </li>
                   <li class="calendar__item">
                     <input class="calendar__input calendar__input--checkbox" type="checkbox" name="days" value="arrival"
-                      id="twenty" disabled>
+                      id="twenty" disabled="">
                     <label class="calendar__label" for="twenty">20</label>
                     <div class="calendar__arrival">Заезд</div>
                   </li>
                   <li class="calendar__item">
                     <input class="calendar__input calendar__input--checkbox" type="checkbox" name="days" value="arrival"
-                      id="twenty-one" disabled>
+                      id="twenty-one" disabled="">
                     <label class="calendar__label" for="twenty-one">21</label>
                     <div class="calendar__arrival">Заезд</div>
                   </li>
                   <li class="calendar__item">
                     <input class="calendar__input calendar__input--checkbox" type="checkbox" name="days" value="arrival"
-                      id="twenty-two" disabled>
+                      id="twenty-two" disabled="">
                     <label class="calendar__label" for="twenty-two">22
                       <div class="calendar__arrival">Заезд</div>
                     </label>
                   </li>
                   <li class="calendar__item">
                     <input class="calendar__input calendar__input--checkbox" type="checkbox" name="days" value="arrival"
-                      id="twenty-three" disabled>
+                      id="twenty-three" disabled="">
                     <label class="calendar__label" for="twenty-three">23
                       <div class="calendar__arrival">Заезд</div>
                     </label>
                   </li>
                   <li class="calendar__item">
                     <input class="calendar__input calendar__input--checkbox" type="checkbox" name="days" value="arrival"
-                      id="twenty-fourth" disabled>
+                      id="twenty-fourth" disabled="">
                     <label class="calendar__label" for="twenty-fourth">24
                       <div class="calendar__arrival">Заезд</div>
                     </label>
                   </li>
                   <li class="calendar__item">
                     <input class="calendar__input calendar__input--checkbox" type="checkbox" name="days" value="arrival"
-                      id="twenty-fifth" disabled>
+                      id="twenty-fifth" disabled="">
                     <label class="calendar__label" for="twenty-fifth">25
                       <div class="calendar__arrival">Заезд</div>
                     </label>
@@ -688,7 +699,7 @@
                       <ul class="modal-country__alphabet dictionary">
                         <li class="dictionary__list">
                           <input class="dictionary__input dictionary__input--radio" type="radio"
-                            name="countries-alphabetically" value="letter-first" id="letter-first" checked>
+                            name="countries-alphabetically" value="letter-first" id="letter-first" checked="">
                           <label class="dictionary__label" for="letter-first">А</label>
                         </li>
                         <li class="dictionary__list">
@@ -921,10 +932,11 @@
       <div class="page-footer__wrapper">
         <a class="page-footer__logo" href="index.html">
           <picture>
-            <!--<source type="image/webp" media="(min-width: 1440px)" srcset="img/logo-desktop-blue@1x.webp, img/logo-desktop-blue@2x.webp">
-              <source type="image/webp" media="(min-width: 768px)" srcset="img/logo-tablet-blue@1x.webp, img/logo-tablet-blue@2x.webp">
-              <source type="image/webp" srcset="img/logo-mobile-blue@1x.webp, img/logo-mobile-blue@2x.webp">-->
-
+            <source type="image/webp" media="(min-width: 1440px)"
+              srcset="img/logo-desktop-blue@1x.webp, img/logo-desktop-blue@2x.webp">
+            <source type="image/webp" media="(min-width: 768px)"
+              srcset="img/logo-tablet-blue@1x.webp, img/logo-tablet-blue@2x.webp">
+            <source type="image/webp" srcset="img/logo-mobile-blue@1x.webp, img/logo-mobile-blue@2x.webp">
             <source media="(min-width: 1440px)" srcset="img/logo-desktop-blue@1x.png, img/logo-desktop-blue@2x.png">
             <source media="(min-width: 768px)" srcset="img/logo-tablet-blue@1x.png, img/logo-tablet-blue@2x.png">
             <img class="page-footer__image" src="img/logo-mobile-blue@1x.png" srcset="img/logo-mobile-blue@2x.png"
@@ -937,7 +949,8 @@
               <svg class="social__facebook" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 11 21" fill="#1d2e5b"
                 width="11" height="21">
                 <path
-                  d="M7.8 21H2.2v-9.8H0V6.4h2.1c-.1-2.2.3-3.8 1.3-4.9C4.2.6 5.5.1 7.1 0H11v4.7H7.9c-.1.2-.2.8-.2 1.7H11v4.8H7.8V21zm-4.4-1.1h3.1v-9.8h3.2V7.5H6.5v-.6c0-1.5 0-2.9.8-3.4l.2-.1h2.3V1.1H7.1c-1.2.1-2.2.5-2.8 1.2-.8.9-1.1 2.5-.9 4.6l.1.6H1.2v2.6h2.2v9.8z" />
+                  d="M7.8 21H2.2v-9.8H0V6.4h2.1c-.1-2.2.3-3.8 1.3-4.9C4.2.6 5.5.1 7.1 0H11v4.7H7.9c-.1.2-.2.8-.2 1.7H11v4.8H7.8V21zm-4.4-1.1h3.1v-9.8h3.2V7.5H6.5v-.6c0-1.5 0-2.9.8-3.4l.2-.1h2.3V1.1H7.1c-1.2.1-2.2.5-2.8 1.2-.8.9-1.1 2.5-.9 4.6l.1.6H1.2v2.6h2.2v9.8z">
+                </path>
               </svg>
               <span class="visually-hidden">
                 Фейсбук
@@ -949,7 +962,8 @@
               <svg class="social__vkontakte" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 15.8" fill="#1d2e5b"
                 width="23" height="12">
                 <path
-                  d="M23.9 15.8c-.4 0-1.2-.1-2.1-.6-.6-.4-1.2-1-1.8-1.5-.4-.4-1.2-1.2-1.4-1.2-.3.1-.5.9-.5 1.6 0 .1 0 .8-.5 1.2-.4.4-1.1.5-1.2.5h-1.9c-1 0-4.4-.2-7.4-3C3.4 9.4.3 3 .1 2.7 0 2.2-.1 1.5.3 1.1.7.7 1.4.6 1.7.6H5.9c.1 0 .6.1 1 .3.4.2.6.7.6.7S8.1 3 9 4.3c1.3 2 1.9 2.5 2.1 2.6.2-.4.3-1.7.2-2.9 0-.5-.1-1.1-.3-1.3-.1-.1-.4-.3-.8-.3l-.7-.6c-.1-.7.6-1.2 1.1-1.4.7-.3 1.8-.4 3.1-.4h.7c1.2 0 1.6.1 2.1.2 1.7.4 1.6 1.7 1.6 3.3v2.1c0 .4 0 1 .1 1.3.2-.1.9-.7 2.1-2.5.8-1.2 1.4-2.5 1.5-2.8.2-.4.6-.9 1.6-.9h4.7c1 0 1.6.3 1.8.9.3.6.2 1.7-2.4 4.6-.4.4-.7.8-1 1.1-.6.7-1.2 1.4-1.2 1.6.1.1.7.6 1.3 1.1 1.5 1.2 2.5 2.3 3 3.1.5.8.4 1.3.3 1.7-.4.9-1.6 1-1.9 1h-4.1zm-5.3-4.9c.9 0 1.7.8 2.5 1.6.5.5 1 1 1.5 1.3.7.4 1.3.4 1.4.4h3.9c.2 0 .4-.1.5-.1 0 0 0-.1-.1-.2-.4-.7-1.4-1.7-2.7-2.7-1.2-1-1.8-1.5-1.9-2.2-.1-.8.5-1.4 1.6-2.7.3-.3.6-.7 1-1.1 1.6-1.8 2-2.6 2.1-3H23.1c-.2.4-.8 1.8-1.6 3-1.9 2.8-2.8 3.2-3.4 3.2-.2 0-.4 0-.6-.1-1-.6-1-1.8-.9-2.8v-.4-1.7c.1-1.7 0-1.7-.4-1.8-.4-.1-.7-.1-1.9-.2h-.7c-.6 0-1.3 0-1.9.1l.3.3c.6.7.6 2 .6 2.2.1 1.6.1 3.8-1 4.3-.2.1-.4.1-.6.1-.9 0-1.9-.9-3.4-3.3-.8-1.2-1.5-2.7-1.5-2.8L6 2.2c-.1 0-.2-.1-.3-.1h-4-.1c.6 1.2 3.4 6.6 6.5 9.5 2.7 2.5 5.8 2.6 6.4 2.6h1.9s.2-.1.3-.1V14c0-.3 0-2.6 1.6-3 .1-.1.2-.1.3-.1z" />
+                  d="M23.9 15.8c-.4 0-1.2-.1-2.1-.6-.6-.4-1.2-1-1.8-1.5-.4-.4-1.2-1.2-1.4-1.2-.3.1-.5.9-.5 1.6 0 .1 0 .8-.5 1.2-.4.4-1.1.5-1.2.5h-1.9c-1 0-4.4-.2-7.4-3C3.4 9.4.3 3 .1 2.7 0 2.2-.1 1.5.3 1.1.7.7 1.4.6 1.7.6H5.9c.1 0 .6.1 1 .3.4.2.6.7.6.7S8.1 3 9 4.3c1.3 2 1.9 2.5 2.1 2.6.2-.4.3-1.7.2-2.9 0-.5-.1-1.1-.3-1.3-.1-.1-.4-.3-.8-.3l-.7-.6c-.1-.7.6-1.2 1.1-1.4.7-.3 1.8-.4 3.1-.4h.7c1.2 0 1.6.1 2.1.2 1.7.4 1.6 1.7 1.6 3.3v2.1c0 .4 0 1 .1 1.3.2-.1.9-.7 2.1-2.5.8-1.2 1.4-2.5 1.5-2.8.2-.4.6-.9 1.6-.9h4.7c1 0 1.6.3 1.8.9.3.6.2 1.7-2.4 4.6-.4.4-.7.8-1 1.1-.6.7-1.2 1.4-1.2 1.6.1.1.7.6 1.3 1.1 1.5 1.2 2.5 2.3 3 3.1.5.8.4 1.3.3 1.7-.4.9-1.6 1-1.9 1h-4.1zm-5.3-4.9c.9 0 1.7.8 2.5 1.6.5.5 1 1 1.5 1.3.7.4 1.3.4 1.4.4h3.9c.2 0 .4-.1.5-.1 0 0 0-.1-.1-.2-.4-.7-1.4-1.7-2.7-2.7-1.2-1-1.8-1.5-1.9-2.2-.1-.8.5-1.4 1.6-2.7.3-.3.6-.7 1-1.1 1.6-1.8 2-2.6 2.1-3H23.1c-.2.4-.8 1.8-1.6 3-1.9 2.8-2.8 3.2-3.4 3.2-.2 0-.4 0-.6-.1-1-.6-1-1.8-.9-2.8v-.4-1.7c.1-1.7 0-1.7-.4-1.8-.4-.1-.7-.1-1.9-.2h-.7c-.6 0-1.3 0-1.9.1l.3.3c.6.7.6 2 .6 2.2.1 1.6.1 3.8-1 4.3-.2.1-.4.1-.6.1-.9 0-1.9-.9-3.4-3.3-.8-1.2-1.5-2.7-1.5-2.8L6 2.2c-.1 0-.2-.1-.3-.1h-4-.1c.6 1.2 3.4 6.6 6.5 9.5 2.7 2.5 5.8 2.6 6.4 2.6h1.9s.2-.1.3-.1V14c0-.3 0-2.6 1.6-3 .1-.1.2-.1.3-.1z">
+                </path>
               </svg>
               <span class="visually-hidden">
                 Вконтакте
@@ -961,10 +975,12 @@
               <svg class="social__instagram" id="Layer_1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 23 23"
                 fill="#1d2e5b" width="18" height="18">
                 <path class="st0"
-                  d="M17 1.5c2.5 0 4.5 2 4.5 4.5v11c0 2.5-2 4.5-4.5 4.5H6c-2.5 0-4.5-2-4.5-4.5V6c0-2.5 2-4.5 4.5-4.5h11M17 0H6C2.7 0 0 2.7 0 6v11c0 3.3 2.7 6 6 6h11c3.3 0 6-2.7 6-6V6c0-3.3-2.7-6-6-6z" />
+                  d="M17 1.5c2.5 0 4.5 2 4.5 4.5v11c0 2.5-2 4.5-4.5 4.5H6c-2.5 0-4.5-2-4.5-4.5V6c0-2.5 2-4.5 4.5-4.5h11M17 0H6C2.7 0 0 2.7 0 6v11c0 3.3 2.7 6 6 6h11c3.3 0 6-2.7 6-6V6c0-3.3-2.7-6-6-6z">
+                </path>
                 <path class="st0"
-                  d="M11.5 7.1c2.4 0 4.4 2 4.4 4.4 0 2.4-2 4.4-4.4 4.4-2.4 0-4.4-2-4.4-4.4 0-2.4 2-4.4 4.4-4.4m0-1.5c-3.3 0-5.9 2.7-5.9 5.9s2.7 5.9 5.9 5.9 5.9-2.7 5.9-5.9-2.6-5.9-5.9-5.9z" />
-                <circle class="st0" cx="17.6" cy="5.4" r="1.3" />
+                  d="M11.5 7.1c2.4 0 4.4 2 4.4 4.4 0 2.4-2 4.4-4.4 4.4-2.4 0-4.4-2-4.4-4.4 0-2.4 2-4.4 4.4-4.4m0-1.5c-3.3 0-5.9 2.7-5.9 5.9s2.7 5.9 5.9 5.9 5.9-2.7 5.9-5.9-2.6-5.9-5.9-5.9z">
+                </path>
+                <circle class="st0" cx="17.6" cy="5.4" r="1.3"></circle>
               </svg>
               <span class="visually-hidden">
                 Инстаграмм
@@ -979,18 +995,19 @@
               height="34px">
               <path
                 d="M13.6 0h-.2L0 1.4V26l13.5 8L27 26V1.4L13.6 0zm5.7 16.8l-.9.5-5-3v1.4l3.8 2.3-.8.5-3-1.8v1.4l1.9 1.1-1.8 1.1L2 13.6l11.4-6.8L25 13.5l-4.5 2.6-7.1-4.2v1.4l5.9 3.5zM1.9 15.1l11.4 6.8v1l-8-4.7v1.4l8 4.8v1.1l-8-4.7v1.4l8 4.8 8.2-4.9V17l3.4-2v10l-11.6 6.9-11.4-7v-9.8zm0-3v-9l11.6-1.2 11.6 1.2v9L13.5 5.3v-.1h-.2v.1L1.9 12.1z"
-                fill="#192144" />
+                fill="#192144"></path>
             </svg>
           </a>
         </div>
       </div>
     </div>
   </footer>
-  <script src="js/picturefill.min.js" async></script>
-  <script src="js/plan-error.js"></script>
-  <script src="js/route-modal.js"></script>
-  <script src="js/menu.js"></script>
-  <script src="js/scroll.js"></script>
+  <script src="js/picturefill.min.js" async=""></script>
+  <script src="js/plan-error.min.js"></script>
+  <script src="js/route-modal.min.js"></script>
+  <script src="js/menu.min.js"></script>
+  <script src="js/scroll.min.js"></script>
+  <!-- <script src="js/main.min.js"></script> -->
 </body>
 
 </html>
