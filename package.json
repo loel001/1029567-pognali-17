@@ -52,5 +52,8 @@
   ],
   "engines": {
     "node": "8.16"
+  },
+  "dependencies": {
+    "gulp-footer": "^2.0.2"
   }
 }

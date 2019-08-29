@@ -17,6 +17,7 @@ var concat = require("gulp-concat");
 var minify = require("gulp-minify");
 var babel = require("gulp-babel");
 var del = require("del");
+var footer = require("gulp-footer");
 var server = require("browser-sync").create();
 
 gulp.task("css", function () {
@@ -63,6 +64,7 @@ gulp.task("sprite", function () {
     .pipe(svgstore({
       inlineSvg: true
     }))
+    .pipe(footer("\n"))
     .pipe(rename("sprite.svg"))
     .pipe(gulp.dest("build/img"));
 });
