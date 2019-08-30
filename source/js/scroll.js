@@ -6,9 +6,18 @@ var linkHeader = document.querySelectorAll(".navigation__link");
 var wrap = document.querySelector(".page-header__color");
 var listHeader = document.querySelector(".page-header__list");
 var course = document.querySelector(".page-header__wrapper--course");
+var topOfHeader = header.offsetHeight;
+var bodyMain = document.querySelector(".main");
+var bodyScroll = document.querySelector(".scroll");
 
 window.addEventListener('scroll', function () {
-  if (window.pageYOffset >= 125) {
+  if (window.pageYOffset >= topOfHeader) {
+    if (bodyMain) {
+      bodyMain.classList.add("main--show");
+    }
+    if (bodyScroll) {
+      bodyScroll.classList.add("scroll--show");
+    }
     header.classList.add("page-header--scroll");
     if (headerHamburger) {
       headerHamburger.classList.add("page-header__toggle-open--scroll");
@@ -27,8 +36,13 @@ window.addEventListener('scroll', function () {
     if (course) {
       course.classList.remove("page-header__wrapper--course");
     }
-    document.body.style.paddingTop = header.scrollHeight + 'px';
   } else {
+    if (bodyMain) {
+      bodyMain.classList.remove("main--show");
+    }
+    if (bodyScroll) {
+      bodyScroll.classList.remove("scroll--show");
+    }
     header.classList.remove("page-header--scroll");
     if (headerHamburger) {
       headerHamburger.classList.remove("page-header__toggle-open--scroll");
@@ -47,6 +61,5 @@ window.addEventListener('scroll', function () {
     if (course) {
       course.classList.add("page-header__wrapper--course");
     }
-    document.body.style.paddingTop = 0;
   }
 });

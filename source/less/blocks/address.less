@@ -15,16 +15,15 @@
 }
 
 .address__wrapper {
-  width: 320px;
+  // width: 320px;
   margin: 0 auto;
   position: relative;
-
-  @media @tablet-width {
-    width: 768px;
-  }
+  // @media @tablet-width {
+  //   width: 768px;
+  // }
 
   @media @desktop-width {
-    width: 1440px;
+    width: auto;
   }
 
   &::before {
@@ -74,7 +73,7 @@
 .address__map {
   display: none;
   position: relative;
-  width: 100vw;
+  width: 100%;
   transform: translateX(-50%) translateY(-19%);
   left: 50%;
   height: 546px;

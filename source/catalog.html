@@ -5,10 +5,17 @@
   <meta charset="utf-8">
   <title>HTML Academy: Погнали</title>
   <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="preload" href="fonts/bloggersans.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/bloggersans-bold.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/bloggersans-light.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/bloggersans-medium.woff2" as="font" crossorigin="anonymous">
   <link href="css/style.min.css" rel="stylesheet">
 </head>
 
-<body>
+<body class="scroll">
+  <div class="sprite">
+    <include src="build/img/sprite.svg"></include>
+  </div>
   <header class="page-header page-header--color">
     <div class="page-header__color">
       <div class="page-header__wrapper page-header__wrapper--course">
@@ -39,7 +46,7 @@
           </a>
           <button class="page-header__toggle-open page-header__toggle-open--color" type="button">Открыть
             меню
-            <svg class="page-header__icon" width="25" height="11" xmlns="http://www.w3.org/2000/svg">
+            <svg class="page-header__icon" width="25" height="11">
               <use xlink:href="#icon-menu">
             </svg>
           </button>
@@ -107,7 +114,7 @@
           <li class="main-nav__items">
             <a class="main-nav__phone-number" href="tel:+78005558628">
               <span>8 800 555-86-28</span>
-              <svg class="main-nav__first" width="18" height="18" xmlns="http://www.w3.org/2000/svg">
+              <svg class="main-nav__first" width="18" height="18">
                 <use xlink:href="#icon-contacts-phone">
               </svg>
             </a>
@@ -115,8 +122,8 @@
           <li class="main-nav__items">
             <a class="main-nav__email" href="mailto:mail@htmlacademy.ru">
               <span>mail@htmlacademy.ru</span>
-              <svg class="main-nav__second" width="18" height="13" xxmlns="http://www.w3.org/2000/svg">
-                <use xlink:href="#icon-contacts-phone">
+              <svg class="main-nav__second" width="18" height="13">
+                <use xlink:href="#icon-contacts-mail">
               </svg>
             </a>
           </li>
@@ -124,7 +131,7 @@
         <ul class="main-nav__links-header public">
           <li class="public__button">
             <a class="public__link" href="https://www.facebook.com/">
-              <svg class="public__facebook" xmlns="http://www.w3.org/2000/svg" width="11" height="21">
+              <svg class="public__facebook" width="11" height="21">
                 <use xlink:href="#icon-facebook">
               </svg>
               <span class="visually-hidden">
@@ -134,7 +141,7 @@
           </li>
           <li class="public__button">
             <a class="public__link" href="https://vk.com/">
-              <svg class="public__vkontakte" xmlns="http://www.w3.org/2000/svg" width="23" height="12">
+              <svg class="public__vkontakte" width="23" height="12">
                 <use xlink:href="#icon-vk">
               </svg>
               <span class="visually-hidden">
@@ -144,7 +151,7 @@
           </li>
           <li class="public__button">
             <a class="public__link" href="https://www.instagram.com/?hl=ru">
-              <svg class="public__instagram" id="Layer_1" xmlns="http://www.w3.org/2000/svg" width="18" height="18">
+              <svg class="public__instagram" width="18" height="18">
                 <use xlink:href="#icon-instagram">
               </svg>
               <span class="visually-hidden">
@@ -1164,10 +1171,8 @@
                         aria-label="Пешком">Пешком</span>
                     </li>
                   </ul>
-                  <svg class="ideal-traveler__circle" width="45" height="45" viewBox="0 0 60 60">
-                    <circle class="ideal-traveler__round" r="28" cx="30" cy="30" fill="none" stroke="#ff8d30"
-                      stroke-width="3" stroke-dasharray="180 5" stroke-dashoffset="52">
-                    </circle>
+                  <svg class="ideal-traveler__circle" width="45" height="45">
+                    <use xlink:href="#icon-circle-first">
                   </svg>
                   <div class="ideal-traveler__cover">
                     <span class="ideal-traveler__interest">99</span>
@@ -1227,10 +1232,8 @@
                         aria-label="Пешком">Пешком</span>
                     </li>
                   </ul>
-                  <svg class="ideal-traveler__circle" width="45" height="45" viewBox="0 0 60 60">
-                    <circle class="ideal-traveler__round" r="28" cx="30" cy="30" fill="none" stroke="#ff8d30"
-                      stroke-width="3" stroke-dasharray="180 33" stroke-dashoffset="82">
-                    </circle>
+                  <svg class="ideal-traveler__circle" width="45" height="45">
+                    <use xlink:href="#icon-circle-second"></use>
                   </svg>
                   <div class="ideal-traveler__cover">
                     <span class="ideal-traveler__interest">80</span>
@@ -1290,10 +1293,8 @@
                         aria-label="Пешком">Пешком</span>
                     </li>
                   </ul>
-                  <svg class="ideal-traveler__circle" width="45" height="45" viewBox="0 0 50 50">
-                    <circle class="ideal-traveler__round" r="22.5" cx="25" cy="25" fill="none" stroke="#ff8d30"
-                      stroke-width="3" stroke-dasharray="100 110" stroke-dashoffset="105">
-                    </circle>
+                  <svg class="ideal-traveler__circle" width="45" height="45">
+                    <use xlink:href="#icon-circle-third"></use>
                   </svg>
                   <div class="ideal-traveler__cover">
                     <span class="ideal-traveler__interest">25</span>
@@ -1353,10 +1354,8 @@
                         aria-label="Пешком">Пешком</span>
                     </li>
                   </ul>
-                  <svg class="ideal-traveler__circle" width="45" height="45" viewBox="0 0 50 50">
-                    <circle class="ideal-traveler__round" r="22.5" cx="25" cy="25" fill="none" stroke="#ff8d30"
-                      stroke-width="3" stroke-dasharray="51 72" stroke-dashoffset="140">
-                    </circle>
+                  <svg class="ideal-traveler__circle" width="45" height="45">
+                    <use xlink:href="#icon-circle-thourth"></use>
                   </svg>
                   <div class="ideal-traveler__cover">
                     <span class="ideal-traveler__interest">50</span>
@@ -1417,7 +1416,7 @@
         <ul class="page-footer__links social">
           <li class="social__button">
             <a class="social__link" href="https://www.facebook.com/">
-              <svg class="social__facebook" xmlns="http://www.w3.org/2000/svg" width="11" height="21">
+              <svg class="social__facebook" width="11" height="21">
                 <use xlink:href="#icon-facebook">
               </svg>
               <span class="visually-hidden">
@@ -1427,7 +1426,7 @@
           </li>
           <li class="social__button">
             <a class="social__link" href="https://vk.com/">
-              <svg class="social__vkontakte" xmlns="http://www.w3.org/2000/svg" width="23" height="12">
+              <svg class="social__vkontakte" width="23" height="12">
                 <use xlink:href="#icon-vk">
               </svg>
               <span class="visually-hidden">
@@ -1437,7 +1436,7 @@
           </li>
           <li class="social__button">
             <a class="social__link" href="https://www.instagram.com/?hl=ru">
-              <svg class="social__instagram" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 23 23" width="18" height="18">
+              <svg class="social__instagram" width="18" height="18">
                 <use xlink:href="#icon-instagram">
               </svg>
               <span class="visually-hidden">
@@ -1449,7 +1448,7 @@
         <div class="page-footer__content">
           <a class="page-footer__html logo-html" href="https://htmlacademy.ru/intensive/adaptive">
             <span>Разработано</span>
-            <svg class="logo-html__icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 27 34" width="27px" height="34px">
+            <svg class="logo-html__icon" width="27px" height="34px">
               <use xlink:href="#icon-htmlacademy">
             </svg>
           </a>
