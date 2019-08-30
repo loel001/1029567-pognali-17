@@ -1,18 +1,7 @@
-.site-list {
+.navigation {
   .bloggersans(500);
-  font-size: 30px;
-  line-height: 1.2;
   .list();
   text-transform: uppercase;
-  color: @color-third;
-  text-align: center;
-
-  @media @tablet-width {
-    font-size: 60px;
-    line-height: 1.18;
-    text-align: left;
-    padding-left: 60px;
-  }
 
   @media @desktop-width {
     font-size: 20px;
@@ -22,12 +11,11 @@
     color: @color-first;
     padding-left: 0;
     line-height: 58px;
+    margin-left: 146px;
   }
 }
 
-.site-list__link {
-  color: @color-third;
-
+.navigation__link {
   @media @desktop-width {
     color: @color-first;
 
@@ -39,9 +27,15 @@
       color: rgba(255, 215, 75, 0.3);
     }
   }
+
+  &--scroll {
+    @media @desktop-width {
+      color: @color-third;
+    }
+  }
 }
 
-.site-list__item {
+.navigation__item {
   @media @desktop-width {
     margin-right: 34px;
   }

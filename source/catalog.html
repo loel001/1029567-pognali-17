@@ -2,51 +2,63 @@
 <html lang="ru">
 
 <head>
-  <script src="js/picturefill.min.js" async></script>
   <meta charset="utf-8">
   <title>HTML Academy: Погнали</title>
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <link href="css/style.css" rel="stylesheet">
+  <link rel="preload" href="fonts/bloggersans.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/bloggersans-bold.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/bloggersans-light.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/bloggersans-medium.woff2" as="font" crossorigin="anonymous">
+  <link href="css/style.min.css" rel="stylesheet">
 </head>
 
-<body>
+<body class="scroll">
+  <div class="sprite">
+    <include src="build/img/sprite.svg"></include>
+  </div>
   <header class="page-header page-header--color">
     <div class="page-header__color">
       <div class="page-header__wrapper page-header__wrapper--course">
         <div class="page-header__content">
           <a class="page-header__logo logo" href="index.html">
-            <picture>
-              <!--<source type="image/webp" media="(min-width: 1440px)" srcset="img/logo-desktop-white@1x.webp, img/logo-desktop-white@2x.webp">
-                  <source type="image/webp" media="(min-width: 768px)" srcset="img/logo-tablet-white@1x.webp, img/logo-tablet-white@2x.webp">
-                  <img type="image/webp" src="img/logo-mobile-white@1x.webp" srcset="img/logo-mobile-white@2x.webp"
-                    width="100" height="19" alt="Логотип Погнали">-->
-
+            <picture class="page-header__hide">
+              <source type="image/webp" media="(min-width: 1440px)"
+                srcset="img/logo-desktop-white@1x.webp, img/logo-desktop-white@2x.webp">
+              <source type="image/webp" media="(min-width: 768px)"
+                srcset="img/logo-tablet-white@1x.webp, img/logo-tablet-white@2x.webp">
+              <source type="image/webp" srcset="img/logo-mobile-white@1x.webp, img/logo-mobile-white@2x.webp">
               <source media="(min-width: 1440px)" srcset="img/logo-desktop-white@1x.png, img/logo-desktop-white@2x.png">
               <source media="(min-width: 768px)" srcset="img/logo-tablet-white@1x.png, img/logo-tablet-white@2x.png">
               <img class="logo__image" src="img/logo-mobile-white@1x.png" srcset="img/logo-mobile-white@2x.png"
                 width="100" height="19" alt="Логотип Погнали">
             </picture>
+            <picture class="page-header__picture">
+              <source type="image/webp" media="(min-width: 1440px)"
+                srcset="img/logo-desktop-blue@1x.webp, img/logo-desktop-blue@2x.webp">
+              <source type="image/webp" media="(min-width: 768px)"
+                srcset="img/logo-tablet-blue@1x.webp, img/logo-tablet-blue@2x.webp">
+              <source type="image/webp" srcset="img/logo-mobile-blue@1x.webp, img/logo-mobile-blue@2x.webp">
+              <source media="(min-width: 1440px)" srcset="img/logo-desktop-blue@1x.png, img/logo-desktop-blue@2x.png">
+              <source media="(min-width: 768px)" srcset="img/logo-tablet-blue@1x.png, img/logo-tablet-blue@2x.png">
+              <img class="page-header__new" src="img/logo-mobile-blue@1x.png" srcset="img/logo-mobile-blue@2x.png"
+                width="100" height="19" alt="Логотип Погнали">
+            </picture>
           </a>
-          <button class="page-header__toggle-open page-header__toggle-open--color page-header__toggle-open--scroll"
-            type="button">Открыть
+          <button class="page-header__toggle-open page-header__toggle-open--color" type="button">Открыть
             меню
-            <svg class="page-header__icon" width="25" height="11" xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 25 11">
-              <g fill="#fff">
-                <path
-                  d="M1.5 3h22c.8 0 1.5-.7 1.5-1.5S24.3 0 23.5 0h-22C.7 0 0 .7 0 1.5S.7 3 1.5 3zM23.5 8h-22C.7 8 0 8.7 0 9.5S.7 11 1.5 11h22c.8 0 1.5-.7 1.5-1.5S24.3 8 23.5 8z" />
-              </g>
+            <svg class="page-header__icon" width="25" height="11">
+              <use xlink:href="#icon-menu">
             </svg>
           </button>
-          <ul class="page-header__navigation site-list site-list--color">
-            <li class="site-list__item">
-              <a class="site-list__link" href="index.html">О сервисе</a>
+          <ul class="page-header__navigation navigation">
+            <li class="navigation__item">
+              <a class="navigation__link" href="index.html">О сервисе</a>
             </li>
-            <li class="site-list__item">
-              <a class="site-list__link" href="form.html">Направления</a>
+            <li class="navigation__item">
+              <a class="navigation__link" href="form.html">Направления</a>
             </li>
-            <li class="site-list__item">
-              <a class="site-list__link">Попутчики</a>
+            <li class="navigation__item">
+              <a class="navigation__link">Попутчики</a>
             </li>
           </ul>
           <ul class="page-header__manage">
@@ -75,8 +87,9 @@
         <div class="main-nav__content">
           <a class="main-nav__logo">
             <picture>
-              <!--<source type="image/webp" media="(min-width: 768px)" srcset="img/logo-tablet-blue@1x.webp, img/logo-tablet-blue@2x.webp">
-                    <source type="image/webp" srcset="img/logo-mobile-blue@1x.webp, img/logo-mobile-blue@2x.webp">-->
+              <source type="image/webp" media="(min-width: 768px)"
+                srcset="img/logo-tablet-blue@1x.webp, img/logo-tablet-blue@2x.webp">
+              <source type="image/webp" srcset="img/logo-mobile-blue@1x.webp, img/logo-mobile-blue@2x.webp">
               <source media="(min-width: 768px)" srcset="img/logo-tablet-blue@1x.png, img/logo-tablet-blue@2x.png">
               <img class="main-nav__image" src="img/logo-mobile-blue@1x.png" srcset="img/logo-mobile-blue@2x.png"
                 width="100" height="19" alt="Логотип Погнали">
@@ -96,36 +109,30 @@
           </li>
         </ul>
         <a class="main-nav__login button-authorization" href="login.html">Авторизация</a>
-        </ul>
+
         <ul class="main-nav__connection">
           <li class="main-nav__items">
             <a class="main-nav__phone-number" href="tel:+78005558628">
               <span>8 800 555-86-28</span>
-              <svg class="contacts__image-phone" width="18" height="18" xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 36 36">
-                <path
-                  d="M18 0C11.6 0 5.2 1.1 2.8 3.4.9 5.3.2 8.7 0 10.8v.3c0 .8.7 1.5 1.5 1.5.1 0 3.7-.3 5.9-.5h.2c.8 0 1.5-.7 1.5-1.5v-3C9 6.7 9.7 6 10.7 6h14.7c.8 0 1.6.7 1.6 1.7v3c0 .8.7 1.5 1.5 1.5h.2c2.2.2 5.8.5 5.9.5.8 0 1.5-.7 1.5-1.5v-.3c-.2-2.1-.9-5.5-2.8-7.4C30.8 1.1 24.4 0 18 0zm0 19.5c-1.7 0-3 1.3-3 3s1.3 3 3 3 3-1.3 3-3-1.3-3-3-3zm-2.3-6.8v-1.9c0-1-.8-1.9-1.9-1.9s-1.8.9-1.8 2v1.9L1.9 23.6c-.7.7-1.1 1.6-1.1 2.7v3c0 1.7 1.3 3 3 3h.8v1.9c0 1 .8 1.9 1.9 1.9s1.9-.8 1.9-1.9v-1.9h19.5v1.9c0 1 .8 1.9 1.9 1.9 1 0 1.9-.8 1.9-1.9v-1.9h.8c1.7 0 3-1.3 3-3v-3c0-1.1-.4-2-1.1-2.7L24 12.7v-1.9c0-1-.8-1.9-1.9-1.9s-1.9.8-1.9 1.9v1.9h-4.5zm2.3 3.8c3.3 0 6 2.7 6 6s-2.7 6-6 6-6-2.7-6-6 2.7-6 6-6z" />
+              <svg class="main-nav__first" width="18" height="18">
+                <use xlink:href="#icon-contacts-phone">
               </svg>
             </a>
           </li>
           <li class="main-nav__items">
             <a class="main-nav__email" href="mailto:mail@htmlacademy.ru">
               <span>mail@htmlacademy.ru</span>
-              <svg class="contacts__image-email" width="18" height="13" xxmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 36 26">
-                <path
-                  d="M0 23c0 1.6 1.3 3 3 3h30c1.7 0 3-1.3 3-3V3c0-1.6-1.3-3-3-3H3C1.3 0 0 1.3 0 3v20zm11-10L4.2 6.2c-.6-.6-.6-1.5 0-2 .6-.6 1.5-.6 2.1 0l11 10.9c.4.4 1.2.4 1.6 0l11-10.9c.6-.6 1.5-.6 2.1 0 .6.6.6 1.5 0 2L25 13l6.9 6.8c.6.6.6 1.5 0 2-.6.6-1.5.6-2.1 0L22.9 15s-2.1 2.2-2.5 2.5c-.6.6-1.4 1-2.4 1-.9 0-1.8-.4-2.4-1L13.1 15l-6.9 6.8c-.6.6-1.5.6-2.1 0-.6-.6-.6-1.5 0-2L11 13z" />
+              <svg class="main-nav__second" width="18" height="13">
+                <use xlink:href="#icon-contacts-mail">
               </svg>
             </a>
           </li>
         </ul>
         <ul class="main-nav__links-header public">
           <li class="public__button">
-            <a class="publicl__link" href="https://www.facebook.com/">
-              <svg class="public__facebook" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 11 21" fill="#cccccc"
-                width="11" height="21">
-                <path
-                  d="M7.8 21H2.2v-9.8H0V6.4h2.1c-.1-2.2.3-3.8 1.3-4.9C4.2.6 5.5.1 7.1 0H11v4.7H7.9c-.1.2-.2.8-.2 1.7H11v4.8H7.8V21zm-4.4-1.1h3.1v-9.8h3.2V7.5H6.5v-.6c0-1.5 0-2.9.8-3.4l.2-.1h2.3V1.1H7.1c-1.2.1-2.2.5-2.8 1.2-.8.9-1.1 2.5-.9 4.6l.1.6H1.2v2.6h2.2v9.8z" />
+            <a class="public__link" href="https://www.facebook.com/">
+              <svg class="public__facebook" width="11" height="21">
+                <use xlink:href="#icon-facebook">
               </svg>
               <span class="visually-hidden">
                 Фейсбук
@@ -134,10 +141,8 @@
           </li>
           <li class="public__button">
             <a class="public__link" href="https://vk.com/">
-              <svg class="public__vkontakte" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 15.8" fill="#cccccc"
-                width="23" height="12">
-                <path
-                  d="M23.9 15.8c-.4 0-1.2-.1-2.1-.6-.6-.4-1.2-1-1.8-1.5-.4-.4-1.2-1.2-1.4-1.2-.3.1-.5.9-.5 1.6 0 .1 0 .8-.5 1.2-.4.4-1.1.5-1.2.5h-1.9c-1 0-4.4-.2-7.4-3C3.4 9.4.3 3 .1 2.7 0 2.2-.1 1.5.3 1.1.7.7 1.4.6 1.7.6H5.9c.1 0 .6.1 1 .3.4.2.6.7.6.7S8.1 3 9 4.3c1.3 2 1.9 2.5 2.1 2.6.2-.4.3-1.7.2-2.9 0-.5-.1-1.1-.3-1.3-.1-.1-.4-.3-.8-.3l-.7-.6c-.1-.7.6-1.2 1.1-1.4.7-.3 1.8-.4 3.1-.4h.7c1.2 0 1.6.1 2.1.2 1.7.4 1.6 1.7 1.6 3.3v2.1c0 .4 0 1 .1 1.3.2-.1.9-.7 2.1-2.5.8-1.2 1.4-2.5 1.5-2.8.2-.4.6-.9 1.6-.9h4.7c1 0 1.6.3 1.8.9.3.6.2 1.7-2.4 4.6-.4.4-.7.8-1 1.1-.6.7-1.2 1.4-1.2 1.6.1.1.7.6 1.3 1.1 1.5 1.2 2.5 2.3 3 3.1.5.8.4 1.3.3 1.7-.4.9-1.6 1-1.9 1h-4.1zm-5.3-4.9c.9 0 1.7.8 2.5 1.6.5.5 1 1 1.5 1.3.7.4 1.3.4 1.4.4h3.9c.2 0 .4-.1.5-.1 0 0 0-.1-.1-.2-.4-.7-1.4-1.7-2.7-2.7-1.2-1-1.8-1.5-1.9-2.2-.1-.8.5-1.4 1.6-2.7.3-.3.6-.7 1-1.1 1.6-1.8 2-2.6 2.1-3H23.1c-.2.4-.8 1.8-1.6 3-1.9 2.8-2.8 3.2-3.4 3.2-.2 0-.4 0-.6-.1-1-.6-1-1.8-.9-2.8v-.4-1.7c.1-1.7 0-1.7-.4-1.8-.4-.1-.7-.1-1.9-.2h-.7c-.6 0-1.3 0-1.9.1l.3.3c.6.7.6 2 .6 2.2.1 1.6.1 3.8-1 4.3-.2.1-.4.1-.6.1-.9 0-1.9-.9-3.4-3.3-.8-1.2-1.5-2.7-1.5-2.8L6 2.2c-.1 0-.2-.1-.3-.1h-4-.1c.6 1.2 3.4 6.6 6.5 9.5 2.7 2.5 5.8 2.6 6.4 2.6h1.9s.2-.1.3-.1V14c0-.3 0-2.6 1.6-3 .1-.1.2-.1.3-.1z" />
+              <svg class="public__vkontakte" width="23" height="12">
+                <use xlink:href="#icon-vk">
               </svg>
               <span class="visually-hidden">
                 Вконтакте
@@ -146,13 +151,8 @@
           </li>
           <li class="public__button">
             <a class="public__link" href="https://www.instagram.com/?hl=ru">
-              <svg class="public__instagram" id="Layer_1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 23 23"
-                fill="#cccccc" width="18" height="18">
-                <path class="st0"
-                  d="M17 1.5c2.5 0 4.5 2 4.5 4.5v11c0 2.5-2 4.5-4.5 4.5H6c-2.5 0-4.5-2-4.5-4.5V6c0-2.5 2-4.5 4.5-4.5h11M17 0H6C2.7 0 0 2.7 0 6v11c0 3.3 2.7 6 6 6h11c3.3 0 6-2.7 6-6V6c0-3.3-2.7-6-6-6z" />
-                <path class="st0"
-                  d="M11.5 7.1c2.4 0 4.4 2 4.4 4.4 0 2.4-2 4.4-4.4 4.4-2.4 0-4.4-2-4.4-4.4 0-2.4 2-4.4 4.4-4.4m0-1.5c-3.3 0-5.9 2.7-5.9 5.9s2.7 5.9 5.9 5.9 5.9-2.7 5.9-5.9-2.6-5.9-5.9-5.9z" />
-                <circle class="st0" cx="17.6" cy="5.4" r="1.3" />
+              <svg class="public__instagram" width="18" height="18">
+                <use xlink:href="#icon-instagram">
               </svg>
               <span class="visually-hidden">
                 Инстаграмм
@@ -179,7 +179,7 @@
               <ul class="modal-open__list world">
                 <li class="world__item">
                   <input class="world__input world__input--checkbox" type="checkbox" name="europe" value="europe"
-                    id="world-europe" checked>
+                    id="world-europe" checked="">
                   <label class="world__label" for="world-europe">Европа</label>
                 </li>
                 <li class="world__item">
@@ -205,7 +205,7 @@
               <ul class="modal-open__alphabet alphabet">
                 <li class="alphabet__list">
                   <input class="alphabet__input alphabet__input--radio" type="radio" name="countries-alphabetically"
-                    value="letter-first" id="letter-first" checked>
+                    value="letter-first" id="letter-first" checked="">
                   <label class="alphabet__label" for="letter-first">А</label>
                 </li>
                 <li class="alphabet__list">
@@ -356,7 +356,7 @@
                   <label class="alphabet__label" for="letter-thirtieth">Я</label>
                 </li>
               </ul>
-              <ul class="modal__open__countries">
+              <ul class="modal-open__countries">
                 <li class="modal-open__character modal-open__character--fixed">
                   <span class="modal-open__content">А</span>
                   <ul class="modal-open__country country-alphabetically">
@@ -1021,7 +1021,7 @@
                   <ul class="preferences__list preferences__list--hide">
                     <li class="preferences__enthusiasm">
                       <input class="preferences__input preferences__input--checkbox" type="checkbox" name="preferences"
-                        value="gym" id="gym" checked>
+                        value="gym" id="gym" checked="">
                       <label class="preferences__label" for="gym">Cпортзал</label>
                     </li>
                     <li class="preferences__enthusiasm">
@@ -1042,7 +1042,7 @@
                   <ul class="preferences__list">
                     <li class="preferences__enthusiasm">
                       <input class="preferences__input preferences__input--checkbox" type="checkbox" name="genre"
-                        value="hard-rock" id="hard-rock" checked>
+                        value="hard-rock" id="hard-rock" checked="">
                       <label class="preferences__label" for="hard-rock">Тяжелый рок</label>
                     </li>
                     <li class="preferences__enthusiasm">
@@ -1063,7 +1063,7 @@
                   <ul class="preferences__list preferences__list--hide">
                     <li class="preferences__enthusiasm">
                       <input class="preferences__input preferences__input--checkbox" type="checkbox" name="food"
-                        value="meat" id="meat" checked>
+                        value="meat" id="meat" checked="">
                       <label class="preferences__label" for="meat">Мясоед</label>
                     </li>
                     <li class="preferences__enthusiasm">
@@ -1084,13 +1084,13 @@
                   <ul class="preferences__transport transport-choice">
                     <li class="transport-choice__type" tooltip="Авиаперелет">
                       <input class="transport-choice__input transport-choice__input--checkbox" type="checkbox"
-                        name="aircraft" value="aircraft" id="transport-aircraft" checked>
+                        name="aircraft" value="aircraft" id="transport-aircraft" checked="">
                       <label class="transport-choice__label transport-choice__label--aircraft"
                         for="transport-aircraft">Авиаперелет</label>
                     </li>
                     <li class="transport-choice__type" tooltip="Автотранспорт">
                       <input class="transport-choice__input transport-choice__input--checkbox" type="checkbox"
-                        name="car" value="car" id="transport-car" checked>
+                        name="car" value="car" id="transport-car" checked="">
                       <label class="transport-choice__label transport-choice__label--car"
                         for="transport-car">Автотранспорт</label>
                     </li>
@@ -1102,7 +1102,7 @@
                     </li>
                     <li class="transport-choice__type" tooltip="Пешком">
                       <input class="transport-choice__input transport-choice__input--checkbox" type="checkbox"
-                        name="pedestrian" value="pedestrian" id="transport-pedestrian" checked>
+                        name="pedestrian" value="pedestrian" id="transport-pedestrian" checked="">
                       <label class="transport-choice__label transport-choice__label--pedestrian"
                         for="transport-pedestrian">Пешком</label>
                     </li>
@@ -1128,10 +1128,11 @@
               <li class="travelers__item ideal-traveler">
                 <a class="ideal-traveler__profile" href="#">
                   <picture>
-                    <!--<source type="image/webp" media="(min-width: 1440px)" srcset="img/firsova-desktop@1x.webp, img/firsova-desktop@2x.webp">
-                      <source type="image/webp" media="(min-width: 768px)" srcset="img/firsova-tablet@1x.webp, img/firsova-tablet@2x.webp">
-                      <source type="image/webp" srcset="img/firsova-mobile@1x.webp, img/firsova-mobile@2x.webp">-->
-
+                    <source type="image/webp" media="(min-width: 1440px)"
+                      srcset="img/firsova-desktop@1x.webp, img/firsova-desktop@2x.webp">
+                    <source type="image/webp" media="(min-width: 768px)"
+                      srcset="img/firsova-tablet@1x.webp, img/firsova-tablet@2x.webp">
+                    <source type="image/webp" srcset="img/firsova-mobile@1x.webp, img/firsova-mobile@2x.webp">
                     <source media="(min-width: 1440px)" srcset="img/firsova-desktop@1x.jpg, img/firsova-desktop@1x.jpg">
                     <source media="(min-width: 768px)" srcset="img/firsova-tablet@1x.jpg, img/firsova-tablet@2x.jpg">
                     <img class="ideal-traveler__photo" src="img/firsova-mobile@1x.jpg"
@@ -1156,7 +1157,7 @@
                     <li class="transport__item transport__item--catalog" tooltip="Авиаперелет">
                       <span class="transport__aircraft transport__aircraft--active transport__aircraft--catalog"
                         aria-label="Авиаперелет">Авиаперелет</>
-                    </li>
+                      </span></li>
                     <li class="transport__item transport__item--catalog" tooltip="Автотранспорт">
                       <span class="transport__car transport__car--catalog"
                         aria-label="Автотранспорт">Автотранспорт</span>
@@ -1170,10 +1171,8 @@
                         aria-label="Пешком">Пешком</span>
                     </li>
                   </ul>
-                  <svg class="ideal-traveler__circle" width="45" height="45" viewBox="0 0 60 60">
-                    <circle class="ideal-traveler__round" r="28" cx="30" cy="30" fill="none" stroke="#ff8d30"
-                      stroke-width="3" stroke-dasharray="180 5" stroke-dashoffset="52">
-                    </circle>
+                  <svg class="ideal-traveler__circle" width="45" height="45">
+                    <use xlink:href="#icon-circle-first">
                   </svg>
                   <div class="ideal-traveler__cover">
                     <span class="ideal-traveler__interest">99</span>
@@ -1191,10 +1190,11 @@
               <li class="travelers__item ideal-traveler">
                 <a class="ideal-traveler__profile" href="#">
                   <picture>
-                    <!--<source type="image/webp" media="(min-width: 1440px)" srcset="img/demin-desktop@1x.webp, img/demin-desktop@2x.webp">
-                          <source type="image/webp" media="(min-width: 768px)" srcset="img/demin-tablet@1x.webp, img/demin-tablet@2x.webp">
-                          <source type="image/webp" srcset="img/demin-mobile@1x.webp, img/demin-mobile@2x.webp">-->
-
+                    <source type="image/webp" media="(min-width: 1440px)"
+                      srcset="img/demin-desktop@1x.webp, img/demin-desktop@2x.webp">
+                    <source type="image/webp" media="(min-width: 768px)"
+                      srcset="img/demin-tablet@1x.webp, img/demin-tablet@2x.webp">
+                    <source type="image/webp" srcset="img/demin-mobile@1x.webp, img/demin-mobile@2x.webp">
                     <source media="(min-width: 1440px)" srcset="img/demin-desktop@1x.jpg, img/demin-desktop@1x.jpg">
                     <source media="(min-width: 768px)" srcset="img/demin-tablet@1x.jpg, img/demin-tablet@2x.jpg">
                     <img class="ideal-traveler__photo" src="img/demin-mobile@1x.jpg" srcset="img/demin-mobile@2x.jpg"
@@ -1232,10 +1232,8 @@
                         aria-label="Пешком">Пешком</span>
                     </li>
                   </ul>
-                  <svg class="ideal-traveler__circle" width="45" height="45" viewBox="0 0 60 60">
-                    <circle class="ideal-traveler__round" r="28" cx="30" cy="30" fill="none" stroke="#ff8d30"
-                      stroke-width="3" stroke-dasharray="180 33" stroke-dashoffset="82">
-                    </circle>
+                  <svg class="ideal-traveler__circle" width="45" height="45">
+                    <use xlink:href="#icon-circle-second"></use>
                   </svg>
                   <div class="ideal-traveler__cover">
                     <span class="ideal-traveler__interest">80</span>
@@ -1253,10 +1251,11 @@
               <li class="travelers__item ideal-traveler">
                 <a class="ideal-traveler__profile" href="#">
                   <picture>
-                    <!--<source type="image/webp" media="(min-width: 1440px)" srcset="img/smolov-desktop@1x.webp, img/smolov-desktop@2x.webp">
-                              <source type="image/webp" media="(min-width: 768px)" srcset="img/smolov-tablet@1x.webp, img/smolov-tablet@2x.webp">
-                              <source type="image/webp" srcset="img/smolov-mobile@1x.webp, img/smolov-mobile@2x.webp">-->
-
+                    <source type="image/webp" media="(min-width: 1440px)"
+                      srcset="img/smolov-desktop@1x.webp, img/smolov-desktop@2x.webp">
+                    <source type="image/webp" media="(min-width: 768px)"
+                      srcset="img/smolov-tablet@1x.webp, img/smolov-tablet@2x.webp">
+                    <source type="image/webp" srcset="img/smolov-mobile@1x.webp, img/smolov-mobile@2x.webp">
                     <source media="(min-width: 1440px)" srcset="img/smolov-desktop@1x.jpg, img/smolov-desktop@1x.jpg">
                     <source media="(min-width: 768px)" srcset="img/smolov-tablet@1x.jpg, img/smolov-tablet@2x.jpg">
                     <img class="ideal-traveler__photo" src="img/smolov-mobile@1x.jpg" srcset="img/smolov-mobile@2x.jpg"
@@ -1294,10 +1293,8 @@
                         aria-label="Пешком">Пешком</span>
                     </li>
                   </ul>
-                  <svg class="ideal-traveler__circle" width="45" height="45" viewBox="0 0 50 50">
-                    <circle class="ideal-traveler__round" r="22.5" cx="25" cy="25" fill="none" stroke="#ff8d30"
-                      stroke-width="3" stroke-dasharray="100 110" stroke-dashoffset="105">
-                    </circle>
+                  <svg class="ideal-traveler__circle" width="45" height="45">
+                    <use xlink:href="#icon-circle-third"></use>
                   </svg>
                   <div class="ideal-traveler__cover">
                     <span class="ideal-traveler__interest">25</span>
@@ -1315,9 +1312,11 @@
               <li class="travelers__item ideal-traveler">
                 <a class="ideal-traveler__profile" href="#">
                   <picture>
-                    <!--<source type="image/webp" media="(min-width: 1440px)" srcset="img/rogovaya-desktop@1x.webp, img/rogovaya-desktop@2x.webp">
-                                  <source type="image/webp" media="(min-width: 768px)" srcset="img/rogovaya-tablet@1x.webp, img/rogovaya-tablet@2x.webp">
-                                  <source type="image/webp" srcset="img/rogovaya-mobile@1x.webp, img/rogovaya-mobile@2x.webp">-->
+                    <source type="image/webp" media="(min-width: 1440px)"
+                      srcset="img/rogovaya-desktop@1x.webp, img/rogovaya-desktop@2x.webp">
+                    <source type="image/webp" media="(min-width: 768px)"
+                      srcset="img/rogovaya-tablet@1x.webp, img/rogovaya-tablet@2x.webp">
+                    <source type="image/webp" srcset="img/rogovaya-mobile@1x.webp, img/rogovaya-mobile@2x.webp">
                     <source media="(min-width: 1440px)"
                       srcset="img/rogovaya-desktop@1x.jpg, img/rogovaya-desktop@1x.jpg">
                     <source media="(min-width: 768px)" srcset="img/rogovaya-tablet@1x.jpg, img/rogovaya-tablet@2x.jpg">
@@ -1355,10 +1354,8 @@
                         aria-label="Пешком">Пешком</span>
                     </li>
                   </ul>
-                  <svg class="ideal-traveler__circle" width="45" height="45" viewBox="0 0 50 50">
-                    <circle class="ideal-traveler__round" r="22.5" cx="25" cy="25" fill="none" stroke="#ff8d30"
-                      stroke-width="3" stroke-dasharray="51 72" stroke-dashoffset="140">
-                    </circle>
+                  <svg class="ideal-traveler__circle" width="45" height="45">
+                    <use xlink:href="#icon-circle-thourth"></use>
                   </svg>
                   <div class="ideal-traveler__cover">
                     <span class="ideal-traveler__interest">50</span>
@@ -1388,10 +1385,10 @@
               <li class="pagination__item pagination__item--fourth">
                 <a class="pagination__link pagination__link--page" href="#">4</a>
               </li>
-              <li class="pagination-item pagination__item--back">
+              <li class="pagination__item pagination__item--back">
                 <a class="pagination__link" href="#">Назад</a>
               </li>
-              <li class="pagination-item pagination__item--forrader">
+              <li class="pagination__item pagination__item--forrader">
                 <a class="pagination__link" href="#">Вперед</a>
               </li>
             </ul>
@@ -1405,10 +1402,11 @@
       <div class="page-footer__wrapper">
         <a class="page-footer__logo" href="index.html">
           <picture>
-            <!--<source type="image/webp" media="(min-width: 1440px)" srcset="img/logo-desktop-blue@1x.webp, img/logo-desktop-blue@2x.webp">
-            <source type="image/webp" media="(min-width: 768px)" srcset="img/logo-tablet-blue@1x.webp, img/logo-tablet-blue@2x.webp">
-            <source type="image/webp" srcset="img/logo-mobile-blue@1x.webp, img/logo-mobile-blue@2x.webp">-->
-
+            <source type="image/webp" media="(min-width: 1440px)"
+              srcset="img/logo-desktop-blue@1x.webp, img/logo-desktop-blue@2x.webp">
+            <source type="image/webp" media="(min-width: 768px)"
+              srcset="img/logo-tablet-blue@1x.webp, img/logo-tablet-blue@2x.webp">
+            <source type="image/webp" srcset="img/logo-mobile-blue@1x.webp, img/logo-mobile-blue@2x.webp">
             <source media="(min-width: 1440px)" srcset="img/logo-desktop-blue@1x.png, img/logo-desktop-blue@2x.png">
             <source media="(min-width: 768px)" srcset="img/logo-tablet-blue@1x.png, img/logo-tablet-blue@2x.png">
             <img class="page-footer__image" src="img/logo-mobile-blue@1x.png" srcset="img/logo-mobile-blue@2x.png"
@@ -1418,10 +1416,8 @@
         <ul class="page-footer__links social">
           <li class="social__button">
             <a class="social__link" href="https://www.facebook.com/">
-              <svg class="social__facebook" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 11 21" fill="#1d2e5b"
-                width="11" height="21">
-                <path
-                  d="M7.8 21H2.2v-9.8H0V6.4h2.1c-.1-2.2.3-3.8 1.3-4.9C4.2.6 5.5.1 7.1 0H11v4.7H7.9c-.1.2-.2.8-.2 1.7H11v4.8H7.8V21zm-4.4-1.1h3.1v-9.8h3.2V7.5H6.5v-.6c0-1.5 0-2.9.8-3.4l.2-.1h2.3V1.1H7.1c-1.2.1-2.2.5-2.8 1.2-.8.9-1.1 2.5-.9 4.6l.1.6H1.2v2.6h2.2v9.8z" />
+              <svg class="social__facebook" width="11" height="21">
+                <use xlink:href="#icon-facebook">
               </svg>
               <span class="visually-hidden">
                 Фейсбук
@@ -1430,10 +1426,8 @@
           </li>
           <li class="social__button">
             <a class="social__link" href="https://vk.com/">
-              <svg class="social__vkontakte" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 15.8" fill="#1d2e5b"
-                width="23" height="12">
-                <path
-                  d="M23.9 15.8c-.4 0-1.2-.1-2.1-.6-.6-.4-1.2-1-1.8-1.5-.4-.4-1.2-1.2-1.4-1.2-.3.1-.5.9-.5 1.6 0 .1 0 .8-.5 1.2-.4.4-1.1.5-1.2.5h-1.9c-1 0-4.4-.2-7.4-3C3.4 9.4.3 3 .1 2.7 0 2.2-.1 1.5.3 1.1.7.7 1.4.6 1.7.6H5.9c.1 0 .6.1 1 .3.4.2.6.7.6.7S8.1 3 9 4.3c1.3 2 1.9 2.5 2.1 2.6.2-.4.3-1.7.2-2.9 0-.5-.1-1.1-.3-1.3-.1-.1-.4-.3-.8-.3l-.7-.6c-.1-.7.6-1.2 1.1-1.4.7-.3 1.8-.4 3.1-.4h.7c1.2 0 1.6.1 2.1.2 1.7.4 1.6 1.7 1.6 3.3v2.1c0 .4 0 1 .1 1.3.2-.1.9-.7 2.1-2.5.8-1.2 1.4-2.5 1.5-2.8.2-.4.6-.9 1.6-.9h4.7c1 0 1.6.3 1.8.9.3.6.2 1.7-2.4 4.6-.4.4-.7.8-1 1.1-.6.7-1.2 1.4-1.2 1.6.1.1.7.6 1.3 1.1 1.5 1.2 2.5 2.3 3 3.1.5.8.4 1.3.3 1.7-.4.9-1.6 1-1.9 1h-4.1zm-5.3-4.9c.9 0 1.7.8 2.5 1.6.5.5 1 1 1.5 1.3.7.4 1.3.4 1.4.4h3.9c.2 0 .4-.1.5-.1 0 0 0-.1-.1-.2-.4-.7-1.4-1.7-2.7-2.7-1.2-1-1.8-1.5-1.9-2.2-.1-.8.5-1.4 1.6-2.7.3-.3.6-.7 1-1.1 1.6-1.8 2-2.6 2.1-3H23.1c-.2.4-.8 1.8-1.6 3-1.9 2.8-2.8 3.2-3.4 3.2-.2 0-.4 0-.6-.1-1-.6-1-1.8-.9-2.8v-.4-1.7c.1-1.7 0-1.7-.4-1.8-.4-.1-.7-.1-1.9-.2h-.7c-.6 0-1.3 0-1.9.1l.3.3c.6.7.6 2 .6 2.2.1 1.6.1 3.8-1 4.3-.2.1-.4.1-.6.1-.9 0-1.9-.9-3.4-3.3-.8-1.2-1.5-2.7-1.5-2.8L6 2.2c-.1 0-.2-.1-.3-.1h-4-.1c.6 1.2 3.4 6.6 6.5 9.5 2.7 2.5 5.8 2.6 6.4 2.6h1.9s.2-.1.3-.1V14c0-.3 0-2.6 1.6-3 .1-.1.2-.1.3-.1z" />
+              <svg class="social__vkontakte" width="23" height="12">
+                <use xlink:href="#icon-vk">
               </svg>
               <span class="visually-hidden">
                 Вконтакте
@@ -1442,13 +1436,8 @@
           </li>
           <li class="social__button">
             <a class="social__link" href="https://www.instagram.com/?hl=ru">
-              <svg class="social__instagram" id="Layer_1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 23 23"
-                fill="#1d2e5b" width="18" height="18">
-                <path class="st0"
-                  d="M17 1.5c2.5 0 4.5 2 4.5 4.5v11c0 2.5-2 4.5-4.5 4.5H6c-2.5 0-4.5-2-4.5-4.5V6c0-2.5 2-4.5 4.5-4.5h11M17 0H6C2.7 0 0 2.7 0 6v11c0 3.3 2.7 6 6 6h11c3.3 0 6-2.7 6-6V6c0-3.3-2.7-6-6-6z" />
-                <path class="st0"
-                  d="M11.5 7.1c2.4 0 4.4 2 4.4 4.4 0 2.4-2 4.4-4.4 4.4-2.4 0-4.4-2-4.4-4.4 0-2.4 2-4.4 4.4-4.4m0-1.5c-3.3 0-5.9 2.7-5.9 5.9s2.7 5.9 5.9 5.9 5.9-2.7 5.9-5.9-2.6-5.9-5.9-5.9z" />
-                <circle class="st0" cx="17.6" cy="5.4" r="1.3" />
+              <svg class="social__instagram" width="18" height="18">
+                <use xlink:href="#icon-instagram">
               </svg>
               <span class="visually-hidden">
                 Инстаграмм
@@ -1459,18 +1448,17 @@
         <div class="page-footer__content">
           <a class="page-footer__html logo-html" href="https://htmlacademy.ru/intensive/adaptive">
             <span>Разработано</span>
-            <svg class="logo-html__icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 27 34" width="27px"
-              height="34px">
-              <path
-                d="M13.6 0h-.2L0 1.4V26l13.5 8L27 26V1.4L13.6 0zm5.7 16.8l-.9.5-5-3v1.4l3.8 2.3-.8.5-3-1.8v1.4l1.9 1.1-1.8 1.1L2 13.6l11.4-6.8L25 13.5l-4.5 2.6-7.1-4.2v1.4l5.9 3.5zM1.9 15.1l11.4 6.8v1l-8-4.7v1.4l8 4.8v1.1l-8-4.7v1.4l8 4.8 8.2-4.9V17l3.4-2v10l-11.6 6.9-11.4-7v-9.8zm0-3v-9l11.6-1.2 11.6 1.2v9L13.5 5.3v-.1h-.2v.1L1.9 12.1z"
-                fill="#192144" />
+            <svg class="logo-html__icon" width="27px" height="34px">
+              <use xlink:href="#icon-htmlacademy">
             </svg>
           </a>
         </div>
       </div>
     </div>
   </footer>
-
+  <script src="js/picturefill.min.js" async=""></script>
+  <script src="js/menu.min.js"></script>
+  <script src="js/scroll.min.js"></script>
 </body>
 
 </html>

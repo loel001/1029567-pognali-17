@@ -129,7 +129,6 @@
     order: 2;
     width: 565px;
     flex-direction: row;
-    justify-content: space-between;
     font-size: 28px;
     line-height: 64px;
     padding-top: 0;
@@ -259,21 +258,15 @@
 
 .profile__money {
   @media @tablet-width {
-    width: 142px;
+    margin-left: auto;
+    width: 135px;
     text-align: right;
-  }
-
-  @media @desktop-width {
-    width: 285px;
   }
 }
 
 .profile__information {
   @media @tablet-width {
-    width: 424px;
-  }
-
-  @media @desktop-width {
-    width: 525px;
+    width: 320px;
+    margin-right: auto;
   }
 }

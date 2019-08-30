@@ -3,6 +3,7 @@
   background-color: @main-color-first;
   margin-top: -35px;
   margin-bottom: -237px;
+  overflow: hidden;
 
   @media @tablet-width {
     margin-top: -85px;
@@ -25,6 +26,10 @@
 
   @media @desktop-width {
     width: 1440px;
+  }
+
+  &--show {
+    width: auto;
   }
 
   &::before {
@@ -56,8 +61,6 @@
 }
 
 .address__image {
-  display: none;
-
   @media @tablet-width {
     width: 768px;
     height: 700px;
@@ -67,20 +70,31 @@
     width: 1440px;
     height: 750px;
   }
+
+  &--close {
+    display: none;
+  }
 }
 
 .address__map {
-  position: absolute;
-  width: 100vw;
-  transform: translateX(-50%);
+  display: none;
+  position: relative;
+  width: 100%;
+  transform: translateX(-50%) translateY(-19%);
+  left: 50%;
   height: 546px;
 
   @media @tablet-width {
     height: 700px;
+    transform: translateX(-50%);
   }
 
   @media @desktop-width {
     height: 750px;
+  }
+
+  &--open {
+    display: block;
   }
 }
 
