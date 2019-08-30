@@ -23,24 +23,28 @@
           <a class="page-header__logo logo" href="index.html">
             <picture class="page-header__hide">
               <source type="image/webp" media="(min-width: 1440px)"
-                srcset="img/logo-desktop-white@1x.webp, img/logo-desktop-white@2x.webp">
+                srcset="img/logo-desktop-white@1x.webp 1x, img/logo-desktop-white@2x.webp 2x">
               <source type="image/webp" media="(min-width: 768px)"
-                srcset="img/logo-tablet-white@1x.webp, img/logo-tablet-white@2x.webp">
-              <source type="image/webp" srcset="img/logo-mobile-white@1x.webp, img/logo-mobile-white@2x.webp">
-              <source media="(min-width: 1440px)" srcset="img/logo-desktop-white@1x.png, img/logo-desktop-white@2x.png">
-              <source media="(min-width: 768px)" srcset="img/logo-tablet-white@1x.png, img/logo-tablet-white@2x.png">
-              <img class="logo__image" src="img/logo-mobile-white@1x.png" srcset="img/logo-mobile-white@2x.png"
+                srcset="img/logo-tablet-white@1x.webp 1x, img/logo-tablet-white@2x.webp 2x">
+              <source type="image/webp" srcset="img/logo-mobile-white@1x.webp 1x, img/logo-mobile-white@2x.webp 2x">
+              <source media="(min-width: 1440px)"
+                srcset="img/logo-desktop-white@1x.png 1x, img/logo-desktop-white@2x.png 2x">
+              <source media="(min-width: 768px)"
+                srcset="img/logo-tablet-white@1x.png 1x, img/logo-tablet-white@2x.png 2x">
+              <img class="logo__image" src="img/logo-mobile-white@1x.png" srcset="img/logo-mobile-white@2x.png 2x"
                 width="100" height="19" alt="Логотип Погнали">
             </picture>
             <picture class="page-header__picture">
               <source type="image/webp" media="(min-width: 1440px)"
-                srcset="img/logo-desktop-blue@1x.webp, img/logo-desktop-blue@2x.webp">
+                srcset="img/logo-desktop-blue@1x.webp 1x, img/logo-desktop-blue@2x.webp 2x">
               <source type="image/webp" media="(min-width: 768px)"
-                srcset="img/logo-tablet-blue@1x.webp, img/logo-tablet-blue@2x.webp">
-              <source type="image/webp" srcset="img/logo-mobile-blue@1x.webp, img/logo-mobile-blue@2x.webp">
-              <source media="(min-width: 1440px)" srcset="img/logo-desktop-blue@1x.png, img/logo-desktop-blue@2x.png">
-              <source media="(min-width: 768px)" srcset="img/logo-tablet-blue@1x.png, img/logo-tablet-blue@2x.png">
-              <img class="page-header__new" src="img/logo-mobile-blue@1x.png" srcset="img/logo-mobile-blue@2x.png"
+                srcset="img/logo-tablet-blue@1x.webp 1x, img/logo-tablet-blue@2x.webp 2x">
+              <source type="image/webp" srcset="img/logo-mobile-blue@1x.webp 1x, img/logo-mobile-blue@2x.webp 2x">
+              <source media="(min-width: 1440px)"
+                srcset="img/logo-desktop-blue@1x.png 1x, img/logo-desktop-blue@2x.png 2x">
+              <source media="(min-width: 768px)"
+                srcset="img/logo-tablet-blue@1x.png 1x, img/logo-tablet-blue@2x.png 2x">
+              <img class="page-header__new" src="img/logo-mobile-blue@1x.png" srcset="img/logo-mobile-blue@2x.png 2x"
                 width="100" height="19" alt="Логотип Погнали">
             </picture>
           </a>
@@ -88,10 +92,11 @@
           <a class="main-nav__logo">
             <picture>
               <source type="image/webp" media="(min-width: 768px)"
-                srcset="img/logo-tablet-blue@1x.webp, img/logo-tablet-blue@2x.webp">
-              <source type="image/webp" srcset="img/logo-mobile-blue@1x.webp, img/logo-mobile-blue@2x.webp">
-              <source media="(min-width: 768px)" srcset="img/logo-tablet-blue@1x.png, img/logo-tablet-blue@2x.png">
-              <img class="main-nav__image" src="img/logo-mobile-blue@1x.png" srcset="img/logo-mobile-blue@2x.png"
+                srcset="img/logo-tablet-blue@1x.webp 1x, img/logo-tablet-blue@2x.webp 2x">
+              <source type="image/webp" srcset="img/logo-mobile-blue@1x.webp 1x, img/logo-mobile-blue@2x.webp 2x">
+              <source media="(min-width: 768px)"
+                srcset="img/logo-tablet-blue@1x.png 1x, img/logo-tablet-blue@2x.png 2x">
+              <img class="main-nav__image" src="img/logo-mobile-blue@1x.png" srcset="img/logo-mobile-blue@2x.png 2x"
                 width="100" height="19" alt="Логотип Погнали">
             </picture>
           </a>
@@ -1009,6 +1014,7 @@
       </div>
     </section>
     <section class="travel-companions">
+      <h2 class="visually-hidden">Подбop попутчика</h2>
       <div class="travel-companions__wrapper">
         <section class="travel-companions__choice choice">
           <div class="choice__wrapper">
@@ -1082,25 +1088,25 @@
                   <span class="preferences__additive">Транспорт</span>
                   <span class="preferences__appearance preferences__appearance--change">:</span>
                   <ul class="preferences__transport transport-choice">
-                    <li class="transport-choice__type" tooltip="Авиаперелет">
+                    <li class="transport-choice__type" data-tooltip="Авиаперелет">
                       <input class="transport-choice__input transport-choice__input--checkbox" type="checkbox"
                         name="aircraft" value="aircraft" id="transport-aircraft" checked="">
                       <label class="transport-choice__label transport-choice__label--aircraft"
                         for="transport-aircraft">Авиаперелет</label>
                     </li>
-                    <li class="transport-choice__type" tooltip="Автотранспорт">
+                    <li class="transport-choice__type" data-tooltip="Автотранспорт">
                       <input class="transport-choice__input transport-choice__input--checkbox" type="checkbox"
                         name="car" value="car" id="transport-car" checked="">
                       <label class="transport-choice__label transport-choice__label--car"
                         for="transport-car">Автотранспорт</label>
                     </li>
-                    <li class="transport-choice__type" tooltip="Велосипед">
+                    <li class="transport-choice__type" data-tooltip="Велосипед">
                       <input class="transport-choice__input transport-choice__input--checkbox" type="checkbox"
                         name="bicycle" value="bicycle" id="transport-bicycle">
                       <label class="transport-choice__label transport-choice__label--bicycle"
                         for="transport-bicycle">Велосипед</label>
                     </li>
-                    <li class="transport-choice__type" tooltip="Пешком">
+                    <li class="transport-choice__type" data-tooltip="Пешком">
                       <input class="transport-choice__input transport-choice__input--checkbox" type="checkbox"
                         name="pedestrian" value="pedestrian" id="transport-pedestrian" checked="">
                       <label class="transport-choice__label transport-choice__label--pedestrian"
@@ -1129,14 +1135,16 @@
                 <a class="ideal-traveler__profile" href="#">
                   <picture>
                     <source type="image/webp" media="(min-width: 1440px)"
-                      srcset="img/firsova-desktop@1x.webp, img/firsova-desktop@2x.webp">
+                      srcset="img/firsova-desktop@1x.webp 1x, img/firsova-desktop@2x.webp 2x">
                     <source type="image/webp" media="(min-width: 768px)"
-                      srcset="img/firsova-tablet@1x.webp, img/firsova-tablet@2x.webp">
-                    <source type="image/webp" srcset="img/firsova-mobile@1x.webp, img/firsova-mobile@2x.webp">
-                    <source media="(min-width: 1440px)" srcset="img/firsova-desktop@1x.jpg, img/firsova-desktop@1x.jpg">
-                    <source media="(min-width: 768px)" srcset="img/firsova-tablet@1x.jpg, img/firsova-tablet@2x.jpg">
+                      srcset="img/firsova-tablet@1x.webp 1x, img/firsova-tablet@2x.webp 2x">
+                    <source type="image/webp" srcset="img/firsova-mobile@1x.webp 1x, img/firsova-mobile@2x.webp 2x">
+                    <source media="(min-width: 1440px)"
+                      srcset="img/firsova-desktop@1x.jpg 1x, img/firsova-desktop@1x.jpg 2x">
+                    <source media="(min-width: 768px)"
+                      srcset="img/firsova-tablet@1x.jpg 1x, img/firsova-tablet@2x.jpg 2x">
                     <img class="ideal-traveler__photo" src="img/firsova-mobile@1x.jpg"
-                      srcset="img/firsova-mobile@2x.jpg" width="70" height="70" alt="Таня Фирсова">
+                      srcset="img/firsova-mobile@2x.jpg 2x" width="70" height="70" alt="Таня Фирсова">
                   </picture>
                   <h3 class="ideal-traveler__name ideal-traveler__name--active ideal-traveler__name--first">Таня Фирсова
                   </h3>
@@ -1154,21 +1162,18 @@
                 </div>
                 <div class="ideal-traveler__wrapper">
                   <ul class="ideal-traveler__transport transport transport--catalog">
-                    <li class="transport__item transport__item--catalog" tooltip="Авиаперелет">
-                      <span class="transport__aircraft transport__aircraft--active transport__aircraft--catalog"
-                        aria-label="Авиаперелет">Авиаперелет</>
-                      </span></li>
-                    <li class="transport__item transport__item--catalog" tooltip="Автотранспорт">
-                      <span class="transport__car transport__car--catalog"
-                        aria-label="Автотранспорт">Автотранспорт</span>
+                    <li class="transport__item transport__item--catalog" data-tooltip="Авиаперелет">
+                      <span
+                        class="transport__aircraft transport__aircraft--active transport__aircraft--catalog">Авиаперелет</span>
                     </li>
-                    <li class="transport__item transport__item--catalog" tooltip="Велосипед">
-                      <span class="transport__bicycle transport__bicycle--catalog"
-                        aria-label="Велосипед">Велосипед</span>
+                    <li class="transport__item transport__item--catalog" data-tooltip="Автотранспорт">
+                      <span class="transport__car transport__car--catalog">Автотранспорт</span>
                     </li>
-                    <li class="transport__item transport__item--catalog" tooltip="Пешком">
-                      <span class="transport__pedestrian transport__pedestrian--catalog"
-                        aria-label="Пешком">Пешком</span>
+                    <li class="transport__item transport__item--catalog" data-tooltip="Велосипед">
+                      <span class="transport__bicycle transport__bicycle--catalog">Велосипед</span>
+                    </li>
+                    <li class="transport__item transport__item--catalog" data-tooltip="Пешком">
+                      <span class="transport__pedestrian transport__pedestrian--catalog">Пешком</span>
                     </li>
                   </ul>
                   <svg class="ideal-traveler__circle" width="45" height="45">
@@ -1182,8 +1187,7 @@
                 <div class="ideal-traveler__choose">
                   <a class="ideal-traveler__button button-container  button-container--catalog"
                     href="response.html">Позвать!</a>
-                  <button class="ideal-traveler__like ideal-traveler__like--yes" type="button"
-                    aria-label="like">Лайк</button>
+                  <button class="ideal-traveler__like ideal-traveler__like--yes" type="button">Лайк</button>
                   <span class="ideal-traveler__distance">1,5 м</span>
                 </div>
               </li>
@@ -1191,13 +1195,14 @@
                 <a class="ideal-traveler__profile" href="#">
                   <picture>
                     <source type="image/webp" media="(min-width: 1440px)"
-                      srcset="img/demin-desktop@1x.webp, img/demin-desktop@2x.webp">
+                      srcset="img/demin-desktop@1x.webp 1x, img/demin-desktop@2x.webp 2x">
                     <source type="image/webp" media="(min-width: 768px)"
-                      srcset="img/demin-tablet@1x.webp, img/demin-tablet@2x.webp">
-                    <source type="image/webp" srcset="img/demin-mobile@1x.webp, img/demin-mobile@2x.webp">
-                    <source media="(min-width: 1440px)" srcset="img/demin-desktop@1x.jpg, img/demin-desktop@1x.jpg">
-                    <source media="(min-width: 768px)" srcset="img/demin-tablet@1x.jpg, img/demin-tablet@2x.jpg">
-                    <img class="ideal-traveler__photo" src="img/demin-mobile@1x.jpg" srcset="img/demin-mobile@2x.jpg"
+                      srcset="img/demin-tablet@1x.webp 1x, img/demin-tablet@2x.webp 2x">
+                    <source type="image/webp" srcset="img/demin-mobile@1x.webp 1x, img/demin-mobile@2x.webp 2x">
+                    <source media="(min-width: 1440px)"
+                      srcset="img/demin-desktop@1x.jpg 1x, img/demin-desktop@1x.jpg 2x">
+                    <source media="(min-width: 768px)" srcset="img/demin-tablet@1x.jpg 1x, img/demin-tablet@2x.jpg 2x">
+                    <img class="ideal-traveler__photo" src="img/demin-mobile@1x.jpg" srcset="img/demin-mobile@2x.jpg 2x"
                       width="70" height="70" alt="Петя Демин">
                   </picture>
                   <h3 class="ideal-traveler__name ideal-traveler__name--active ideal-traveler__name--second">Петя Демин
@@ -1215,21 +1220,19 @@
                 </div>
                 <div class="ideal-traveler__wrapper">
                   <ul class="ideal-traveler__transport transport transport--catalog">
-                    <li class="transport__item transport__item--catalog" tooltip="Авиаперелет">
-                      <span class="transport__aircraft transport__aircraft--active transport__aircraft--catalog"
-                        aria-label="Авиаперелет">Авиаперелет</span>
+                    <li class="transport__item transport__item--catalog" data-tooltip="Авиаперелет">
+                      <span
+                        class="transport__aircraft transport__aircraft--active transport__aircraft--catalog">Авиаперелет</span>
                     </li>
-                    <li class="transport__item transport__item--catalog" tooltip="Автотранспорт">
-                      <span class="transport__car transport__car--active transport__car--catalog"
-                        aria-label="Автотранспорт">Автотранспорт</span>
+                    <li class="transport__item transport__item--catalog" data-tooltip="Автотранспорт">
+                      <span class="transport__car transport__car--active transport__car--catalog">Автотранспорт</span>
                     </li>
-                    <li class="transport__item transport__item--catalog" tooltip="Велосипед">
-                      <span class="transport__bicycle transport__bicycle--catalog"
-                        aria-label="Велосипед">Велосипед</span>
+                    <li class="transport__item transport__item--catalog" data-tooltip="Велосипед">
+                      <span class="transport__bicycle transport__bicycle--catalog">Велосипед</span>
                     </li>
-                    <li class="transport__item transport__item--catalog" tooltip="Пешком">
-                      <span class="transport__pedestrian transport__pedestrian--active transport__pedestrian--catalog"
-                        aria-label="Пешком">Пешком</span>
+                    <li class="transport__item transport__item--catalog" data-tooltip="Пешком">
+                      <span
+                        class="transport__pedestrian transport__pedestrian--active transport__pedestrian--catalog">Пешком</span>
                     </li>
                   </ul>
                   <svg class="ideal-traveler__circle" width="45" height="45">
@@ -1243,8 +1246,7 @@
                 <div class="ideal-traveler__choose ideal-traveler__choose--size">
                   <a class="ideal-traveler__button button-container  button-container--catalog"
                     href="response.html">Позвать!</a>
-                  <button class="ideal-traveler__like ideal-traveler__like--not" type="button"
-                    aria-label="like">Лайк</button>
+                  <button class="ideal-traveler__like ideal-traveler__like--not" type="button">Лайк</button>
                   <span class="ideal-traveler__distance">150</span>
                 </div>
               </li>
@@ -1252,14 +1254,16 @@
                 <a class="ideal-traveler__profile" href="#">
                   <picture>
                     <source type="image/webp" media="(min-width: 1440px)"
-                      srcset="img/smolov-desktop@1x.webp, img/smolov-desktop@2x.webp">
+                      srcset="img/smolov-desktop@1x.webp 1x, img/smolov-desktop@2x.webp 2x">
                     <source type="image/webp" media="(min-width: 768px)"
-                      srcset="img/smolov-tablet@1x.webp, img/smolov-tablet@2x.webp">
-                    <source type="image/webp" srcset="img/smolov-mobile@1x.webp, img/smolov-mobile@2x.webp">
-                    <source media="(min-width: 1440px)" srcset="img/smolov-desktop@1x.jpg, img/smolov-desktop@1x.jpg">
-                    <source media="(min-width: 768px)" srcset="img/smolov-tablet@1x.jpg, img/smolov-tablet@2x.jpg">
-                    <img class="ideal-traveler__photo" src="img/smolov-mobile@1x.jpg" srcset="img/smolov-mobile@2x.jpg"
-                      width="70" height="70" alt="Марк Смолов">
+                      srcset="img/smolov-tablet@1x.webp 1x, img/smolov-tablet@2x.webp 2x">
+                    <source type="image/webp" srcset="img/smolov-mobile@1x.webp 1x, img/smolov-mobile@2x.webp 2x">
+                    <source media="(min-width: 1440px)"
+                      srcset="img/smolov-desktop@1x.jpg 1x, img/smolov-desktop@1x.jpg 2x">
+                    <source media="(min-width: 768px)"
+                      srcset="img/smolov-tablet@1x.jpg 1x, img/smolov-tablet@2x.jpg 2x">
+                    <img class="ideal-traveler__photo" src="img/smolov-mobile@1x.jpg"
+                      srcset="img/smolov-mobile@2x.jpg 2x" width="70" height="70" alt="Марк Смолов">
                   </picture>
                   <h3 class="ideal-traveler__name ideal-traveler__name--active">Марк Смолов</h3>
                 </a>
@@ -1276,21 +1280,19 @@
                 </div>
                 <div class="ideal-traveler__wrapper">
                   <ul class="ideal-traveler__transport transport transport--catalog">
-                    <li class="transport__item transport__item--catalog" tooltip="Авиаперелет">
-                      <span class="transport__aircraft transport__aircraft--active transport__aircraft--catalog"
-                        aria-label="Авиаперелет">Авиаперелет</span>
+                    <li class="transport__item transport__item--catalog" data-tooltip="Авиаперелет">
+                      <span
+                        class="transport__aircraft transport__aircraft--active transport__aircraft--catalog">Авиаперелет</span>
                     </li>
-                    <li class="transport__item transport__item--catalog" tooltip="Автотранспорт">
-                      <span class="transport__car transport__car--catalog"
-                        aria-label="Автотранспорт">Автотранспорт</span>
+                    <li class="transport__item transport__item--catalog" data-tooltip="Автотранспорт">
+                      <span class="transport__car transport__car--catalog">Автотранспорт</span>
                     </li>
-                    <li class="transport__item transport__item--catalog" tooltip="Велосипед">
-                      <span class="transport__bicycle transport__bicycle--active transport__bicycle--catalog"
-                        aria-label="Велосипед">Велосипед</span>
+                    <li class="transport__item transport__item--catalog" data-tooltip="Велосипед">
+                      <span
+                        class="transport__bicycle transport__bicycle--active transport__bicycle--catalog">Велосипед</span>
                     </li>
-                    <li class="transport__item transport__item--catalog" tooltip="Пешком">
-                      <span class="transport__pedestrian transport__pedestrian--catalog"
-                        aria-label="Пешком">Пешком</span>
+                    <li class="transport__item transport__item--catalog" data-tooltip="Пешком">
+                      <span class="transport__pedestrian transport__pedestrian--catalog">Пешком</span>
                     </li>
                   </ul>
                   <svg class="ideal-traveler__circle" width="45" height="45">
@@ -1304,8 +1306,7 @@
                 <div class="ideal-traveler__choose">
                   <a class="ideal-traveler__button button-container button-container--catalog"
                     href="response.html">Позвать!</a>
-                  <button class="ideal-traveler__like ideal-traveler__like--not" type="button"
-                    aria-label="like">Лайк</button>
+                  <button class="ideal-traveler__like ideal-traveler__like--not" type="button">Лайк</button>
                   <span class="ideal-traveler__distance">1700</span>
                 </div>
               </li>
@@ -1313,15 +1314,16 @@
                 <a class="ideal-traveler__profile" href="#">
                   <picture>
                     <source type="image/webp" media="(min-width: 1440px)"
-                      srcset="img/rogovaya-desktop@1x.webp, img/rogovaya-desktop@2x.webp">
+                      srcset="img/rogovaya-desktop@1x.webp 1x, img/rogovaya-desktop@2x.webp 2x">
                     <source type="image/webp" media="(min-width: 768px)"
-                      srcset="img/rogovaya-tablet@1x.webp, img/rogovaya-tablet@2x.webp">
-                    <source type="image/webp" srcset="img/rogovaya-mobile@1x.webp, img/rogovaya-mobile@2x.webp">
+                      srcset="img/rogovaya-tablet@1x.webp 1x, img/rogovaya-tablet@2x.webp 2x">
+                    <source type="image/webp" srcset="img/rogovaya-mobile@1x.webp 1x, img/rogovaya-mobile@2x.webp 2x">
                     <source media="(min-width: 1440px)"
-                      srcset="img/rogovaya-desktop@1x.jpg, img/rogovaya-desktop@1x.jpg">
-                    <source media="(min-width: 768px)" srcset="img/rogovaya-tablet@1x.jpg, img/rogovaya-tablet@2x.jpg">
+                      srcset="img/rogovaya-desktop@1x.jpg 1x, img/rogovaya-desktop@1x.jpg 2x">
+                    <source media="(min-width: 768px)"
+                      srcset="img/rogovaya-tablet@1x.jpg 1x, img/rogovaya-tablet@2x.jpg 2x">
                     <img class="ideal-traveler__photo" src="img/rogovaya-mobile@1x.jpg"
-                      srcset="img/rogovaya-mobile@2x.jpg" width="70" height="70" alt="Лариса Роговая">
+                      srcset="img/rogovaya-mobile@2x.jpg 2x" width="70" height="70" alt="Лариса Роговая">
                   </picture>
                   <h3 class="ideal-traveler__name ideal-traveler__name--other">Лариса Роговая</h3>
                 </a>
@@ -1337,21 +1339,18 @@
                 </div>
                 <div class="ideal-traveler__wrapper">
                   <ul class="ideal-traveler__transport transport transport--catalog">
-                    <li class="transport__item transport__item--catalog" tooltip="Авиаперелет">
-                      <span class="transport__aircraft transport__aircraft--active transport__aircraft--catalog"
-                        aria-label="Авиаперелет">Авиаперелет</span>
+                    <li class="transport__item transport__item--catalog" data-tooltip="Авиаперелет">
+                      <span
+                        class="transport__aircraft transport__aircraft--active transport__aircraft--catalog">Авиаперелет</span>
                     </li>
-                    <li class="transport__item transport__item--catalog" tooltip="Автотранспорт">
-                      <span class="transport__car transport__car--active transport__car--catalog"
-                        aria-label="Автотранспорт">Автотранспорт</span>
+                    <li class="transport__item transport__item--catalog" data-tooltip="Автотранспорт">
+                      <span class="transport__car transport__car--active transport__car--catalog">Автотранспорт</span>
                     </li>
-                    <li class="transport__item transport__item--catalog" tooltip="Велосипед">
-                      <span class="transport__bicycle transport__bicycle--catalog"
-                        aria-label="Велосипед">Велосипед</span>
+                    <li class="transport__item transport__item--catalog" data-tooltip="Велосипед">
+                      <span class="transport__bicycle transport__bicycle--catalog">Велосипед</span>
                     </li>
-                    <li class="transport__item transport__item--catalog" tooltip="Пешком">
-                      <span class="transport__pedestrian transport__pedestrian--catalog"
-                        aria-label="Пешком">Пешком</span>
+                    <li class="transport__item transport__item--catalog" data-tooltip="Пешком">
+                      <span class="transport__pedestrian transport__pedestrian--catalog">Пешком</span>
                     </li>
                   </ul>
                   <svg class="ideal-traveler__circle" width="45" height="45">
@@ -1365,8 +1364,7 @@
                 <div class="ideal-traveler__choose ideal-traveler__choose--rate">
                   <a class="ideal-traveler__button button-container button-container--catalog"
                     href="response.html">Позвать!</a>
-                  <button class="ideal-traveler__like ideal-traveler__like--not" type="button"
-                    aria-label="like">Лайк</button>
+                  <button class="ideal-traveler__like ideal-traveler__like--not" type="button">Лайк</button>
                   <span class="ideal-traveler__distance">23</span>
                 </div>
               </li>
@@ -1403,13 +1401,14 @@
         <a class="page-footer__logo" href="index.html">
           <picture>
             <source type="image/webp" media="(min-width: 1440px)"
-              srcset="img/logo-desktop-blue@1x.webp, img/logo-desktop-blue@2x.webp">
+              srcset="img/logo-desktop-blue@1x.webp 1x, img/logo-desktop-blue@2x.webp 2x">
             <source type="image/webp" media="(min-width: 768px)"
-              srcset="img/logo-tablet-blue@1x.webp, img/logo-tablet-blue@2x.webp">
-            <source type="image/webp" srcset="img/logo-mobile-blue@1x.webp, img/logo-mobile-blue@2x.webp">
-            <source media="(min-width: 1440px)" srcset="img/logo-desktop-blue@1x.png, img/logo-desktop-blue@2x.png">
-            <source media="(min-width: 768px)" srcset="img/logo-tablet-blue@1x.png, img/logo-tablet-blue@2x.png">
-            <img class="page-footer__image" src="img/logo-mobile-blue@1x.png" srcset="img/logo-mobile-blue@2x.png"
+              srcset="img/logo-tablet-blue@1x.webp 1x, img/logo-tablet-blue@2x.webp 2x">
+            <source type="image/webp" srcset="img/logo-mobile-blue@1x.webp 1x, img/logo-mobile-blue@2x.webp 2x">
+            <source media="(min-width: 1440px)"
+              srcset="img/logo-desktop-blue@1x.png 1x, img/logo-desktop-blue@2x.png 2x">
+            <source media="(min-width: 768px)" srcset="img/logo-tablet-blue@1x.png 1x, img/logo-tablet-blue@2x.png 2x">
+            <img class="page-footer__image" src="img/logo-mobile-blue@1x.png" srcset="img/logo-mobile-blue@2x.png 2x"
               width="100" height="19" alt="Логотип Погнали">
           </picture>
         </a>
