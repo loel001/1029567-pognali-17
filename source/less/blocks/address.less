@@ -3,6 +3,7 @@
   background-color: @main-color-first;
   margin-top: -35px;
   margin-bottom: -237px;
+  overflow: hidden;
 
   @media @tablet-width {
     margin-top: -85px;
@@ -15,14 +16,19 @@
 }
 
 .address__wrapper {
-  // width: 320px;
+  width: 320px;
   margin: 0 auto;
   position: relative;
-  // @media @tablet-width {
-  //   width: 768px;
-  // }
+
+  @media @tablet-width {
+    width: 768px;
+  }
 
   @media @desktop-width {
+    width: 1440px;
+  }
+
+  &--show {
     width: auto;
   }
 
