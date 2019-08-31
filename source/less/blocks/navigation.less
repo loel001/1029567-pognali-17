@@ -10,12 +10,17 @@
     width: 600px;
     color: @color-first;
     padding-left: 0;
-    line-height: 58px;
     margin-left: 146px;
+    padding-top: 17px;
   }
 }
 
 .navigation__link {
+  display: inline-block;
+  text-shadow: 0 0 1px rgba(255, 255, 255, 0.3);
+  outline: none;
+  overflow: hidden;
+
   @media @desktop-width {
     color: @color-first;
 
@@ -33,10 +38,31 @@
       color: @color-third;
     }
   }
+
+  &:hover .navigation__animation {
+    transform: translateY(-100%);
+  }
+
+  &:focus .navigation__animation {
+    transform: translateY(-100%);
+  }
 }
 
 .navigation__item {
   @media @desktop-width {
     margin-right: 34px;
+  }
+}
+
+.navigation__animation {
+  position: relative;
+  display: inline-block;
+  transition: transform 0.3s;
+
+  &::before {
+    position: absolute;
+    top: 100%;
+    content: attr(data-hover);
+    transform: translate3d(0, 0, 0);
   }
 }

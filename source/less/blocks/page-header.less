@@ -65,7 +65,7 @@
     padding-left: 60px;
     padding-top: 47px;
     padding-right: 60px;
-    padding-bottom: 0;
+    padding-bottom: 6px;
   }
 
   &--course {
@@ -82,6 +82,7 @@
       padding-left: 60px;
       padding-right: 60px;
       padding-top: 47px;
+      padding-bottom: 69px;
     }
   }
 }
@@ -203,6 +204,10 @@
         border-radius: 4px;
         top: 124px;
       }
+
+      @media @desktop-width {
+        top: 131px;
+      }
     }
   }
 
@@ -226,6 +231,7 @@
 
       @media @desktop-width {
         width: 357px;
+        top: 131px;
       }
     }
   }
@@ -377,8 +383,12 @@
       border-radius: 1px;
       background-color: @main-color-eleventh;
       left: -105px;
-      top: 28px;
+      top: 21px;
     }
+  }
+
+  &--course {
+    padding-top: 12px;
   }
 }
 
