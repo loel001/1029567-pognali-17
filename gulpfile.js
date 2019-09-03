@@ -15,7 +15,6 @@ var include = require("posthtml-include");
 var csso = require("gulp-csso");
 var concat = require("gulp-concat");
 var minify = require("gulp-minify");
-var babel = require("gulp-babel");
 var del = require("del");
 var footer = require("gulp-footer");
 var server = require("browser-sync").create();
@@ -79,13 +78,14 @@ gulp.task("html", function () {
 
 gulp.task("scripts", function () {
   return gulp.src("source/js/*.js")
-    .pipe(minify({
-      ext:{
-        src:".js",
-        min:'.min.js'
-      }
-    }))
-    .pipe(gulp.dest("build/js"));
+  .pipe(concat("main.js"))
+  .pipe(minify({
+    ext:{
+      src:".js",
+      min:'.min.js'
+    }
+  }))
+  .pipe(gulp.dest("build/js"));
 });
 
 gulp.task("copy", function () {
